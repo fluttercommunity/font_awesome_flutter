@@ -1,3 +1,11 @@
+## 4.7.2
+
+* MOAR README updates
+
+## 4.7.1
+
+* README fix
+
 ## 4.7.0
 
 * Expose Font Awesome 4.7.0 `woff` font asset. This was the smallest version of the font file that worked with Flutter. 

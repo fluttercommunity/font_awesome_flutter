@@ -1,6 +1,6 @@
 # font_awesome_flutter
 
-The [Font Awesome](https://fontawesome.com) Icon pack available as set of Flutter Icons.
+The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of Flutter Icons.
 
 ## Installation
 
@@ -11,7 +11,7 @@ This requires two steps:
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-  font_awesome_flutter: 4.7.0    
+  font_awesome_flutter: 4.7.2    
 ```
 
 ### Install the font asset

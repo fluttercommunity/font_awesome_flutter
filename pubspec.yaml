@@ -2,7 +2,7 @@ name: font_awesome_flutter
 author: Brian Egan <brian@brianegan.com>
 description: The Font Awesome Icon pack available as Flutter Icons
 homepage: https://github.com/brianegan/font_awesome_flutter
-version: 4.7.1
+version: 4.7.2
 
 dependencies:
   flutter:
