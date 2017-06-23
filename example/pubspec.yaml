@@ -15,4 +15,4 @@ flutter:
   fonts:
     - family: FontAwesome # Do not change!
       fonts:
-        - asset: packages/font_awesome_flutter/fonts/fontawesome-webfont.woff
+        - asset: packages/font_awesome_flutter/fonts/fontawesome.woff

@@ -22,7 +22,7 @@ In the `flutter:` section of your `pubspec.yaml`, add the following section:
   fonts:
     - family: FontAwesome # Do not change!
       fonts:
-        - asset: packages/font_awesome_flutter/fonts/fontawesome-webfont.woff
+        - asset: fontawesome.woff
 ```
 
 ## Usage
@@ -30,12 +30,15 @@ In the `flutter:` section of your `pubspec.yaml`, add the following section:
 ```dart
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-// ... later in the build method
-
-new IconButton(
-  icon: new Icon(FontAwesomeIcons.gamepad), 
-  onPressed: () { print("Pressed"); }
-)
+class MyWidget extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return new IconButton(
+      // Use the FontAwesomeIcons class for the IconData
+      icon: new Icon(FontAwesomeIcons.gamepad), 
+      onPressed: () { print("Pressed"); }
+     );
+  }
+}
 ```
 
 ## Example
