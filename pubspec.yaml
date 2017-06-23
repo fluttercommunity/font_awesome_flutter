@@ -1,0 +1,10 @@
+name: font_awesome_flutter
+version: 4.7.0
+description: The Font Awesome Icon pack available as Flutter Icons
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
