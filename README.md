@@ -22,7 +22,7 @@ In the `flutter:` section of your `pubspec.yaml`, add the following section:
   fonts:
     - family: FontAwesome # Do not change!
       fonts:
-        - asset: fontawesome.woff
+        - asset: packages/font_awesome_flutter/fonts/fontawesome.woff
 ```
 
 ## Usage
