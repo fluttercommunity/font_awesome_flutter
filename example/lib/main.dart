@@ -35,26 +35,40 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        leading: isSearching
+            ? new IconButton(
+                icon: new Icon(FontAwesomeIcons.arrowLeft),
+                onPressed: () => setState(() {
+                      isSearching = false;
+                      searchTerm = "";
+                    }))
+            : null,
         title: isSearching
             ? new TextField(
                 onChanged: (text) => setState(() => searchTerm = text),
                 autofocus: true,
                 style: new TextStyle(fontSize: 18.0),
+                decoration: new InputDecoration(hideDivider: true),
               )
             : new Text("Font Awesome Flutter Gallery"),
         actions: isSearching
-            ? [
-                new IconButton(
-                    icon: new Icon(FontAwesomeIcons.timesCircle),
-                    onPressed: () => setState(() {
-                          isSearching = false;
-                          searchTerm = "";
-                        }))
-              ]
+            ? null
             : [
                 new IconButton(
                     icon: new Icon(FontAwesomeIcons.search),
-                    onPressed: () => setState(() => isSearching = true))
+                    onPressed: () {
+                      ModalRoute.of(context).addLocalHistoryEntry(
+                          new LocalHistoryEntry(onRemove: () {
+                        setState(() {
+                          searchTerm = "";
+                          isSearching = false;
+                        });
+                      }));
+
+                      setState(() {
+                        isSearching = true;
+                      });
+                    })
               ],
       ),
       body: new GridView.count(
