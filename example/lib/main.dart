@@ -28,58 +28,22 @@ class FontAwesomeGalleryHome extends StatefulWidget {
 }
 
 class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
-  var searchTerm = "";
-  var isSearching = false;
+  var _searchTerm = "";
+  var _isSearching = false;
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        leading: isSearching
-            ? new IconButton(
-                icon: new Icon(FontAwesomeIcons.arrowLeft),
-                onPressed: () => setState(() {
-                      isSearching = false;
-                      searchTerm = "";
-                    }))
-            : null,
-        title: isSearching
-            ? new TextField(
-                onChanged: (text) => setState(() => searchTerm = text),
-                autofocus: true,
-                style: new TextStyle(fontSize: 18.0),
-                decoration: new InputDecoration(hideDivider: true),
-              )
-            : new Text("Font Awesome Flutter Gallery"),
-        actions: isSearching
-            ? null
-            : [
-                new IconButton(
-                    icon: new Icon(FontAwesomeIcons.search),
-                    onPressed: () {
-                      ModalRoute.of(context).addLocalHistoryEntry(
-                          new LocalHistoryEntry(onRemove: () {
-                        setState(() {
-                          searchTerm = "";
-                          isSearching = false;
-                        });
-                      }));
-
-                      setState(() {
-                        isSearching = true;
-                      });
-                    })
-              ],
-      ),
+      appBar: _isSearching ? _searchBar(context) : _titleBar(),
       body: new GridView.count(
           crossAxisCount:
               MediaQuery.of(context).orientation == Orientation.portrait
                   ? 2
                   : 3,
-          children: (icons..sort())
+          children: icons
               .where((icon) =>
-                  searchTerm.isEmpty ||
-                  icon.title.toLowerCase().startsWith(searchTerm.toLowerCase()))
+                  _searchTerm.isEmpty ||
+                  icon.title.toLowerCase().startsWith(_searchTerm.toLowerCase()))
               .map((icon) => new InkWell(
                     onTap: () {
                       Navigator.push(
@@ -115,9 +79,56 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
               .toList()),
     );
   }
+
+  AppBar _titleBar() {
+    return new AppBar(
+      title: new Text("Font Awesome Flutter Gallery"),
+      actions: [
+        new IconButton(
+            icon: new Icon(FontAwesomeIcons.search),
+            onPressed: () {
+              ModalRoute
+                  .of(context)
+                  .addLocalHistoryEntry(new LocalHistoryEntry(onRemove: () {
+                setState(() {
+                  _searchTerm = "";
+                  _isSearching = false;
+                });
+              }));
+
+              setState(() {
+                _isSearching = true;
+              });
+            })
+      ],
+    );
+  }
+
+  AppBar _searchBar(BuildContext context) {
+    return new AppBar(
+      leading: new IconButton(
+        icon: new Icon(FontAwesomeIcons.arrowLeft),
+        onPressed: () {
+          setState(
+            () {
+              Navigator.pop(context);
+              _isSearching = false;
+              _searchTerm = "";
+            },
+          );
+        },
+      ),
+      title: new TextField(
+        onChanged: (text) => setState(() => _searchTerm = text),
+        autofocus: true,
+        style: new TextStyle(fontSize: 18.0),
+        decoration: new InputDecoration(hideDivider: true),
+      ),
+    );
+  }
 }
 
-final List<IconDefinition> icons = <IconDefinition>[
+final List<IconDefinition> icons = (<IconDefinition>[
   new IconDefinition(FontAwesomeIcons.glass, "glass"),
   new IconDefinition(FontAwesomeIcons.music, "music"),
   new IconDefinition(FontAwesomeIcons.search, "search"),
@@ -872,7 +883,7 @@ final List<IconDefinition> icons = <IconDefinition>[
   new IconDefinition(FontAwesomeIcons.superpowers, "superpowers"),
   new IconDefinition(FontAwesomeIcons.wpexplorer, "wpexplorer"),
   new IconDefinition(FontAwesomeIcons.meetup, "meetup"),
-];
+]..sort());
 
 class IconDefinition implements Comparable {
   final IconData iconData;
