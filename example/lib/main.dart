@@ -33,50 +33,56 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
 
   @override
   Widget build(BuildContext context) {
+    final filteredIcons = icons
+        .where((icon) =>
+            _searchTerm.isEmpty ||
+            icon.title.toLowerCase().startsWith(_searchTerm.toLowerCase()))
+        .toList();
+    final orientation = MediaQuery.of(context).orientation;
+
     return new Scaffold(
       appBar: _isSearching ? _searchBar(context) : _titleBar(),
-      body: new GridView.count(
-          crossAxisCount:
-              MediaQuery.of(context).orientation == Orientation.portrait
-                  ? 2
-                  : 3,
-          children: icons
-              .where((icon) =>
-                  _searchTerm.isEmpty ||
-                  icon.title.toLowerCase().startsWith(_searchTerm.toLowerCase()))
-              .map((icon) => new InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        new MaterialPageRoute<Null>(
-                          builder: (BuildContext context) {
-                            return new Container(
-                              color: Colors.white,
-                              child: new SizedBox.expand(
-                                child: new Hero(
-                                  tag: icon,
-                                  child: new Icon(
-                                    icon.iconData,
-                                    size: 100.0,
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
+      body: new GridView.builder(
+          itemCount: filteredIcons.length,
+          gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+          ),
+          itemBuilder: (context, index) {
+            final icon = filteredIcons[index];
+
+            return new InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute<Null>(
+                    builder: (BuildContext context) {
+                      return new Container(
+                        color: Colors.white,
+                        child: new SizedBox.expand(
+                          child: new Hero(
+                            tag: icon,
+                            child: new Icon(
+                              icon.iconData,
+                              size: 100.0,
+                            ),
+                          ),
                         ),
                       );
                     },
-                    child: new Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        new Hero(tag: icon, child: new Icon(icon.iconData)),
-                        new Container(
-                            padding: new EdgeInsets.only(top: 16.0),
-                            child: new Text(icon.title))
-                      ],
-                    ),
-                  ))
-              .toList()),
+                  ),
+                );
+              },
+              child: new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  new Hero(tag: icon, child: new Icon(icon.iconData)),
+                  new Container(
+                      padding: new EdgeInsets.only(top: 16.0),
+                      child: new Text(icon.title))
+                ],
+              ),
+            );
+          }),
     );
   }
 
