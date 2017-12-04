@@ -10,9 +10,3 @@ dependencies:
 flutter:
   uses-material-design: true
 
-  # In order to use font_awesome_flutter in your own app, be sure to
-  # include the following font declaration in your pubspec.yaml
-  fonts:
-    - family: FontAwesome # Do not change!
-      fonts:
-        - asset: packages/font_awesome_flutter/fonts/fontawesome.woff

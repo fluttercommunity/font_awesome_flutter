@@ -753,5 +753,10 @@ class FontAwesomeIcons {
 }
 
 class _IconData extends IconData {
-  const _IconData(int codePoint) : super(codePoint, fontFamily: 'FontAwesome');
+  const _IconData(int codePoint)
+      : super(
+          codePoint,
+          fontFamily: 'FontAwesome',
+          fontPackage: 'font_awesome_flutter',
+        );
 }

@@ -4,25 +4,10 @@ The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of F
 
 ## Installation
 
-This requires two steps:
-
-### Install the dependency
-
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-  font_awesome_flutter: 4.7.2    
-```
-
-### Install the font asset
-
-In the `flutter:` section of your `pubspec.yaml`, add the following section:
-
-```yaml
-  fonts:
-    - family: FontAwesome # Do not change!
-      fonts:
-        - asset: packages/font_awesome_flutter/fonts/fontawesome.woff
+  font_awesome_flutter: ^4.7.3
 ```
 
 ## Usage

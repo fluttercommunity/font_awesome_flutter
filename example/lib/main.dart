@@ -36,7 +36,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
     final filteredIcons = icons
         .where((icon) =>
             _searchTerm.isEmpty ||
-            icon.title.toLowerCase().startsWith(_searchTerm.toLowerCase()))
+            icon.title.toLowerCase().contains(_searchTerm.toLowerCase()))
         .toList();
     final orientation = MediaQuery.of(context).orientation;
 
@@ -77,8 +77,9 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                 children: <Widget>[
                   new Hero(tag: icon, child: new Icon(icon.iconData)),
                   new Container(
-                      padding: new EdgeInsets.only(top: 16.0),
-                      child: new Text(icon.title))
+                    padding: new EdgeInsets.only(top: 16.0),
+                    child: new Text(icon.title),
+                  )
                 ],
               ),
             );
@@ -93,14 +94,16 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         new IconButton(
             icon: new Icon(FontAwesomeIcons.search),
             onPressed: () {
-              ModalRoute
-                  .of(context)
-                  .addLocalHistoryEntry(new LocalHistoryEntry(onRemove: () {
-                setState(() {
-                  _searchTerm = "";
-                  _isSearching = false;
-                });
-              }));
+              ModalRoute.of(context).addLocalHistoryEntry(
+                new LocalHistoryEntry(
+                  onRemove: () {
+                    setState(() {
+                      _searchTerm = "";
+                      _isSearching = false;
+                    });
+                  },
+                ),
+              );
 
               setState(() {
                 _isSearching = true;
@@ -252,7 +255,9 @@ final List<IconDefinition> icons = (<IconDefinition>[
   new IconDefinition(FontAwesomeIcons.eyeSlash, "eyeSlash"),
   new IconDefinition(FontAwesomeIcons.warning, "warning"),
   new IconDefinition(
-      FontAwesomeIcons.exclamationTriangle, "exclamationTriangle"),
+    FontAwesomeIcons.exclamationTriangle,
+    "exclamationTriangle",
+  ),
   new IconDefinition(FontAwesomeIcons.plane, "plane"),
   new IconDefinition(FontAwesomeIcons.calendar, "calendar"),
   new IconDefinition(FontAwesomeIcons.random, "random"),
@@ -726,7 +731,9 @@ final List<IconDefinition> icons = (<IconDefinition>[
   new IconDefinition(FontAwesomeIcons.battery, "battery"),
   new IconDefinition(FontAwesomeIcons.batteryFull, "batteryFull"),
   new IconDefinition(
-      FontAwesomeIcons.batteryThreeQuarters, "batteryThreeQuarters"),
+    FontAwesomeIcons.batteryThreeQuarters,
+    "batteryThreeQuarters",
+  ),
   new IconDefinition(FontAwesomeIcons.batteryHalf, "batteryHalf"),
   new IconDefinition(FontAwesomeIcons.batteryQuarter, "batteryQuarter"),
   new IconDefinition(FontAwesomeIcons.batteryEmpty, "batteryEmpty"),
@@ -821,9 +828,13 @@ final List<IconDefinition> icons = (<IconDefinition>[
   new IconDefinition(FontAwesomeIcons.volumeControlPhone, "volumeControlPhone"),
   new IconDefinition(FontAwesomeIcons.braille, "braille"),
   new IconDefinition(
-      FontAwesomeIcons.assistiveListeningSystems, "assistiveListeningSystems"),
-  new IconDefinition(FontAwesomeIcons.americanSignLanguageInterpreting,
-      "americanSignLanguageInterpreting"),
+    FontAwesomeIcons.assistiveListeningSystems,
+    "assistiveListeningSystems",
+  ),
+  new IconDefinition(
+    FontAwesomeIcons.americanSignLanguageInterpreting,
+    "americanSignLanguageInterpreting",
+  ),
   new IconDefinition(FontAwesomeIcons.deaf, "deaf"),
   new IconDefinition(FontAwesomeIcons.glide, "glide"),
   new IconDefinition(FontAwesomeIcons.glideG, "glideG"),
@@ -864,7 +875,9 @@ final List<IconDefinition> icons = (<IconDefinition>[
   new IconDefinition(FontAwesomeIcons.thermometer, "thermometer"),
   new IconDefinition(FontAwesomeIcons.thermometerFull, "thermometerFull"),
   new IconDefinition(
-      FontAwesomeIcons.thermometerThreeQuarters, "thermometerThreeQuarters"),
+    FontAwesomeIcons.thermometerThreeQuarters,
+    "thermometerThreeQuarters",
+  ),
   new IconDefinition(FontAwesomeIcons.thermometerHalf, "thermometerHalf"),
   new IconDefinition(FontAwesomeIcons.thermometerQuarter, "thermometerQuarter"),
   new IconDefinition(FontAwesomeIcons.thermometerEmpty, "thermometerEmpty"),

@@ -1,3 +1,7 @@
+## 4.7.3
+
+* Simpler Install: Remove the need to specify the font in your own pubspec.yaml
+
 ## 4.7.2
 
 * MOAR README updates
