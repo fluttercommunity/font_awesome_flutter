@@ -1,3 +1,7 @@
+## 5.0.0
+
+* semver mistake: 4.7.3 should have been a major bump as it involves breaking changes.
+
 ## 4.7.3
 
 * Simpler Install: Remove the need to specify the font in your own pubspec.yaml
