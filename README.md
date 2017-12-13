@@ -7,7 +7,7 @@ The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of F
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-  font_awesome_flutter: ^4.7.3
+  font_awesome_flutter: ^5.0.0
 ```
 
 ## Usage
