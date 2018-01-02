@@ -1,3 +1,7 @@
+## 6.0.0
+
+* Update to Font Awesome Icons 5.0.2, which includes tons of new Icons!
+
 ## 5.0.0
 
 * semver mistake: 4.7.3 should have been a major bump as it involves breaking changes.
