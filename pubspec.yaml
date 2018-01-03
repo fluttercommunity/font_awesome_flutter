@@ -2,7 +2,7 @@ name: font_awesome_flutter
 description: The Font Awesome Icon pack available as Flutter Icons
 author: Brian Egan <brian@brianegan.com>
 homepage: https://github.com/brianegan/font_awesome_flutter
-version: 5.0.0
+version: 6.0.0
 
 dependencies:
   flutter:
@@ -10,6 +10,15 @@ dependencies:
 
 flutter:
   fonts:
-    - family: FontAwesome
+    - family: FontAwesomeBrands
       fonts:
-        - asset: assets/fontawesome.woff
+        - asset: assets/fa-brands-400.ttf
+          weight: 400
+    - family: FontAwesomeRegular
+      fonts:
+        - asset: assets/fa-regular-400.ttf
+          weight: 400
+    - family: FontAwesomeSolid
+      fonts:
+        - asset: assets/fa-solid-900.ttf
+          weight: 900
