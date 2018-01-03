@@ -4,9 +4,9 @@ The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of F
 
 Based on Font Awesome 5.0.2. Includes all free icons:
 
-  * Regular (FontAwesomeIconsRegular)
-  * Solid (FontAwesomeIconsSolid)
-  * Brands (FontAwesomeIconsBrands)
+  * Regular
+  * Solid
+  * Brands
 
 ## Installation
 
