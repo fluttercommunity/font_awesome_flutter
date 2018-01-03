@@ -56,14 +56,19 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                   context,
                   new MaterialPageRoute<Null>(
                     builder: (BuildContext context) {
-                      return new Container(
-                        color: Colors.white,
-                        child: new SizedBox.expand(
-                          child: new Hero(
-                            tag: icon,
-                            child: new Icon(
-                              icon.iconData,
-                              size: 100.0,
+                      return new GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: new Container(
+                          color: Colors.white,
+                          child: new SizedBox.expand(
+                            child: new Hero(
+                              tag: icon,
+                              child: new Icon(
+                                icon.iconData,
+                                size: 100.0,
+                              ),
                             ),
                           ),
                         ),
