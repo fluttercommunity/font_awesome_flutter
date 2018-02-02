@@ -136,7 +136,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         onChanged: (text) => setState(() => _searchTerm = text),
         autofocus: true,
         style: new TextStyle(fontSize: 18.0),
-        decoration: new InputDecoration(hideDivider: true),
+        decoration: new InputDecoration(border: InputBorder.none),
       ),
     );
   }
