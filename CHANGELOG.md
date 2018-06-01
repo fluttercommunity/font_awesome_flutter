@@ -1,3 +1,11 @@
+## 7.0.0
+
+* Renames:
+  - All icons that end with capital-O (for outline) have been renamed. E.g. `addressBookO` has been renamed `addressBook` 
+  - All solid icons have been renamed to `solidIconName`. E.g. `addressBook` renamed `solidAddressBook`
+* Generate Icon pack based on JSON definition from source. Much easier upgrades / maintenance / consistency going forward! Big thanks to @pplante on Github for the contribution :)
+* Move fonts into the `lib` folder.
+  
 ## 6.0.0
 
 * Update to Font Awesome Icons 5.0.2, which includes tons of new Icons!

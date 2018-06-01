@@ -2,7 +2,7 @@
 
 The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of Flutter Icons.
 
-Based on Font Awesome 5.0.2. Includes all free icons:
+Based on Font Awesome 5.0.13. Includes all free icons:
 
   * Regular
   * Solid
@@ -13,7 +13,7 @@ Based on Font Awesome 5.0.2. Includes all free icons:
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-  font_awesome_flutter: 6.0.0
+  font_awesome_flutter: <latest_version>
 ```
 
 ## Usage
@@ -35,3 +35,8 @@ class MyWidget extends StatelessWidget {
 ## Example
 
 View the Flutter app in the `example` directory to see all the available `FontAwesomeIcons`.
+
+## Contributors
+
+  - Brian Egan
+  - Phil Plante
