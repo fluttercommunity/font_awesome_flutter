@@ -1,3 +1,7 @@
+## 7.1.0
+
+  * Upgrade to font awesome icons 5.1.0
+
 ## 7.0.0
 
 * Renames:

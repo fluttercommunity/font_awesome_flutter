@@ -18,7 +18,7 @@ void main(List<String> arguments) {
   for (String iconName in icons.keys) {
     var icon = icons[iconName];
     var unicode = icon['unicode'];
-    List<String> styles = icon['styles'];
+    List<String> styles = (icon['styles'] as List).cast<String>();
 
     if (styles.length > 1) {
       if (styles.contains('regular')) {
