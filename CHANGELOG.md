@@ -1,3 +1,8 @@
+## 8.0.0
+
+  * Upgrade environment version constraint for Dart 2
+  * Upgrade to font awesome icons 5.2.0
+
 ## 7.1.0
 
   * Upgrade to font awesome icons 5.1.0
