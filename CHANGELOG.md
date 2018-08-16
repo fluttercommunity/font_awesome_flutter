@@ -1,3 +1,7 @@
+## 8.0.1
+
+  * Fix documentation
+  
 ## 8.0.0
 
   * Upgrade environment version constraint for Dart 2
