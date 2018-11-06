@@ -2,7 +2,7 @@
 
 The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of Flutter Icons.
 
-Based on Font Awesome 5.2.0. Includes all free icons:
+Based on Font Awesome 5.3.1. Includes all free icons:
 
   * Regular
   * Solid
