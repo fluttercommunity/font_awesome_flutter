@@ -265,8 +265,13 @@ class FontAwesomeIcons {
   static const IconData solidClosedCaptioning = const IconDataSolid(0xf20a);
   static const IconData cloud = const IconDataSolid(0xf0c2);
   static const IconData cloudDownloadAlt = const IconDataSolid(0xf381);
+  static const IconData cloudMeatball = const IconDataSolid(0xf73b);
   static const IconData cloudMoon = const IconDataSolid(0xf6c3);
+  static const IconData cloudMoonRain = const IconDataSolid(0xf73c);
+  static const IconData cloudRain = const IconDataSolid(0xf73d);
+  static const IconData cloudShowersHeavy = const IconDataSolid(0xf740);
   static const IconData cloudSun = const IconDataSolid(0xf6c4);
+  static const IconData cloudSunRain = const IconDataSolid(0xf743);
   static const IconData cloudUploadAlt = const IconDataSolid(0xf382);
   static const IconData cloudscale = const IconDataBrands(0xf383);
   static const IconData cloudsmith = const IconDataBrands(0xf384);
@@ -338,10 +343,12 @@ class FontAwesomeIcons {
   static const IconData cut = const IconDataSolid(0xf0c4);
   static const IconData cuttlefish = const IconDataBrands(0xf38c);
   static const IconData dAndD = const IconDataBrands(0xf38d);
+  static const IconData dAndDBeyond = const IconDataBrands(0xf6ca);
   static const IconData dashcube = const IconDataBrands(0xf210);
   static const IconData database = const IconDataSolid(0xf1c0);
   static const IconData deaf = const IconDataSolid(0xf2a4);
   static const IconData delicious = const IconDataBrands(0xf1a5);
+  static const IconData democrat = const IconDataSolid(0xf747);
   static const IconData deploydog = const IconDataBrands(0xf38e);
   static const IconData deskpro = const IconDataBrands(0xf38f);
   static const IconData desktop = const IconDataSolid(0xf108);
@@ -497,6 +504,7 @@ class FontAwesomeIcons {
   static const IconData flag = const IconDataRegular(0xf024);
   static const IconData solidFlag = const IconDataSolid(0xf024);
   static const IconData flagCheckered = const IconDataSolid(0xf11e);
+  static const IconData flagUsa = const IconDataSolid(0xf74d);
   static const IconData flask = const IconDataSolid(0xf0c3);
   static const IconData flickr = const IconDataBrands(0xf16e);
   static const IconData flipboard = const IconDataBrands(0xf44d);
@@ -837,6 +845,7 @@ class FontAwesomeIcons {
   static const IconData memory = const IconDataSolid(0xf538);
   static const IconData menorah = const IconDataSolid(0xf676);
   static const IconData mercury = const IconDataSolid(0xf223);
+  static const IconData meteor = const IconDataSolid(0xf753);
   static const IconData microchip = const IconDataSolid(0xf2db);
   static const IconData microphone = const IconDataSolid(0xf130);
   static const IconData microphoneAlt = const IconDataSolid(0xf3c9);
@@ -937,6 +946,7 @@ class FontAwesomeIcons {
   static const IconData percent = const IconDataSolid(0xf295);
   static const IconData percentage = const IconDataSolid(0xf541);
   static const IconData periscope = const IconDataBrands(0xf3da);
+  static const IconData personBooth = const IconDataSolid(0xf756);
   static const IconData phabricator = const IconDataBrands(0xf3db);
   static const IconData phoenixFramework = const IconDataBrands(0xf3dc);
   static const IconData phoenixSquadron = const IconDataBrands(0xf511);
@@ -971,6 +981,7 @@ class FontAwesomeIcons {
   static const IconData poll = const IconDataSolid(0xf681);
   static const IconData pollH = const IconDataSolid(0xf682);
   static const IconData poo = const IconDataSolid(0xf2fe);
+  static const IconData pooStorm = const IconDataSolid(0xf75a);
   static const IconData poop = const IconDataSolid(0xf619);
   static const IconData portrait = const IconDataSolid(0xf3e0);
   static const IconData poundSign = const IconDataSolid(0xf154);
@@ -999,9 +1010,11 @@ class FontAwesomeIcons {
   static const IconData quoteRight = const IconDataSolid(0xf10e);
   static const IconData quran = const IconDataSolid(0xf687);
   static const IconData rProject = const IconDataBrands(0xf4f7);
+  static const IconData rainbow = const IconDataSolid(0xf75b);
   static const IconData random = const IconDataSolid(0xf074);
   static const IconData ravelry = const IconDataBrands(0xf2d9);
   static const IconData react = const IconDataBrands(0xf41b);
+  static const IconData reacteurope = const IconDataBrands(0xf75d);
   static const IconData readme = const IconDataBrands(0xf4d5);
   static const IconData rebel = const IconDataBrands(0xf1d0);
   static const IconData receipt = const IconDataSolid(0xf543);
@@ -1014,11 +1027,11 @@ class FontAwesomeIcons {
   static const IconData redoAlt = const IconDataSolid(0xf2f9);
   static const IconData registered = const IconDataRegular(0xf25d);
   static const IconData solidRegistered = const IconDataSolid(0xf25d);
-  static const IconData rendact = const IconDataBrands(0xf3e4);
   static const IconData renren = const IconDataBrands(0xf18b);
   static const IconData reply = const IconDataSolid(0xf3e5);
   static const IconData replyAll = const IconDataSolid(0xf122);
   static const IconData replyd = const IconDataBrands(0xf3e6);
+  static const IconData republican = const IconDataSolid(0xf75e);
   static const IconData researchgate = const IconDataBrands(0xf4f8);
   static const IconData resolving = const IconDataBrands(0xf3e7);
   static const IconData retweet = const IconDataSolid(0xf079);
@@ -1107,6 +1120,7 @@ class FontAwesomeIcons {
   static const IconData solidSmileBeam = const IconDataSolid(0xf5b8);
   static const IconData smileWink = const IconDataRegular(0xf4da);
   static const IconData solidSmileWink = const IconDataSolid(0xf4da);
+  static const IconData smog = const IconDataSolid(0xf75f);
   static const IconData smoking = const IconDataSolid(0xf48d);
   static const IconData smokingBan = const IconDataSolid(0xf54d);
   static const IconData snapchat = const IconDataBrands(0xf2ab);
@@ -1210,6 +1224,8 @@ class FontAwesomeIcons {
   static const IconData teethOpen = const IconDataSolid(0xf62f);
   static const IconData telegram = const IconDataBrands(0xf2c6);
   static const IconData telegramPlane = const IconDataBrands(0xf3fe);
+  static const IconData temperatureHigh = const IconDataSolid(0xf769);
+  static const IconData temperatureLow = const IconDataSolid(0xf76b);
   static const IconData tencentWeibo = const IconDataBrands(0xf1d5);
   static const IconData terminal = const IconDataSolid(0xf120);
   static const IconData textHeight = const IconDataSolid(0xf034);
@@ -1227,6 +1243,7 @@ class FontAwesomeIcons {
   static const IconData thermometerHalf = const IconDataSolid(0xf2c9);
   static const IconData thermometerQuarter = const IconDataSolid(0xf2ca);
   static const IconData thermometerThreeQuarters = const IconDataSolid(0xf2c8);
+  static const IconData thinkPeaks = const IconDataBrands(0xf731);
   static const IconData thumbsDown = const IconDataRegular(0xf165);
   static const IconData solidThumbsDown = const IconDataSolid(0xf165);
   static const IconData thumbsUp = const IconDataRegular(0xf164);
@@ -1346,10 +1363,13 @@ class FontAwesomeIcons {
   static const IconData volumeMute = const IconDataSolid(0xf6a9);
   static const IconData volumeOff = const IconDataSolid(0xf026);
   static const IconData volumeUp = const IconDataSolid(0xf028);
+  static const IconData voteYea = const IconDataSolid(0xf772);
+  static const IconData vrCardboard = const IconDataSolid(0xf729);
   static const IconData vuejs = const IconDataBrands(0xf41f);
   static const IconData walking = const IconDataSolid(0xf554);
   static const IconData wallet = const IconDataSolid(0xf555);
   static const IconData warehouse = const IconDataSolid(0xf494);
+  static const IconData water = const IconDataSolid(0xf773);
   static const IconData weebly = const IconDataBrands(0xf5cc);
   static const IconData weibo = const IconDataBrands(0xf18a);
   static const IconData weight = const IconDataSolid(0xf496);
@@ -1383,6 +1403,7 @@ class FontAwesomeIcons {
   static const IconData wpbeginner = const IconDataBrands(0xf297);
   static const IconData wpexplorer = const IconDataBrands(0xf2de);
   static const IconData wpforms = const IconDataBrands(0xf298);
+  static const IconData wpressr = const IconDataBrands(0xf3e4);
   static const IconData wrench = const IconDataSolid(0xf0ad);
   static const IconData xRay = const IconDataSolid(0xf497);
   static const IconData xbox = const IconDataBrands(0xf412);
