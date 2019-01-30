@@ -8,7 +8,7 @@ curl -O -L "https://github.com/FortAwesome/Font-Awesome/raw/master/web-fonts-wit
 
 popd
 
-curl -o /tmp/icons.json "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/advanced-options/metadata/icons.json"
+curl -o /tmp/icons.json "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json"
 
 dart ./tool/generate_font.dart /tmp/icons.json
 dart ./tool/generate_example.dart /tmp/icons.json
