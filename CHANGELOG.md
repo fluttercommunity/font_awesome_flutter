@@ -1,3 +1,7 @@
+## 8.3.0
+
+  * Upgrade to Font Awesome Icons 5.7
+
 ## 8.2.0
 
   * Upgrade to Font Awesome Icons 5.5
