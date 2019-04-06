@@ -28,3 +28,9 @@ flutter:
       fonts:
         - asset: lib/fonts/fa-solid-900.ttf
           weight: 900
+# To support pro icons, drop fa-light-300.ttf into lib/fonts,
+# regenerate the icon collection and uncomment the following lines:
+#    - family: FontAwesomeLight
+#      fonts:
+#        - asset: lib/fonts/fa-light-300.ttf
+#          weight: 300
