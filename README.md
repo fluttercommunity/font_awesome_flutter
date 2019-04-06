@@ -40,21 +40,22 @@ View the Flutter app in the `example` directory to see all the available `FontAw
 
 If you bought font awesome pro icons, you can import them here. 
 
-:exclamation: By importing pro icons you acknowledge that it is your obligation to keep these files private, this includes **not** uploading your package to github or other public file sharing services.
+:exclamation: By importing pro icons you acknowledge that it is your obligation to keep these files private. This includes **not** uploading your package to github or other public file sharing services.
 
 - [Download this package's source](https://github.com/michaelspiss/font_awesome_flutter/archive/master.zip), extract the folder and move it to a location of your choice
-- Download your font awesome pro icons (web version)
-- Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
-- Move `icons.json` from `metadata` to this directory (package root)
-- Run `./tool/update.sh` (from this package's root)
-- Remove `#`s from `pubspec.yaml` at the indicated position
-- Add dependency to your project with the source being the location of your choice:
+- In your project's dependencies, replace the version tag for `font_awesome_flutter` with the path to your custom installation:
 ```yaml
 dependencies:
   font_awesome_flutter:
     path: /path/to/font_awesome_flutter
     ...
 ```
+- Remove `#`s from `pubspec.yaml` at the indicated position
+- Run `pub get`
+- Download your font awesome pro icons (web version)
+- Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
+- Move `icons.json` from `metadata` to this directory (package root)
+- Run `./tool/update.sh` (from this package's root)
 
 ## Contributors
 
