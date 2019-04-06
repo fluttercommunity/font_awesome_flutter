@@ -28,3 +28,13 @@ class IconDataRegular extends IconData {
           fontPackage: 'font_awesome_flutter',
         );
 }
+
+// Pro only
+class IconDataLight extends IconData {
+  const IconDataLight(int codePoint)
+      : super(
+          codePoint,
+          fontFamily: 'FontAwesomeLight',
+          fontPackage: 'font_awesome_flutter',
+        );
+}
