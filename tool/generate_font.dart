@@ -34,7 +34,7 @@ void main(List<String> arguments) {
         String name = '${style}_$iconName';
         iconDefinitions[name] = generateIconDefinition(
           name,
-          styles,
+          style,
           unicode,
         );
       }
