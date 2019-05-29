@@ -42,7 +42,7 @@ If you bought font awesome pro icons, you can import them here.
 
 :exclamation: By importing pro icons you acknowledge that it is your obligation to keep these files private. This includes **not** uploading your package to github or other public file sharing services.
 
-- [Download this package's source](https://github.com/michaelspiss/font_awesome_flutter/archive/master.zip), extract the folder and move it to a location of your choice
+- Download this package's newest release, extract the folder and move it to a location of your choice
 - Remove `#`s from `pubspec.yaml` at the indicated position
 - run `flutter packages get`
 - Download your font awesome pro icons (web version)
