@@ -1,3 +1,7 @@
+## 8.5.0
+
+  * Upgrade to Font Awesome Icons 5.8
+
 ## 8.4.0
 
   * FIX BAD BUILD - 8.3.0 had a problem with the update Script, please do not use!
