@@ -15,6 +15,7 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 ```yaml
   font_awesome_flutter: <latest_version>
 ```
+When icons do not render try [this](https://github.com/brianegan/font_awesome_flutter/issues/28#issuecomment-460109786).
 
 ## Usage
 
