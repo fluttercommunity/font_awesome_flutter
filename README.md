@@ -56,8 +56,10 @@ dependencies:
     path: /path/to/font_awesome_flutter
     ...
 ```
+- Uncomment `IconDataLight` in `lib/icon_data.dart`
 
 ## Contributors
 
   - Brian Egan
   - Phil Plante
+  - Michael Spiss
