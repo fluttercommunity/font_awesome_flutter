@@ -29,15 +29,12 @@ class IconDataRegular extends IconData {
         );
 }
 
-// Uncomment to be able to use (pro) light icons if installed
-/*
+// Only available when Light font is installed
 class IconDataLight extends IconData {
-  const IconDataLight(int codePoint)
+  IconDataLight(String packageName, int codePoint)
       : super(
           codePoint,
           fontFamily: 'FontAwesomeLight',
-          fontPackage: 'font_awesome_flutter',
+          fontPackage: packageName,
         );
 }
-*/
-

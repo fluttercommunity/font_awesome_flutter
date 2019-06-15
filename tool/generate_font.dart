@@ -14,6 +14,7 @@ void main(List<String> arguments) {
   Map<String, dynamic> icons = json.decode(content);
 
   Map<String, String> iconDefinitions = {};
+  Map<String, String> lightIconDefinitions = {};
 
   for (String iconName in icons.keys) {
     var icon = icons[iconName];
@@ -26,6 +27,13 @@ void main(List<String> arguments) {
         iconDefinitions[iconName] = generateIconDefinition(
           iconName,
           'regular',
+          unicode,
+        );
+      }
+
+      if (styles.contains('solid')) {
+        lightIconDefinitions[iconName] = generateLightIconDefinition(
+          iconName,
           unicode,
         );
       }
@@ -60,22 +68,49 @@ void main(List<String> arguments) {
 
   generatedOutput.addAll(iconDefinitions.values);
 
-  generatedOutput.add('}');
+  generatedOutput.add('}\n');
+  generatedOutput.add('class FontAwesomeIconsPro {');
+  generatedOutput.add('  final String packageName;');
+  generatedOutput.add('  FontAwesomeIconsPro(this.packageName);\n');
+  generatedOutput.addAll(lightIconDefinitions.values);
+  generatedOutput.add('}\n');
 
   File output = new File('lib/font_awesome_flutter.dart');
   output.writeAsStringSync(generatedOutput.join('\n'));
 }
+
+const aliases = <String, String>{
+  '500px': 'fiveHundredPx',
+};
 
 String generateIconDefinition(String iconName, String style, String unicode) {
   style = '${style[0].toUpperCase()}${style.substring(1)}';
 
   String iconDataSource = 'IconData$style';
 
-  if (iconName == '500px') {
-    iconName = 'fiveHundredPx';
+  if (aliases.containsKey(iconName)) {
+    iconName = aliases[iconName];
   }
 
   iconName = new ReCase(iconName).camelCase;
 
   return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+}
+
+String generateLightIconDefinition(String iconName, String unicode) {
+  if (aliases.containsKey(iconName)) {
+    iconName = aliases[iconName];
+  }
+
+  iconName = new ReCase(iconName).camelCase;
+
+  return '''
+      IconData _$iconName;
+      IconData get $iconName {
+        if(_$iconName == null) {
+          _$iconName = IconDataLight(packageName, 0x$unicode);
+        }
+        return _$iconName;
+      }
+    ''';
 }

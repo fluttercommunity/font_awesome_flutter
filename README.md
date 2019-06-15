@@ -38,28 +38,33 @@ View the Flutter app in the `example` directory to see all the available `FontAw
 
 ## Include pro icons
 
-If you bought font awesome pro icons, you can import them here. 
+If you bought Font Awesome Pro icons, you can import them here. 
 
-:exclamation: By importing pro icons you acknowledge that it is your obligation to keep these files private. This includes **not** uploading your package to github or other public file sharing services.
+:exclamation: By importing Pro icons you acknowledge that it is your obligation to keep these files private. This includes **not** uploading your package to GitHub or other public file sharing services.
 
-- Download this package's newest release, extract the folder and move it to a location of your choice
-- Remove `#`s from `pubspec.yaml` at the indicated position
-- run `flutter packages get`
-- Download your font awesome pro icons (web version)
-- Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
-- Move `icons.json` from `metadata` to this directory
-- Run `./tool/update.sh`
-- In your project's dependencies, replace the version tag for `font_awesome_flutter` with the path to your custom installation.
-```yaml
-dependencies:
-  font_awesome_flutter:
-    path: /path/to/font_awesome_flutter
-    ...
-```
-- Uncomment `IconDataLight` in `lib/icon_data.dart`
+- Download and add the light TTF to your project (for example, under `fonts/fa-light-300.ttf`)
+- Add the follow to your `pubspec.yaml`:
+    ```yaml
+    flutter:
+      fonts:
+        - family: FontAwesomeLight
+          fonts:
+            - asset: fonts/fa-light-300.ttf
+              weight: 300
+  
+    ```
+    > The `family` and `weight` fields must not change. Change `asset` to where the font is located.
+- Use the light icons by using `FontAwesomeIconsPro('myPackageName')`
+    > It is recommended to store one global version for your app, by putting the follow somewhere:
+    ```dart
+    final lightIcons = FontAwesomeIconsPro('myPackageName');
+    ```
+
+If you do not have the Pro fonts added, the Pro icons will not work.
 
 ## Contributors
 
   - Brian Egan
   - Phil Plante
   - Michael Spiss
+  - Charles Crete

@@ -21,6 +21,7 @@ class FontAwesomeIcons {
   static const IconData adversal = const IconDataBrands(0xf36a);
   static const IconData affiliatetheme = const IconDataBrands(0xf36b);
   static const IconData airFreshener = const IconDataSolid(0xf5d0);
+  static const IconData airbnb = const IconDataBrands(0xf834);
   static const IconData algolia = const IconDataBrands(0xf36c);
   static const IconData alignCenter = const IconDataSolid(0xf037);
   static const IconData alignJustify = const IconDataSolid(0xf039);
@@ -98,6 +99,8 @@ class FontAwesomeIcons {
   static const IconData backward = const IconDataSolid(0xf04a);
   static const IconData bacon = const IconDataSolid(0xf7e5);
   static const IconData balanceScale = const IconDataSolid(0xf24e);
+  static const IconData balanceScaleLeft = const IconDataSolid(0xf515);
+  static const IconData balanceScaleRight = const IconDataSolid(0xf516);
   static const IconData ban = const IconDataSolid(0xf05e);
   static const IconData bandAid = const IconDataSolid(0xf462);
   static const IconData bandcamp = const IconDataBrands(0xf2d5);
@@ -111,6 +114,7 @@ class FontAwesomeIcons {
   static const IconData batteryHalf = const IconDataSolid(0xf242);
   static const IconData batteryQuarter = const IconDataSolid(0xf243);
   static const IconData batteryThreeQuarters = const IconDataSolid(0xf241);
+  static const IconData battleNet = const IconDataBrands(0xf835);
   static const IconData bed = const IconDataSolid(0xf236);
   static const IconData beer = const IconDataSolid(0xf0fc);
   static const IconData behance = const IconDataBrands(0xf1b4);
@@ -122,6 +126,7 @@ class FontAwesomeIcons {
   static const IconData bezierCurve = const IconDataSolid(0xf55b);
   static const IconData bible = const IconDataSolid(0xf647);
   static const IconData bicycle = const IconDataSolid(0xf206);
+  static const IconData biking = const IconDataSolid(0xf84a);
   static const IconData bimobject = const IconDataBrands(0xf378);
   static const IconData binoculars = const IconDataSolid(0xf1e5);
   static const IconData biohazard = const IconDataSolid(0xf780);
@@ -151,6 +156,10 @@ class FontAwesomeIcons {
   static const IconData bookReader = const IconDataSolid(0xf5da);
   static const IconData bookmark = const IconDataRegular(0xf02e);
   static const IconData solidBookmark = const IconDataSolid(0xf02e);
+  static const IconData bootstrap = const IconDataBrands(0xf836);
+  static const IconData borderAll = const IconDataSolid(0xf84c);
+  static const IconData borderNone = const IconDataSolid(0xf850);
+  static const IconData borderStyle = const IconDataSolid(0xf853);
   static const IconData bowlingBall = const IconDataSolid(0xf436);
   static const IconData box = const IconDataSolid(0xf466);
   static const IconData boxOpen = const IconDataSolid(0xf49e);
@@ -164,6 +173,7 @@ class FontAwesomeIcons {
   static const IconData broom = const IconDataSolid(0xf51a);
   static const IconData brush = const IconDataSolid(0xf55d);
   static const IconData btc = const IconDataBrands(0xf15a);
+  static const IconData buffer = const IconDataBrands(0xf837);
   static const IconData bug = const IconDataSolid(0xf188);
   static const IconData building = const IconDataRegular(0xf1ad);
   static const IconData solidBuilding = const IconDataSolid(0xf1ad);
@@ -266,6 +276,7 @@ class FontAwesomeIcons {
   static const IconData chevronUp = const IconDataSolid(0xf077);
   static const IconData child = const IconDataSolid(0xf1ae);
   static const IconData chrome = const IconDataBrands(0xf268);
+  static const IconData chromecast = const IconDataBrands(0xf838);
   static const IconData church = const IconDataSolid(0xf51d);
   static const IconData circle = const IconDataRegular(0xf111);
   static const IconData solidCircle = const IconDataSolid(0xf111);
@@ -456,6 +467,7 @@ class FontAwesomeIcons {
   static const IconData ethernet = const IconDataSolid(0xf796);
   static const IconData etsy = const IconDataBrands(0xf2d7);
   static const IconData euroSign = const IconDataSolid(0xf153);
+  static const IconData evernote = const IconDataBrands(0xf839);
   static const IconData exchangeAlt = const IconDataSolid(0xf362);
   static const IconData exclamation = const IconDataSolid(0xf12a);
   static const IconData exclamationCircle = const IconDataSolid(0xf06a);
@@ -474,6 +486,7 @@ class FontAwesomeIcons {
   static const IconData facebookF = const IconDataBrands(0xf39e);
   static const IconData facebookMessenger = const IconDataBrands(0xf39f);
   static const IconData facebookSquare = const IconDataBrands(0xf082);
+  static const IconData fan = const IconDataSolid(0xf863);
   static const IconData fantasyFlightGames = const IconDataBrands(0xf6dc);
   static const IconData fastBackward = const IconDataSolid(0xf049);
   static const IconData fastForward = const IconDataSolid(0xf050);
@@ -556,7 +569,8 @@ class FontAwesomeIcons {
   static const IconData fontAwesomeFlag = const IconDataBrands(0xf425);
   static const IconData fontAwesomeLogoFull = const IconDataRegular(0xf4e6);
   static const IconData solidFontAwesomeLogoFull = const IconDataSolid(0xf4e6);
-  static const IconData brandsFontAwesomeLogoFull = const IconDataSolid(0xf4e6);
+  static const IconData brandsFontAwesomeLogoFull =
+      const IconDataBrands(0xf4e6);
   static const IconData fonticons = const IconDataBrands(0xf280);
   static const IconData fonticonsFi = const IconDataBrands(0xf3a2);
   static const IconData footballBall = const IconDataSolid(0xf44e);
@@ -591,6 +605,7 @@ class FontAwesomeIcons {
   static const IconData gift = const IconDataSolid(0xf06b);
   static const IconData gifts = const IconDataSolid(0xf79c);
   static const IconData git = const IconDataBrands(0xf1d3);
+  static const IconData gitAlt = const IconDataBrands(0xf841);
   static const IconData gitSquare = const IconDataBrands(0xf1d2);
   static const IconData github = const IconDataBrands(0xf09b);
   static const IconData githubAlt = const IconDataBrands(0xf113);
@@ -750,6 +765,7 @@ class FontAwesomeIcons {
   static const IconData iCursor = const IconDataSolid(0xf246);
   static const IconData iceCream = const IconDataSolid(0xf810);
   static const IconData icicles = const IconDataSolid(0xf7ad);
+  static const IconData icons = const IconDataSolid(0xf86d);
   static const IconData idBadge = const IconDataRegular(0xf2c1);
   static const IconData solidIdBadge = const IconDataSolid(0xf2c1);
   static const IconData idCard = const IconDataRegular(0xf2c2);
@@ -773,6 +789,7 @@ class FontAwesomeIcons {
   static const IconData invision = const IconDataBrands(0xf7b0);
   static const IconData ioxhost = const IconDataBrands(0xf208);
   static const IconData italic = const IconDataSolid(0xf033);
+  static const IconData itchIo = const IconDataBrands(0xf83a);
   static const IconData itunes = const IconDataBrands(0xf3b4);
   static const IconData itunesNote = const IconDataBrands(0xf3b5);
   static const IconData java = const IconDataBrands(0xf4e4);
@@ -944,7 +961,6 @@ class FontAwesomeIcons {
   static const IconData newspaper = const IconDataRegular(0xf1ea);
   static const IconData solidNewspaper = const IconDataSolid(0xf1ea);
   static const IconData nimblr = const IconDataBrands(0xf5a8);
-  static const IconData nintendoSwitch = const IconDataBrands(0xf418);
   static const IconData node = const IconDataBrands(0xf419);
   static const IconData nodeJs = const IconDataBrands(0xf3d3);
   static const IconData notEqual = const IconDataSolid(0xf53e);
@@ -1010,9 +1026,12 @@ class FontAwesomeIcons {
   static const IconData phoenixFramework = const IconDataBrands(0xf3dc);
   static const IconData phoenixSquadron = const IconDataBrands(0xf511);
   static const IconData phone = const IconDataSolid(0xf095);
+  static const IconData phoneAlt = const IconDataSolid(0xf879);
   static const IconData phoneSlash = const IconDataSolid(0xf3dd);
   static const IconData phoneSquare = const IconDataSolid(0xf098);
+  static const IconData phoneSquareAlt = const IconDataSolid(0xf87b);
   static const IconData phoneVolume = const IconDataSolid(0xf2a0);
+  static const IconData photoVideo = const IconDataSolid(0xf87c);
   static const IconData php = const IconDataBrands(0xf457);
   static const IconData piedPiper = const IconDataBrands(0xf2ae);
   static const IconData piedPiperAlt = const IconDataBrands(0xf1a8);
@@ -1091,6 +1110,7 @@ class FontAwesomeIcons {
   static const IconData redoAlt = const IconDataSolid(0xf2f9);
   static const IconData registered = const IconDataRegular(0xf25d);
   static const IconData solidRegistered = const IconDataSolid(0xf25d);
+  static const IconData removeFormat = const IconDataSolid(0xf87d);
   static const IconData renren = const IconDataBrands(0xf18b);
   static const IconData reply = const IconDataSolid(0xf3e5);
   static const IconData replyAll = const IconDataSolid(0xf122);
@@ -1123,6 +1143,7 @@ class FontAwesomeIcons {
   static const IconData sadTear = const IconDataRegular(0xf5b4);
   static const IconData solidSadTear = const IconDataSolid(0xf5b4);
   static const IconData safari = const IconDataBrands(0xf267);
+  static const IconData salesforce = const IconDataBrands(0xf83b);
   static const IconData sass = const IconDataBrands(0xf41e);
   static const IconData satellite = const IconDataSolid(0xf7bf);
   static const IconData satelliteDish = const IconDataSolid(0xf7c0);
@@ -1210,18 +1231,26 @@ class FontAwesomeIcons {
   static const IconData solarPanel = const IconDataSolid(0xf5ba);
   static const IconData sort = const IconDataSolid(0xf0dc);
   static const IconData sortAlphaDown = const IconDataSolid(0xf15d);
+  static const IconData sortAlphaDownAlt = const IconDataSolid(0xf881);
   static const IconData sortAlphaUp = const IconDataSolid(0xf15e);
+  static const IconData sortAlphaUpAlt = const IconDataSolid(0xf882);
   static const IconData sortAmountDown = const IconDataSolid(0xf160);
+  static const IconData sortAmountDownAlt = const IconDataSolid(0xf884);
   static const IconData sortAmountUp = const IconDataSolid(0xf161);
+  static const IconData sortAmountUpAlt = const IconDataSolid(0xf885);
   static const IconData sortDown = const IconDataSolid(0xf0dd);
   static const IconData sortNumericDown = const IconDataSolid(0xf162);
+  static const IconData sortNumericDownAlt = const IconDataSolid(0xf886);
   static const IconData sortNumericUp = const IconDataSolid(0xf163);
+  static const IconData sortNumericUpAlt = const IconDataSolid(0xf887);
   static const IconData sortUp = const IconDataSolid(0xf0de);
   static const IconData soundcloud = const IconDataBrands(0xf1be);
   static const IconData sourcetree = const IconDataBrands(0xf7d3);
   static const IconData spa = const IconDataSolid(0xf5bb);
   static const IconData spaceShuttle = const IconDataSolid(0xf197);
   static const IconData speakap = const IconDataBrands(0xf3f3);
+  static const IconData speakerDeck = const IconDataBrands(0xf83c);
+  static const IconData spellCheck = const IconDataSolid(0xf891);
   static const IconData spider = const IconDataSolid(0xf717);
   static const IconData spinner = const IconDataSolid(0xf110);
   static const IconData splotch = const IconDataSolid(0xf5bc);
@@ -1234,6 +1263,7 @@ class FontAwesomeIcons {
   static const IconData squarespace = const IconDataBrands(0xf5be);
   static const IconData stackExchange = const IconDataBrands(0xf18d);
   static const IconData stackOverflow = const IconDataBrands(0xf16c);
+  static const IconData stackpath = const IconDataBrands(0xf842);
   static const IconData stamp = const IconDataSolid(0xf5bf);
   static const IconData star = const IconDataRegular(0xf005);
   static const IconData solidStar = const IconDataSolid(0xf005);
@@ -1284,6 +1314,7 @@ class FontAwesomeIcons {
   static const IconData swatchbook = const IconDataSolid(0xf5c3);
   static const IconData swimmer = const IconDataSolid(0xf5c4);
   static const IconData swimmingPool = const IconDataSolid(0xf5c5);
+  static const IconData symfony = const IconDataBrands(0xf83d);
   static const IconData synagogue = const IconDataSolid(0xf69b);
   static const IconData sync = const IconDataSolid(0xf021);
   static const IconData syncAlt = const IconDataSolid(0xf2f1);
@@ -1448,6 +1479,7 @@ class FontAwesomeIcons {
   static const IconData vine = const IconDataBrands(0xf1ca);
   static const IconData vk = const IconDataBrands(0xf189);
   static const IconData vnv = const IconDataBrands(0xf40b);
+  static const IconData voicemail = const IconDataSolid(0xf897);
   static const IconData volleyballBall = const IconDataSolid(0xf45f);
   static const IconData volumeDown = const IconDataSolid(0xf027);
   static const IconData volumeMute = const IconDataSolid(0xf6a9);
@@ -1460,6 +1492,8 @@ class FontAwesomeIcons {
   static const IconData wallet = const IconDataSolid(0xf555);
   static const IconData warehouse = const IconDataSolid(0xf494);
   static const IconData water = const IconDataSolid(0xf773);
+  static const IconData waveSquare = const IconDataSolid(0xf83e);
+  static const IconData waze = const IconDataBrands(0xf83f);
   static const IconData weebly = const IconDataBrands(0xf5cc);
   static const IconData weibo = const IconDataBrands(0xf18a);
   static const IconData weight = const IconDataSolid(0xf496);
@@ -1501,6 +1535,7 @@ class FontAwesomeIcons {
   static const IconData xingSquare = const IconDataBrands(0xf169);
   static const IconData yCombinator = const IconDataBrands(0xf23b);
   static const IconData yahoo = const IconDataBrands(0xf19e);
+  static const IconData yammer = const IconDataBrands(0xf840);
   static const IconData yandex = const IconDataBrands(0xf413);
   static const IconData yandexInternational = const IconDataBrands(0xf414);
   static const IconData yarn = const IconDataBrands(0xf7e3);
@@ -1511,4 +1546,1225 @@ class FontAwesomeIcons {
   static const IconData youtube = const IconDataBrands(0xf167);
   static const IconData youtubeSquare = const IconDataBrands(0xf431);
   static const IconData zhihu = const IconDataBrands(0xf63f);
+}
+
+class FontAwesomeIconsPro {
+  final String packageName;
+  FontAwesomeIconsPro(this.packageName);
+
+  IconData _addressBook;
+  IconData get addressBook {
+    if (_addressBook == null) {
+      _addressBook = IconDataLight(packageName, 0xf2b9);
+    }
+    return _addressBook;
+  }
+
+  IconData _addressCard;
+  IconData get addressCard {
+    if (_addressCard == null) {
+      _addressCard = IconDataLight(packageName, 0xf2bb);
+    }
+    return _addressCard;
+  }
+
+  IconData _angry;
+  IconData get angry {
+    if (_angry == null) {
+      _angry = IconDataLight(packageName, 0xf556);
+    }
+    return _angry;
+  }
+
+  IconData _arrowAltCircleDown;
+  IconData get arrowAltCircleDown {
+    if (_arrowAltCircleDown == null) {
+      _arrowAltCircleDown = IconDataLight(packageName, 0xf358);
+    }
+    return _arrowAltCircleDown;
+  }
+
+  IconData _arrowAltCircleLeft;
+  IconData get arrowAltCircleLeft {
+    if (_arrowAltCircleLeft == null) {
+      _arrowAltCircleLeft = IconDataLight(packageName, 0xf359);
+    }
+    return _arrowAltCircleLeft;
+  }
+
+  IconData _arrowAltCircleRight;
+  IconData get arrowAltCircleRight {
+    if (_arrowAltCircleRight == null) {
+      _arrowAltCircleRight = IconDataLight(packageName, 0xf35a);
+    }
+    return _arrowAltCircleRight;
+  }
+
+  IconData _arrowAltCircleUp;
+  IconData get arrowAltCircleUp {
+    if (_arrowAltCircleUp == null) {
+      _arrowAltCircleUp = IconDataLight(packageName, 0xf35b);
+    }
+    return _arrowAltCircleUp;
+  }
+
+  IconData _bell;
+  IconData get bell {
+    if (_bell == null) {
+      _bell = IconDataLight(packageName, 0xf0f3);
+    }
+    return _bell;
+  }
+
+  IconData _bellSlash;
+  IconData get bellSlash {
+    if (_bellSlash == null) {
+      _bellSlash = IconDataLight(packageName, 0xf1f6);
+    }
+    return _bellSlash;
+  }
+
+  IconData _bookmark;
+  IconData get bookmark {
+    if (_bookmark == null) {
+      _bookmark = IconDataLight(packageName, 0xf02e);
+    }
+    return _bookmark;
+  }
+
+  IconData _building;
+  IconData get building {
+    if (_building == null) {
+      _building = IconDataLight(packageName, 0xf1ad);
+    }
+    return _building;
+  }
+
+  IconData _calendar;
+  IconData get calendar {
+    if (_calendar == null) {
+      _calendar = IconDataLight(packageName, 0xf133);
+    }
+    return _calendar;
+  }
+
+  IconData _calendarAlt;
+  IconData get calendarAlt {
+    if (_calendarAlt == null) {
+      _calendarAlt = IconDataLight(packageName, 0xf073);
+    }
+    return _calendarAlt;
+  }
+
+  IconData _calendarCheck;
+  IconData get calendarCheck {
+    if (_calendarCheck == null) {
+      _calendarCheck = IconDataLight(packageName, 0xf274);
+    }
+    return _calendarCheck;
+  }
+
+  IconData _calendarMinus;
+  IconData get calendarMinus {
+    if (_calendarMinus == null) {
+      _calendarMinus = IconDataLight(packageName, 0xf272);
+    }
+    return _calendarMinus;
+  }
+
+  IconData _calendarPlus;
+  IconData get calendarPlus {
+    if (_calendarPlus == null) {
+      _calendarPlus = IconDataLight(packageName, 0xf271);
+    }
+    return _calendarPlus;
+  }
+
+  IconData _calendarTimes;
+  IconData get calendarTimes {
+    if (_calendarTimes == null) {
+      _calendarTimes = IconDataLight(packageName, 0xf273);
+    }
+    return _calendarTimes;
+  }
+
+  IconData _caretSquareDown;
+  IconData get caretSquareDown {
+    if (_caretSquareDown == null) {
+      _caretSquareDown = IconDataLight(packageName, 0xf150);
+    }
+    return _caretSquareDown;
+  }
+
+  IconData _caretSquareLeft;
+  IconData get caretSquareLeft {
+    if (_caretSquareLeft == null) {
+      _caretSquareLeft = IconDataLight(packageName, 0xf191);
+    }
+    return _caretSquareLeft;
+  }
+
+  IconData _caretSquareRight;
+  IconData get caretSquareRight {
+    if (_caretSquareRight == null) {
+      _caretSquareRight = IconDataLight(packageName, 0xf152);
+    }
+    return _caretSquareRight;
+  }
+
+  IconData _caretSquareUp;
+  IconData get caretSquareUp {
+    if (_caretSquareUp == null) {
+      _caretSquareUp = IconDataLight(packageName, 0xf151);
+    }
+    return _caretSquareUp;
+  }
+
+  IconData _chartBar;
+  IconData get chartBar {
+    if (_chartBar == null) {
+      _chartBar = IconDataLight(packageName, 0xf080);
+    }
+    return _chartBar;
+  }
+
+  IconData _checkCircle;
+  IconData get checkCircle {
+    if (_checkCircle == null) {
+      _checkCircle = IconDataLight(packageName, 0xf058);
+    }
+    return _checkCircle;
+  }
+
+  IconData _checkSquare;
+  IconData get checkSquare {
+    if (_checkSquare == null) {
+      _checkSquare = IconDataLight(packageName, 0xf14a);
+    }
+    return _checkSquare;
+  }
+
+  IconData _circle;
+  IconData get circle {
+    if (_circle == null) {
+      _circle = IconDataLight(packageName, 0xf111);
+    }
+    return _circle;
+  }
+
+  IconData _clipboard;
+  IconData get clipboard {
+    if (_clipboard == null) {
+      _clipboard = IconDataLight(packageName, 0xf328);
+    }
+    return _clipboard;
+  }
+
+  IconData _clock;
+  IconData get clock {
+    if (_clock == null) {
+      _clock = IconDataLight(packageName, 0xf017);
+    }
+    return _clock;
+  }
+
+  IconData _clone;
+  IconData get clone {
+    if (_clone == null) {
+      _clone = IconDataLight(packageName, 0xf24d);
+    }
+    return _clone;
+  }
+
+  IconData _closedCaptioning;
+  IconData get closedCaptioning {
+    if (_closedCaptioning == null) {
+      _closedCaptioning = IconDataLight(packageName, 0xf20a);
+    }
+    return _closedCaptioning;
+  }
+
+  IconData _comment;
+  IconData get comment {
+    if (_comment == null) {
+      _comment = IconDataLight(packageName, 0xf075);
+    }
+    return _comment;
+  }
+
+  IconData _commentAlt;
+  IconData get commentAlt {
+    if (_commentAlt == null) {
+      _commentAlt = IconDataLight(packageName, 0xf27a);
+    }
+    return _commentAlt;
+  }
+
+  IconData _commentDots;
+  IconData get commentDots {
+    if (_commentDots == null) {
+      _commentDots = IconDataLight(packageName, 0xf4ad);
+    }
+    return _commentDots;
+  }
+
+  IconData _comments;
+  IconData get comments {
+    if (_comments == null) {
+      _comments = IconDataLight(packageName, 0xf086);
+    }
+    return _comments;
+  }
+
+  IconData _compass;
+  IconData get compass {
+    if (_compass == null) {
+      _compass = IconDataLight(packageName, 0xf14e);
+    }
+    return _compass;
+  }
+
+  IconData _copy;
+  IconData get copy {
+    if (_copy == null) {
+      _copy = IconDataLight(packageName, 0xf0c5);
+    }
+    return _copy;
+  }
+
+  IconData _copyright;
+  IconData get copyright {
+    if (_copyright == null) {
+      _copyright = IconDataLight(packageName, 0xf1f9);
+    }
+    return _copyright;
+  }
+
+  IconData _creditCard;
+  IconData get creditCard {
+    if (_creditCard == null) {
+      _creditCard = IconDataLight(packageName, 0xf09d);
+    }
+    return _creditCard;
+  }
+
+  IconData _dizzy;
+  IconData get dizzy {
+    if (_dizzy == null) {
+      _dizzy = IconDataLight(packageName, 0xf567);
+    }
+    return _dizzy;
+  }
+
+  IconData _dotCircle;
+  IconData get dotCircle {
+    if (_dotCircle == null) {
+      _dotCircle = IconDataLight(packageName, 0xf192);
+    }
+    return _dotCircle;
+  }
+
+  IconData _edit;
+  IconData get edit {
+    if (_edit == null) {
+      _edit = IconDataLight(packageName, 0xf044);
+    }
+    return _edit;
+  }
+
+  IconData _envelope;
+  IconData get envelope {
+    if (_envelope == null) {
+      _envelope = IconDataLight(packageName, 0xf0e0);
+    }
+    return _envelope;
+  }
+
+  IconData _envelopeOpen;
+  IconData get envelopeOpen {
+    if (_envelopeOpen == null) {
+      _envelopeOpen = IconDataLight(packageName, 0xf2b6);
+    }
+    return _envelopeOpen;
+  }
+
+  IconData _eye;
+  IconData get eye {
+    if (_eye == null) {
+      _eye = IconDataLight(packageName, 0xf06e);
+    }
+    return _eye;
+  }
+
+  IconData _eyeSlash;
+  IconData get eyeSlash {
+    if (_eyeSlash == null) {
+      _eyeSlash = IconDataLight(packageName, 0xf070);
+    }
+    return _eyeSlash;
+  }
+
+  IconData _file;
+  IconData get file {
+    if (_file == null) {
+      _file = IconDataLight(packageName, 0xf15b);
+    }
+    return _file;
+  }
+
+  IconData _fileAlt;
+  IconData get fileAlt {
+    if (_fileAlt == null) {
+      _fileAlt = IconDataLight(packageName, 0xf15c);
+    }
+    return _fileAlt;
+  }
+
+  IconData _fileArchive;
+  IconData get fileArchive {
+    if (_fileArchive == null) {
+      _fileArchive = IconDataLight(packageName, 0xf1c6);
+    }
+    return _fileArchive;
+  }
+
+  IconData _fileAudio;
+  IconData get fileAudio {
+    if (_fileAudio == null) {
+      _fileAudio = IconDataLight(packageName, 0xf1c7);
+    }
+    return _fileAudio;
+  }
+
+  IconData _fileCode;
+  IconData get fileCode {
+    if (_fileCode == null) {
+      _fileCode = IconDataLight(packageName, 0xf1c9);
+    }
+    return _fileCode;
+  }
+
+  IconData _fileExcel;
+  IconData get fileExcel {
+    if (_fileExcel == null) {
+      _fileExcel = IconDataLight(packageName, 0xf1c3);
+    }
+    return _fileExcel;
+  }
+
+  IconData _fileImage;
+  IconData get fileImage {
+    if (_fileImage == null) {
+      _fileImage = IconDataLight(packageName, 0xf1c5);
+    }
+    return _fileImage;
+  }
+
+  IconData _filePdf;
+  IconData get filePdf {
+    if (_filePdf == null) {
+      _filePdf = IconDataLight(packageName, 0xf1c1);
+    }
+    return _filePdf;
+  }
+
+  IconData _filePowerpoint;
+  IconData get filePowerpoint {
+    if (_filePowerpoint == null) {
+      _filePowerpoint = IconDataLight(packageName, 0xf1c4);
+    }
+    return _filePowerpoint;
+  }
+
+  IconData _fileVideo;
+  IconData get fileVideo {
+    if (_fileVideo == null) {
+      _fileVideo = IconDataLight(packageName, 0xf1c8);
+    }
+    return _fileVideo;
+  }
+
+  IconData _fileWord;
+  IconData get fileWord {
+    if (_fileWord == null) {
+      _fileWord = IconDataLight(packageName, 0xf1c2);
+    }
+    return _fileWord;
+  }
+
+  IconData _flag;
+  IconData get flag {
+    if (_flag == null) {
+      _flag = IconDataLight(packageName, 0xf024);
+    }
+    return _flag;
+  }
+
+  IconData _flushed;
+  IconData get flushed {
+    if (_flushed == null) {
+      _flushed = IconDataLight(packageName, 0xf579);
+    }
+    return _flushed;
+  }
+
+  IconData _folder;
+  IconData get folder {
+    if (_folder == null) {
+      _folder = IconDataLight(packageName, 0xf07b);
+    }
+    return _folder;
+  }
+
+  IconData _folderOpen;
+  IconData get folderOpen {
+    if (_folderOpen == null) {
+      _folderOpen = IconDataLight(packageName, 0xf07c);
+    }
+    return _folderOpen;
+  }
+
+  IconData _fontAwesomeLogoFull;
+  IconData get fontAwesomeLogoFull {
+    if (_fontAwesomeLogoFull == null) {
+      _fontAwesomeLogoFull = IconDataLight(packageName, 0xf4e6);
+    }
+    return _fontAwesomeLogoFull;
+  }
+
+  IconData _frown;
+  IconData get frown {
+    if (_frown == null) {
+      _frown = IconDataLight(packageName, 0xf119);
+    }
+    return _frown;
+  }
+
+  IconData _frownOpen;
+  IconData get frownOpen {
+    if (_frownOpen == null) {
+      _frownOpen = IconDataLight(packageName, 0xf57a);
+    }
+    return _frownOpen;
+  }
+
+  IconData _futbol;
+  IconData get futbol {
+    if (_futbol == null) {
+      _futbol = IconDataLight(packageName, 0xf1e3);
+    }
+    return _futbol;
+  }
+
+  IconData _gem;
+  IconData get gem {
+    if (_gem == null) {
+      _gem = IconDataLight(packageName, 0xf3a5);
+    }
+    return _gem;
+  }
+
+  IconData _grimace;
+  IconData get grimace {
+    if (_grimace == null) {
+      _grimace = IconDataLight(packageName, 0xf57f);
+    }
+    return _grimace;
+  }
+
+  IconData _grin;
+  IconData get grin {
+    if (_grin == null) {
+      _grin = IconDataLight(packageName, 0xf580);
+    }
+    return _grin;
+  }
+
+  IconData _grinAlt;
+  IconData get grinAlt {
+    if (_grinAlt == null) {
+      _grinAlt = IconDataLight(packageName, 0xf581);
+    }
+    return _grinAlt;
+  }
+
+  IconData _grinBeam;
+  IconData get grinBeam {
+    if (_grinBeam == null) {
+      _grinBeam = IconDataLight(packageName, 0xf582);
+    }
+    return _grinBeam;
+  }
+
+  IconData _grinBeamSweat;
+  IconData get grinBeamSweat {
+    if (_grinBeamSweat == null) {
+      _grinBeamSweat = IconDataLight(packageName, 0xf583);
+    }
+    return _grinBeamSweat;
+  }
+
+  IconData _grinHearts;
+  IconData get grinHearts {
+    if (_grinHearts == null) {
+      _grinHearts = IconDataLight(packageName, 0xf584);
+    }
+    return _grinHearts;
+  }
+
+  IconData _grinSquint;
+  IconData get grinSquint {
+    if (_grinSquint == null) {
+      _grinSquint = IconDataLight(packageName, 0xf585);
+    }
+    return _grinSquint;
+  }
+
+  IconData _grinSquintTears;
+  IconData get grinSquintTears {
+    if (_grinSquintTears == null) {
+      _grinSquintTears = IconDataLight(packageName, 0xf586);
+    }
+    return _grinSquintTears;
+  }
+
+  IconData _grinStars;
+  IconData get grinStars {
+    if (_grinStars == null) {
+      _grinStars = IconDataLight(packageName, 0xf587);
+    }
+    return _grinStars;
+  }
+
+  IconData _grinTears;
+  IconData get grinTears {
+    if (_grinTears == null) {
+      _grinTears = IconDataLight(packageName, 0xf588);
+    }
+    return _grinTears;
+  }
+
+  IconData _grinTongue;
+  IconData get grinTongue {
+    if (_grinTongue == null) {
+      _grinTongue = IconDataLight(packageName, 0xf589);
+    }
+    return _grinTongue;
+  }
+
+  IconData _grinTongueSquint;
+  IconData get grinTongueSquint {
+    if (_grinTongueSquint == null) {
+      _grinTongueSquint = IconDataLight(packageName, 0xf58a);
+    }
+    return _grinTongueSquint;
+  }
+
+  IconData _grinTongueWink;
+  IconData get grinTongueWink {
+    if (_grinTongueWink == null) {
+      _grinTongueWink = IconDataLight(packageName, 0xf58b);
+    }
+    return _grinTongueWink;
+  }
+
+  IconData _grinWink;
+  IconData get grinWink {
+    if (_grinWink == null) {
+      _grinWink = IconDataLight(packageName, 0xf58c);
+    }
+    return _grinWink;
+  }
+
+  IconData _handLizard;
+  IconData get handLizard {
+    if (_handLizard == null) {
+      _handLizard = IconDataLight(packageName, 0xf258);
+    }
+    return _handLizard;
+  }
+
+  IconData _handPaper;
+  IconData get handPaper {
+    if (_handPaper == null) {
+      _handPaper = IconDataLight(packageName, 0xf256);
+    }
+    return _handPaper;
+  }
+
+  IconData _handPeace;
+  IconData get handPeace {
+    if (_handPeace == null) {
+      _handPeace = IconDataLight(packageName, 0xf25b);
+    }
+    return _handPeace;
+  }
+
+  IconData _handPointDown;
+  IconData get handPointDown {
+    if (_handPointDown == null) {
+      _handPointDown = IconDataLight(packageName, 0xf0a7);
+    }
+    return _handPointDown;
+  }
+
+  IconData _handPointLeft;
+  IconData get handPointLeft {
+    if (_handPointLeft == null) {
+      _handPointLeft = IconDataLight(packageName, 0xf0a5);
+    }
+    return _handPointLeft;
+  }
+
+  IconData _handPointRight;
+  IconData get handPointRight {
+    if (_handPointRight == null) {
+      _handPointRight = IconDataLight(packageName, 0xf0a4);
+    }
+    return _handPointRight;
+  }
+
+  IconData _handPointUp;
+  IconData get handPointUp {
+    if (_handPointUp == null) {
+      _handPointUp = IconDataLight(packageName, 0xf0a6);
+    }
+    return _handPointUp;
+  }
+
+  IconData _handPointer;
+  IconData get handPointer {
+    if (_handPointer == null) {
+      _handPointer = IconDataLight(packageName, 0xf25a);
+    }
+    return _handPointer;
+  }
+
+  IconData _handRock;
+  IconData get handRock {
+    if (_handRock == null) {
+      _handRock = IconDataLight(packageName, 0xf255);
+    }
+    return _handRock;
+  }
+
+  IconData _handScissors;
+  IconData get handScissors {
+    if (_handScissors == null) {
+      _handScissors = IconDataLight(packageName, 0xf257);
+    }
+    return _handScissors;
+  }
+
+  IconData _handSpock;
+  IconData get handSpock {
+    if (_handSpock == null) {
+      _handSpock = IconDataLight(packageName, 0xf259);
+    }
+    return _handSpock;
+  }
+
+  IconData _handshake;
+  IconData get handshake {
+    if (_handshake == null) {
+      _handshake = IconDataLight(packageName, 0xf2b5);
+    }
+    return _handshake;
+  }
+
+  IconData _hdd;
+  IconData get hdd {
+    if (_hdd == null) {
+      _hdd = IconDataLight(packageName, 0xf0a0);
+    }
+    return _hdd;
+  }
+
+  IconData _heart;
+  IconData get heart {
+    if (_heart == null) {
+      _heart = IconDataLight(packageName, 0xf004);
+    }
+    return _heart;
+  }
+
+  IconData _hospital;
+  IconData get hospital {
+    if (_hospital == null) {
+      _hospital = IconDataLight(packageName, 0xf0f8);
+    }
+    return _hospital;
+  }
+
+  IconData _hourglass;
+  IconData get hourglass {
+    if (_hourglass == null) {
+      _hourglass = IconDataLight(packageName, 0xf254);
+    }
+    return _hourglass;
+  }
+
+  IconData _idBadge;
+  IconData get idBadge {
+    if (_idBadge == null) {
+      _idBadge = IconDataLight(packageName, 0xf2c1);
+    }
+    return _idBadge;
+  }
+
+  IconData _idCard;
+  IconData get idCard {
+    if (_idCard == null) {
+      _idCard = IconDataLight(packageName, 0xf2c2);
+    }
+    return _idCard;
+  }
+
+  IconData _image;
+  IconData get image {
+    if (_image == null) {
+      _image = IconDataLight(packageName, 0xf03e);
+    }
+    return _image;
+  }
+
+  IconData _images;
+  IconData get images {
+    if (_images == null) {
+      _images = IconDataLight(packageName, 0xf302);
+    }
+    return _images;
+  }
+
+  IconData _keyboard;
+  IconData get keyboard {
+    if (_keyboard == null) {
+      _keyboard = IconDataLight(packageName, 0xf11c);
+    }
+    return _keyboard;
+  }
+
+  IconData _kiss;
+  IconData get kiss {
+    if (_kiss == null) {
+      _kiss = IconDataLight(packageName, 0xf596);
+    }
+    return _kiss;
+  }
+
+  IconData _kissBeam;
+  IconData get kissBeam {
+    if (_kissBeam == null) {
+      _kissBeam = IconDataLight(packageName, 0xf597);
+    }
+    return _kissBeam;
+  }
+
+  IconData _kissWinkHeart;
+  IconData get kissWinkHeart {
+    if (_kissWinkHeart == null) {
+      _kissWinkHeart = IconDataLight(packageName, 0xf598);
+    }
+    return _kissWinkHeart;
+  }
+
+  IconData _laugh;
+  IconData get laugh {
+    if (_laugh == null) {
+      _laugh = IconDataLight(packageName, 0xf599);
+    }
+    return _laugh;
+  }
+
+  IconData _laughBeam;
+  IconData get laughBeam {
+    if (_laughBeam == null) {
+      _laughBeam = IconDataLight(packageName, 0xf59a);
+    }
+    return _laughBeam;
+  }
+
+  IconData _laughSquint;
+  IconData get laughSquint {
+    if (_laughSquint == null) {
+      _laughSquint = IconDataLight(packageName, 0xf59b);
+    }
+    return _laughSquint;
+  }
+
+  IconData _laughWink;
+  IconData get laughWink {
+    if (_laughWink == null) {
+      _laughWink = IconDataLight(packageName, 0xf59c);
+    }
+    return _laughWink;
+  }
+
+  IconData _lemon;
+  IconData get lemon {
+    if (_lemon == null) {
+      _lemon = IconDataLight(packageName, 0xf094);
+    }
+    return _lemon;
+  }
+
+  IconData _lifeRing;
+  IconData get lifeRing {
+    if (_lifeRing == null) {
+      _lifeRing = IconDataLight(packageName, 0xf1cd);
+    }
+    return _lifeRing;
+  }
+
+  IconData _lightbulb;
+  IconData get lightbulb {
+    if (_lightbulb == null) {
+      _lightbulb = IconDataLight(packageName, 0xf0eb);
+    }
+    return _lightbulb;
+  }
+
+  IconData _listAlt;
+  IconData get listAlt {
+    if (_listAlt == null) {
+      _listAlt = IconDataLight(packageName, 0xf022);
+    }
+    return _listAlt;
+  }
+
+  IconData _map;
+  IconData get map {
+    if (_map == null) {
+      _map = IconDataLight(packageName, 0xf279);
+    }
+    return _map;
+  }
+
+  IconData _meh;
+  IconData get meh {
+    if (_meh == null) {
+      _meh = IconDataLight(packageName, 0xf11a);
+    }
+    return _meh;
+  }
+
+  IconData _mehBlank;
+  IconData get mehBlank {
+    if (_mehBlank == null) {
+      _mehBlank = IconDataLight(packageName, 0xf5a4);
+    }
+    return _mehBlank;
+  }
+
+  IconData _mehRollingEyes;
+  IconData get mehRollingEyes {
+    if (_mehRollingEyes == null) {
+      _mehRollingEyes = IconDataLight(packageName, 0xf5a5);
+    }
+    return _mehRollingEyes;
+  }
+
+  IconData _minusSquare;
+  IconData get minusSquare {
+    if (_minusSquare == null) {
+      _minusSquare = IconDataLight(packageName, 0xf146);
+    }
+    return _minusSquare;
+  }
+
+  IconData _moneyBillAlt;
+  IconData get moneyBillAlt {
+    if (_moneyBillAlt == null) {
+      _moneyBillAlt = IconDataLight(packageName, 0xf3d1);
+    }
+    return _moneyBillAlt;
+  }
+
+  IconData _moon;
+  IconData get moon {
+    if (_moon == null) {
+      _moon = IconDataLight(packageName, 0xf186);
+    }
+    return _moon;
+  }
+
+  IconData _newspaper;
+  IconData get newspaper {
+    if (_newspaper == null) {
+      _newspaper = IconDataLight(packageName, 0xf1ea);
+    }
+    return _newspaper;
+  }
+
+  IconData _objectGroup;
+  IconData get objectGroup {
+    if (_objectGroup == null) {
+      _objectGroup = IconDataLight(packageName, 0xf247);
+    }
+    return _objectGroup;
+  }
+
+  IconData _objectUngroup;
+  IconData get objectUngroup {
+    if (_objectUngroup == null) {
+      _objectUngroup = IconDataLight(packageName, 0xf248);
+    }
+    return _objectUngroup;
+  }
+
+  IconData _paperPlane;
+  IconData get paperPlane {
+    if (_paperPlane == null) {
+      _paperPlane = IconDataLight(packageName, 0xf1d8);
+    }
+    return _paperPlane;
+  }
+
+  IconData _pauseCircle;
+  IconData get pauseCircle {
+    if (_pauseCircle == null) {
+      _pauseCircle = IconDataLight(packageName, 0xf28b);
+    }
+    return _pauseCircle;
+  }
+
+  IconData _playCircle;
+  IconData get playCircle {
+    if (_playCircle == null) {
+      _playCircle = IconDataLight(packageName, 0xf144);
+    }
+    return _playCircle;
+  }
+
+  IconData _plusSquare;
+  IconData get plusSquare {
+    if (_plusSquare == null) {
+      _plusSquare = IconDataLight(packageName, 0xf0fe);
+    }
+    return _plusSquare;
+  }
+
+  IconData _questionCircle;
+  IconData get questionCircle {
+    if (_questionCircle == null) {
+      _questionCircle = IconDataLight(packageName, 0xf059);
+    }
+    return _questionCircle;
+  }
+
+  IconData _registered;
+  IconData get registered {
+    if (_registered == null) {
+      _registered = IconDataLight(packageName, 0xf25d);
+    }
+    return _registered;
+  }
+
+  IconData _sadCry;
+  IconData get sadCry {
+    if (_sadCry == null) {
+      _sadCry = IconDataLight(packageName, 0xf5b3);
+    }
+    return _sadCry;
+  }
+
+  IconData _sadTear;
+  IconData get sadTear {
+    if (_sadTear == null) {
+      _sadTear = IconDataLight(packageName, 0xf5b4);
+    }
+    return _sadTear;
+  }
+
+  IconData _save;
+  IconData get save {
+    if (_save == null) {
+      _save = IconDataLight(packageName, 0xf0c7);
+    }
+    return _save;
+  }
+
+  IconData _shareSquare;
+  IconData get shareSquare {
+    if (_shareSquare == null) {
+      _shareSquare = IconDataLight(packageName, 0xf14d);
+    }
+    return _shareSquare;
+  }
+
+  IconData _smile;
+  IconData get smile {
+    if (_smile == null) {
+      _smile = IconDataLight(packageName, 0xf118);
+    }
+    return _smile;
+  }
+
+  IconData _smileBeam;
+  IconData get smileBeam {
+    if (_smileBeam == null) {
+      _smileBeam = IconDataLight(packageName, 0xf5b8);
+    }
+    return _smileBeam;
+  }
+
+  IconData _smileWink;
+  IconData get smileWink {
+    if (_smileWink == null) {
+      _smileWink = IconDataLight(packageName, 0xf4da);
+    }
+    return _smileWink;
+  }
+
+  IconData _snowflake;
+  IconData get snowflake {
+    if (_snowflake == null) {
+      _snowflake = IconDataLight(packageName, 0xf2dc);
+    }
+    return _snowflake;
+  }
+
+  IconData _square;
+  IconData get square {
+    if (_square == null) {
+      _square = IconDataLight(packageName, 0xf0c8);
+    }
+    return _square;
+  }
+
+  IconData _star;
+  IconData get star {
+    if (_star == null) {
+      _star = IconDataLight(packageName, 0xf005);
+    }
+    return _star;
+  }
+
+  IconData _starHalf;
+  IconData get starHalf {
+    if (_starHalf == null) {
+      _starHalf = IconDataLight(packageName, 0xf089);
+    }
+    return _starHalf;
+  }
+
+  IconData _stickyNote;
+  IconData get stickyNote {
+    if (_stickyNote == null) {
+      _stickyNote = IconDataLight(packageName, 0xf249);
+    }
+    return _stickyNote;
+  }
+
+  IconData _stopCircle;
+  IconData get stopCircle {
+    if (_stopCircle == null) {
+      _stopCircle = IconDataLight(packageName, 0xf28d);
+    }
+    return _stopCircle;
+  }
+
+  IconData _sun;
+  IconData get sun {
+    if (_sun == null) {
+      _sun = IconDataLight(packageName, 0xf185);
+    }
+    return _sun;
+  }
+
+  IconData _surprise;
+  IconData get surprise {
+    if (_surprise == null) {
+      _surprise = IconDataLight(packageName, 0xf5c2);
+    }
+    return _surprise;
+  }
+
+  IconData _thumbsDown;
+  IconData get thumbsDown {
+    if (_thumbsDown == null) {
+      _thumbsDown = IconDataLight(packageName, 0xf165);
+    }
+    return _thumbsDown;
+  }
+
+  IconData _thumbsUp;
+  IconData get thumbsUp {
+    if (_thumbsUp == null) {
+      _thumbsUp = IconDataLight(packageName, 0xf164);
+    }
+    return _thumbsUp;
+  }
+
+  IconData _timesCircle;
+  IconData get timesCircle {
+    if (_timesCircle == null) {
+      _timesCircle = IconDataLight(packageName, 0xf057);
+    }
+    return _timesCircle;
+  }
+
+  IconData _tired;
+  IconData get tired {
+    if (_tired == null) {
+      _tired = IconDataLight(packageName, 0xf5c8);
+    }
+    return _tired;
+  }
+
+  IconData _trashAlt;
+  IconData get trashAlt {
+    if (_trashAlt == null) {
+      _trashAlt = IconDataLight(packageName, 0xf2ed);
+    }
+    return _trashAlt;
+  }
+
+  IconData _user;
+  IconData get user {
+    if (_user == null) {
+      _user = IconDataLight(packageName, 0xf007);
+    }
+    return _user;
+  }
+
+  IconData _userCircle;
+  IconData get userCircle {
+    if (_userCircle == null) {
+      _userCircle = IconDataLight(packageName, 0xf2bd);
+    }
+    return _userCircle;
+  }
+
+  IconData _windowClose;
+  IconData get windowClose {
+    if (_windowClose == null) {
+      _windowClose = IconDataLight(packageName, 0xf410);
+    }
+    return _windowClose;
+  }
+
+  IconData _windowMaximize;
+  IconData get windowMaximize {
+    if (_windowMaximize == null) {
+      _windowMaximize = IconDataLight(packageName, 0xf2d0);
+    }
+    return _windowMaximize;
+  }
+
+  IconData _windowMinimize;
+  IconData get windowMinimize {
+    if (_windowMinimize == null) {
+      _windowMinimize = IconDataLight(packageName, 0xf2d1);
+    }
+    return _windowMinimize;
+  }
+
+  IconData _windowRestore;
+  IconData get windowRestore {
+    if (_windowRestore == null) {
+      _windowRestore = IconDataLight(packageName, 0xf2d2);
+    }
+    return _windowRestore;
+  }
 }
