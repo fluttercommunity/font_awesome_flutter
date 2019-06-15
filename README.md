@@ -56,9 +56,9 @@ If you bought Font Awesome Pro icons, you can import them here.
     > The `family` and `weight` fields must not change. Change `asset` to where the font is located.
 - Use the light icons by using `FontAwesomeIconsPro('myPackageName')`
     > It is recommended to store one global version for your app, by putting the follow somewhere:
-    ```dart
-    final lightIcons = FontAwesomeIconsPro('myPackageName');
-    ```
+        ```dart
+        final lightIcons = FontAwesomeIconsPro('myPackageName');
+        ```
 
 If you do not have the Pro fonts added, the Pro icons will not work.
 
