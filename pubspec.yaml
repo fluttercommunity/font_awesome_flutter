@@ -2,10 +2,10 @@ name: font_awesome_flutter
 description: The Font Awesome Icon pack available as Flutter Icons. Provides 1500 additional icons to use in your apps.
 author: Brian Egan <brian@brianegan.com>
 homepage: https://github.com/brianegan/font_awesome_flutter
-version: 8.5.0
+version: 8.6.0
 
 environment:
-  sdk: ">=2.0.0-dev.28.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:

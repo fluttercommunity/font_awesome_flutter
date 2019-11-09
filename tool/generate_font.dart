@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:recase/recase.dart';
 
 void main(List<String> arguments) {
-  var file = new File(arguments.first);
+  var file = File(arguments.first);
 
   if (!file.existsSync()) {
     print('Cannot find the file "${arguments.first}".');
@@ -15,7 +15,7 @@ void main(List<String> arguments) {
 
   Map<String, String> iconDefinitions = {};
 
-  for (String iconName in icons.keys) {
+  for (final iconName in icons.keys) {
     var icon = icons[iconName];
     var unicode = icon['unicode'];
     List<String> styles = (icon['styles'] as List).cast<String>();
@@ -47,7 +47,7 @@ void main(List<String> arguments) {
     }
   }
 
-  List<String> generatedOutput = [
+  final generatedOutput = <String>[
     'library font_awesome_flutter;',
     '',
     "import 'package:flutter/widgets.dart';",
@@ -60,9 +60,12 @@ void main(List<String> arguments) {
 
   generatedOutput.addAll(iconDefinitions.values);
 
+  generatedOutput
+      .addAll(['', 'static const values = <IconData>[', for (final iconName in icons.keys) '${generateSafeIconName(iconName)},', '];']);
+
   generatedOutput.add('}');
 
-  File output = new File('lib/font_awesome_flutter.dart');
+  File output = File('lib/font_awesome_flutter.dart');
   output.writeAsStringSync(generatedOutput.join('\n'));
 }
 
@@ -71,11 +74,15 @@ String generateIconDefinition(String iconName, String style, String unicode) {
 
   String iconDataSource = 'IconData$style';
 
+  final newIconName = generateSafeIconName(iconName);
+
+  return 'static const IconData $newIconName = const $iconDataSource(0x$unicode);';
+}
+
+String generateSafeIconName(String iconName) {
   if (iconName == '500px') {
-    iconName = 'fiveHundredPx';
+    return 'fiveHundredPx';
   }
 
-  iconName = new ReCase(iconName).camelCase;
-
-  return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+  return ReCase(iconName).camelCase;
 }
