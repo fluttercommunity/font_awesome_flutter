@@ -1,8 +1,1 @@
-# example
-
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+This package includes an example flutter project. To view it, please go to https://github.com/brianegan/font_awesome_flutter/tree/master/example
