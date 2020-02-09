@@ -60,8 +60,16 @@ void main(List<String> arguments) {
 
   generatedOutput.addAll(iconDefinitions.values);
 
-  generatedOutput
-      .addAll(['', 'static const values = <IconData>[', for (final iconName in icons.keys) '${generateSafeIconName(iconName)},', '];']);
+  // generatedOutput
+  //     .addAll(['', 'static const values = <IconData>[', for (final iconName in icons.keys) '${generateSafeIconName(iconName)},', '];']);
+
+  generatedOutput.addAll([
+    '',
+    'static const values = <String, IconData>{',
+    for (final iconName in icons.keys)
+      '"${generateSafeIconName(iconName)}": ${generateSafeIconName(iconName)},',
+    '};'
+  ]);
 
   generatedOutput.add('}');
 
