@@ -1,6 +1,6 @@
 ## 8.6.0
-  * Upgrade to Font Awesome Icons 5.11.2
-  * Add `values` array that lists all icons.
+  * Upgrade to Font Awesome Icons 5.12.1
+  * Add `values` map that lists all icons.
   * Add `final` keyword where possible.
   * Set minimal Dart SDK version to v2.2.2
 
