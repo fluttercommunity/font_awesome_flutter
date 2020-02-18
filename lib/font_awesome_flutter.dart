@@ -383,6 +383,7 @@ class FontAwesomeIcons {
   static const IconData cuttlefish = const IconDataBrands(0xf38c);
   static const IconData dAndD = const IconDataBrands(0xf38d);
   static const IconData dAndDBeyond = const IconDataBrands(0xf6ca);
+  static const IconData dailymotion = const IconDataBrands(0xf952);
   static const IconData dashcube = const IconDataBrands(0xf210);
   static const IconData database = const IconDataSolid(0xf1c0);
   static const IconData deaf = const IconDataSolid(0xf2a4);
@@ -576,7 +577,8 @@ class FontAwesomeIcons {
   static const IconData fontAwesomeFlag = const IconDataBrands(0xf425);
   static const IconData fontAwesomeLogoFull = const IconDataRegular(0xf4e6);
   static const IconData solidFontAwesomeLogoFull = const IconDataSolid(0xf4e6);
-  static const IconData brandsFontAwesomeLogoFull = const IconDataSolid(0xf4e6);
+  static const IconData brandsFontAwesomeLogoFull =
+      const IconDataBrands(0xf4e6);
   static const IconData fonticons = const IconDataBrands(0xf280);
   static const IconData fonticonsFi = const IconDataBrands(0xf3a2);
   static const IconData footballBall = const IconDataSolid(0xf44e);
@@ -792,6 +794,7 @@ class FontAwesomeIcons {
   static const IconData info = const IconDataSolid(0xf129);
   static const IconData infoCircle = const IconDataSolid(0xf05a);
   static const IconData instagram = const IconDataBrands(0xf16d);
+  static const IconData instagramSquare = const IconDataBrands(0xf955);
   static const IconData intercom = const IconDataBrands(0xf7af);
   static const IconData internetExplorer = const IconDataBrands(0xf26b);
   static const IconData invision = const IconDataBrands(0xf7b0);
@@ -942,6 +945,7 @@ class FontAwesomeIcons {
   static const IconData mitten = const IconDataSolid(0xf7b5);
   static const IconData mix = const IconDataBrands(0xf3cb);
   static const IconData mixcloud = const IconDataBrands(0xf289);
+  static const IconData mixer = const IconDataBrands(0xf956);
   static const IconData mizuni = const IconDataBrands(0xf3cc);
   static const IconData mobile = const IconDataSolid(0xf10b);
   static const IconData mobileAlt = const IconDataSolid(0xf3cd);
@@ -1192,6 +1196,7 @@ class FontAwesomeIcons {
   static const IconData shippingFast = const IconDataSolid(0xf48b);
   static const IconData shirtsinbulk = const IconDataBrands(0xf214);
   static const IconData shoePrints = const IconDataSolid(0xf54b);
+  static const IconData shopify = const IconDataBrands(0xf957);
   static const IconData shoppingBag = const IconDataSolid(0xf290);
   static const IconData shoppingBasket = const IconDataSolid(0xf291);
   static const IconData shoppingCart = const IconDataSolid(0xf07a);

@@ -1,5 +1,7 @@
 ## 8.6.0
-  * Upgrade to Font Awesome Icons 5.12
+  * Move package to FlutterCommunity
+  * Upgrade to Font Awesome Icons 5.12.1
+  * Directions to support pro icons if you've purchased them (thanks @michaelspiss!)
 
 ## 8.5.0
   * Upgrade to Font Awesome Icons 5.9
