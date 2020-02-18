@@ -1,3 +1,8 @@
+## 8.7.0
+
+  * Add `FaIcon` widget for Font Awesome Icons
+  * Update `README` with FAQ
+
 ## 8.6.0
   * Move package to FlutterCommunity
   * Upgrade to Font Awesome Icons 5.12.1
