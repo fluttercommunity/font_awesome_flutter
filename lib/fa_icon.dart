@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 /// Creates an Icon Widget that works for non-material Icons, such as the
 /// Font Awesome Icons.
@@ -25,24 +26,20 @@ class FaIcon extends StatelessWidget {
   })  : assert(icon != null),
         super(key: key);
 
-  /// The icon to display. The available icons are described in [Icons].
-  ///
-  /// The icon can be null, in which case the widget will render as an empty
-  /// space of the specified [size].
+  /// The icon to display. The available icons are described in
+  /// [FontAwesomeIcons].
   final IconData icon;
 
-  /// The size of the icon in logical pixels.
-  ///
-  /// Icons occupy a square with width and height equal to size.
+  /// The font size of the icon.
   ///
   /// Defaults to the current [IconTheme] size, if any. If there is no
   /// [IconTheme], or it does not specify an explicit size, then it defaults to
   /// 24.0.
   ///
   /// If this [FaIcon] is being placed inside an [IconButton], then use
-  /// [IconButton.iconSize] instead, so that the [IconButton] can make the splash
-  /// area the appropriate size as well. The [IconButton] uses an [IconTheme] to
-  /// pass down the size to the [FaIcon].
+  /// [IconButton.iconSize] instead, so that the [IconButton] can make the
+  /// splash area the appropriate size as well. The [IconButton] uses an
+  /// [IconTheme] to pass down the size to the [FaIcon].
   final double size;
 
   /// The color to use when drawing the icon.
@@ -51,27 +48,6 @@ class FaIcon extends StatelessWidget {
   ///
   /// The given color will be adjusted by the opacity of the current
   /// [IconTheme], if any.
-  ///
-  ///
-  /// In material apps, if there is a [Theme] without any [IconTheme]s
-  /// specified, icon colors default to white if the theme is dark
-  /// and black if the theme is light.
-  ///
-  /// If no [IconTheme] and no [Theme] is specified, icons will default to black.
-  ///
-  /// See [Theme] to set the current theme and [ThemeData.brightness]
-  /// for setting the current theme's brightness.
-  ///
-  /// {@tool snippet}
-  /// Typically, a material design color will be used, as follows:
-  ///
-  /// ```dart
-  /// Icon(
-  ///   Icons.widgets,
-  ///   color: Colors.blue.shade400,
-  /// )
-  /// ```
-  /// {@end-tool}
   final Color color;
 
   /// Semantic label for the icon.
