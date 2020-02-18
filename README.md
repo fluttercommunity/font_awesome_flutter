@@ -26,9 +26,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
-    return new IconButton(
-      // Use the FontAwesomeIcons class for the IconData
-      icon: new Icon(FontAwesomeIcons.gamepad), 
+    return IconButton(
+      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+      icon: FaIcon(FontAwesomeIcons.gamepad), 
       onPressed: () { print("Pressed"); }
      );
   }

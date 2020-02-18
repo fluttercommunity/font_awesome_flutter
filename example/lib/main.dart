@@ -3,28 +3,28 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:font_awesome_flutter_example/icons.dart';
 
 void main() {
-  runApp(new FontAwesomeGalleryApp());
+  runApp(FontAwesomeGalleryApp());
 }
 
 class FontAwesomeGalleryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Font Awesome Flutter Gallery',
-      theme: new ThemeData.light().copyWith(
-        iconTheme: new IconThemeData(size: 36.0, color: Colors.black87),
-        textTheme: new TextTheme(
-          body1: new TextStyle(fontSize: 16.0, color: Colors.black87),
+      theme: ThemeData.light().copyWith(
+        iconTheme: IconThemeData(size: 36.0, color: Colors.black87),
+        textTheme: TextTheme(
+          body1: TextStyle(fontSize: 16.0, color: Colors.black87),
         ),
       ),
-      home: new FontAwesomeGalleryHome(),
+      home: FontAwesomeGalleryHome(),
     );
   }
 }
 
 class FontAwesomeGalleryHome extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => new FontAwesomeGalleryHomeState();
+  State<StatefulWidget> createState() => FontAwesomeGalleryHomeState();
 }
 
 class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
@@ -40,67 +40,67 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         .toList();
     final orientation = MediaQuery.of(context).orientation;
 
-    return new Scaffold(
+    return Scaffold(
       appBar: _isSearching ? _searchBar(context) : _titleBar(),
-      body: new GridView.builder(
-          itemCount: filteredIcons.length,
-          gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
-          ),
-          itemBuilder: (context, index) {
-            final icon = filteredIcons[index];
+      body: GridView.builder(
+        itemCount: filteredIcons.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+        ),
+        itemBuilder: (context, index) {
+          final icon = filteredIcons[index];
 
-            return new InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  new MaterialPageRoute<Null>(
-                    builder: (BuildContext context) {
-                      return new GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).pop();
-                        },
-                        child: new Container(
-                          color: Colors.white,
-                          child: new SizedBox.expand(
-                            child: new Hero(
-                              tag: icon,
-                              child: new Icon(
-                                icon.iconData,
-                                size: 100.0,
-                              ),
-                            ),
+          return InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute<Null>(
+                  builder: (BuildContext context) {
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        alignment: Alignment.center,
+                        child: Hero(
+                          tag: icon,
+                          child: FaIcon(
+                            icon.iconData,
+                            size: 100,
                           ),
                         ),
-                      );
-                    },
-                  ),
-                );
-              },
-              child: new Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  new Hero(tag: icon, child: new Icon(icon.iconData)),
-                  new Container(
-                    padding: new EdgeInsets.only(top: 16.0),
-                    child: new Text(icon.title),
-                  )
-                ],
-              ),
-            );
-          }),
+                      ),
+                    );
+                  },
+                ),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Hero(tag: icon, child: FaIcon(icon.iconData)),
+                Container(
+                  padding: EdgeInsets.only(top: 16.0),
+                  child: Text(icon.title),
+                )
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 
   AppBar _titleBar() {
-    return new AppBar(
-      title: new Text("Font Awesome Flutter Gallery"),
+    return AppBar(
+      title: Text("Font Awesome Flutter Gallery"),
       actions: [
-        new IconButton(
-            icon: new Icon(FontAwesomeIcons.search),
+        IconButton(
+            icon: FaIcon(FontAwesomeIcons.search),
             onPressed: () {
               ModalRoute.of(context).addLocalHistoryEntry(
-                new LocalHistoryEntry(
+                LocalHistoryEntry(
                   onRemove: () {
                     setState(() {
                       _searchTerm = "";
@@ -119,9 +119,9 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
   }
 
   AppBar _searchBar(BuildContext context) {
-    return new AppBar(
-      leading: new IconButton(
-        icon: new Icon(FontAwesomeIcons.arrowLeft),
+    return AppBar(
+      leading: IconButton(
+        icon: FaIcon(FontAwesomeIcons.arrowLeft),
         onPressed: () {
           setState(
             () {
@@ -132,11 +132,11 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
           );
         },
       ),
-      title: new TextField(
+      title: TextField(
         onChanged: (text) => setState(() => _searchTerm = text),
         autofocus: true,
-        style: new TextStyle(fontSize: 18.0),
-        decoration: new InputDecoration(border: InputBorder.none),
+        style: TextStyle(fontSize: 18.0),
+        decoration: InputDecoration(border: InputBorder.none),
       ),
     );
   }
