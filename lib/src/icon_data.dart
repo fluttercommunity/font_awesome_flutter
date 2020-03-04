@@ -29,8 +29,6 @@ class IconDataRegular extends IconData {
         );
 }
 
-// Uncomment to be able to use (pro) light icons if installed
-/*
 class IconDataLight extends IconData {
   const IconDataLight(int codePoint)
       : super(
@@ -39,5 +37,12 @@ class IconDataLight extends IconData {
           fontPackage: 'font_awesome_flutter',
         );
 }
-*/
 
+class IconDataDuotone extends IconData {
+  const IconDataDuotone(int codePoint)
+      : super(
+          codePoint,
+          fontFamily: 'FontAwesomeDuotone',
+          fontPackage: 'font_awesome_flutter',
+        );
+}

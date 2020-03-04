@@ -76,14 +76,15 @@ icon fonts and want to use them with Flutter, please follow these instructions.
 to keep these files private. This includes **not** uploading your package to
 a public github repository or other public file sharing services.
 
-  * Download this package's newest release, extract the folder and move it to a location of your choice
+  * Download this package's
+  [newest release](https://github.com/fluttercommunity/font_awesome_flutter/archive/master.zip),
+  extract the folder and move it to a location of your choice
   * Remove `#`s from `pubspec.yaml` at the indicated position
   * run `flutter packages get`
   * Download your font awesome pro icons (web version)
   * Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
   * Move `icons.json` from `metadata` to this directory
   * Run `./tool/update.sh`
-  * Uncomment `IconDataLight` in `lib/icon_data.dart`
   * In your project's dependencies, replace the version tag for `font_awesome_flutter` with the path to your custom installation.
   
 ```yaml
@@ -91,6 +92,21 @@ dependencies:
   font_awesome_flutter:
     path: /path/to/font_awesome_flutter
     ...
+```
+
+### Duotone icons
+
+Duotone icons require special treatment. Instead of `FaIcon` a special class
+`FaDuotoneIcon` needs to be used. It allows to set the primary and secondary colors
+for the icon. If primary and / or secondary color are not defined, they will default
+ to the standard `IconTheme` color.
+
+```dart
+FaDuotoneIcon(
+  FontAwesomeIcons.abacus,
+  primaryColor: Colors.black.withOpacity(.4),
+  secondaryColor: Colors.black,
+);
 ```
 
 ## Contributors
