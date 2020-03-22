@@ -85,13 +85,17 @@ a public github repository or other public file sharing services.
   * Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
   * Move `icons.json` from `metadata` to this directory
   * Run `./tool/update.sh`
-  * In your project's dependencies, replace the version tag for `font_awesome_flutter` with the path to your custom installation.
+  * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation
   
 ```yaml
 dependencies:
+  font_awesome_flutter: '>= 4.7.0'
+  ...
+  
+dependency_overrides:
   font_awesome_flutter:
-    path: /path/to/font_awesome_flutter
-    ...
+    path: /path/to/your/font_awesome_flutter
+  ...
 ```
 
 ### Duotone icons
