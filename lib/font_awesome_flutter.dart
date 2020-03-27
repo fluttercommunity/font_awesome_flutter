@@ -165,6 +165,7 @@ class FontAwesomeIcons {
   static const IconData bowlingBall = const IconDataSolid(0xf436);
   static const IconData box = const IconDataSolid(0xf466);
   static const IconData boxOpen = const IconDataSolid(0xf49e);
+  static const IconData boxTissue = const IconDataSolid(0xf95b);
   static const IconData boxes = const IconDataSolid(0xf468);
   static const IconData braille = const IconDataSolid(0xf2a1);
   static const IconData brain = const IconDataSolid(0xf5dc);
@@ -414,6 +415,7 @@ class FontAwesomeIcons {
   static const IconData directions = const IconDataSolid(0xf5eb);
   static const IconData discord = const IconDataBrands(0xf392);
   static const IconData discourse = const IconDataBrands(0xf393);
+  static const IconData disease = const IconDataSolid(0xf7fa);
   static const IconData divide = const IconDataSolid(0xf529);
   static const IconData dizzy = const IconDataRegular(0xf567);
   static const IconData solidDizzy = const IconDataSolid(0xf567);
@@ -498,6 +500,7 @@ class FontAwesomeIcons {
   static const IconData fantasyFlightGames = const IconDataBrands(0xf6dc);
   static const IconData fastBackward = const IconDataSolid(0xf049);
   static const IconData fastForward = const IconDataSolid(0xf050);
+  static const IconData faucet = const IconDataSolid(0xf905);
   static const IconData fax = const IconDataSolid(0xf1ac);
   static const IconData feather = const IconDataSolid(0xf52d);
   static const IconData featherAlt = const IconDataSolid(0xf56b);
@@ -696,7 +699,9 @@ class FontAwesomeIcons {
   static const IconData hamsa = const IconDataSolid(0xf665);
   static const IconData handHolding = const IconDataSolid(0xf4bd);
   static const IconData handHoldingHeart = const IconDataSolid(0xf4be);
+  static const IconData handHoldingMedical = const IconDataSolid(0xf95c);
   static const IconData handHoldingUsd = const IconDataSolid(0xf4c0);
+  static const IconData handHoldingWater = const IconDataSolid(0xf4c1);
   static const IconData handLizard = const IconDataRegular(0xf258);
   static const IconData solidHandLizard = const IconDataSolid(0xf258);
   static const IconData handMiddleFinger = const IconDataSolid(0xf806);
@@ -718,12 +723,16 @@ class FontAwesomeIcons {
   static const IconData solidHandRock = const IconDataSolid(0xf255);
   static const IconData handScissors = const IconDataRegular(0xf257);
   static const IconData solidHandScissors = const IconDataSolid(0xf257);
+  static const IconData handSparkles = const IconDataSolid(0xf95d);
   static const IconData handSpock = const IconDataRegular(0xf259);
   static const IconData solidHandSpock = const IconDataSolid(0xf259);
   static const IconData hands = const IconDataSolid(0xf4c2);
   static const IconData handsHelping = const IconDataSolid(0xf4c4);
+  static const IconData handsWash = const IconDataSolid(0xf95e);
   static const IconData handshake = const IconDataRegular(0xf2b5);
   static const IconData solidHandshake = const IconDataSolid(0xf2b5);
+  static const IconData handshakeAltSlash = const IconDataSolid(0xf95f);
+  static const IconData handshakeSlash = const IconDataSolid(0xf960);
   static const IconData hanukiah = const IconDataSolid(0xf6e6);
   static const IconData hardHat = const IconDataSolid(0xf807);
   static const IconData hashtag = const IconDataSolid(0xf292);
@@ -732,6 +741,10 @@ class FontAwesomeIcons {
   static const IconData hatWizard = const IconDataSolid(0xf6e8);
   static const IconData hdd = const IconDataRegular(0xf0a0);
   static const IconData solidHdd = const IconDataSolid(0xf0a0);
+  static const IconData headSideCough = const IconDataSolid(0xf961);
+  static const IconData headSideCoughSlash = const IconDataSolid(0xf962);
+  static const IconData headSideMask = const IconDataSolid(0xf963);
+  static const IconData headSideVirus = const IconDataSolid(0xf964);
   static const IconData heading = const IconDataSolid(0xf1dc);
   static const IconData headphones = const IconDataSolid(0xf025);
   static const IconData headphonesAlt = const IconDataSolid(0xf58f);
@@ -758,6 +771,7 @@ class FontAwesomeIcons {
   static const IconData solidHospital = const IconDataSolid(0xf0f8);
   static const IconData hospitalAlt = const IconDataSolid(0xf47d);
   static const IconData hospitalSymbol = const IconDataSolid(0xf47e);
+  static const IconData hospitalUser = const IconDataSolid(0xf80d);
   static const IconData hotTub = const IconDataSolid(0xf593);
   static const IconData hotdog = const IconDataSolid(0xf80f);
   static const IconData hotel = const IconDataSolid(0xf594);
@@ -768,6 +782,7 @@ class FontAwesomeIcons {
   static const IconData hourglassHalf = const IconDataSolid(0xf252);
   static const IconData hourglassStart = const IconDataSolid(0xf251);
   static const IconData houseDamage = const IconDataSolid(0xf6f1);
+  static const IconData houseUser = const IconDataSolid(0xf965);
   static const IconData houzz = const IconDataBrands(0xf27c);
   static const IconData hryvnia = const IconDataSolid(0xf6f2);
   static const IconData html5 = const IconDataBrands(0xf13b);
@@ -838,6 +853,7 @@ class FontAwesomeIcons {
   static const IconData language = const IconDataSolid(0xf1ab);
   static const IconData laptop = const IconDataSolid(0xf109);
   static const IconData laptopCode = const IconDataSolid(0xf5fc);
+  static const IconData laptopHouse = const IconDataSolid(0xf966);
   static const IconData laptopMedical = const IconDataSolid(0xf812);
   static const IconData laravel = const IconDataBrands(0xf3bd);
   static const IconData lastfm = const IconDataBrands(0xf202);
@@ -885,6 +901,8 @@ class FontAwesomeIcons {
   static const IconData longArrowAltUp = const IconDataSolid(0xf30c);
   static const IconData lowVision = const IconDataSolid(0xf2a8);
   static const IconData luggageCart = const IconDataSolid(0xf59d);
+  static const IconData lungs = const IconDataSolid(0xf604);
+  static const IconData lungsVirus = const IconDataSolid(0xf967);
   static const IconData lyft = const IconDataBrands(0xf3c3);
   static const IconData magento = const IconDataBrands(0xf3c4);
   static const IconData magic = const IconDataSolid(0xf0d0);
@@ -1033,6 +1051,7 @@ class FontAwesomeIcons {
   static const IconData pencilAlt = const IconDataSolid(0xf303);
   static const IconData pencilRuler = const IconDataSolid(0xf5ae);
   static const IconData pennyArcade = const IconDataBrands(0xf704);
+  static const IconData peopleArrows = const IconDataSolid(0xf968);
   static const IconData peopleCarry = const IconDataSolid(0xf4ce);
   static const IconData pepperHot = const IconDataSolid(0xf816);
   static const IconData percent = const IconDataSolid(0xf295);
@@ -1065,6 +1084,7 @@ class FontAwesomeIcons {
   static const IconData plane = const IconDataSolid(0xf072);
   static const IconData planeArrival = const IconDataSolid(0xf5af);
   static const IconData planeDeparture = const IconDataSolid(0xf5b0);
+  static const IconData planeSlash = const IconDataSolid(0xf969);
   static const IconData play = const IconDataSolid(0xf04b);
   static const IconData playCircle = const IconDataRegular(0xf144);
   static const IconData solidPlayCircle = const IconDataSolid(0xf144);
@@ -1092,6 +1112,8 @@ class FontAwesomeIcons {
   static const IconData procedures = const IconDataSolid(0xf487);
   static const IconData productHunt = const IconDataBrands(0xf288);
   static const IconData projectDiagram = const IconDataSolid(0xf542);
+  static const IconData pumpMedical = const IconDataSolid(0xf96a);
+  static const IconData pumpSoap = const IconDataSolid(0xf96b);
   static const IconData pushed = const IconDataBrands(0xf3e1);
   static const IconData puzzlePiece = const IconDataSolid(0xf12e);
   static const IconData python = const IconDataBrands(0xf3e2);
@@ -1193,6 +1215,7 @@ class FontAwesomeIcons {
   static const IconData solidShareSquare = const IconDataSolid(0xf14d);
   static const IconData shekelSign = const IconDataSolid(0xf20b);
   static const IconData shieldAlt = const IconDataSolid(0xf3ed);
+  static const IconData shieldVirus = const IconDataSolid(0xf96c);
   static const IconData ship = const IconDataSolid(0xf21a);
   static const IconData shippingFast = const IconDataSolid(0xf48b);
   static const IconData shirtsinbulk = const IconDataBrands(0xf214);
@@ -1247,6 +1270,7 @@ class FontAwesomeIcons {
   static const IconData solidSnowflake = const IconDataSolid(0xf2dc);
   static const IconData snowman = const IconDataSolid(0xf7d0);
   static const IconData snowplow = const IconDataSolid(0xf7d2);
+  static const IconData soap = const IconDataSolid(0xf96e);
   static const IconData socks = const IconDataSolid(0xf696);
   static const IconData solarPanel = const IconDataSolid(0xf5ba);
   static const IconData sort = const IconDataSolid(0xf0dc);
@@ -1307,8 +1331,11 @@ class FontAwesomeIcons {
   static const IconData stopCircle = const IconDataRegular(0xf28d);
   static const IconData solidStopCircle = const IconDataSolid(0xf28d);
   static const IconData stopwatch = const IconDataSolid(0xf2f2);
+  static const IconData stopwatch20 = const IconDataSolid(0xf96f);
   static const IconData store = const IconDataSolid(0xf54e);
   static const IconData storeAlt = const IconDataSolid(0xf54f);
+  static const IconData storeAltSlash = const IconDataSolid(0xf970);
+  static const IconData storeSlash = const IconDataSolid(0xf971);
   static const IconData strava = const IconDataBrands(0xf428);
   static const IconData stream = const IconDataSolid(0xf550);
   static const IconData streetView = const IconDataSolid(0xf21d);
@@ -1394,6 +1421,7 @@ class FontAwesomeIcons {
   static const IconData toggleOn = const IconDataSolid(0xf205);
   static const IconData toilet = const IconDataSolid(0xf7d8);
   static const IconData toiletPaper = const IconDataSolid(0xf71e);
+  static const IconData toiletPaperSlash = const IconDataSolid(0xf972);
   static const IconData toolbox = const IconDataSolid(0xf552);
   static const IconData tools = const IconDataSolid(0xf7d9);
   static const IconData tooth = const IconDataSolid(0xf5c9);
@@ -1501,6 +1529,9 @@ class FontAwesomeIcons {
   static const IconData vimeoSquare = const IconDataBrands(0xf194);
   static const IconData vimeoV = const IconDataBrands(0xf27d);
   static const IconData vine = const IconDataBrands(0xf1ca);
+  static const IconData virus = const IconDataSolid(0xf974);
+  static const IconData virusSlash = const IconDataSolid(0xf975);
+  static const IconData viruses = const IconDataSolid(0xf976);
   static const IconData vk = const IconDataBrands(0xf189);
   static const IconData vnv = const IconDataBrands(0xf40b);
   static const IconData voicemail = const IconDataSolid(0xf897);

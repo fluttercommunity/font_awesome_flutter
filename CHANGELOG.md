@@ -1,3 +1,6 @@
+## 8.8.0
+  * Upgrade to Font Awesome Icons 5.13
+
 ## 8.7.0
 
   * Add `FaIcon` widget for Font Awesome Icons
