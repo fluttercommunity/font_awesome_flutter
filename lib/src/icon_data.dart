@@ -2,6 +2,9 @@ library font_awesome_flutter;
 
 import 'package:flutter/widgets.dart';
 
+/// [IconData] for a font awesome brand icon from a code point
+///
+/// Code points can be obtained from fontawesome.com
 class IconDataBrands extends IconData {
   const IconDataBrands(int codePoint)
       : super(
@@ -11,6 +14,9 @@ class IconDataBrands extends IconData {
         );
 }
 
+/// [IconData] for a font awesome solid icon from a code point
+///
+/// Code points can be obtained from fontawesome.com
 class IconDataSolid extends IconData {
   const IconDataSolid(int codePoint)
       : super(
@@ -20,6 +26,9 @@ class IconDataSolid extends IconData {
         );
 }
 
+/// [IconData] for a font awesome regular icon from a code point
+///
+/// Code points can be obtained from fontawesome.com
 class IconDataRegular extends IconData {
   const IconDataRegular(int codePoint)
       : super(
@@ -29,6 +38,10 @@ class IconDataRegular extends IconData {
         );
 }
 
+/// [IconData] for a font awesome light icon from a code point. Only works if
+/// light icons (pro) have been installed.
+///
+/// Code points can be obtained from fontawesome.com
 class IconDataLight extends IconData {
   const IconDataLight(int codePoint)
       : super(
@@ -38,6 +51,10 @@ class IconDataLight extends IconData {
         );
 }
 
+/// [IconData] for a font awesome duotone icon from a code point. Only works if
+/// duotone icons (pro) have been installed.
+///
+/// Code points can be obtained from fontawesome.com
 class IconDataDuotone extends IconData {
   const IconDataDuotone(int codePoint)
       : super(

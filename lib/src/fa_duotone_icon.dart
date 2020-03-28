@@ -38,13 +38,13 @@ class FaDuotoneIcon extends StatelessWidget {
   final String semanticLabel;
 
   const FaDuotoneIcon(
-      this.icon, {
-        Key key,
-        this.size,
-        this.primaryColor,
-        this.secondaryColor,
-        this.semanticLabel,
-      })  : assert(icon != null),
+    this.icon, {
+    Key key,
+    this.size,
+    this.primaryColor,
+    this.secondaryColor,
+    this.semanticLabel,
+  })  : assert(icon != null),
         super(key: key);
 
   @override

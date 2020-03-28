@@ -32,7 +32,7 @@ void main(List<String> arguments) {
         );
       }
 
-      if(styles.contains('duotone')) {
+      if (styles.contains('duotone')) {
         hasDuotone = true;
       }
 
@@ -59,10 +59,12 @@ void main(List<String> arguments) {
     "import 'package:flutter/widgets.dart';",
     "import 'package:font_awesome_flutter/src/icon_data.dart';",
     "export 'package:font_awesome_flutter/src/fa_icon.dart';",
+    "export 'package:font_awesome_flutter/src/icon_data.dart';",
   ];
 
-  if(hasDuotone) {
-    generatedOutput.add("export 'package:font_awesome_flutter/src/fa_duotone_icon.dart';");
+  if (hasDuotone) {
+    generatedOutput
+        .add("export 'package:font_awesome_flutter/src/fa_duotone_icon.dart';");
   }
 
   generatedOutput.addAll([
