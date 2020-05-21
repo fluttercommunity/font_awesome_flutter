@@ -35,7 +35,19 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
-## Example
+### Icon names
+
+Icon names equal those on the [official website](http://fontawesome.io/icons/), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
+
+#### Examples:
+Icon name | Code | Style
+--- | --- | ---
+[angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | FontAwesomeIcons.angleDoubleUp | solid _(this icon does not have other free styles)_
+[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | FontAwesomeIcons.arrowAltCircleUp | regular
+[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  FontAwesomeIcons.solidArrowAltCircleUp | solid
+
+
+## Example App
 
 View the Flutter app in the `example` directory to see all the available `FontAwesomeIcons`.
 
