@@ -83,7 +83,7 @@ a public github repository or other public file sharing services.
   * run `flutter packages get`
   * Download your font awesome pro icons (web version)
   * Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
-  * Move `icons.json` from `metadata` to this directory
+  * Move `icons.json` from `metadata` to the root of your working directory (same directory of tools)
   * Run `./tool/update.sh`
   * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation
   
