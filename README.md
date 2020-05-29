@@ -76,17 +76,15 @@ icon fonts and want to use them with Flutter, please follow these instructions.
 to keep these files private. This includes **not** uploading your package to
 a public github repository or other public file sharing services.
 
-  * Download this package's
-  [newest release](https://github.com/fluttercommunity/font_awesome_flutter/archive/master.zip),
-  extract the folder and move it to a location of your choice
-  * Remove `#`s from `pubspec.yaml` at the indicated position
-  * run `flutter packages get`
-  * Download your font awesome pro icons (web version)
-  * Move all `.ttf` files from the `webfonts` directory to this package's lib/fonts (replace existing fonts)
-  * Move `icons.json` from `metadata` to the root of your working directory (same directory of tools)
-  * Run `./tool/update.sh`
-  * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation
-  
+*Download this package's newest release, extract the folder, move it to a location of your choice and go to that directory
+*Remove #s from pubspec.yaml at the indicated position
+*run flutter packages get
+*Download your font awesome pro icons (web version)
+*Move icons.json from metadata to this directory
+*Move all .ttf files from the webfonts directory to this package's lib/fonts (replace existing fonts)
+*Run ./tool/update.sh
+*Add version >= 4.7.0 to your project's dependencies, Override it with the path to your local installation
+
 ```yaml
 dependencies:
   font_awesome_flutter: '>= 4.7.0'
