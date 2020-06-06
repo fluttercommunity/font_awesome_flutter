@@ -65,10 +65,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                         alignment: Alignment.center,
                         child: Hero(
                           tag: icon,
-                          child: FaIcon(
-                            icon.iconData,
-                            size: 100,
-                          ),
+                          child: _icon(icon.iconData, size: 100),
                         ),
                       ),
                     );
@@ -79,17 +76,29 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Hero(tag: icon, child: FaIcon(icon.iconData)),
+                Hero(tag: icon, child: _icon(icon.iconData)),
                 Container(
                   padding: EdgeInsets.only(top: 16.0),
                   child: Text(icon.title),
-                )
+                ),
               ],
             ),
           );
         },
       ),
     );
+  }
+
+  Widget _icon(IconData icon, {double size}) {
+    if(icon is IconDataDuotone) {
+      return FaDuotoneIcon(
+          icon,
+          size: size,
+          primaryColor: Theme.of(context).iconTheme.color.withOpacity(.3),
+          secondaryColor: Theme.of(context).iconTheme.color,
+      );
+    }
+    return FaIcon(icon, size: size);
   }
 
   AppBar _titleBar() {
