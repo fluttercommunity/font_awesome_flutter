@@ -1,3 +1,6 @@
+## 8.9.0
+  * Upgrade to Font Awesome Icons 5.14
+
 ## 8.8.1
   * Fix icon_data.dart not being accessible
 
