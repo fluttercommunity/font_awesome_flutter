@@ -1,6 +1,7 @@
-## 8.9.1
+## 8.10.0
   * Fix #119: Inverted colors for duotone icons
   * Fix #122: Build failure due to missing glyphs in web fonts
+  * Upgrade to Font Awesome icons 5.15.1
 
 ## 8.9.0
   * Upgrade to Font Awesome icons 5.15
