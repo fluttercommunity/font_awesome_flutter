@@ -1,3 +1,6 @@
+## 8.9.1
+  * Fix #119: Inverted colors for duotone icons
+
 ## 8.9.0
   * Upgrade to Font Awesome icons 5.15
 
