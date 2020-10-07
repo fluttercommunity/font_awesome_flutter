@@ -42,9 +42,9 @@ Icon names equal those on the [official website](https://fontawesome.com/icons),
 #### Examples:
 Icon name | Code | Style
 --- | --- | ---
-[angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | FontAwesomeIcons.angleDoubleUp | solid _(this icon does not have other free styles)_
-[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | FontAwesomeIcons.arrowAltCircleUp | regular
-[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  FontAwesomeIcons.solidArrowAltCircleUp | solid
+[angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | `FontAwesomeIcons.angleDoubleUp` | solid _(this icon does not have other free styles)_
+[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | `FontAwesomeIcons.arrowAltCircleUp` | regular
+[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  `FontAwesomeIcons.solidArrowAltCircleUp` | solid
 
 
 ## Example App
