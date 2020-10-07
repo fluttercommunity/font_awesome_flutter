@@ -2,7 +2,7 @@
 
 [![Flutter Community: font_awesome_flutter](https://fluttercommunity.dev/_github/header/font_awesome_flutter)](https://github.com/fluttercommunity/community)
 
-The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of Flutter Icons.
+The [Font Awesome](https://fontawesome.com/icons) Icon pack available as set of Flutter Icons.
 
 Based on Font Awesome 5.15.1. Includes all free icons:
 
@@ -37,7 +37,7 @@ class MyWidget extends StatelessWidget {
 
 ### Icon names
 
-Icon names equal those on the [official website](http://fontawesome.io/icons/), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
+Icon names equal those on the [official website](https://fontawesome.com/icons), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
 
 #### Examples:
 Icon name | Code | Style
