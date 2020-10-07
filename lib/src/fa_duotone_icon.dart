@@ -57,12 +57,12 @@ class FaDuotoneIcon extends StatelessWidget {
           FaIcon(
             IconDataDuotone(icon.codePoint),
             size: size,
-            color: secondaryColor,
+            color: primaryColor,
           ),
           FaIcon(
             IconDataDuotone(icon.codePoint + 0x100000),
             size: size,
-            color: primaryColor,
+            color: secondaryColor,
           ),
         ],
       ),
