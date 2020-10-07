@@ -1,5 +1,6 @@
 ## 8.9.1
   * Fix #119: Inverted colors for duotone icons
+  * Fix #122: Skip icons marked as private during generation
 
 ## 8.9.0
   * Upgrade to Font Awesome icons 5.15
