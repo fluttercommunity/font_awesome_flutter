@@ -586,11 +586,6 @@ final icons = <ExampleIcon>[
   ExampleIcon(FontAwesomeIcons.fontAwesome, 'fontAwesome'),
   ExampleIcon(FontAwesomeIcons.fontAwesomeAlt, 'fontAwesomeAlt'),
   ExampleIcon(FontAwesomeIcons.fontAwesomeFlag, 'fontAwesomeFlag'),
-  ExampleIcon(FontAwesomeIcons.fontAwesomeLogoFull, 'fontAwesomeLogoFull'),
-  ExampleIcon(
-      FontAwesomeIcons.solidFontAwesomeLogoFull, 'solidFontAwesomeLogoFull'),
-  ExampleIcon(
-      FontAwesomeIcons.brandsFontAwesomeLogoFull, 'brandsFontAwesomeLogoFull'),
   ExampleIcon(FontAwesomeIcons.fonticons, 'fonticons'),
   ExampleIcon(FontAwesomeIcons.fonticonsFi, 'fonticonsFi'),
   ExampleIcon(FontAwesomeIcons.footballBall, 'footballBall'),

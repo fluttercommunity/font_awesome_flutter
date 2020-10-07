@@ -19,6 +19,12 @@ void main(List<String> arguments) {
 
   for (String iconName in icons.keys) {
     var icon = icons[iconName];
+
+    // At least one icon does not have a glyph in the font files. This property
+    // is marked with "private": true in icons.json
+    if((icon as Map<String, dynamic>).containsKey('private') && icon['private'])
+      continue;
+
     var unicode = icon['unicode'];
     List<String> styles = (icon['styles'] as List).cast<String>();
 
