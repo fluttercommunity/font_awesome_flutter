@@ -584,10 +584,6 @@ class FontAwesomeIcons {
   static const IconData fontAwesome = const IconDataBrands(0xf2b4);
   static const IconData fontAwesomeAlt = const IconDataBrands(0xf35c);
   static const IconData fontAwesomeFlag = const IconDataBrands(0xf425);
-  static const IconData fontAwesomeLogoFull = const IconDataRegular(0xf4e6);
-  static const IconData solidFontAwesomeLogoFull = const IconDataSolid(0xf4e6);
-  static const IconData brandsFontAwesomeLogoFull =
-      const IconDataBrands(0xf4e6);
   static const IconData fonticons = const IconDataBrands(0xf280);
   static const IconData fonticonsFi = const IconDataBrands(0xf3a2);
   static const IconData footballBall = const IconDataSolid(0xf44e);
