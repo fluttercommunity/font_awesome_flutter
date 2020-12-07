@@ -1,3 +1,7 @@
+## 8.10.1
+  * Update license file with MIT header
+  * Update readme links
+
 ## 8.10.0
   * Fix #119: Inverted colors for duotone icons
   * Fix #122: Build failure due to missing glyphs in web fonts
