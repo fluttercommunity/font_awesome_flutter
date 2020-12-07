@@ -18,7 +18,7 @@ class FaIcon extends StatelessWidget {
   /// The [size] and [color] default to the value given by the current [IconTheme].
   const FaIcon(
     this.icon, {
-    Key key,
+    Key? key,
     this.size,
     this.color,
     this.semanticLabel,
@@ -28,7 +28,7 @@ class FaIcon extends StatelessWidget {
 
   /// The icon to display. The available icons are described in
   /// [FontAwesomeIcons].
-  final IconData icon;
+  final IconData? icon;
 
   /// The font size of the icon.
   ///
@@ -40,7 +40,7 @@ class FaIcon extends StatelessWidget {
   /// [IconButton.iconSize] instead, so that the [IconButton] can make the
   /// splash area the appropriate size as well. The [IconButton] uses an
   /// [IconTheme] to pass down the size to the [FaIcon].
-  final double size;
+  final double? size;
 
   /// The color to use when drawing the icon.
   ///
@@ -48,7 +48,7 @@ class FaIcon extends StatelessWidget {
   ///
   /// The given color will be adjusted by the opacity of the current
   /// [IconTheme], if any.
-  final Color color;
+  final Color? color;
 
   /// Semantic label for the icon.
   ///
@@ -59,7 +59,7 @@ class FaIcon extends StatelessWidget {
   ///
   ///  * [Semantics.label], which is set to [semanticLabel] in the underlying
   ///    [Semantics] widget.
-  final String semanticLabel;
+  final String? semanticLabel;
 
   /// The text direction to use for rendering the icon.
   ///
@@ -74,7 +74,7 @@ class FaIcon extends StatelessWidget {
   /// This property has no effect if the [icon]'s [IconData.matchTextDirection]
   /// field is false, but for consistency a text direction value must always be
   /// specified, either directly using this property or using [Directionality].
-  final TextDirection textDirection;
+  final TextDirection? textDirection;
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +84,7 @@ class FaIcon extends StatelessWidget {
 
     final IconThemeData iconTheme = IconTheme.of(context);
 
-    final double iconSize = size ?? iconTheme.size;
+    final double? iconSize = size ?? iconTheme.size;
 
     if (icon == null) {
       return Semantics(
@@ -93,8 +93,8 @@ class FaIcon extends StatelessWidget {
       );
     }
 
-    final double iconOpacity = iconTheme.opacity;
-    Color iconColor = color ?? iconTheme.color;
+    final double iconOpacity = iconTheme.opacity ?? 1.0;
+    Color iconColor = color ?? iconTheme.color!;
     if (iconOpacity != 1.0)
       iconColor = iconColor.withOpacity(iconColor.opacity * iconOpacity);
 
@@ -103,18 +103,18 @@ class FaIcon extends StatelessWidget {
       textDirection:
           textDirection, // Since we already fetched it for the assert...
       text: TextSpan(
-        text: String.fromCharCode(icon.codePoint),
+        text: String.fromCharCode(icon!.codePoint),
         style: TextStyle(
           inherit: false,
           color: iconColor,
           fontSize: iconSize,
-          fontFamily: icon.fontFamily,
-          package: icon.fontPackage,
+          fontFamily: icon!.fontFamily,
+          package: icon!.fontPackage,
         ),
       ),
     );
 
-    if (icon.matchTextDirection) {
+    if (icon!.matchTextDirection) {
       switch (textDirection) {
         case TextDirection.rtl:
           iconWidget = Transform(

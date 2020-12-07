@@ -18,13 +18,13 @@ class FaDuotoneIcon extends StatelessWidget {
   /// [IconButton.iconSize] instead, so that the [IconButton] can make the
   /// splash area the appropriate size as well. The [IconButton] uses an
   /// [IconTheme] to pass down the size to the [FaIcon].
-  final double size;
+  final double? size;
 
   /// Color used for the icon's main body
-  final Color primaryColor;
+  final Color? primaryColor;
 
   /// Color used for the icon's accents
-  final Color secondaryColor;
+  final Color? secondaryColor;
 
   /// Semantic label for the icon.
   ///
@@ -35,17 +35,16 @@ class FaDuotoneIcon extends StatelessWidget {
   ///
   ///  * [Semantics.label], which is set to [semanticLabel] in the underlying
   ///    [Semantics] widget.
-  final String semanticLabel;
+  final String? semanticLabel;
 
   const FaDuotoneIcon(
     this.icon, {
-    Key key,
+    Key? key,
     this.size,
     this.primaryColor,
     this.secondaryColor,
     this.semanticLabel,
-  })  : assert(icon != null),
-        super(key: key);
+  })  : super(key: key);
 
   @override
   Widget build(BuildContext context) {

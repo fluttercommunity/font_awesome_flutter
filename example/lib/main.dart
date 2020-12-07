@@ -99,7 +99,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         IconButton(
             icon: FaIcon(FontAwesomeIcons.search),
             onPressed: () {
-              ModalRoute.of(context).addLocalHistoryEntry(
+              ModalRoute.of(context)?.addLocalHistoryEntry(
                 LocalHistoryEntry(
                   onRemove: () {
                     setState(() {

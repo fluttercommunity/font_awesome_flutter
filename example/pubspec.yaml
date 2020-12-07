@@ -7,6 +7,9 @@ dependencies:
   font_awesome_flutter:
     path: ../
 
+environment:
+  sdk: '>=2.12.0-0 <3.0.0'
+
 flutter:
   uses-material-design: true
 
