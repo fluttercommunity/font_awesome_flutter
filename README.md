@@ -2,6 +2,8 @@
 
 [![Flutter Community: font_awesome_flutter](https://fluttercommunity.dev/_github/header/font_awesome_flutter)](https://github.com/fluttercommunity/community)
 
+[![Pub](https://img.shields.io/pub/v/font_awesome_flutter.svg)](https://pub.dartlang.org/packages/font_awesome_flutter)
+
 The [Font Awesome](https://fontawesome.com/icons) Icon pack available as set of Flutter Icons.
 
 Based on Font Awesome 5.15.1. Includes all free icons:
