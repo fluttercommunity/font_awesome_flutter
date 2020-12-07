@@ -127,9 +127,3 @@ FaDuotoneIcon(
   secondaryColor: Colors.black,
 );
 ```
-
-## Contributors
-
-  - Brian Egan
-  - Phil Plante
-  - Michael Spiss
