@@ -1,3 +1,7 @@
+## 8.10.2
+  * Fix missing keys in FaDuotoneIcon
+  * Fix icon tree shaking build error for duotone icons
+
 ## 8.10.1
   * Update license file with MIT header
   * Update readme links
