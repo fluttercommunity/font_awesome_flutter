@@ -55,13 +55,13 @@ class FaDuotoneIcon extends StatelessWidget {
         key: key,
         children: <Widget>[
           FaIcon(
-            IconDataDuotone(icon.codePoint),
+            icon,
             size: size,
             color: primaryColor,
             key: Key("primaryGlyph"),
           ),
           FaIcon(
-            IconDataDuotone(icon.codePoint + 0x100000),
+            icon.secondary,
             size: size,
             color: secondaryColor,
             key: Key("secondaryGlyph"),

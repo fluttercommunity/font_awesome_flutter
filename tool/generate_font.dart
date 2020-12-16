@@ -22,8 +22,8 @@ void main(List<String> arguments) {
 
     // At least one icon does not have a glyph in the font files. This property
     // is marked with "private": true in icons.json
-    if((icon as Map<String, dynamic>).containsKey('private') && icon['private'])
-      continue;
+    if ((icon as Map<String, dynamic>).containsKey('private') &&
+        icon['private']) continue;
 
     var unicode = icon['unicode'];
     List<String> styles = (icon['styles'] as List).cast<String>();
@@ -89,15 +89,35 @@ void main(List<String> arguments) {
 }
 
 String generateIconDefinition(String iconName, String style, String unicode) {
-  style = '${style[0].toUpperCase()}${style.substring(1)}';
+  if (style == 'duotone') {
+    return generateDuotoneIconDefinition(iconName, unicode);
+  }
 
-  String iconDataSource = 'IconData$style';
+  iconName = normalizeIconName(iconName);
+  String iconDataSource = styleToDataSource(style);
 
+  return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+}
+
+String generateDuotoneIconDefinition(String iconName, String primaryUnicode) {
+  iconName = normalizeIconName(iconName);
+  String secondaryUnicode = (int.parse(primaryUnicode, radix: 16) + 0x100000)
+      .toRadixString(16)
+      .toString();
+
+  return 'static const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+}
+
+String normalizeIconName(String iconName) {
   if (iconName == '500px') {
     iconName = 'fiveHundredPx';
   }
 
-  iconName = new ReCase(iconName).camelCase;
+  return new ReCase(iconName).camelCase;
+}
 
-  return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+String styleToDataSource(String style) {
+  style = '${style[0].toUpperCase()}${style.substring(1)}';
+
+  return 'IconData$style';
 }
