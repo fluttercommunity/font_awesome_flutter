@@ -129,7 +129,8 @@ Duotone icons require special treatment. Instead of `FaIcon` a special class
 `FaDuotoneIcon` needs to be used. It allows to set the primary and secondary colors
 for the icon. If primary and / or secondary color are not defined, they will default
  to the standard `IconTheme` color. Please be aware that only duotone style icons
- can be passed to this class.
+ can be passed to this class. `FaDuotoneIcon` is only available if at least one duotone
+icon is available.
  
 
 ```dart
