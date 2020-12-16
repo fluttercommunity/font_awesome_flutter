@@ -39,7 +39,7 @@ class IconDataRegular extends IconData {
 }
 
 /// [IconData] for a font awesome light icon from a code point. Only works if
-/// light icons (pro) have been installed.
+/// light icons (font awesome pro) have been installed.
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataLight extends IconData {
@@ -52,7 +52,7 @@ class IconDataLight extends IconData {
 }
 
 /// [IconData] for a font awesome duotone icon from a code point. Only works if
-/// duotone icons (pro) have been installed.
+/// duotone icons (font awesome pro) have been installed.
 ///
 /// Code points can be obtained from fontawesome.com. Each duotone icon has
 /// a primary [codePoint] and a [secondary]. Due to tree-shaking restraints,
@@ -66,6 +66,19 @@ class IconDataDuotone extends IconData {
         super(
           codePoint,
           fontFamily: 'FontAwesomeDuotone',
+          fontPackage: 'font_awesome_flutter',
+        );
+}
+
+/// [IconData] for a font awesome thin icon from a code point. Only works if
+/// thin icons (font awesome pro, v6+) have been installed.
+///
+/// Code points can be obtained from fontawesome.com
+class IconDataThin extends IconData {
+  const IconDataThin(int codePoint)
+      : super(
+          codePoint,
+          fontFamily: 'FontAwesomeThin',
           fontPackage: 'font_awesome_flutter',
         );
 }

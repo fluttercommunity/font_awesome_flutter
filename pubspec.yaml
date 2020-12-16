@@ -37,3 +37,7 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/fa-duotone-900.ttf
 #          weight: 900
+#    - family: FontAwesomeThin
+#      fonts:
+#        - asset: lib/fonts/fa-thin-100.ttf
+#          weight: 100
