@@ -66,6 +66,7 @@ void main(List<String> arguments) {
           iconName,
           'regular',
           unicode,
+          icon["search"]["terms"],
         );
       }
 
@@ -79,6 +80,7 @@ void main(List<String> arguments) {
           name,
           style,
           unicode,
+          icon["search"]["terms"],
         );
       }
     } else {
@@ -86,6 +88,7 @@ void main(List<String> arguments) {
         iconName,
         styles.first,
         unicode,
+        icon["search"]["terms"],
       );
     }
   }
@@ -120,24 +123,50 @@ void main(List<String> arguments) {
   output.writeAsStringSync(generatedOutput.join('\n'));
 }
 
-String generateIconDefinition(String iconName, String style, String unicode) {
-  if (style == 'duotone') {
-    return generateDuotoneIconDefinition(iconName, unicode);
+String generateIconDocumentation(
+    String iconName, String style, List searchTerms) {
+  searchTerms = searchTerms ?? [];
+  var searchTermsString = searchTerms.toString();
+  searchTermsString =
+      searchTermsString.substring(1, searchTermsString.length - 1);
+
+  iconName = iconName.replaceFirst("solid_", "");
+
+  var doc = '/// ${style.sentenceCase} $iconName icon\n'
+      '///\n'
+      '/// https://fontawesome.com/icons/$iconName?style=$style';
+
+  if (searchTermsString.length != 0) {
+    doc += '\n/// $searchTermsString';
   }
+
+  return doc;
+}
+
+String generateIconDefinition(
+    String iconName, String style, String unicode, List searchTerms) {
+  if (style == 'duotone') {
+    return generateDuotoneIconDefinition(iconName, unicode, searchTerms);
+  }
+
+  String doc = generateIconDocumentation(iconName, style, searchTerms);
 
   iconName = normalizeIconName(iconName);
   String iconDataSource = styleToDataSource(style);
 
-  return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+  return '$doc\nstatic const IconData $iconName = const $iconDataSource(0x$unicode);';
 }
 
-String generateDuotoneIconDefinition(String iconName, String primaryUnicode) {
+String generateDuotoneIconDefinition(
+    String iconName, String primaryUnicode, List searchTerms) {
+  String doc = generateIconDocumentation(iconName, "duotone", searchTerms);
+
   iconName = normalizeIconName(iconName);
   String secondaryUnicode = (int.parse(primaryUnicode, radix: 16) + 0x100000)
       .toRadixString(16)
       .toString();
 
-  return 'static const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+  return '$doc\nstatic const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
 }
 
 String normalizeIconName(String iconName) {
