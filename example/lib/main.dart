@@ -58,7 +58,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                   builder: (BuildContext context) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.of(context)?.pop();
+                        Navigator.of(context).pop();
                       },
                       child: Container(
                         color: Colors.white,
