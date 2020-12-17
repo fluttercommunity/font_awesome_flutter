@@ -15,6 +15,7 @@ dev_dependencies:
   recase: ^3.0.0
   flutter_test:
     sdk: flutter
+  version: ^1.2.0
 
 flutter:
   fonts:
