@@ -61,6 +61,18 @@ Please use the `FaIcon` widget provided by the library instead of the `Icon`
 widget provided by Flutter. The `Icon` widget assumes all icons are square, but
 many Font Awesome Icons are not.
 
+### What about file size
+This package has been written in a way so that it only uses the minimum amount of ressources required.
+
+All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
+definitions are loaded into ram.
+
+Flutter 1.22 added icon tree shaking. This means unused icon "images" will be removed as well. However, this only
+applies to styles of which at least one icon has been used. Assuming only icons of style "regular" are being used,
+"regular" will be minified and "solid" and "brands" will stay in their raw, complete form. This issue is being [tracked
+over in the flutter repository](https://github.com/flutter/flutter/issues/64106). While it is open, a workaround is
+to create an icon of each style and put it in an invisible container.
+
 ### Why aren't the icons showing up on Mobile devices?
 
 If you're not seeing any icons at all, sometimes it means that Flutter has a cached version of the app on device and hasn't pushed the new fonts. I've run into that as well a few times...
@@ -117,7 +129,8 @@ Duotone icons require special treatment. Instead of `FaIcon` a special class
 `FaDuotoneIcon` needs to be used. It allows to set the primary and secondary colors
 for the icon. If primary and / or secondary color are not defined, they will default
  to the standard `IconTheme` color. Please be aware that only duotone style icons
- can be passed to this class.
+ can be passed to this class. `FaDuotoneIcon` is only available if at least one duotone
+icon is available.
  
 
 ```dart

@@ -1,3 +1,6 @@
+## 8.11.0
+  * Add support for font awesome 6's thin icons
+
 ## 8.10.2
   * Fix missing keys in FaDuotoneIcon
   * Fix icon tree shaking build error for duotone icons
