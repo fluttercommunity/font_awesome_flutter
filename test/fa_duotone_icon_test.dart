@@ -41,7 +41,7 @@ void main() {
 
     final FaIcon primary = tester.widget(find.byKey(Key("primaryGlyph")));
     final FaIcon secondary = tester.widget(find.byKey(Key("secondaryGlyph")));
-    expect(primary.icon.codePoint, 0x01);
-    expect(secondary.icon.codePoint, 0x02);
+    expect(primary.icon!.codePoint, 0x01);
+    expect(secondary.icon!.codePoint, 0x02);
   });
 }
