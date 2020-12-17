@@ -1,3 +1,6 @@
+## 9.0.0
+  * Add support for null-safety
+
 ## 8.11.0
   * Add support for font awesome 6's thin icons
 
