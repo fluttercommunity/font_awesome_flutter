@@ -30,7 +30,7 @@ void main(List<String> arguments) {
         icon['private']) continue;
 
     // compute highest version
-    var changes = (icon["changes"] as List) ?? List();
+    var changes = (icon["changes"] as List);
 
     List<Version> versions = changes.map((v) {
       // since font awesome does not adhere to semver standards
