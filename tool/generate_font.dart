@@ -67,6 +67,7 @@ void main(List<String> arguments) {
           'regular',
           unicode,
           icon["search"]["terms"],
+          icon["label"],
         );
       }
 
@@ -81,6 +82,7 @@ void main(List<String> arguments) {
           style,
           unicode,
           icon["search"]["terms"],
+          icon["label"],
         );
       }
     } else {
@@ -89,6 +91,7 @@ void main(List<String> arguments) {
         styles.first,
         unicode,
         icon["search"]["terms"],
+        icon["label"],
       );
     }
   }
@@ -124,7 +127,7 @@ void main(List<String> arguments) {
 }
 
 String generateIconDocumentation(
-    String iconName, String style, List searchTerms) {
+    String iconName, String style, List searchTerms, String iconLabel) {
   searchTerms = searchTerms ?? [];
   var searchTermsString = searchTerms.toString();
   searchTermsString =
@@ -132,7 +135,7 @@ String generateIconDocumentation(
 
   iconName = iconName.replaceFirst("solid_", "");
 
-  var doc = '/// ${style.sentenceCase} $iconName icon\n'
+  var doc = '/// ${style.sentenceCase} $iconLabel icon\n'
       '///\n'
       '/// https://fontawesome.com/icons/$iconName?style=$style';
 
@@ -144,12 +147,12 @@ String generateIconDocumentation(
 }
 
 String generateIconDefinition(
-    String iconName, String style, String unicode, List searchTerms) {
+    String iconName, String style, String unicode, List searchTerms, String iconLabel) {
   if (style == 'duotone') {
-    return generateDuotoneIconDefinition(iconName, unicode, searchTerms);
+    return generateDuotoneIconDefinition(iconName, unicode, searchTerms, iconLabel);
   }
 
-  String doc = generateIconDocumentation(iconName, style, searchTerms);
+  String doc = generateIconDocumentation(iconName, style, searchTerms, iconLabel);
 
   iconName = normalizeIconName(iconName);
   String iconDataSource = styleToDataSource(style);
@@ -158,8 +161,8 @@ String generateIconDefinition(
 }
 
 String generateDuotoneIconDefinition(
-    String iconName, String primaryUnicode, List searchTerms) {
-  String doc = generateIconDocumentation(iconName, "duotone", searchTerms);
+    String iconName, String primaryUnicode, List searchTerms, String iconLabel) {
+  String doc = generateIconDocumentation(iconName, "duotone", searchTerms, iconLabel);
 
   iconName = normalizeIconName(iconName);
   String secondaryUnicode = (int.parse(primaryUnicode, radix: 16) + 0x100000)

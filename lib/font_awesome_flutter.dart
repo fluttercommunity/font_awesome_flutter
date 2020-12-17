@@ -14,48 +14,48 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/500px?style=brands
   static const IconData fiveHundredPx = const IconDataBrands(0xf26e);
 
-  /// Brands accessible-icon icon
+  /// Brands Accessible Icon icon
   ///
   /// https://fontawesome.com/icons/accessible-icon?style=brands
   /// accessibility, handicap, person, wheelchair, wheelchair-alt
   static const IconData accessibleIcon = const IconDataBrands(0xf368);
 
-  /// Brands accusoft icon
+  /// Brands Accusoft icon
   ///
   /// https://fontawesome.com/icons/accusoft?style=brands
   static const IconData accusoft = const IconDataBrands(0xf369);
 
-  /// Brands acquisitions-incorporated icon
+  /// Brands Acquisitions Incorporated icon
   ///
   /// https://fontawesome.com/icons/acquisitions-incorporated?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, game, gaming, tabletop
   static const IconData acquisitionsIncorporated = const IconDataBrands(0xf6af);
 
-  /// Solid ad icon
+  /// Solid Ad icon
   ///
   /// https://fontawesome.com/icons/ad?style=solid
   /// advertisement, media, newspaper, promotion, publicity
   static const IconData ad = const IconDataSolid(0xf641);
 
-  /// Regular address-book icon
+  /// Regular Address Book icon
   ///
   /// https://fontawesome.com/icons/address-book?style=regular
   /// contact, directory, index, little black book, rolodex
   static const IconData addressBook = const IconDataRegular(0xf2b9);
 
-  /// Solid address-book icon
+  /// Solid Address Book icon
   ///
   /// https://fontawesome.com/icons/address-book?style=solid
   /// contact, directory, index, little black book, rolodex
   static const IconData solidAddressBook = const IconDataSolid(0xf2b9);
 
-  /// Regular address-card icon
+  /// Regular Address Card icon
   ///
   /// https://fontawesome.com/icons/address-card?style=regular
   /// about, contact, id, identification, postcard, profile
   static const IconData addressCard = const IconDataRegular(0xf2bb);
 
-  /// Solid address-card icon
+  /// Solid Address Card icon
   ///
   /// https://fontawesome.com/icons/address-card?style=solid
   /// about, contact, id, identification, postcard, profile
@@ -67,12 +67,12 @@ class FontAwesomeIcons {
   /// contrast, dark, light, saturation
   static const IconData adjust = const IconDataSolid(0xf042);
 
-  /// Brands adn icon
+  /// Brands App.net icon
   ///
   /// https://fontawesome.com/icons/adn?style=brands
   static const IconData adn = const IconDataBrands(0xf170);
 
-  /// Brands adversal icon
+  /// Brands Adversal icon
   ///
   /// https://fontawesome.com/icons/adversal?style=brands
   static const IconData adversal = const IconDataBrands(0xf36a);
@@ -82,18 +82,18 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/affiliatetheme?style=brands
   static const IconData affiliatetheme = const IconDataBrands(0xf36b);
 
-  /// Solid air-freshener icon
+  /// Solid Air Freshener icon
   ///
   /// https://fontawesome.com/icons/air-freshener?style=solid
   /// car, deodorize, fresh, pine, scent
   static const IconData airFreshener = const IconDataSolid(0xf5d0);
 
-  /// Brands airbnb icon
+  /// Brands Airbnb icon
   ///
   /// https://fontawesome.com/icons/airbnb?style=brands
   static const IconData airbnb = const IconDataBrands(0xf834);
 
-  /// Brands algolia icon
+  /// Brands Algolia icon
   ///
   /// https://fontawesome.com/icons/algolia?style=brands
   static const IconData algolia = const IconDataBrands(0xf36c);
@@ -122,23 +122,23 @@ class FontAwesomeIcons {
   /// format, paragraph, text
   static const IconData alignRight = const IconDataSolid(0xf038);
 
-  /// Brands alipay icon
+  /// Brands Alipay icon
   ///
   /// https://fontawesome.com/icons/alipay?style=brands
   static const IconData alipay = const IconDataBrands(0xf642);
 
-  /// Solid allergies icon
+  /// Solid Allergies icon
   ///
   /// https://fontawesome.com/icons/allergies?style=solid
   /// allergy, freckles, hand, hives, pox, skin, spots
   static const IconData allergies = const IconDataSolid(0xf461);
 
-  /// Brands amazon icon
+  /// Brands Amazon icon
   ///
   /// https://fontawesome.com/icons/amazon?style=brands
   static const IconData amazon = const IconDataBrands(0xf270);
 
-  /// Brands amazon-pay icon
+  /// Brands Amazon Pay icon
   ///
   /// https://fontawesome.com/icons/amazon-pay?style=brands
   static const IconData amazonPay = const IconDataBrands(0xf42c);
@@ -149,54 +149,54 @@ class FontAwesomeIcons {
   /// covid-19, emergency, emt, er, help, hospital, support, vehicle
   static const IconData ambulance = const IconDataSolid(0xf0f9);
 
-  /// Solid american-sign-language-interpreting icon
+  /// Solid American Sign Language Interpreting icon
   ///
   /// https://fontawesome.com/icons/american-sign-language-interpreting?style=solid
   /// asl, deaf, finger, hand, interpret, speak
   static const IconData americanSignLanguageInterpreting =
       const IconDataSolid(0xf2a3);
 
-  /// Brands amilia icon
+  /// Brands Amilia icon
   ///
   /// https://fontawesome.com/icons/amilia?style=brands
   static const IconData amilia = const IconDataBrands(0xf36d);
 
-  /// Solid anchor icon
+  /// Solid Anchor icon
   ///
   /// https://fontawesome.com/icons/anchor?style=solid
   /// berth, boat, dock, embed, link, maritime, moor, secure
   static const IconData anchor = const IconDataSolid(0xf13d);
 
-  /// Brands android icon
+  /// Brands Android icon
   ///
   /// https://fontawesome.com/icons/android?style=brands
   /// robot
   static const IconData android = const IconDataBrands(0xf17b);
 
-  /// Brands angellist icon
+  /// Brands AngelList icon
   ///
   /// https://fontawesome.com/icons/angellist?style=brands
   static const IconData angellist = const IconDataBrands(0xf209);
 
-  /// Solid angle-double-down icon
+  /// Solid Angle Double Down icon
   ///
   /// https://fontawesome.com/icons/angle-double-down?style=solid
   /// arrows, caret, download, expand
   static const IconData angleDoubleDown = const IconDataSolid(0xf103);
 
-  /// Solid angle-double-left icon
+  /// Solid Angle Double Left icon
   ///
   /// https://fontawesome.com/icons/angle-double-left?style=solid
   /// arrows, back, caret, laquo, previous, quote
   static const IconData angleDoubleLeft = const IconDataSolid(0xf100);
 
-  /// Solid angle-double-right icon
+  /// Solid Angle Double Right icon
   ///
   /// https://fontawesome.com/icons/angle-double-right?style=solid
   /// arrows, caret, forward, more, next, quote, raquo
   static const IconData angleDoubleRight = const IconDataSolid(0xf101);
 
-  /// Solid angle-double-up icon
+  /// Solid Angle Double Up icon
   ///
   /// https://fontawesome.com/icons/angle-double-up?style=solid
   /// arrows, caret, collapse, upload
@@ -226,145 +226,145 @@ class FontAwesomeIcons {
   /// arrow, caret, collapse, upload
   static const IconData angleUp = const IconDataSolid(0xf106);
 
-  /// Regular angry icon
+  /// Regular Angry Face icon
   ///
   /// https://fontawesome.com/icons/angry?style=regular
   /// disapprove, emoticon, face, mad, upset
   static const IconData angry = const IconDataRegular(0xf556);
 
-  /// Solid angry icon
+  /// Solid Angry Face icon
   ///
   /// https://fontawesome.com/icons/angry?style=solid
   /// disapprove, emoticon, face, mad, upset
   static const IconData solidAngry = const IconDataSolid(0xf556);
 
-  /// Brands angrycreative icon
+  /// Brands Angry Creative icon
   ///
   /// https://fontawesome.com/icons/angrycreative?style=brands
   static const IconData angrycreative = const IconDataBrands(0xf36e);
 
-  /// Brands angular icon
+  /// Brands Angular icon
   ///
   /// https://fontawesome.com/icons/angular?style=brands
   static const IconData angular = const IconDataBrands(0xf420);
 
-  /// Solid ankh icon
+  /// Solid Ankh icon
   ///
   /// https://fontawesome.com/icons/ankh?style=solid
   /// amulet, copper, coptic christianity, copts, crux ansata, egypt, venus
   static const IconData ankh = const IconDataSolid(0xf644);
 
-  /// Brands app-store icon
+  /// Brands App Store icon
   ///
   /// https://fontawesome.com/icons/app-store?style=brands
   static const IconData appStore = const IconDataBrands(0xf36f);
 
-  /// Brands app-store-ios icon
+  /// Brands iOS App Store icon
   ///
   /// https://fontawesome.com/icons/app-store-ios?style=brands
   static const IconData appStoreIos = const IconDataBrands(0xf370);
 
-  /// Brands apper icon
+  /// Brands Apper Systems AB icon
   ///
   /// https://fontawesome.com/icons/apper?style=brands
   static const IconData apper = const IconDataBrands(0xf371);
 
-  /// Brands apple icon
+  /// Brands Apple icon
   ///
   /// https://fontawesome.com/icons/apple?style=brands
   /// fruit, ios, mac, operating system, os, osx
   static const IconData apple = const IconDataBrands(0xf179);
 
-  /// Solid apple-alt icon
+  /// Solid Fruit Apple icon
   ///
   /// https://fontawesome.com/icons/apple-alt?style=solid
   /// fall, fruit, fuji, macintosh, orchard, seasonal, vegan
   static const IconData appleAlt = const IconDataSolid(0xf5d1);
 
-  /// Brands apple-pay icon
+  /// Brands Apple Pay icon
   ///
   /// https://fontawesome.com/icons/apple-pay?style=brands
   static const IconData applePay = const IconDataBrands(0xf415);
 
-  /// Solid archive icon
+  /// Solid Archive icon
   ///
   /// https://fontawesome.com/icons/archive?style=solid
   /// box, package, save, storage
   static const IconData archive = const IconDataSolid(0xf187);
 
-  /// Solid archway icon
+  /// Solid Archway icon
   ///
   /// https://fontawesome.com/icons/archway?style=solid
   /// arc, monument, road, street, tunnel
   static const IconData archway = const IconDataSolid(0xf557);
 
-  /// Regular arrow-alt-circle-down icon
+  /// Regular Alternate Arrow Circle Down icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-down?style=regular
   /// arrow-circle-o-down, download
   static const IconData arrowAltCircleDown = const IconDataRegular(0xf358);
 
-  /// Solid arrow-alt-circle-down icon
+  /// Solid Alternate Arrow Circle Down icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-down?style=solid
   /// arrow-circle-o-down, download
   static const IconData solidArrowAltCircleDown = const IconDataSolid(0xf358);
 
-  /// Regular arrow-alt-circle-left icon
+  /// Regular Alternate Arrow Circle Left icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-left?style=regular
   /// arrow-circle-o-left, back, previous
   static const IconData arrowAltCircleLeft = const IconDataRegular(0xf359);
 
-  /// Solid arrow-alt-circle-left icon
+  /// Solid Alternate Arrow Circle Left icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-left?style=solid
   /// arrow-circle-o-left, back, previous
   static const IconData solidArrowAltCircleLeft = const IconDataSolid(0xf359);
 
-  /// Regular arrow-alt-circle-right icon
+  /// Regular Alternate Arrow Circle Right icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-right?style=regular
   /// arrow-circle-o-right, forward, next
   static const IconData arrowAltCircleRight = const IconDataRegular(0xf35a);
 
-  /// Solid arrow-alt-circle-right icon
+  /// Solid Alternate Arrow Circle Right icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-right?style=solid
   /// arrow-circle-o-right, forward, next
   static const IconData solidArrowAltCircleRight = const IconDataSolid(0xf35a);
 
-  /// Regular arrow-alt-circle-up icon
+  /// Regular Alternate Arrow Circle Up icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-up?style=regular
   /// arrow-circle-o-up
   static const IconData arrowAltCircleUp = const IconDataRegular(0xf35b);
 
-  /// Solid arrow-alt-circle-up icon
+  /// Solid Alternate Arrow Circle Up icon
   ///
   /// https://fontawesome.com/icons/arrow-alt-circle-up?style=solid
   /// arrow-circle-o-up
   static const IconData solidArrowAltCircleUp = const IconDataSolid(0xf35b);
 
-  /// Solid arrow-circle-down icon
+  /// Solid Arrow Circle Down icon
   ///
   /// https://fontawesome.com/icons/arrow-circle-down?style=solid
   /// download
   static const IconData arrowCircleDown = const IconDataSolid(0xf0ab);
 
-  /// Solid arrow-circle-left icon
+  /// Solid Arrow Circle Left icon
   ///
   /// https://fontawesome.com/icons/arrow-circle-left?style=solid
   /// back, previous
   static const IconData arrowCircleLeft = const IconDataSolid(0xf0a8);
 
-  /// Solid arrow-circle-right icon
+  /// Solid Arrow Circle Right icon
   ///
   /// https://fontawesome.com/icons/arrow-circle-right?style=solid
   /// forward, next
   static const IconData arrowCircleRight = const IconDataSolid(0xf0a9);
 
-  /// Solid arrow-circle-up icon
+  /// Solid Arrow Circle Up icon
   ///
   /// https://fontawesome.com/icons/arrow-circle-up?style=solid
   /// upload
@@ -394,30 +394,30 @@ class FontAwesomeIcons {
   /// forward, upload
   static const IconData arrowUp = const IconDataSolid(0xf062);
 
-  /// Solid arrows-alt icon
+  /// Solid Alternate Arrows icon
   ///
   /// https://fontawesome.com/icons/arrows-alt?style=solid
   /// arrow, arrows, bigger, enlarge, expand, fullscreen, move, position, reorder, resize
   static const IconData arrowsAlt = const IconDataSolid(0xf0b2);
 
-  /// Solid arrows-alt-h icon
+  /// Solid Alternate Arrows Horizontal icon
   ///
   /// https://fontawesome.com/icons/arrows-alt-h?style=solid
   /// arrows-h, expand, horizontal, landscape, resize, wide
   static const IconData arrowsAltH = const IconDataSolid(0xf337);
 
-  /// Solid arrows-alt-v icon
+  /// Solid Alternate Arrows Vertical icon
   ///
   /// https://fontawesome.com/icons/arrows-alt-v?style=solid
   /// arrows-v, expand, portrait, resize, tall, vertical
   static const IconData arrowsAltV = const IconDataSolid(0xf338);
 
-  /// Brands artstation icon
+  /// Brands Artstation icon
   ///
   /// https://fontawesome.com/icons/artstation?style=brands
   static const IconData artstation = const IconDataBrands(0xf77a);
 
-  /// Solid assistive-listening-systems icon
+  /// Solid Assistive Listening Systems icon
   ///
   /// https://fontawesome.com/icons/assistive-listening-systems?style=solid
   /// amplify, audio, deaf, ear, headset, hearing, sound
@@ -429,46 +429,46 @@ class FontAwesomeIcons {
   /// annotation, details, reference, star
   static const IconData asterisk = const IconDataSolid(0xf069);
 
-  /// Brands asymmetrik icon
+  /// Brands Asymmetrik, Ltd. icon
   ///
   /// https://fontawesome.com/icons/asymmetrik?style=brands
   static const IconData asymmetrik = const IconDataBrands(0xf372);
 
-  /// Solid at icon
+  /// Solid At icon
   ///
   /// https://fontawesome.com/icons/at?style=solid
   /// address, author, e-mail, email, handle
   static const IconData at = const IconDataSolid(0xf1fa);
 
-  /// Solid atlas icon
+  /// Solid Atlas icon
   ///
   /// https://fontawesome.com/icons/atlas?style=solid
   /// book, directions, geography, globe, map, travel, wayfinding
   static const IconData atlas = const IconDataSolid(0xf558);
 
-  /// Brands atlassian icon
+  /// Brands Atlassian icon
   ///
   /// https://fontawesome.com/icons/atlassian?style=brands
   static const IconData atlassian = const IconDataBrands(0xf77b);
 
-  /// Solid atom icon
+  /// Solid Atom icon
   ///
   /// https://fontawesome.com/icons/atom?style=solid
   /// atheism, chemistry, electron, ion, isotope, neutron, nuclear, proton, science
   static const IconData atom = const IconDataSolid(0xf5d2);
 
-  /// Brands audible icon
+  /// Brands Audible icon
   ///
   /// https://fontawesome.com/icons/audible?style=brands
   static const IconData audible = const IconDataBrands(0xf373);
 
-  /// Solid audio-description icon
+  /// Solid Audio Description icon
   ///
   /// https://fontawesome.com/icons/audio-description?style=solid
   /// blind, narration, video, visual
   static const IconData audioDescription = const IconDataSolid(0xf29e);
 
-  /// Brands autoprefixer icon
+  /// Brands Autoprefixer icon
   ///
   /// https://fontawesome.com/icons/autoprefixer?style=brands
   static const IconData autoprefixer = const IconDataBrands(0xf41c);
@@ -478,35 +478,35 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/avianex?style=brands
   static const IconData avianex = const IconDataBrands(0xf374);
 
-  /// Brands aviato icon
+  /// Brands Aviato icon
   ///
   /// https://fontawesome.com/icons/aviato?style=brands
   static const IconData aviato = const IconDataBrands(0xf421);
 
-  /// Solid award icon
+  /// Solid Award icon
   ///
   /// https://fontawesome.com/icons/award?style=solid
   /// honor, praise, prize, recognition, ribbon, trophy
   static const IconData award = const IconDataSolid(0xf559);
 
-  /// Brands aws icon
+  /// Brands Amazon Web Services (AWS) icon
   ///
   /// https://fontawesome.com/icons/aws?style=brands
   static const IconData aws = const IconDataBrands(0xf375);
 
-  /// Solid baby icon
+  /// Solid Baby icon
   ///
   /// https://fontawesome.com/icons/baby?style=solid
   /// child, diaper, doll, human, infant, kid, offspring, person, sprout
   static const IconData baby = const IconDataSolid(0xf77c);
 
-  /// Solid baby-carriage icon
+  /// Solid Baby Carriage icon
   ///
   /// https://fontawesome.com/icons/baby-carriage?style=solid
   /// buggy, carrier, infant, push, stroller, transportation, walk, wheels
   static const IconData babyCarriage = const IconDataSolid(0xf77d);
 
-  /// Solid backspace icon
+  /// Solid Backspace icon
   ///
   /// https://fontawesome.com/icons/backspace?style=solid
   /// command, delete, erase, keyboard, undo
@@ -518,43 +518,43 @@ class FontAwesomeIcons {
   /// previous, rewind
   static const IconData backward = const IconDataSolid(0xf04a);
 
-  /// Solid bacon icon
+  /// Solid Bacon icon
   ///
   /// https://fontawesome.com/icons/bacon?style=solid
   /// blt, breakfast, ham, lard, meat, pancetta, pork, rasher
   static const IconData bacon = const IconDataSolid(0xf7e5);
 
-  /// Solid bacteria icon
+  /// Solid Bacteria icon
   ///
   /// https://fontawesome.com/icons/bacteria?style=solid
   /// antibiotic, antibody, covid-19, health, organism, sick
   static const IconData bacteria = const IconDataSolid(0xe059);
 
-  /// Solid bacterium icon
+  /// Solid Bacterium icon
   ///
   /// https://fontawesome.com/icons/bacterium?style=solid
   /// antibiotic, antibody, covid-19, health, organism, sick
   static const IconData bacterium = const IconDataSolid(0xe05a);
 
-  /// Solid bahai icon
+  /// Solid Bahá'í icon
   ///
   /// https://fontawesome.com/icons/bahai?style=solid
   /// bahai, bahá'í, star
   static const IconData bahai = const IconDataSolid(0xf666);
 
-  /// Solid balance-scale icon
+  /// Solid Balance Scale icon
   ///
   /// https://fontawesome.com/icons/balance-scale?style=solid
   /// balanced, justice, legal, measure, weight
   static const IconData balanceScale = const IconDataSolid(0xf24e);
 
-  /// Solid balance-scale-left icon
+  /// Solid Balance Scale (Left-Weighted) icon
   ///
   /// https://fontawesome.com/icons/balance-scale-left?style=solid
   /// justice, legal, measure, unbalanced, weight
   static const IconData balanceScaleLeft = const IconDataSolid(0xf515);
 
-  /// Solid balance-scale-right icon
+  /// Solid Balance Scale (Right-Weighted) icon
   ///
   /// https://fontawesome.com/icons/balance-scale-right?style=solid
   /// justice, legal, measure, unbalanced, weight
@@ -566,13 +566,13 @@ class FontAwesomeIcons {
   /// abort, ban, block, cancel, delete, hide, prohibit, remove, stop, trash
   static const IconData ban = const IconDataSolid(0xf05e);
 
-  /// Solid band-aid icon
+  /// Solid Band-Aid icon
   ///
   /// https://fontawesome.com/icons/band-aid?style=solid
   /// bandage, boo boo, first aid, ouch
   static const IconData bandAid = const IconDataSolid(0xf462);
 
-  /// Brands bandcamp icon
+  /// Brands Bandcamp icon
   ///
   /// https://fontawesome.com/icons/bandcamp?style=brands
   static const IconData bandcamp = const IconDataBrands(0xf2d5);
@@ -583,66 +583,66 @@ class FontAwesomeIcons {
   /// info, laser, price, scan, upc
   static const IconData barcode = const IconDataSolid(0xf02a);
 
-  /// Solid bars icon
+  /// Solid Bars icon
   ///
   /// https://fontawesome.com/icons/bars?style=solid
   /// checklist, drag, hamburger, list, menu, nav, navigation, ol, reorder, settings, todo, ul
   static const IconData bars = const IconDataSolid(0xf0c9);
 
-  /// Solid baseball-ball icon
+  /// Solid Baseball Ball icon
   ///
   /// https://fontawesome.com/icons/baseball-ball?style=solid
   /// foul, hardball, league, leather, mlb, softball, sport
   static const IconData baseballBall = const IconDataSolid(0xf433);
 
-  /// Solid basketball-ball icon
+  /// Solid Basketball Ball icon
   ///
   /// https://fontawesome.com/icons/basketball-ball?style=solid
   /// dribble, dunk, hoop, nba
   static const IconData basketballBall = const IconDataSolid(0xf434);
 
-  /// Solid bath icon
+  /// Solid Bath icon
   ///
   /// https://fontawesome.com/icons/bath?style=solid
   /// clean, shower, tub, wash
   static const IconData bath = const IconDataSolid(0xf2cd);
 
-  /// Solid battery-empty icon
+  /// Solid Battery Empty icon
   ///
   /// https://fontawesome.com/icons/battery-empty?style=solid
   /// charge, dead, power, status
   static const IconData batteryEmpty = const IconDataSolid(0xf244);
 
-  /// Solid battery-full icon
+  /// Solid Battery Full icon
   ///
   /// https://fontawesome.com/icons/battery-full?style=solid
   /// charge, power, status
   static const IconData batteryFull = const IconDataSolid(0xf240);
 
-  /// Solid battery-half icon
+  /// Solid Battery 1/2 Full icon
   ///
   /// https://fontawesome.com/icons/battery-half?style=solid
   /// charge, power, status
   static const IconData batteryHalf = const IconDataSolid(0xf242);
 
-  /// Solid battery-quarter icon
+  /// Solid Battery 1/4 Full icon
   ///
   /// https://fontawesome.com/icons/battery-quarter?style=solid
   /// charge, low, power, status
   static const IconData batteryQuarter = const IconDataSolid(0xf243);
 
-  /// Solid battery-three-quarters icon
+  /// Solid Battery 3/4 Full icon
   ///
   /// https://fontawesome.com/icons/battery-three-quarters?style=solid
   /// charge, power, status
   static const IconData batteryThreeQuarters = const IconDataSolid(0xf241);
 
-  /// Brands battle-net icon
+  /// Brands Battle.net icon
   ///
   /// https://fontawesome.com/icons/battle-net?style=brands
   static const IconData battleNet = const IconDataBrands(0xf835);
 
-  /// Solid bed icon
+  /// Solid Bed icon
   ///
   /// https://fontawesome.com/icons/bed?style=solid
   /// lodging, mattress, rest, sleep, travel
@@ -654,12 +654,12 @@ class FontAwesomeIcons {
   /// alcohol, ale, bar, beverage, brewery, drink, lager, liquor, mug, stein
   static const IconData beer = const IconDataSolid(0xf0fc);
 
-  /// Brands behance icon
+  /// Brands Behance icon
   ///
   /// https://fontawesome.com/icons/behance?style=brands
   static const IconData behance = const IconDataBrands(0xf1b4);
 
-  /// Brands behance-square icon
+  /// Brands Behance Square icon
   ///
   /// https://fontawesome.com/icons/behance-square?style=brands
   static const IconData behanceSquare = const IconDataBrands(0xf1b5);
@@ -676,131 +676,131 @@ class FontAwesomeIcons {
   /// alarm, alert, chime, notification, reminder
   static const IconData solidBell = const IconDataSolid(0xf0f3);
 
-  /// Regular bell-slash icon
+  /// Regular Bell Slash icon
   ///
   /// https://fontawesome.com/icons/bell-slash?style=regular
   /// alert, cancel, disabled, notification, off, reminder
   static const IconData bellSlash = const IconDataRegular(0xf1f6);
 
-  /// Solid bell-slash icon
+  /// Solid Bell Slash icon
   ///
   /// https://fontawesome.com/icons/bell-slash?style=solid
   /// alert, cancel, disabled, notification, off, reminder
   static const IconData solidBellSlash = const IconDataSolid(0xf1f6);
 
-  /// Solid bezier-curve icon
+  /// Solid Bezier Curve icon
   ///
   /// https://fontawesome.com/icons/bezier-curve?style=solid
   /// curves, illustrator, lines, path, vector
   static const IconData bezierCurve = const IconDataSolid(0xf55b);
 
-  /// Solid bible icon
+  /// Solid Bible icon
   ///
   /// https://fontawesome.com/icons/bible?style=solid
   /// book, catholicism, christianity, god, holy
   static const IconData bible = const IconDataSolid(0xf647);
 
-  /// Solid bicycle icon
+  /// Solid Bicycle icon
   ///
   /// https://fontawesome.com/icons/bicycle?style=solid
   /// bike, gears, pedal, transportation, vehicle
   static const IconData bicycle = const IconDataSolid(0xf206);
 
-  /// Solid biking icon
+  /// Solid Biking icon
   ///
   /// https://fontawesome.com/icons/biking?style=solid
   /// bicycle, bike, cycle, cycling, ride, wheel
   static const IconData biking = const IconDataSolid(0xf84a);
 
-  /// Brands bimobject icon
+  /// Brands BIMobject icon
   ///
   /// https://fontawesome.com/icons/bimobject?style=brands
   static const IconData bimobject = const IconDataBrands(0xf378);
 
-  /// Solid binoculars icon
+  /// Solid Binoculars icon
   ///
   /// https://fontawesome.com/icons/binoculars?style=solid
   /// glasses, magnify, scenic, spyglass, view
   static const IconData binoculars = const IconDataSolid(0xf1e5);
 
-  /// Solid biohazard icon
+  /// Solid Biohazard icon
   ///
   /// https://fontawesome.com/icons/biohazard?style=solid
   /// covid-19, danger, dangerous, hazmat, medical, radioactive, toxic, waste, zombie
   static const IconData biohazard = const IconDataSolid(0xf780);
 
-  /// Solid birthday-cake icon
+  /// Solid Birthday Cake icon
   ///
   /// https://fontawesome.com/icons/birthday-cake?style=solid
   /// anniversary, bakery, candles, celebration, dessert, frosting, holiday, party, pastry
   static const IconData birthdayCake = const IconDataSolid(0xf1fd);
 
-  /// Brands bitbucket icon
+  /// Brands Bitbucket icon
   ///
   /// https://fontawesome.com/icons/bitbucket?style=brands
   /// atlassian, bitbucket-square, git
   static const IconData bitbucket = const IconDataBrands(0xf171);
 
-  /// Brands bitcoin icon
+  /// Brands Bitcoin icon
   ///
   /// https://fontawesome.com/icons/bitcoin?style=brands
   static const IconData bitcoin = const IconDataBrands(0xf379);
 
-  /// Brands bity icon
+  /// Brands Bity icon
   ///
   /// https://fontawesome.com/icons/bity?style=brands
   static const IconData bity = const IconDataBrands(0xf37a);
 
-  /// Brands black-tie icon
+  /// Brands Font Awesome Black Tie icon
   ///
   /// https://fontawesome.com/icons/black-tie?style=brands
   static const IconData blackTie = const IconDataBrands(0xf27e);
 
-  /// Brands blackberry icon
+  /// Brands BlackBerry icon
   ///
   /// https://fontawesome.com/icons/blackberry?style=brands
   static const IconData blackberry = const IconDataBrands(0xf37b);
 
-  /// Solid blender icon
+  /// Solid Blender icon
   ///
   /// https://fontawesome.com/icons/blender?style=solid
   /// cocktail, milkshake, mixer, puree, smoothie
   static const IconData blender = const IconDataSolid(0xf517);
 
-  /// Solid blender-phone icon
+  /// Solid Blender Phone icon
   ///
   /// https://fontawesome.com/icons/blender-phone?style=solid
   /// appliance, cocktail, communication, fantasy, milkshake, mixer, puree, silly, smoothie
   static const IconData blenderPhone = const IconDataSolid(0xf6b6);
 
-  /// Solid blind icon
+  /// Solid Blind icon
   ///
   /// https://fontawesome.com/icons/blind?style=solid
   /// cane, disability, person, sight
   static const IconData blind = const IconDataSolid(0xf29d);
 
-  /// Solid blog icon
+  /// Solid Blog icon
   ///
   /// https://fontawesome.com/icons/blog?style=solid
   /// journal, log, online, personal, post, web 2.0, wordpress, writing
   static const IconData blog = const IconDataSolid(0xf781);
 
-  /// Brands blogger icon
+  /// Brands Blogger icon
   ///
   /// https://fontawesome.com/icons/blogger?style=brands
   static const IconData blogger = const IconDataBrands(0xf37c);
 
-  /// Brands blogger-b icon
+  /// Brands Blogger B icon
   ///
   /// https://fontawesome.com/icons/blogger-b?style=brands
   static const IconData bloggerB = const IconDataBrands(0xf37d);
 
-  /// Brands bluetooth icon
+  /// Brands Bluetooth icon
   ///
   /// https://fontawesome.com/icons/bluetooth?style=brands
   static const IconData bluetooth = const IconDataBrands(0xf293);
 
-  /// Brands bluetooth-b icon
+  /// Brands Bluetooth icon
   ///
   /// https://fontawesome.com/icons/bluetooth-b?style=brands
   static const IconData bluetoothB = const IconDataBrands(0xf294);
@@ -811,25 +811,25 @@ class FontAwesomeIcons {
   /// emphasis, format, text
   static const IconData bold = const IconDataSolid(0xf032);
 
-  /// Solid bolt icon
+  /// Solid Lightning Bolt icon
   ///
   /// https://fontawesome.com/icons/bolt?style=solid
   /// electricity, lightning, weather, zap
   static const IconData bolt = const IconDataSolid(0xf0e7);
 
-  /// Solid bomb icon
+  /// Solid Bomb icon
   ///
   /// https://fontawesome.com/icons/bomb?style=solid
   /// error, explode, fuse, grenade, warning
   static const IconData bomb = const IconDataSolid(0xf1e2);
 
-  /// Solid bone icon
+  /// Solid Bone icon
   ///
   /// https://fontawesome.com/icons/bone?style=solid
   /// calcium, dog, skeletal, skeleton, tibia
   static const IconData bone = const IconDataSolid(0xf5d7);
 
-  /// Solid bong icon
+  /// Solid Bong icon
   ///
   /// https://fontawesome.com/icons/bong?style=solid
   /// aparatus, cannabis, marijuana, pipe, smoke, smoking
@@ -841,25 +841,25 @@ class FontAwesomeIcons {
   /// diary, documentation, journal, library, read
   static const IconData book = const IconDataSolid(0xf02d);
 
-  /// Solid book-dead icon
+  /// Solid Book of the Dead icon
   ///
   /// https://fontawesome.com/icons/book-dead?style=solid
   /// Dungeons & Dragons, crossbones, d&d, dark arts, death, dnd, documentation, evil, fantasy, halloween, holiday, necronomicon, read, skull, spell
   static const IconData bookDead = const IconDataSolid(0xf6b7);
 
-  /// Solid book-medical icon
+  /// Solid Medical Book icon
   ///
   /// https://fontawesome.com/icons/book-medical?style=solid
   /// diary, documentation, health, history, journal, library, read, record
   static const IconData bookMedical = const IconDataSolid(0xf7e6);
 
-  /// Solid book-open icon
+  /// Solid Book Open icon
   ///
   /// https://fontawesome.com/icons/book-open?style=solid
   /// flyer, library, notebook, open book, pamphlet, reading
   static const IconData bookOpen = const IconDataSolid(0xf518);
 
-  /// Solid book-reader icon
+  /// Solid Book Reader icon
   ///
   /// https://fontawesome.com/icons/book-reader?style=solid
   /// flyer, library, notebook, open book, pamphlet, reading
@@ -877,129 +877,129 @@ class FontAwesomeIcons {
   /// favorite, marker, read, remember, save
   static const IconData solidBookmark = const IconDataSolid(0xf02e);
 
-  /// Brands bootstrap icon
+  /// Brands Bootstrap icon
   ///
   /// https://fontawesome.com/icons/bootstrap?style=brands
   static const IconData bootstrap = const IconDataBrands(0xf836);
 
-  /// Solid border-all icon
+  /// Solid Border All icon
   ///
   /// https://fontawesome.com/icons/border-all?style=solid
   /// cell, grid, outline, stroke, table
   static const IconData borderAll = const IconDataSolid(0xf84c);
 
-  /// Solid border-none icon
+  /// Solid Border None icon
   ///
   /// https://fontawesome.com/icons/border-none?style=solid
   /// cell, grid, outline, stroke, table
   static const IconData borderNone = const IconDataSolid(0xf850);
 
-  /// Solid border-style icon
+  /// Solid Border Style icon
   ///
   /// https://fontawesome.com/icons/border-style?style=solid
   static const IconData borderStyle = const IconDataSolid(0xf853);
 
-  /// Solid bowling-ball icon
+  /// Solid Bowling Ball icon
   ///
   /// https://fontawesome.com/icons/bowling-ball?style=solid
   /// alley, candlepin, gutter, lane, strike, tenpin
   static const IconData bowlingBall = const IconDataSolid(0xf436);
 
-  /// Solid box icon
+  /// Solid Box icon
   ///
   /// https://fontawesome.com/icons/box?style=solid
   /// archive, container, package, storage
   static const IconData box = const IconDataSolid(0xf466);
 
-  /// Solid box-open icon
+  /// Solid Box Open icon
   ///
   /// https://fontawesome.com/icons/box-open?style=solid
   /// archive, container, package, storage, unpack
   static const IconData boxOpen = const IconDataSolid(0xf49e);
 
-  /// Solid box-tissue icon
+  /// Solid Tissue Box icon
   ///
   /// https://fontawesome.com/icons/box-tissue?style=solid
   /// cough, covid-19, kleenex, mucus, nose, sneeze, snot
   static const IconData boxTissue = const IconDataSolid(0xe05b);
 
-  /// Solid boxes icon
+  /// Solid Boxes icon
   ///
   /// https://fontawesome.com/icons/boxes?style=solid
   /// archives, inventory, storage, warehouse
   static const IconData boxes = const IconDataSolid(0xf468);
 
-  /// Solid braille icon
+  /// Solid Braille icon
   ///
   /// https://fontawesome.com/icons/braille?style=solid
   /// alphabet, blind, dots, raised, vision
   static const IconData braille = const IconDataSolid(0xf2a1);
 
-  /// Solid brain icon
+  /// Solid Brain icon
   ///
   /// https://fontawesome.com/icons/brain?style=solid
   /// cerebellum, gray matter, intellect, medulla oblongata, mind, noodle, wit
   static const IconData brain = const IconDataSolid(0xf5dc);
 
-  /// Solid bread-slice icon
+  /// Solid Bread Slice icon
   ///
   /// https://fontawesome.com/icons/bread-slice?style=solid
   /// bake, bakery, baking, dough, flour, gluten, grain, sandwich, sourdough, toast, wheat, yeast
   static const IconData breadSlice = const IconDataSolid(0xf7ec);
 
-  /// Solid briefcase icon
+  /// Solid Briefcase icon
   ///
   /// https://fontawesome.com/icons/briefcase?style=solid
   /// bag, business, luggage, office, work
   static const IconData briefcase = const IconDataSolid(0xf0b1);
 
-  /// Solid briefcase-medical icon
+  /// Solid Medical Briefcase icon
   ///
   /// https://fontawesome.com/icons/briefcase-medical?style=solid
   /// doctor, emt, first aid, health
   static const IconData briefcaseMedical = const IconDataSolid(0xf469);
 
-  /// Solid broadcast-tower icon
+  /// Solid Broadcast Tower icon
   ///
   /// https://fontawesome.com/icons/broadcast-tower?style=solid
   /// airwaves, antenna, radio, reception, waves
   static const IconData broadcastTower = const IconDataSolid(0xf519);
 
-  /// Solid broom icon
+  /// Solid Broom icon
   ///
   /// https://fontawesome.com/icons/broom?style=solid
   /// clean, firebolt, fly, halloween, nimbus 2000, quidditch, sweep, witch
   static const IconData broom = const IconDataSolid(0xf51a);
 
-  /// Solid brush icon
+  /// Solid Brush icon
   ///
   /// https://fontawesome.com/icons/brush?style=solid
   /// art, bristles, color, handle, paint
   static const IconData brush = const IconDataSolid(0xf55d);
 
-  /// Brands btc icon
+  /// Brands BTC icon
   ///
   /// https://fontawesome.com/icons/btc?style=brands
   static const IconData btc = const IconDataBrands(0xf15a);
 
-  /// Brands buffer icon
+  /// Brands Buffer icon
   ///
   /// https://fontawesome.com/icons/buffer?style=brands
   static const IconData buffer = const IconDataBrands(0xf837);
 
-  /// Solid bug icon
+  /// Solid Bug icon
   ///
   /// https://fontawesome.com/icons/bug?style=solid
   /// beetle, error, insect, report
   static const IconData bug = const IconDataSolid(0xf188);
 
-  /// Regular building icon
+  /// Regular Building icon
   ///
   /// https://fontawesome.com/icons/building?style=regular
   /// apartment, business, city, company, office, work
   static const IconData building = const IconDataRegular(0xf1ad);
 
-  /// Solid building icon
+  /// Solid Building icon
   ///
   /// https://fontawesome.com/icons/building?style=solid
   /// apartment, business, city, company, office, work
@@ -1011,136 +1011,136 @@ class FontAwesomeIcons {
   /// announcement, broadcast, louder, megaphone, share
   static const IconData bullhorn = const IconDataSolid(0xf0a1);
 
-  /// Solid bullseye icon
+  /// Solid Bullseye icon
   ///
   /// https://fontawesome.com/icons/bullseye?style=solid
   /// archery, goal, objective, target
   static const IconData bullseye = const IconDataSolid(0xf140);
 
-  /// Solid burn icon
+  /// Solid Burn icon
   ///
   /// https://fontawesome.com/icons/burn?style=solid
   /// caliente, energy, fire, flame, gas, heat, hot
   static const IconData burn = const IconDataSolid(0xf46a);
 
-  /// Brands buromobelexperte icon
+  /// Brands Büromöbel-Experte GmbH & Co. KG. icon
   ///
   /// https://fontawesome.com/icons/buromobelexperte?style=brands
   static const IconData buromobelexperte = const IconDataBrands(0xf37f);
 
-  /// Solid bus icon
+  /// Solid Bus icon
   ///
   /// https://fontawesome.com/icons/bus?style=solid
   /// public transportation, transportation, travel, vehicle
   static const IconData bus = const IconDataSolid(0xf207);
 
-  /// Solid bus-alt icon
+  /// Solid Bus Alt icon
   ///
   /// https://fontawesome.com/icons/bus-alt?style=solid
   /// mta, public transportation, transportation, travel, vehicle
   static const IconData busAlt = const IconDataSolid(0xf55e);
 
-  /// Solid business-time icon
+  /// Solid Business Time icon
   ///
   /// https://fontawesome.com/icons/business-time?style=solid
   /// alarm, briefcase, business socks, clock, flight of the conchords, reminder, wednesday
   static const IconData businessTime = const IconDataSolid(0xf64a);
 
-  /// Brands buy-n-large icon
+  /// Brands Buy n Large icon
   ///
   /// https://fontawesome.com/icons/buy-n-large?style=brands
   static const IconData buyNLarge = const IconDataBrands(0xf8a6);
 
-  /// Brands buysellads icon
+  /// Brands BuySellAds icon
   ///
   /// https://fontawesome.com/icons/buysellads?style=brands
   static const IconData buysellads = const IconDataBrands(0xf20d);
 
-  /// Solid calculator icon
+  /// Solid Calculator icon
   ///
   /// https://fontawesome.com/icons/calculator?style=solid
   /// abacus, addition, arithmetic, counting, math, multiplication, subtraction
   static const IconData calculator = const IconDataSolid(0xf1ec);
 
-  /// Regular calendar icon
+  /// Regular Calendar icon
   ///
   /// https://fontawesome.com/icons/calendar?style=regular
   /// calendar-o, date, event, schedule, time, when
   static const IconData calendar = const IconDataRegular(0xf133);
 
-  /// Solid calendar icon
+  /// Solid Calendar icon
   ///
   /// https://fontawesome.com/icons/calendar?style=solid
   /// calendar-o, date, event, schedule, time, when
   static const IconData solidCalendar = const IconDataSolid(0xf133);
 
-  /// Regular calendar-alt icon
+  /// Regular Alternate Calendar icon
   ///
   /// https://fontawesome.com/icons/calendar-alt?style=regular
   /// calendar, date, event, schedule, time, when
   static const IconData calendarAlt = const IconDataRegular(0xf073);
 
-  /// Solid calendar-alt icon
+  /// Solid Alternate Calendar icon
   ///
   /// https://fontawesome.com/icons/calendar-alt?style=solid
   /// calendar, date, event, schedule, time, when
   static const IconData solidCalendarAlt = const IconDataSolid(0xf073);
 
-  /// Regular calendar-check icon
+  /// Regular Calendar Check icon
   ///
   /// https://fontawesome.com/icons/calendar-check?style=regular
   /// accept, agree, appointment, confirm, correct, date, done, event, ok, schedule, select, success, tick, time, todo, when
   static const IconData calendarCheck = const IconDataRegular(0xf274);
 
-  /// Solid calendar-check icon
+  /// Solid Calendar Check icon
   ///
   /// https://fontawesome.com/icons/calendar-check?style=solid
   /// accept, agree, appointment, confirm, correct, date, done, event, ok, schedule, select, success, tick, time, todo, when
   static const IconData solidCalendarCheck = const IconDataSolid(0xf274);
 
-  /// Solid calendar-day icon
+  /// Solid Calendar with Day Focus icon
   ///
   /// https://fontawesome.com/icons/calendar-day?style=solid
   /// date, detail, event, focus, schedule, single day, time, today, when
   static const IconData calendarDay = const IconDataSolid(0xf783);
 
-  /// Regular calendar-minus icon
+  /// Regular Calendar Minus icon
   ///
   /// https://fontawesome.com/icons/calendar-minus?style=regular
   /// calendar, date, delete, event, negative, remove, schedule, time, when
   static const IconData calendarMinus = const IconDataRegular(0xf272);
 
-  /// Solid calendar-minus icon
+  /// Solid Calendar Minus icon
   ///
   /// https://fontawesome.com/icons/calendar-minus?style=solid
   /// calendar, date, delete, event, negative, remove, schedule, time, when
   static const IconData solidCalendarMinus = const IconDataSolid(0xf272);
 
-  /// Regular calendar-plus icon
+  /// Regular Calendar Plus icon
   ///
   /// https://fontawesome.com/icons/calendar-plus?style=regular
   /// add, calendar, create, date, event, new, positive, schedule, time, when
   static const IconData calendarPlus = const IconDataRegular(0xf271);
 
-  /// Solid calendar-plus icon
+  /// Solid Calendar Plus icon
   ///
   /// https://fontawesome.com/icons/calendar-plus?style=solid
   /// add, calendar, create, date, event, new, positive, schedule, time, when
   static const IconData solidCalendarPlus = const IconDataSolid(0xf271);
 
-  /// Regular calendar-times icon
+  /// Regular Calendar Times icon
   ///
   /// https://fontawesome.com/icons/calendar-times?style=regular
   /// archive, calendar, date, delete, event, remove, schedule, time, when, x
   static const IconData calendarTimes = const IconDataRegular(0xf273);
 
-  /// Solid calendar-times icon
+  /// Solid Calendar Times icon
   ///
   /// https://fontawesome.com/icons/calendar-times?style=solid
   /// archive, calendar, date, delete, event, remove, schedule, time, when, x
   static const IconData solidCalendarTimes = const IconDataSolid(0xf273);
 
-  /// Solid calendar-week icon
+  /// Solid Calendar with Week Focus icon
   ///
   /// https://fontawesome.com/icons/calendar-week?style=solid
   /// date, detail, event, focus, schedule, single week, time, today, when
@@ -1152,237 +1152,237 @@ class FontAwesomeIcons {
   /// image, lens, photo, picture, record, shutter, video
   static const IconData camera = const IconDataSolid(0xf030);
 
-  /// Solid camera-retro icon
+  /// Solid Retro Camera icon
   ///
   /// https://fontawesome.com/icons/camera-retro?style=solid
   /// image, lens, photo, picture, record, shutter, video
   static const IconData cameraRetro = const IconDataSolid(0xf083);
 
-  /// Solid campground icon
+  /// Solid Campground icon
   ///
   /// https://fontawesome.com/icons/campground?style=solid
   /// camping, fall, outdoors, teepee, tent, tipi
   static const IconData campground = const IconDataSolid(0xf6bb);
 
-  /// Brands canadian-maple-leaf icon
+  /// Brands Canadian Maple Leaf icon
   ///
   /// https://fontawesome.com/icons/canadian-maple-leaf?style=brands
   /// canada, flag, flora, nature, plant
   static const IconData canadianMapleLeaf = const IconDataBrands(0xf785);
 
-  /// Solid candy-cane icon
+  /// Solid Candy Cane icon
   ///
   /// https://fontawesome.com/icons/candy-cane?style=solid
   /// candy, christmas, holiday, mint, peppermint, striped, xmas
   static const IconData candyCane = const IconDataSolid(0xf786);
 
-  /// Solid cannabis icon
+  /// Solid Cannabis icon
   ///
   /// https://fontawesome.com/icons/cannabis?style=solid
   /// bud, chronic, drugs, endica, endo, ganja, marijuana, mary jane, pot, reefer, sativa, spliff, weed, whacky-tabacky
   static const IconData cannabis = const IconDataSolid(0xf55f);
 
-  /// Solid capsules icon
+  /// Solid Capsules icon
   ///
   /// https://fontawesome.com/icons/capsules?style=solid
   /// drugs, medicine, pills, prescription
   static const IconData capsules = const IconDataSolid(0xf46b);
 
-  /// Solid car icon
+  /// Solid Car icon
   ///
   /// https://fontawesome.com/icons/car?style=solid
   /// auto, automobile, sedan, transportation, travel, vehicle
   static const IconData car = const IconDataSolid(0xf1b9);
 
-  /// Solid car-alt icon
+  /// Solid Alternate Car icon
   ///
   /// https://fontawesome.com/icons/car-alt?style=solid
   /// auto, automobile, sedan, transportation, travel, vehicle
   static const IconData carAlt = const IconDataSolid(0xf5de);
 
-  /// Solid car-battery icon
+  /// Solid Car Battery icon
   ///
   /// https://fontawesome.com/icons/car-battery?style=solid
   /// auto, electric, mechanic, power
   static const IconData carBattery = const IconDataSolid(0xf5df);
 
-  /// Solid car-crash icon
+  /// Solid Car Crash icon
   ///
   /// https://fontawesome.com/icons/car-crash?style=solid
   /// accident, auto, automobile, insurance, sedan, transportation, vehicle, wreck
   static const IconData carCrash = const IconDataSolid(0xf5e1);
 
-  /// Solid car-side icon
+  /// Solid Car Side icon
   ///
   /// https://fontawesome.com/icons/car-side?style=solid
   /// auto, automobile, sedan, transportation, travel, vehicle
   static const IconData carSide = const IconDataSolid(0xf5e4);
 
-  /// Solid caravan icon
+  /// Solid Caravan icon
   ///
   /// https://fontawesome.com/icons/caravan?style=solid
   /// camper, motor home, rv, trailer, travel
   static const IconData caravan = const IconDataSolid(0xf8ff);
 
-  /// Solid caret-down icon
+  /// Solid Caret Down icon
   ///
   /// https://fontawesome.com/icons/caret-down?style=solid
   /// arrow, dropdown, expand, menu, more, triangle
   static const IconData caretDown = const IconDataSolid(0xf0d7);
 
-  /// Solid caret-left icon
+  /// Solid Caret Left icon
   ///
   /// https://fontawesome.com/icons/caret-left?style=solid
   /// arrow, back, previous, triangle
   static const IconData caretLeft = const IconDataSolid(0xf0d9);
 
-  /// Solid caret-right icon
+  /// Solid Caret Right icon
   ///
   /// https://fontawesome.com/icons/caret-right?style=solid
   /// arrow, forward, next, triangle
   static const IconData caretRight = const IconDataSolid(0xf0da);
 
-  /// Regular caret-square-down icon
+  /// Regular Caret Square Down icon
   ///
   /// https://fontawesome.com/icons/caret-square-down?style=regular
   /// arrow, caret-square-o-down, dropdown, expand, menu, more, triangle
   static const IconData caretSquareDown = const IconDataRegular(0xf150);
 
-  /// Solid caret-square-down icon
+  /// Solid Caret Square Down icon
   ///
   /// https://fontawesome.com/icons/caret-square-down?style=solid
   /// arrow, caret-square-o-down, dropdown, expand, menu, more, triangle
   static const IconData solidCaretSquareDown = const IconDataSolid(0xf150);
 
-  /// Regular caret-square-left icon
+  /// Regular Caret Square Left icon
   ///
   /// https://fontawesome.com/icons/caret-square-left?style=regular
   /// arrow, back, caret-square-o-left, previous, triangle
   static const IconData caretSquareLeft = const IconDataRegular(0xf191);
 
-  /// Solid caret-square-left icon
+  /// Solid Caret Square Left icon
   ///
   /// https://fontawesome.com/icons/caret-square-left?style=solid
   /// arrow, back, caret-square-o-left, previous, triangle
   static const IconData solidCaretSquareLeft = const IconDataSolid(0xf191);
 
-  /// Regular caret-square-right icon
+  /// Regular Caret Square Right icon
   ///
   /// https://fontawesome.com/icons/caret-square-right?style=regular
   /// arrow, caret-square-o-right, forward, next, triangle
   static const IconData caretSquareRight = const IconDataRegular(0xf152);
 
-  /// Solid caret-square-right icon
+  /// Solid Caret Square Right icon
   ///
   /// https://fontawesome.com/icons/caret-square-right?style=solid
   /// arrow, caret-square-o-right, forward, next, triangle
   static const IconData solidCaretSquareRight = const IconDataSolid(0xf152);
 
-  /// Regular caret-square-up icon
+  /// Regular Caret Square Up icon
   ///
   /// https://fontawesome.com/icons/caret-square-up?style=regular
   /// arrow, caret-square-o-up, collapse, triangle, upload
   static const IconData caretSquareUp = const IconDataRegular(0xf151);
 
-  /// Solid caret-square-up icon
+  /// Solid Caret Square Up icon
   ///
   /// https://fontawesome.com/icons/caret-square-up?style=solid
   /// arrow, caret-square-o-up, collapse, triangle, upload
   static const IconData solidCaretSquareUp = const IconDataSolid(0xf151);
 
-  /// Solid caret-up icon
+  /// Solid Caret Up icon
   ///
   /// https://fontawesome.com/icons/caret-up?style=solid
   /// arrow, collapse, triangle
   static const IconData caretUp = const IconDataSolid(0xf0d8);
 
-  /// Solid carrot icon
+  /// Solid Carrot icon
   ///
   /// https://fontawesome.com/icons/carrot?style=solid
   /// bugs bunny, orange, vegan, vegetable
   static const IconData carrot = const IconDataSolid(0xf787);
 
-  /// Solid cart-arrow-down icon
+  /// Solid Shopping Cart Arrow Down icon
   ///
   /// https://fontawesome.com/icons/cart-arrow-down?style=solid
   /// download, save, shopping
   static const IconData cartArrowDown = const IconDataSolid(0xf218);
 
-  /// Solid cart-plus icon
+  /// Solid Add to Shopping Cart icon
   ///
   /// https://fontawesome.com/icons/cart-plus?style=solid
   /// add, create, new, positive, shopping
   static const IconData cartPlus = const IconDataSolid(0xf217);
 
-  /// Solid cash-register icon
+  /// Solid Cash Register icon
   ///
   /// https://fontawesome.com/icons/cash-register?style=solid
   /// buy, cha-ching, change, checkout, commerce, leaerboard, machine, pay, payment, purchase, store
   static const IconData cashRegister = const IconDataSolid(0xf788);
 
-  /// Solid cat icon
+  /// Solid Cat icon
   ///
   /// https://fontawesome.com/icons/cat?style=solid
   /// feline, halloween, holiday, kitten, kitty, meow, pet
   static const IconData cat = const IconDataSolid(0xf6be);
 
-  /// Brands cc-amazon-pay icon
+  /// Brands Amazon Pay Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-amazon-pay?style=brands
   static const IconData ccAmazonPay = const IconDataBrands(0xf42d);
 
-  /// Brands cc-amex icon
+  /// Brands American Express Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-amex?style=brands
   /// amex
   static const IconData ccAmex = const IconDataBrands(0xf1f3);
 
-  /// Brands cc-apple-pay icon
+  /// Brands Apple Pay Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-apple-pay?style=brands
   static const IconData ccApplePay = const IconDataBrands(0xf416);
 
-  /// Brands cc-diners-club icon
+  /// Brands Diner's Club Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-diners-club?style=brands
   static const IconData ccDinersClub = const IconDataBrands(0xf24c);
 
-  /// Brands cc-discover icon
+  /// Brands Discover Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-discover?style=brands
   static const IconData ccDiscover = const IconDataBrands(0xf1f2);
 
-  /// Brands cc-jcb icon
+  /// Brands JCB Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-jcb?style=brands
   static const IconData ccJcb = const IconDataBrands(0xf24b);
 
-  /// Brands cc-mastercard icon
+  /// Brands MasterCard Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-mastercard?style=brands
   static const IconData ccMastercard = const IconDataBrands(0xf1f1);
 
-  /// Brands cc-paypal icon
+  /// Brands Paypal Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-paypal?style=brands
   static const IconData ccPaypal = const IconDataBrands(0xf1f4);
 
-  /// Brands cc-stripe icon
+  /// Brands Stripe Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-stripe?style=brands
   static const IconData ccStripe = const IconDataBrands(0xf1f5);
 
-  /// Brands cc-visa icon
+  /// Brands Visa Credit Card icon
   ///
   /// https://fontawesome.com/icons/cc-visa?style=brands
   static const IconData ccVisa = const IconDataBrands(0xf1f0);
 
-  /// Brands centercode icon
+  /// Brands Centercode icon
   ///
   /// https://fontawesome.com/icons/centercode?style=brands
   static const IconData centercode = const IconDataBrands(0xf380);
 
-  /// Brands centos icon
+  /// Brands Centos icon
   ///
   /// https://fontawesome.com/icons/centos?style=brands
   /// linux, operating system, os
@@ -1394,169 +1394,169 @@ class FontAwesomeIcons {
   /// badge, star, verified
   static const IconData certificate = const IconDataSolid(0xf0a3);
 
-  /// Solid chair icon
+  /// Solid Chair icon
   ///
   /// https://fontawesome.com/icons/chair?style=solid
   /// furniture, seat, sit
   static const IconData chair = const IconDataSolid(0xf6c0);
 
-  /// Solid chalkboard icon
+  /// Solid Chalkboard icon
   ///
   /// https://fontawesome.com/icons/chalkboard?style=solid
   /// blackboard, learning, school, teaching, whiteboard, writing
   static const IconData chalkboard = const IconDataSolid(0xf51b);
 
-  /// Solid chalkboard-teacher icon
+  /// Solid Chalkboard Teacher icon
   ///
   /// https://fontawesome.com/icons/chalkboard-teacher?style=solid
   /// blackboard, instructor, learning, professor, school, whiteboard, writing
   static const IconData chalkboardTeacher = const IconDataSolid(0xf51c);
 
-  /// Solid charging-station icon
+  /// Solid Charging Station icon
   ///
   /// https://fontawesome.com/icons/charging-station?style=solid
   /// electric, ev, tesla, vehicle
   static const IconData chargingStation = const IconDataSolid(0xf5e7);
 
-  /// Solid chart-area icon
+  /// Solid Area Chart icon
   ///
   /// https://fontawesome.com/icons/chart-area?style=solid
   /// analytics, area, chart, graph
   static const IconData chartArea = const IconDataSolid(0xf1fe);
 
-  /// Regular chart-bar icon
+  /// Regular Bar Chart icon
   ///
   /// https://fontawesome.com/icons/chart-bar?style=regular
   /// analytics, bar, chart, graph
   static const IconData chartBar = const IconDataRegular(0xf080);
 
-  /// Solid chart-bar icon
+  /// Solid Bar Chart icon
   ///
   /// https://fontawesome.com/icons/chart-bar?style=solid
   /// analytics, bar, chart, graph
   static const IconData solidChartBar = const IconDataSolid(0xf080);
 
-  /// Solid chart-line icon
+  /// Solid Line Chart icon
   ///
   /// https://fontawesome.com/icons/chart-line?style=solid
   /// activity, analytics, chart, dashboard, gain, graph, increase, line
   static const IconData chartLine = const IconDataSolid(0xf201);
 
-  /// Solid chart-pie icon
+  /// Solid Pie Chart icon
   ///
   /// https://fontawesome.com/icons/chart-pie?style=solid
   /// analytics, chart, diagram, graph, pie
   static const IconData chartPie = const IconDataSolid(0xf200);
 
-  /// Solid check icon
+  /// Solid Check icon
   ///
   /// https://fontawesome.com/icons/check?style=solid
   /// accept, agree, checkmark, confirm, correct, done, notice, notification, notify, ok, select, success, tick, todo, yes
   static const IconData check = const IconDataSolid(0xf00c);
 
-  /// Regular check-circle icon
+  /// Regular Check Circle icon
   ///
   /// https://fontawesome.com/icons/check-circle?style=regular
   /// accept, agree, confirm, correct, done, ok, select, success, tick, todo, yes
   static const IconData checkCircle = const IconDataRegular(0xf058);
 
-  /// Solid check-circle icon
+  /// Solid Check Circle icon
   ///
   /// https://fontawesome.com/icons/check-circle?style=solid
   /// accept, agree, confirm, correct, done, ok, select, success, tick, todo, yes
   static const IconData solidCheckCircle = const IconDataSolid(0xf058);
 
-  /// Solid check-double icon
+  /// Solid Double Check icon
   ///
   /// https://fontawesome.com/icons/check-double?style=solid
   /// accept, agree, checkmark, confirm, correct, done, notice, notification, notify, ok, select, success, tick, todo
   static const IconData checkDouble = const IconDataSolid(0xf560);
 
-  /// Regular check-square icon
+  /// Regular Check Square icon
   ///
   /// https://fontawesome.com/icons/check-square?style=regular
   /// accept, agree, checkmark, confirm, correct, done, ok, select, success, tick, todo, yes
   static const IconData checkSquare = const IconDataRegular(0xf14a);
 
-  /// Solid check-square icon
+  /// Solid Check Square icon
   ///
   /// https://fontawesome.com/icons/check-square?style=solid
   /// accept, agree, checkmark, confirm, correct, done, ok, select, success, tick, todo, yes
   static const IconData solidCheckSquare = const IconDataSolid(0xf14a);
 
-  /// Solid cheese icon
+  /// Solid Cheese icon
   ///
   /// https://fontawesome.com/icons/cheese?style=solid
   /// cheddar, curd, gouda, melt, parmesan, sandwich, swiss, wedge
   static const IconData cheese = const IconDataSolid(0xf7ef);
 
-  /// Solid chess icon
+  /// Solid Chess icon
   ///
   /// https://fontawesome.com/icons/chess?style=solid
   /// board, castle, checkmate, game, king, rook, strategy, tournament
   static const IconData chess = const IconDataSolid(0xf439);
 
-  /// Solid chess-bishop icon
+  /// Solid Chess Bishop icon
   ///
   /// https://fontawesome.com/icons/chess-bishop?style=solid
   /// board, checkmate, game, strategy
   static const IconData chessBishop = const IconDataSolid(0xf43a);
 
-  /// Solid chess-board icon
+  /// Solid Chess Board icon
   ///
   /// https://fontawesome.com/icons/chess-board?style=solid
   /// board, checkmate, game, strategy
   static const IconData chessBoard = const IconDataSolid(0xf43c);
 
-  /// Solid chess-king icon
+  /// Solid Chess King icon
   ///
   /// https://fontawesome.com/icons/chess-king?style=solid
   /// board, checkmate, game, strategy
   static const IconData chessKing = const IconDataSolid(0xf43f);
 
-  /// Solid chess-knight icon
+  /// Solid Chess Knight icon
   ///
   /// https://fontawesome.com/icons/chess-knight?style=solid
   /// board, checkmate, game, horse, strategy
   static const IconData chessKnight = const IconDataSolid(0xf441);
 
-  /// Solid chess-pawn icon
+  /// Solid Chess Pawn icon
   ///
   /// https://fontawesome.com/icons/chess-pawn?style=solid
   /// board, checkmate, game, strategy
   static const IconData chessPawn = const IconDataSolid(0xf443);
 
-  /// Solid chess-queen icon
+  /// Solid Chess Queen icon
   ///
   /// https://fontawesome.com/icons/chess-queen?style=solid
   /// board, checkmate, game, strategy
   static const IconData chessQueen = const IconDataSolid(0xf445);
 
-  /// Solid chess-rook icon
+  /// Solid Chess Rook icon
   ///
   /// https://fontawesome.com/icons/chess-rook?style=solid
   /// board, castle, checkmate, game, strategy
   static const IconData chessRook = const IconDataSolid(0xf447);
 
-  /// Solid chevron-circle-down icon
+  /// Solid Chevron Circle Down icon
   ///
   /// https://fontawesome.com/icons/chevron-circle-down?style=solid
   /// arrow, download, dropdown, menu, more
   static const IconData chevronCircleDown = const IconDataSolid(0xf13a);
 
-  /// Solid chevron-circle-left icon
+  /// Solid Chevron Circle Left icon
   ///
   /// https://fontawesome.com/icons/chevron-circle-left?style=solid
   /// arrow, back, previous
   static const IconData chevronCircleLeft = const IconDataSolid(0xf137);
 
-  /// Solid chevron-circle-right icon
+  /// Solid Chevron Circle Right icon
   ///
   /// https://fontawesome.com/icons/chevron-circle-right?style=solid
   /// arrow, forward, next
   static const IconData chevronCircleRight = const IconDataSolid(0xf138);
 
-  /// Solid chevron-circle-up icon
+  /// Solid Chevron Circle Up icon
   ///
   /// https://fontawesome.com/icons/chevron-circle-up?style=solid
   /// arrow, collapse, upload
@@ -1586,190 +1586,190 @@ class FontAwesomeIcons {
   /// arrow, collapse, upload
   static const IconData chevronUp = const IconDataSolid(0xf077);
 
-  /// Solid child icon
+  /// Solid Child icon
   ///
   /// https://fontawesome.com/icons/child?style=solid
   /// boy, girl, kid, toddler, young
   static const IconData child = const IconDataSolid(0xf1ae);
 
-  /// Brands chrome icon
+  /// Brands Chrome icon
   ///
   /// https://fontawesome.com/icons/chrome?style=brands
   /// browser
   static const IconData chrome = const IconDataBrands(0xf268);
 
-  /// Brands chromecast icon
+  /// Brands Chromecast icon
   ///
   /// https://fontawesome.com/icons/chromecast?style=brands
   static const IconData chromecast = const IconDataBrands(0xf838);
 
-  /// Solid church icon
+  /// Solid Church icon
   ///
   /// https://fontawesome.com/icons/church?style=solid
   /// building, cathedral, chapel, community, religion
   static const IconData church = const IconDataSolid(0xf51d);
 
-  /// Regular circle icon
+  /// Regular Circle icon
   ///
   /// https://fontawesome.com/icons/circle?style=regular
   /// circle-thin, diameter, dot, ellipse, notification, round
   static const IconData circle = const IconDataRegular(0xf111);
 
-  /// Solid circle icon
+  /// Solid Circle icon
   ///
   /// https://fontawesome.com/icons/circle?style=solid
   /// circle-thin, diameter, dot, ellipse, notification, round
   static const IconData solidCircle = const IconDataSolid(0xf111);
 
-  /// Solid circle-notch icon
+  /// Solid Circle Notched icon
   ///
   /// https://fontawesome.com/icons/circle-notch?style=solid
   /// circle-o-notch, diameter, dot, ellipse, round, spinner
   static const IconData circleNotch = const IconDataSolid(0xf1ce);
 
-  /// Solid city icon
+  /// Solid City icon
   ///
   /// https://fontawesome.com/icons/city?style=solid
   /// buildings, busy, skyscrapers, urban, windows
   static const IconData city = const IconDataSolid(0xf64f);
 
-  /// Solid clinic-medical icon
+  /// Solid Medical Clinic icon
   ///
   /// https://fontawesome.com/icons/clinic-medical?style=solid
   /// covid-19, doctor, general practitioner, hospital, infirmary, medicine, office, outpatient
   static const IconData clinicMedical = const IconDataSolid(0xf7f2);
 
-  /// Regular clipboard icon
+  /// Regular Clipboard icon
   ///
   /// https://fontawesome.com/icons/clipboard?style=regular
   /// copy, notes, paste, record
   static const IconData clipboard = const IconDataRegular(0xf328);
 
-  /// Solid clipboard icon
+  /// Solid Clipboard icon
   ///
   /// https://fontawesome.com/icons/clipboard?style=solid
   /// copy, notes, paste, record
   static const IconData solidClipboard = const IconDataSolid(0xf328);
 
-  /// Solid clipboard-check icon
+  /// Solid Clipboard with Check icon
   ///
   /// https://fontawesome.com/icons/clipboard-check?style=solid
   /// accept, agree, confirm, done, ok, select, success, tick, todo, yes
   static const IconData clipboardCheck = const IconDataSolid(0xf46c);
 
-  /// Solid clipboard-list icon
+  /// Solid Clipboard List icon
   ///
   /// https://fontawesome.com/icons/clipboard-list?style=solid
   /// checklist, completed, done, finished, intinerary, ol, schedule, tick, todo, ul
   static const IconData clipboardList = const IconDataSolid(0xf46d);
 
-  /// Regular clock icon
+  /// Regular Clock icon
   ///
   /// https://fontawesome.com/icons/clock?style=regular
   /// date, late, schedule, time, timer, timestamp, watch
   static const IconData clock = const IconDataRegular(0xf017);
 
-  /// Solid clock icon
+  /// Solid Clock icon
   ///
   /// https://fontawesome.com/icons/clock?style=solid
   /// date, late, schedule, time, timer, timestamp, watch
   static const IconData solidClock = const IconDataSolid(0xf017);
 
-  /// Regular clone icon
+  /// Regular Clone icon
   ///
   /// https://fontawesome.com/icons/clone?style=regular
   /// arrange, copy, duplicate, paste
   static const IconData clone = const IconDataRegular(0xf24d);
 
-  /// Solid clone icon
+  /// Solid Clone icon
   ///
   /// https://fontawesome.com/icons/clone?style=solid
   /// arrange, copy, duplicate, paste
   static const IconData solidClone = const IconDataSolid(0xf24d);
 
-  /// Regular closed-captioning icon
+  /// Regular Closed Captioning icon
   ///
   /// https://fontawesome.com/icons/closed-captioning?style=regular
   /// cc, deaf, hearing, subtitle, subtitling, text, video
   static const IconData closedCaptioning = const IconDataRegular(0xf20a);
 
-  /// Solid closed-captioning icon
+  /// Solid Closed Captioning icon
   ///
   /// https://fontawesome.com/icons/closed-captioning?style=solid
   /// cc, deaf, hearing, subtitle, subtitling, text, video
   static const IconData solidClosedCaptioning = const IconDataSolid(0xf20a);
 
-  /// Solid cloud icon
+  /// Solid Cloud icon
   ///
   /// https://fontawesome.com/icons/cloud?style=solid
   /// atmosphere, fog, overcast, save, upload, weather
   static const IconData cloud = const IconDataSolid(0xf0c2);
 
-  /// Solid cloud-download-alt icon
+  /// Solid Alternate Cloud Download icon
   ///
   /// https://fontawesome.com/icons/cloud-download-alt?style=solid
   /// download, export, save
   static const IconData cloudDownloadAlt = const IconDataSolid(0xf381);
 
-  /// Solid cloud-meatball icon
+  /// Solid Cloud with (a chance of) Meatball icon
   ///
   /// https://fontawesome.com/icons/cloud-meatball?style=solid
   /// FLDSMDFR, food, spaghetti, storm
   static const IconData cloudMeatball = const IconDataSolid(0xf73b);
 
-  /// Solid cloud-moon icon
+  /// Solid Cloud with Moon icon
   ///
   /// https://fontawesome.com/icons/cloud-moon?style=solid
   /// crescent, evening, lunar, night, partly cloudy, sky
   static const IconData cloudMoon = const IconDataSolid(0xf6c3);
 
-  /// Solid cloud-moon-rain icon
+  /// Solid Cloud with Moon and Rain icon
   ///
   /// https://fontawesome.com/icons/cloud-moon-rain?style=solid
   /// crescent, evening, lunar, night, partly cloudy, precipitation, rain, sky, storm
   static const IconData cloudMoonRain = const IconDataSolid(0xf73c);
 
-  /// Solid cloud-rain icon
+  /// Solid Cloud with Rain icon
   ///
   /// https://fontawesome.com/icons/cloud-rain?style=solid
   /// precipitation, rain, sky, storm
   static const IconData cloudRain = const IconDataSolid(0xf73d);
 
-  /// Solid cloud-showers-heavy icon
+  /// Solid Cloud with Heavy Showers icon
   ///
   /// https://fontawesome.com/icons/cloud-showers-heavy?style=solid
   /// precipitation, rain, sky, storm
   static const IconData cloudShowersHeavy = const IconDataSolid(0xf740);
 
-  /// Solid cloud-sun icon
+  /// Solid Cloud with Sun icon
   ///
   /// https://fontawesome.com/icons/cloud-sun?style=solid
   /// clear, day, daytime, fall, outdoors, overcast, partly cloudy
   static const IconData cloudSun = const IconDataSolid(0xf6c4);
 
-  /// Solid cloud-sun-rain icon
+  /// Solid Cloud with Sun and Rain icon
   ///
   /// https://fontawesome.com/icons/cloud-sun-rain?style=solid
   /// day, overcast, precipitation, storm, summer, sunshower
   static const IconData cloudSunRain = const IconDataSolid(0xf743);
 
-  /// Solid cloud-upload-alt icon
+  /// Solid Alternate Cloud Upload icon
   ///
   /// https://fontawesome.com/icons/cloud-upload-alt?style=solid
   /// cloud-upload, import, save, upload
   static const IconData cloudUploadAlt = const IconDataSolid(0xf382);
 
-  /// Brands cloudflare icon
+  /// Brands Cloudflare icon
   ///
   /// https://fontawesome.com/icons/cloudflare?style=brands
   static const IconData cloudflare = const IconDataBrands(0xe07d);
 
-  /// Brands cloudscale icon
+  /// Brands cloudscale.ch icon
   ///
   /// https://fontawesome.com/icons/cloudscale?style=brands
   static const IconData cloudscale = const IconDataBrands(0xf383);
 
-  /// Brands cloudsmith icon
+  /// Brands Cloudsmith icon
   ///
   /// https://fontawesome.com/icons/cloudsmith?style=brands
   static const IconData cloudsmith = const IconDataBrands(0xf384);
@@ -1779,35 +1779,35 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/cloudversify?style=brands
   static const IconData cloudversify = const IconDataBrands(0xf385);
 
-  /// Solid cocktail icon
+  /// Solid Cocktail icon
   ///
   /// https://fontawesome.com/icons/cocktail?style=solid
   /// alcohol, beverage, drink, gin, glass, margarita, martini, vodka
   static const IconData cocktail = const IconDataSolid(0xf561);
 
-  /// Solid code icon
+  /// Solid Code icon
   ///
   /// https://fontawesome.com/icons/code?style=solid
   /// brackets, code, development, html
   static const IconData code = const IconDataSolid(0xf121);
 
-  /// Solid code-branch icon
+  /// Solid Code Branch icon
   ///
   /// https://fontawesome.com/icons/code-branch?style=solid
   /// branch, code-fork, fork, git, github, rebase, svn, vcs, version
   static const IconData codeBranch = const IconDataSolid(0xf126);
 
-  /// Brands codepen icon
+  /// Brands Codepen icon
   ///
   /// https://fontawesome.com/icons/codepen?style=brands
   static const IconData codepen = const IconDataBrands(0xf1cb);
 
-  /// Brands codiepie icon
+  /// Brands Codie Pie icon
   ///
   /// https://fontawesome.com/icons/codiepie?style=brands
   static const IconData codiepie = const IconDataBrands(0xf284);
 
-  /// Solid coffee icon
+  /// Solid Coffee icon
   ///
   /// https://fontawesome.com/icons/coffee?style=solid
   /// beverage, breakfast, cafe, drink, fall, morning, mug, seasonal, tea
@@ -1825,13 +1825,13 @@ class FontAwesomeIcons {
   /// gears, mechanical, settings, sprocket, wheel
   static const IconData cogs = const IconDataSolid(0xf085);
 
-  /// Solid coins icon
+  /// Solid Coins icon
   ///
   /// https://fontawesome.com/icons/coins?style=solid
   /// currency, dime, financial, gold, money, penny
   static const IconData coins = const IconDataSolid(0xf51e);
 
-  /// Solid columns icon
+  /// Solid Columns icon
   ///
   /// https://fontawesome.com/icons/columns?style=solid
   /// browser, dashboard, organize, panes, split
@@ -1849,43 +1849,43 @@ class FontAwesomeIcons {
   /// bubble, chat, commenting, conversation, feedback, message, note, notification, sms, speech, texting
   static const IconData solidComment = const IconDataSolid(0xf075);
 
-  /// Regular comment-alt icon
+  /// Regular Alternate Comment icon
   ///
   /// https://fontawesome.com/icons/comment-alt?style=regular
   /// bubble, chat, commenting, conversation, feedback, message, note, notification, sms, speech, texting
   static const IconData commentAlt = const IconDataRegular(0xf27a);
 
-  /// Solid comment-alt icon
+  /// Solid Alternate Comment icon
   ///
   /// https://fontawesome.com/icons/comment-alt?style=solid
   /// bubble, chat, commenting, conversation, feedback, message, note, notification, sms, speech, texting
   static const IconData solidCommentAlt = const IconDataSolid(0xf27a);
 
-  /// Solid comment-dollar icon
+  /// Solid Comment Dollar icon
   ///
   /// https://fontawesome.com/icons/comment-dollar?style=solid
   /// bubble, chat, commenting, conversation, feedback, message, money, note, notification, pay, sms, speech, spend, texting, transfer
   static const IconData commentDollar = const IconDataSolid(0xf651);
 
-  /// Regular comment-dots icon
+  /// Regular Comment Dots icon
   ///
   /// https://fontawesome.com/icons/comment-dots?style=regular
   /// bubble, chat, commenting, conversation, feedback, message, more, note, notification, reply, sms, speech, texting
   static const IconData commentDots = const IconDataRegular(0xf4ad);
 
-  /// Solid comment-dots icon
+  /// Solid Comment Dots icon
   ///
   /// https://fontawesome.com/icons/comment-dots?style=solid
   /// bubble, chat, commenting, conversation, feedback, message, more, note, notification, reply, sms, speech, texting
   static const IconData solidCommentDots = const IconDataSolid(0xf4ad);
 
-  /// Solid comment-medical icon
+  /// Solid Alternate Medical Chat icon
   ///
   /// https://fontawesome.com/icons/comment-medical?style=solid
   /// advice, bubble, chat, commenting, conversation, diagnose, feedback, message, note, notification, prescription, sms, speech, texting
   static const IconData commentMedical = const IconDataSolid(0xf7f5);
 
-  /// Solid comment-slash icon
+  /// Solid Comment Slash icon
   ///
   /// https://fontawesome.com/icons/comment-slash?style=solid
   /// bubble, cancel, chat, commenting, conversation, feedback, message, mute, note, notification, quiet, sms, speech, texting
@@ -1903,207 +1903,207 @@ class FontAwesomeIcons {
   /// bubble, chat, commenting, conversation, feedback, message, note, notification, sms, speech, texting
   static const IconData solidComments = const IconDataSolid(0xf086);
 
-  /// Solid comments-dollar icon
+  /// Solid Comments Dollar icon
   ///
   /// https://fontawesome.com/icons/comments-dollar?style=solid
   /// bubble, chat, commenting, conversation, feedback, message, money, note, notification, pay, sms, speech, spend, texting, transfer
   static const IconData commentsDollar = const IconDataSolid(0xf653);
 
-  /// Solid compact-disc icon
+  /// Solid Compact Disc icon
   ///
   /// https://fontawesome.com/icons/compact-disc?style=solid
   /// album, bluray, cd, disc, dvd, media, movie, music, record, video, vinyl
   static const IconData compactDisc = const IconDataSolid(0xf51f);
 
-  /// Regular compass icon
+  /// Regular Compass icon
   ///
   /// https://fontawesome.com/icons/compass?style=regular
   /// directions, directory, location, menu, navigation, safari, travel
   static const IconData compass = const IconDataRegular(0xf14e);
 
-  /// Solid compass icon
+  /// Solid Compass icon
   ///
   /// https://fontawesome.com/icons/compass?style=solid
   /// directions, directory, location, menu, navigation, safari, travel
   static const IconData solidCompass = const IconDataSolid(0xf14e);
 
-  /// Solid compress icon
+  /// Solid Compress icon
   ///
   /// https://fontawesome.com/icons/compress?style=solid
   /// collapse, fullscreen, minimize, move, resize, shrink, smaller
   static const IconData compress = const IconDataSolid(0xf066);
 
-  /// Solid compress-alt icon
+  /// Solid Alternate Compress icon
   ///
   /// https://fontawesome.com/icons/compress-alt?style=solid
   /// collapse, fullscreen, minimize, move, resize, shrink, smaller
   static const IconData compressAlt = const IconDataSolid(0xf422);
 
-  /// Solid compress-arrows-alt icon
+  /// Solid Alternate Compress Arrows icon
   ///
   /// https://fontawesome.com/icons/compress-arrows-alt?style=solid
   /// collapse, fullscreen, minimize, move, resize, shrink, smaller
   static const IconData compressArrowsAlt = const IconDataSolid(0xf78c);
 
-  /// Solid concierge-bell icon
+  /// Solid Concierge Bell icon
   ///
   /// https://fontawesome.com/icons/concierge-bell?style=solid
   /// attention, hotel, receptionist, service, support
   static const IconData conciergeBell = const IconDataSolid(0xf562);
 
-  /// Brands confluence icon
+  /// Brands Confluence icon
   ///
   /// https://fontawesome.com/icons/confluence?style=brands
   /// atlassian
   static const IconData confluence = const IconDataBrands(0xf78d);
 
-  /// Brands connectdevelop icon
+  /// Brands Connect Develop icon
   ///
   /// https://fontawesome.com/icons/connectdevelop?style=brands
   static const IconData connectdevelop = const IconDataBrands(0xf20e);
 
-  /// Brands contao icon
+  /// Brands Contao icon
   ///
   /// https://fontawesome.com/icons/contao?style=brands
   static const IconData contao = const IconDataBrands(0xf26d);
 
-  /// Solid cookie icon
+  /// Solid Cookie icon
   ///
   /// https://fontawesome.com/icons/cookie?style=solid
   /// baked good, chips, chocolate, eat, snack, sweet, treat
   static const IconData cookie = const IconDataSolid(0xf563);
 
-  /// Solid cookie-bite icon
+  /// Solid Cookie Bite icon
   ///
   /// https://fontawesome.com/icons/cookie-bite?style=solid
   /// baked good, bitten, chips, chocolate, eat, snack, sweet, treat
   static const IconData cookieBite = const IconDataSolid(0xf564);
 
-  /// Regular copy icon
+  /// Regular Copy icon
   ///
   /// https://fontawesome.com/icons/copy?style=regular
   /// clone, duplicate, file, files-o, paper, paste
   static const IconData copy = const IconDataRegular(0xf0c5);
 
-  /// Solid copy icon
+  /// Solid Copy icon
   ///
   /// https://fontawesome.com/icons/copy?style=solid
   /// clone, duplicate, file, files-o, paper, paste
   static const IconData solidCopy = const IconDataSolid(0xf0c5);
 
-  /// Regular copyright icon
+  /// Regular Copyright icon
   ///
   /// https://fontawesome.com/icons/copyright?style=regular
   /// brand, mark, register, trademark
   static const IconData copyright = const IconDataRegular(0xf1f9);
 
-  /// Solid copyright icon
+  /// Solid Copyright icon
   ///
   /// https://fontawesome.com/icons/copyright?style=solid
   /// brand, mark, register, trademark
   static const IconData solidCopyright = const IconDataSolid(0xf1f9);
 
-  /// Brands cotton-bureau icon
+  /// Brands Cotton Bureau icon
   ///
   /// https://fontawesome.com/icons/cotton-bureau?style=brands
   /// clothing, t-shirts, tshirts
   static const IconData cottonBureau = const IconDataBrands(0xf89e);
 
-  /// Solid couch icon
+  /// Solid Couch icon
   ///
   /// https://fontawesome.com/icons/couch?style=solid
   /// chair, cushion, furniture, relax, sofa
   static const IconData couch = const IconDataSolid(0xf4b8);
 
-  /// Brands cpanel icon
+  /// Brands cPanel icon
   ///
   /// https://fontawesome.com/icons/cpanel?style=brands
   static const IconData cpanel = const IconDataBrands(0xf388);
 
-  /// Brands creative-commons icon
+  /// Brands Creative Commons icon
   ///
   /// https://fontawesome.com/icons/creative-commons?style=brands
   static const IconData creativeCommons = const IconDataBrands(0xf25e);
 
-  /// Brands creative-commons-by icon
+  /// Brands Creative Commons Attribution icon
   ///
   /// https://fontawesome.com/icons/creative-commons-by?style=brands
   static const IconData creativeCommonsBy = const IconDataBrands(0xf4e7);
 
-  /// Brands creative-commons-nc icon
+  /// Brands Creative Commons Noncommercial icon
   ///
   /// https://fontawesome.com/icons/creative-commons-nc?style=brands
   static const IconData creativeCommonsNc = const IconDataBrands(0xf4e8);
 
-  /// Brands creative-commons-nc-eu icon
+  /// Brands Creative Commons Noncommercial (Euro Sign) icon
   ///
   /// https://fontawesome.com/icons/creative-commons-nc-eu?style=brands
   static const IconData creativeCommonsNcEu = const IconDataBrands(0xf4e9);
 
-  /// Brands creative-commons-nc-jp icon
+  /// Brands Creative Commons Noncommercial (Yen Sign) icon
   ///
   /// https://fontawesome.com/icons/creative-commons-nc-jp?style=brands
   static const IconData creativeCommonsNcJp = const IconDataBrands(0xf4ea);
 
-  /// Brands creative-commons-nd icon
+  /// Brands Creative Commons No Derivative Works icon
   ///
   /// https://fontawesome.com/icons/creative-commons-nd?style=brands
   static const IconData creativeCommonsNd = const IconDataBrands(0xf4eb);
 
-  /// Brands creative-commons-pd icon
+  /// Brands Creative Commons Public Domain icon
   ///
   /// https://fontawesome.com/icons/creative-commons-pd?style=brands
   static const IconData creativeCommonsPd = const IconDataBrands(0xf4ec);
 
-  /// Brands creative-commons-pd-alt icon
+  /// Brands Alternate Creative Commons Public Domain icon
   ///
   /// https://fontawesome.com/icons/creative-commons-pd-alt?style=brands
   static const IconData creativeCommonsPdAlt = const IconDataBrands(0xf4ed);
 
-  /// Brands creative-commons-remix icon
+  /// Brands Creative Commons Remix icon
   ///
   /// https://fontawesome.com/icons/creative-commons-remix?style=brands
   static const IconData creativeCommonsRemix = const IconDataBrands(0xf4ee);
 
-  /// Brands creative-commons-sa icon
+  /// Brands Creative Commons Share Alike icon
   ///
   /// https://fontawesome.com/icons/creative-commons-sa?style=brands
   static const IconData creativeCommonsSa = const IconDataBrands(0xf4ef);
 
-  /// Brands creative-commons-sampling icon
+  /// Brands Creative Commons Sampling icon
   ///
   /// https://fontawesome.com/icons/creative-commons-sampling?style=brands
   static const IconData creativeCommonsSampling = const IconDataBrands(0xf4f0);
 
-  /// Brands creative-commons-sampling-plus icon
+  /// Brands Creative Commons Sampling + icon
   ///
   /// https://fontawesome.com/icons/creative-commons-sampling-plus?style=brands
   static const IconData creativeCommonsSamplingPlus =
       const IconDataBrands(0xf4f1);
 
-  /// Brands creative-commons-share icon
+  /// Brands Creative Commons Share icon
   ///
   /// https://fontawesome.com/icons/creative-commons-share?style=brands
   static const IconData creativeCommonsShare = const IconDataBrands(0xf4f2);
 
-  /// Brands creative-commons-zero icon
+  /// Brands Creative Commons CC0 icon
   ///
   /// https://fontawesome.com/icons/creative-commons-zero?style=brands
   static const IconData creativeCommonsZero = const IconDataBrands(0xf4f3);
 
-  /// Regular credit-card icon
+  /// Regular Credit Card icon
   ///
   /// https://fontawesome.com/icons/credit-card?style=regular
   /// buy, checkout, credit-card-alt, debit, money, payment, purchase
   static const IconData creditCard = const IconDataRegular(0xf09d);
 
-  /// Solid credit-card icon
+  /// Solid Credit Card icon
   ///
   /// https://fontawesome.com/icons/credit-card?style=solid
   /// buy, checkout, credit-card-alt, debit, money, payment, purchase
   static const IconData solidCreditCard = const IconDataSolid(0xf09d);
 
-  /// Brands critical-role icon
+  /// Brands Critical Role icon
   ///
   /// https://fontawesome.com/icons/critical-role?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, game, gaming, tabletop
@@ -2115,82 +2115,82 @@ class FontAwesomeIcons {
   /// design, frame, mask, resize, shrink
   static const IconData crop = const IconDataSolid(0xf125);
 
-  /// Solid crop-alt icon
+  /// Solid Alternate Crop icon
   ///
   /// https://fontawesome.com/icons/crop-alt?style=solid
   /// design, frame, mask, resize, shrink
   static const IconData cropAlt = const IconDataSolid(0xf565);
 
-  /// Solid cross icon
+  /// Solid Cross icon
   ///
   /// https://fontawesome.com/icons/cross?style=solid
   /// catholicism, christianity, church, jesus
   static const IconData cross = const IconDataSolid(0xf654);
 
-  /// Solid crosshairs icon
+  /// Solid Crosshairs icon
   ///
   /// https://fontawesome.com/icons/crosshairs?style=solid
   /// aim, bullseye, gpd, picker, position
   static const IconData crosshairs = const IconDataSolid(0xf05b);
 
-  /// Solid crow icon
+  /// Solid Crow icon
   ///
   /// https://fontawesome.com/icons/crow?style=solid
   /// bird, bullfrog, fauna, halloween, holiday, toad
   static const IconData crow = const IconDataSolid(0xf520);
 
-  /// Solid crown icon
+  /// Solid Crown icon
   ///
   /// https://fontawesome.com/icons/crown?style=solid
   /// award, favorite, king, queen, royal, tiara
   static const IconData crown = const IconDataSolid(0xf521);
 
-  /// Solid crutch icon
+  /// Solid Crutch icon
   ///
   /// https://fontawesome.com/icons/crutch?style=solid
   /// cane, injury, mobility, wheelchair
   static const IconData crutch = const IconDataSolid(0xf7f7);
 
-  /// Brands css3 icon
+  /// Brands CSS 3 Logo icon
   ///
   /// https://fontawesome.com/icons/css3?style=brands
   /// code
   static const IconData css3 = const IconDataBrands(0xf13c);
 
-  /// Brands css3-alt icon
+  /// Brands Alternate CSS3 Logo icon
   ///
   /// https://fontawesome.com/icons/css3-alt?style=brands
   static const IconData css3Alt = const IconDataBrands(0xf38b);
 
-  /// Solid cube icon
+  /// Solid Cube icon
   ///
   /// https://fontawesome.com/icons/cube?style=solid
   /// 3d, block, dice, package, square, tesseract
   static const IconData cube = const IconDataSolid(0xf1b2);
 
-  /// Solid cubes icon
+  /// Solid Cubes icon
   ///
   /// https://fontawesome.com/icons/cubes?style=solid
   /// 3d, block, dice, package, pyramid, square, stack, tesseract
   static const IconData cubes = const IconDataSolid(0xf1b3);
 
-  /// Solid cut icon
+  /// Solid Cut icon
   ///
   /// https://fontawesome.com/icons/cut?style=solid
   /// clip, scissors, snip
   static const IconData cut = const IconDataSolid(0xf0c4);
 
-  /// Brands cuttlefish icon
+  /// Brands Cuttlefish icon
   ///
   /// https://fontawesome.com/icons/cuttlefish?style=brands
   static const IconData cuttlefish = const IconDataBrands(0xf38c);
 
-  /// Brands d-and-d icon
+  /// Brands Dungeons & Dragons icon
   ///
   /// https://fontawesome.com/icons/d-and-d?style=brands
   static const IconData dAndD = const IconDataBrands(0xf38d);
 
-  /// Brands d-and-d-beyond icon
+  /// Brands D&D Beyond icon
   ///
   /// https://fontawesome.com/icons/d-and-d-beyond?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, gaming, tabletop
@@ -2201,404 +2201,404 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/dailymotion?style=brands
   static const IconData dailymotion = const IconDataBrands(0xe052);
 
-  /// Brands dashcube icon
+  /// Brands DashCube icon
   ///
   /// https://fontawesome.com/icons/dashcube?style=brands
   static const IconData dashcube = const IconDataBrands(0xf210);
 
-  /// Solid database icon
+  /// Solid Database icon
   ///
   /// https://fontawesome.com/icons/database?style=solid
   /// computer, development, directory, memory, storage
   static const IconData database = const IconDataSolid(0xf1c0);
 
-  /// Solid deaf icon
+  /// Solid Deaf icon
   ///
   /// https://fontawesome.com/icons/deaf?style=solid
   /// ear, hearing, sign language
   static const IconData deaf = const IconDataSolid(0xf2a4);
 
-  /// Brands deezer icon
+  /// Brands Deezer icon
   ///
   /// https://fontawesome.com/icons/deezer?style=brands
   static const IconData deezer = const IconDataBrands(0xe077);
 
-  /// Brands delicious icon
+  /// Brands Delicious icon
   ///
   /// https://fontawesome.com/icons/delicious?style=brands
   static const IconData delicious = const IconDataBrands(0xf1a5);
 
-  /// Solid democrat icon
+  /// Solid Democrat icon
   ///
   /// https://fontawesome.com/icons/democrat?style=solid
   /// american, democratic party, donkey, election, left, left-wing, liberal, politics, usa
   static const IconData democrat = const IconDataSolid(0xf747);
 
-  /// Brands deploydog icon
+  /// Brands deploy.dog icon
   ///
   /// https://fontawesome.com/icons/deploydog?style=brands
   static const IconData deploydog = const IconDataBrands(0xf38e);
 
-  /// Brands deskpro icon
+  /// Brands Deskpro icon
   ///
   /// https://fontawesome.com/icons/deskpro?style=brands
   static const IconData deskpro = const IconDataBrands(0xf38f);
 
-  /// Solid desktop icon
+  /// Solid Desktop icon
   ///
   /// https://fontawesome.com/icons/desktop?style=solid
   /// computer, cpu, demo, desktop, device, imac, machine, monitor, pc, screen
   static const IconData desktop = const IconDataSolid(0xf108);
 
-  /// Brands dev icon
+  /// Brands DEV icon
   ///
   /// https://fontawesome.com/icons/dev?style=brands
   static const IconData dev = const IconDataBrands(0xf6cc);
 
-  /// Brands deviantart icon
+  /// Brands deviantART icon
   ///
   /// https://fontawesome.com/icons/deviantart?style=brands
   static const IconData deviantart = const IconDataBrands(0xf1bd);
 
-  /// Solid dharmachakra icon
+  /// Solid Dharmachakra icon
   ///
   /// https://fontawesome.com/icons/dharmachakra?style=solid
   /// buddhism, buddhist, wheel of dharma
   static const IconData dharmachakra = const IconDataSolid(0xf655);
 
-  /// Brands dhl icon
+  /// Brands DHL icon
   ///
   /// https://fontawesome.com/icons/dhl?style=brands
   /// Dalsey, Hillblom and Lynn, german, package, shipping
   static const IconData dhl = const IconDataBrands(0xf790);
 
-  /// Solid diagnoses icon
+  /// Solid Diagnoses icon
   ///
   /// https://fontawesome.com/icons/diagnoses?style=solid
   /// analyze, detect, diagnosis, examine, medicine
   static const IconData diagnoses = const IconDataSolid(0xf470);
 
-  /// Brands diaspora icon
+  /// Brands Diaspora icon
   ///
   /// https://fontawesome.com/icons/diaspora?style=brands
   static const IconData diaspora = const IconDataBrands(0xf791);
 
-  /// Solid dice icon
+  /// Solid Dice icon
   ///
   /// https://fontawesome.com/icons/dice?style=solid
   /// chance, gambling, game, roll
   static const IconData dice = const IconDataSolid(0xf522);
 
-  /// Solid dice-d20 icon
+  /// Solid Dice D20 icon
   ///
   /// https://fontawesome.com/icons/dice-d20?style=solid
   /// Dungeons & Dragons, chance, d&d, dnd, fantasy, gambling, game, roll
   static const IconData diceD20 = const IconDataSolid(0xf6cf);
 
-  /// Solid dice-d6 icon
+  /// Solid Dice D6 icon
   ///
   /// https://fontawesome.com/icons/dice-d6?style=solid
   /// Dungeons & Dragons, chance, d&d, dnd, fantasy, gambling, game, roll
   static const IconData diceD6 = const IconDataSolid(0xf6d1);
 
-  /// Solid dice-five icon
+  /// Solid Dice Five icon
   ///
   /// https://fontawesome.com/icons/dice-five?style=solid
   /// chance, gambling, game, roll
   static const IconData diceFive = const IconDataSolid(0xf523);
 
-  /// Solid dice-four icon
+  /// Solid Dice Four icon
   ///
   /// https://fontawesome.com/icons/dice-four?style=solid
   /// chance, gambling, game, roll
   static const IconData diceFour = const IconDataSolid(0xf524);
 
-  /// Solid dice-one icon
+  /// Solid Dice One icon
   ///
   /// https://fontawesome.com/icons/dice-one?style=solid
   /// chance, gambling, game, roll
   static const IconData diceOne = const IconDataSolid(0xf525);
 
-  /// Solid dice-six icon
+  /// Solid Dice Six icon
   ///
   /// https://fontawesome.com/icons/dice-six?style=solid
   /// chance, gambling, game, roll
   static const IconData diceSix = const IconDataSolid(0xf526);
 
-  /// Solid dice-three icon
+  /// Solid Dice Three icon
   ///
   /// https://fontawesome.com/icons/dice-three?style=solid
   /// chance, gambling, game, roll
   static const IconData diceThree = const IconDataSolid(0xf527);
 
-  /// Solid dice-two icon
+  /// Solid Dice Two icon
   ///
   /// https://fontawesome.com/icons/dice-two?style=solid
   /// chance, gambling, game, roll
   static const IconData diceTwo = const IconDataSolid(0xf528);
 
-  /// Brands digg icon
+  /// Brands Digg Logo icon
   ///
   /// https://fontawesome.com/icons/digg?style=brands
   static const IconData digg = const IconDataBrands(0xf1a6);
 
-  /// Brands digital-ocean icon
+  /// Brands Digital Ocean icon
   ///
   /// https://fontawesome.com/icons/digital-ocean?style=brands
   static const IconData digitalOcean = const IconDataBrands(0xf391);
 
-  /// Solid digital-tachograph icon
+  /// Solid Digital Tachograph icon
   ///
   /// https://fontawesome.com/icons/digital-tachograph?style=solid
   /// data, distance, speed, tachometer
   static const IconData digitalTachograph = const IconDataSolid(0xf566);
 
-  /// Solid directions icon
+  /// Solid Directions icon
   ///
   /// https://fontawesome.com/icons/directions?style=solid
   /// map, navigation, sign, turn
   static const IconData directions = const IconDataSolid(0xf5eb);
 
-  /// Brands discord icon
+  /// Brands Discord icon
   ///
   /// https://fontawesome.com/icons/discord?style=brands
   static const IconData discord = const IconDataBrands(0xf392);
 
-  /// Brands discourse icon
+  /// Brands Discourse icon
   ///
   /// https://fontawesome.com/icons/discourse?style=brands
   static const IconData discourse = const IconDataBrands(0xf393);
 
-  /// Solid disease icon
+  /// Solid Disease icon
   ///
   /// https://fontawesome.com/icons/disease?style=solid
   /// bacteria, cancer, covid-19, illness, infection, sickness, virus
   static const IconData disease = const IconDataSolid(0xf7fa);
 
-  /// Solid divide icon
+  /// Solid Divide icon
   ///
   /// https://fontawesome.com/icons/divide?style=solid
   /// arithmetic, calculus, division, math
   static const IconData divide = const IconDataSolid(0xf529);
 
-  /// Regular dizzy icon
+  /// Regular Dizzy Face icon
   ///
   /// https://fontawesome.com/icons/dizzy?style=regular
   /// dazed, dead, disapprove, emoticon, face
   static const IconData dizzy = const IconDataRegular(0xf567);
 
-  /// Solid dizzy icon
+  /// Solid Dizzy Face icon
   ///
   /// https://fontawesome.com/icons/dizzy?style=solid
   /// dazed, dead, disapprove, emoticon, face
   static const IconData solidDizzy = const IconDataSolid(0xf567);
 
-  /// Solid dna icon
+  /// Solid DNA icon
   ///
   /// https://fontawesome.com/icons/dna?style=solid
   /// double helix, genetic, helix, molecule, protein
   static const IconData dna = const IconDataSolid(0xf471);
 
-  /// Brands dochub icon
+  /// Brands DocHub icon
   ///
   /// https://fontawesome.com/icons/dochub?style=brands
   static const IconData dochub = const IconDataBrands(0xf394);
 
-  /// Brands docker icon
+  /// Brands Docker icon
   ///
   /// https://fontawesome.com/icons/docker?style=brands
   static const IconData docker = const IconDataBrands(0xf395);
 
-  /// Solid dog icon
+  /// Solid Dog icon
   ///
   /// https://fontawesome.com/icons/dog?style=solid
   /// animal, canine, fauna, mammal, pet, pooch, puppy, woof
   static const IconData dog = const IconDataSolid(0xf6d3);
 
-  /// Solid dollar-sign icon
+  /// Solid Dollar Sign icon
   ///
   /// https://fontawesome.com/icons/dollar-sign?style=solid
   /// $, cost, dollar-sign, money, price, usd
   static const IconData dollarSign = const IconDataSolid(0xf155);
 
-  /// Solid dolly icon
+  /// Solid Dolly icon
   ///
   /// https://fontawesome.com/icons/dolly?style=solid
   /// carry, shipping, transport
   static const IconData dolly = const IconDataSolid(0xf472);
 
-  /// Solid dolly-flatbed icon
+  /// Solid Dolly Flatbed icon
   ///
   /// https://fontawesome.com/icons/dolly-flatbed?style=solid
   /// carry, inventory, shipping, transport
   static const IconData dollyFlatbed = const IconDataSolid(0xf474);
 
-  /// Solid donate icon
+  /// Solid Donate icon
   ///
   /// https://fontawesome.com/icons/donate?style=solid
   /// contribute, generosity, gift, give
   static const IconData donate = const IconDataSolid(0xf4b9);
 
-  /// Solid door-closed icon
+  /// Solid Door Closed icon
   ///
   /// https://fontawesome.com/icons/door-closed?style=solid
   /// enter, exit, locked
   static const IconData doorClosed = const IconDataSolid(0xf52a);
 
-  /// Solid door-open icon
+  /// Solid Door Open icon
   ///
   /// https://fontawesome.com/icons/door-open?style=solid
   /// enter, exit, welcome
   static const IconData doorOpen = const IconDataSolid(0xf52b);
 
-  /// Regular dot-circle icon
+  /// Regular Dot Circle icon
   ///
   /// https://fontawesome.com/icons/dot-circle?style=regular
   /// bullseye, notification, target
   static const IconData dotCircle = const IconDataRegular(0xf192);
 
-  /// Solid dot-circle icon
+  /// Solid Dot Circle icon
   ///
   /// https://fontawesome.com/icons/dot-circle?style=solid
   /// bullseye, notification, target
   static const IconData solidDotCircle = const IconDataSolid(0xf192);
 
-  /// Solid dove icon
+  /// Solid Dove icon
   ///
   /// https://fontawesome.com/icons/dove?style=solid
   /// bird, fauna, flying, peace, war
   static const IconData dove = const IconDataSolid(0xf4ba);
 
-  /// Solid download icon
+  /// Solid Download icon
   ///
   /// https://fontawesome.com/icons/download?style=solid
   /// export, hard drive, save, transfer
   static const IconData download = const IconDataSolid(0xf019);
 
-  /// Brands draft2digital icon
+  /// Brands Draft2digital icon
   ///
   /// https://fontawesome.com/icons/draft2digital?style=brands
   static const IconData draft2digital = const IconDataBrands(0xf396);
 
-  /// Solid drafting-compass icon
+  /// Solid Drafting Compass icon
   ///
   /// https://fontawesome.com/icons/drafting-compass?style=solid
   /// design, map, mechanical drawing, plot, plotting
   static const IconData draftingCompass = const IconDataSolid(0xf568);
 
-  /// Solid dragon icon
+  /// Solid Dragon icon
   ///
   /// https://fontawesome.com/icons/dragon?style=solid
   /// Dungeons & Dragons, d&d, dnd, fantasy, fire, lizard, serpent
   static const IconData dragon = const IconDataSolid(0xf6d5);
 
-  /// Solid draw-polygon icon
+  /// Solid Draw Polygon icon
   ///
   /// https://fontawesome.com/icons/draw-polygon?style=solid
   /// anchors, lines, object, render, shape
   static const IconData drawPolygon = const IconDataSolid(0xf5ee);
 
-  /// Brands dribbble icon
+  /// Brands Dribbble icon
   ///
   /// https://fontawesome.com/icons/dribbble?style=brands
   static const IconData dribbble = const IconDataBrands(0xf17d);
 
-  /// Brands dribbble-square icon
+  /// Brands Dribbble Square icon
   ///
   /// https://fontawesome.com/icons/dribbble-square?style=brands
   static const IconData dribbbleSquare = const IconDataBrands(0xf397);
 
-  /// Brands dropbox icon
+  /// Brands Dropbox icon
   ///
   /// https://fontawesome.com/icons/dropbox?style=brands
   static const IconData dropbox = const IconDataBrands(0xf16b);
 
-  /// Solid drum icon
+  /// Solid Drum icon
   ///
   /// https://fontawesome.com/icons/drum?style=solid
   /// instrument, music, percussion, snare, sound
   static const IconData drum = const IconDataSolid(0xf569);
 
-  /// Solid drum-steelpan icon
+  /// Solid Drum Steelpan icon
   ///
   /// https://fontawesome.com/icons/drum-steelpan?style=solid
   /// calypso, instrument, music, percussion, reggae, snare, sound, steel, tropical
   static const IconData drumSteelpan = const IconDataSolid(0xf56a);
 
-  /// Solid drumstick-bite icon
+  /// Solid Drumstick with Bite Taken Out icon
   ///
   /// https://fontawesome.com/icons/drumstick-bite?style=solid
   /// bone, chicken, leg, meat, poultry, turkey
   static const IconData drumstickBite = const IconDataSolid(0xf6d7);
 
-  /// Brands drupal icon
+  /// Brands Drupal Logo icon
   ///
   /// https://fontawesome.com/icons/drupal?style=brands
   static const IconData drupal = const IconDataBrands(0xf1a9);
 
-  /// Solid dumbbell icon
+  /// Solid Dumbbell icon
   ///
   /// https://fontawesome.com/icons/dumbbell?style=solid
   /// exercise, gym, strength, weight, weight-lifting
   static const IconData dumbbell = const IconDataSolid(0xf44b);
 
-  /// Solid dumpster icon
+  /// Solid Dumpster icon
   ///
   /// https://fontawesome.com/icons/dumpster?style=solid
   /// alley, bin, commercial, trash, waste
   static const IconData dumpster = const IconDataSolid(0xf793);
 
-  /// Solid dumpster-fire icon
+  /// Solid Dumpster Fire icon
   ///
   /// https://fontawesome.com/icons/dumpster-fire?style=solid
   /// alley, bin, commercial, danger, dangerous, euphemism, flame, heat, hot, trash, waste
   static const IconData dumpsterFire = const IconDataSolid(0xf794);
 
-  /// Solid dungeon icon
+  /// Solid Dungeon icon
   ///
   /// https://fontawesome.com/icons/dungeon?style=solid
   /// Dungeons & Dragons, building, d&d, dnd, door, entrance, fantasy, gate
   static const IconData dungeon = const IconDataSolid(0xf6d9);
 
-  /// Brands dyalog icon
+  /// Brands Dyalog icon
   ///
   /// https://fontawesome.com/icons/dyalog?style=brands
   static const IconData dyalog = const IconDataBrands(0xf399);
 
-  /// Brands earlybirds icon
+  /// Brands Earlybirds icon
   ///
   /// https://fontawesome.com/icons/earlybirds?style=brands
   static const IconData earlybirds = const IconDataBrands(0xf39a);
 
-  /// Brands ebay icon
+  /// Brands eBay icon
   ///
   /// https://fontawesome.com/icons/ebay?style=brands
   static const IconData ebay = const IconDataBrands(0xf4f4);
 
-  /// Brands edge icon
+  /// Brands Edge Browser icon
   ///
   /// https://fontawesome.com/icons/edge?style=brands
   /// browser, ie
   static const IconData edge = const IconDataBrands(0xf282);
 
-  /// Brands edge-legacy icon
+  /// Brands Edge Legacy Browser icon
   ///
   /// https://fontawesome.com/icons/edge-legacy?style=brands
   static const IconData edgeLegacy = const IconDataBrands(0xe078);
 
-  /// Regular edit icon
+  /// Regular Edit icon
   ///
   /// https://fontawesome.com/icons/edit?style=regular
   /// edit, pen, pencil, update, write
   static const IconData edit = const IconDataRegular(0xf044);
 
-  /// Solid edit icon
+  /// Solid Edit icon
   ///
   /// https://fontawesome.com/icons/edit?style=solid
   /// edit, pen, pencil, update, write
   static const IconData solidEdit = const IconDataSolid(0xf044);
 
-  /// Solid egg icon
+  /// Solid Egg icon
   ///
   /// https://fontawesome.com/icons/egg?style=solid
   /// breakfast, chicken, easter, shell, yolk
@@ -2610,81 +2610,81 @@ class FontAwesomeIcons {
   /// abort, cancel, cd, discharge
   static const IconData eject = const IconDataSolid(0xf052);
 
-  /// Brands elementor icon
+  /// Brands Elementor icon
   ///
   /// https://fontawesome.com/icons/elementor?style=brands
   static const IconData elementor = const IconDataBrands(0xf430);
 
-  /// Solid ellipsis-h icon
+  /// Solid Horizontal Ellipsis icon
   ///
   /// https://fontawesome.com/icons/ellipsis-h?style=solid
   /// dots, drag, kebab, list, menu, nav, navigation, ol, reorder, settings, ul
   static const IconData ellipsisH = const IconDataSolid(0xf141);
 
-  /// Solid ellipsis-v icon
+  /// Solid Vertical Ellipsis icon
   ///
   /// https://fontawesome.com/icons/ellipsis-v?style=solid
   /// dots, drag, kebab, list, menu, nav, navigation, ol, reorder, settings, ul
   static const IconData ellipsisV = const IconDataSolid(0xf142);
 
-  /// Brands ello icon
+  /// Brands Ello icon
   ///
   /// https://fontawesome.com/icons/ello?style=brands
   static const IconData ello = const IconDataBrands(0xf5f1);
 
-  /// Brands ember icon
+  /// Brands Ember icon
   ///
   /// https://fontawesome.com/icons/ember?style=brands
   static const IconData ember = const IconDataBrands(0xf423);
 
-  /// Brands empire icon
+  /// Brands Galactic Empire icon
   ///
   /// https://fontawesome.com/icons/empire?style=brands
   static const IconData empire = const IconDataBrands(0xf1d1);
 
-  /// Regular envelope icon
+  /// Regular Envelope icon
   ///
   /// https://fontawesome.com/icons/envelope?style=regular
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData envelope = const IconDataRegular(0xf0e0);
 
-  /// Solid envelope icon
+  /// Solid Envelope icon
   ///
   /// https://fontawesome.com/icons/envelope?style=solid
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData solidEnvelope = const IconDataSolid(0xf0e0);
 
-  /// Regular envelope-open icon
+  /// Regular Envelope Open icon
   ///
   /// https://fontawesome.com/icons/envelope-open?style=regular
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData envelopeOpen = const IconDataRegular(0xf2b6);
 
-  /// Solid envelope-open icon
+  /// Solid Envelope Open icon
   ///
   /// https://fontawesome.com/icons/envelope-open?style=solid
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData solidEnvelopeOpen = const IconDataSolid(0xf2b6);
 
-  /// Solid envelope-open-text icon
+  /// Solid Envelope Open-text icon
   ///
   /// https://fontawesome.com/icons/envelope-open-text?style=solid
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData envelopeOpenText = const IconDataSolid(0xf658);
 
-  /// Solid envelope-square icon
+  /// Solid Envelope Square icon
   ///
   /// https://fontawesome.com/icons/envelope-square?style=solid
   /// e-mail, email, letter, mail, message, notification, support
   static const IconData envelopeSquare = const IconDataSolid(0xf199);
 
-  /// Brands envira icon
+  /// Brands Envira Gallery icon
   ///
   /// https://fontawesome.com/icons/envira?style=brands
   /// leaf
   static const IconData envira = const IconDataBrands(0xf299);
 
-  /// Solid equals icon
+  /// Solid Equals icon
   ///
   /// https://fontawesome.com/icons/equals?style=solid
   /// arithmetic, even, match, math
@@ -2696,39 +2696,39 @@ class FontAwesomeIcons {
   /// art, delete, remove, rubber
   static const IconData eraser = const IconDataSolid(0xf12d);
 
-  /// Brands erlang icon
+  /// Brands Erlang icon
   ///
   /// https://fontawesome.com/icons/erlang?style=brands
   static const IconData erlang = const IconDataBrands(0xf39d);
 
-  /// Brands ethereum icon
+  /// Brands Ethereum icon
   ///
   /// https://fontawesome.com/icons/ethereum?style=brands
   static const IconData ethereum = const IconDataBrands(0xf42e);
 
-  /// Solid ethernet icon
+  /// Solid Ethernet icon
   ///
   /// https://fontawesome.com/icons/ethernet?style=solid
   /// cable, cat 5, cat 6, connection, hardware, internet, network, wired
   static const IconData ethernet = const IconDataSolid(0xf796);
 
-  /// Brands etsy icon
+  /// Brands Etsy icon
   ///
   /// https://fontawesome.com/icons/etsy?style=brands
   static const IconData etsy = const IconDataBrands(0xf2d7);
 
-  /// Solid euro-sign icon
+  /// Solid Euro Sign icon
   ///
   /// https://fontawesome.com/icons/euro-sign?style=solid
   /// currency, dollar, exchange, money
   static const IconData euroSign = const IconDataSolid(0xf153);
 
-  /// Brands evernote icon
+  /// Brands Evernote icon
   ///
   /// https://fontawesome.com/icons/evernote?style=brands
   static const IconData evernote = const IconDataBrands(0xf839);
 
-  /// Solid exchange-alt icon
+  /// Solid Alternate Exchange icon
   ///
   /// https://fontawesome.com/icons/exchange-alt?style=solid
   /// arrow, arrows, exchange, reciprocate, return, swap, transfer
@@ -2740,113 +2740,113 @@ class FontAwesomeIcons {
   /// alert, danger, error, important, notice, notification, notify, problem, warning
   static const IconData exclamation = const IconDataSolid(0xf12a);
 
-  /// Solid exclamation-circle icon
+  /// Solid Exclamation Circle icon
   ///
   /// https://fontawesome.com/icons/exclamation-circle?style=solid
   /// alert, danger, error, important, notice, notification, notify, problem, warning
   static const IconData exclamationCircle = const IconDataSolid(0xf06a);
 
-  /// Solid exclamation-triangle icon
+  /// Solid Exclamation Triangle icon
   ///
   /// https://fontawesome.com/icons/exclamation-triangle?style=solid
   /// alert, danger, error, important, notice, notification, notify, problem, warning
   static const IconData exclamationTriangle = const IconDataSolid(0xf071);
 
-  /// Solid expand icon
+  /// Solid Expand icon
   ///
   /// https://fontawesome.com/icons/expand?style=solid
   /// bigger, enlarge, fullscreen, resize
   static const IconData expand = const IconDataSolid(0xf065);
 
-  /// Solid expand-alt icon
+  /// Solid Alternate Expand icon
   ///
   /// https://fontawesome.com/icons/expand-alt?style=solid
   /// arrows, bigger, enlarge, fullscreen, resize
   static const IconData expandAlt = const IconDataSolid(0xf424);
 
-  /// Solid expand-arrows-alt icon
+  /// Solid Alternate Expand Arrows icon
   ///
   /// https://fontawesome.com/icons/expand-arrows-alt?style=solid
   /// bigger, enlarge, fullscreen, move, resize
   static const IconData expandArrowsAlt = const IconDataSolid(0xf31e);
 
-  /// Brands expeditedssl icon
+  /// Brands ExpeditedSSL icon
   ///
   /// https://fontawesome.com/icons/expeditedssl?style=brands
   static const IconData expeditedssl = const IconDataBrands(0xf23e);
 
-  /// Solid external-link-alt icon
+  /// Solid Alternate External Link icon
   ///
   /// https://fontawesome.com/icons/external-link-alt?style=solid
   /// external-link, new, open, share
   static const IconData externalLinkAlt = const IconDataSolid(0xf35d);
 
-  /// Solid external-link-square-alt icon
+  /// Solid Alternate External Link Square icon
   ///
   /// https://fontawesome.com/icons/external-link-square-alt?style=solid
   /// external-link-square, new, open, share
   static const IconData externalLinkSquareAlt = const IconDataSolid(0xf360);
 
-  /// Regular eye icon
+  /// Regular Eye icon
   ///
   /// https://fontawesome.com/icons/eye?style=regular
   /// look, optic, see, seen, show, sight, views, visible
   static const IconData eye = const IconDataRegular(0xf06e);
 
-  /// Solid eye icon
+  /// Solid Eye icon
   ///
   /// https://fontawesome.com/icons/eye?style=solid
   /// look, optic, see, seen, show, sight, views, visible
   static const IconData solidEye = const IconDataSolid(0xf06e);
 
-  /// Solid eye-dropper icon
+  /// Solid Eye Dropper icon
   ///
   /// https://fontawesome.com/icons/eye-dropper?style=solid
   /// beaker, clone, color, copy, eyedropper, pipette
   static const IconData eyeDropper = const IconDataSolid(0xf1fb);
 
-  /// Regular eye-slash icon
+  /// Regular Eye Slash icon
   ///
   /// https://fontawesome.com/icons/eye-slash?style=regular
   /// blind, hide, show, toggle, unseen, views, visible, visiblity
   static const IconData eyeSlash = const IconDataRegular(0xf070);
 
-  /// Solid eye-slash icon
+  /// Solid Eye Slash icon
   ///
   /// https://fontawesome.com/icons/eye-slash?style=solid
   /// blind, hide, show, toggle, unseen, views, visible, visiblity
   static const IconData solidEyeSlash = const IconDataSolid(0xf070);
 
-  /// Brands facebook icon
+  /// Brands Facebook icon
   ///
   /// https://fontawesome.com/icons/facebook?style=brands
   /// facebook-official, social network
   static const IconData facebook = const IconDataBrands(0xf09a);
 
-  /// Brands facebook-f icon
+  /// Brands Facebook F icon
   ///
   /// https://fontawesome.com/icons/facebook-f?style=brands
   /// facebook
   static const IconData facebookF = const IconDataBrands(0xf39e);
 
-  /// Brands facebook-messenger icon
+  /// Brands Facebook Messenger icon
   ///
   /// https://fontawesome.com/icons/facebook-messenger?style=brands
   static const IconData facebookMessenger = const IconDataBrands(0xf39f);
 
-  /// Brands facebook-square icon
+  /// Brands Facebook Square icon
   ///
   /// https://fontawesome.com/icons/facebook-square?style=brands
   /// social network
   static const IconData facebookSquare = const IconDataBrands(0xf082);
 
-  /// Solid fan icon
+  /// Solid Fan icon
   ///
   /// https://fontawesome.com/icons/fan?style=solid
   /// ac, air conditioning, blade, blower, cool, hot
   static const IconData fan = const IconDataSolid(0xf863);
 
-  /// Brands fantasy-flight-games icon
+  /// Brands Fantasy Flight-games icon
   ///
   /// https://fontawesome.com/icons/fantasy-flight-games?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, game, gaming, tabletop
@@ -2864,43 +2864,43 @@ class FontAwesomeIcons {
   /// end, last, next
   static const IconData fastForward = const IconDataSolid(0xf050);
 
-  /// Solid faucet icon
+  /// Solid Faucet icon
   ///
   /// https://fontawesome.com/icons/faucet?style=solid
   /// covid-19, drip, house, hygiene, kitchen, sink, water
   static const IconData faucet = const IconDataSolid(0xe005);
 
-  /// Solid fax icon
+  /// Solid Fax icon
   ///
   /// https://fontawesome.com/icons/fax?style=solid
   /// business, communicate, copy, facsimile, send
   static const IconData fax = const IconDataSolid(0xf1ac);
 
-  /// Solid feather icon
+  /// Solid Feather icon
   ///
   /// https://fontawesome.com/icons/feather?style=solid
   /// bird, light, plucked, quill, write
   static const IconData feather = const IconDataSolid(0xf52d);
 
-  /// Solid feather-alt icon
+  /// Solid Alternate Feather icon
   ///
   /// https://fontawesome.com/icons/feather-alt?style=solid
   /// bird, light, plucked, quill, write
   static const IconData featherAlt = const IconDataSolid(0xf56b);
 
-  /// Brands fedex icon
+  /// Brands FedEx icon
   ///
   /// https://fontawesome.com/icons/fedex?style=brands
   /// Federal Express, package, shipping
   static const IconData fedex = const IconDataBrands(0xf797);
 
-  /// Brands fedora icon
+  /// Brands Fedora icon
   ///
   /// https://fontawesome.com/icons/fedora?style=brands
   /// linux, operating system, os
   static const IconData fedora = const IconDataBrands(0xf798);
 
-  /// Solid female icon
+  /// Solid Female icon
   ///
   /// https://fontawesome.com/icons/female?style=solid
   /// human, person, profile, user, woman
@@ -2912,241 +2912,241 @@ class FontAwesomeIcons {
   /// airplane, fast, fly, goose, maverick, plane, quick, top gun, transportation, travel
   static const IconData fighterJet = const IconDataSolid(0xf0fb);
 
-  /// Brands figma icon
+  /// Brands Figma icon
   ///
   /// https://fontawesome.com/icons/figma?style=brands
   /// app, design, interface
   static const IconData figma = const IconDataBrands(0xf799);
 
-  /// Regular file icon
+  /// Regular File icon
   ///
   /// https://fontawesome.com/icons/file?style=regular
   /// document, new, page, pdf, resume
   static const IconData file = const IconDataRegular(0xf15b);
 
-  /// Solid file icon
+  /// Solid File icon
   ///
   /// https://fontawesome.com/icons/file?style=solid
   /// document, new, page, pdf, resume
   static const IconData solidFile = const IconDataSolid(0xf15b);
 
-  /// Regular file-alt icon
+  /// Regular Alternate File icon
   ///
   /// https://fontawesome.com/icons/file-alt?style=regular
   /// document, file-text, invoice, new, page, pdf
   static const IconData fileAlt = const IconDataRegular(0xf15c);
 
-  /// Solid file-alt icon
+  /// Solid Alternate File icon
   ///
   /// https://fontawesome.com/icons/file-alt?style=solid
   /// document, file-text, invoice, new, page, pdf
   static const IconData solidFileAlt = const IconDataSolid(0xf15c);
 
-  /// Regular file-archive icon
+  /// Regular Archive File icon
   ///
   /// https://fontawesome.com/icons/file-archive?style=regular
   /// .zip, bundle, compress, compression, download, zip
   static const IconData fileArchive = const IconDataRegular(0xf1c6);
 
-  /// Solid file-archive icon
+  /// Solid Archive File icon
   ///
   /// https://fontawesome.com/icons/file-archive?style=solid
   /// .zip, bundle, compress, compression, download, zip
   static const IconData solidFileArchive = const IconDataSolid(0xf1c6);
 
-  /// Regular file-audio icon
+  /// Regular Audio File icon
   ///
   /// https://fontawesome.com/icons/file-audio?style=regular
   /// document, mp3, music, page, play, sound
   static const IconData fileAudio = const IconDataRegular(0xf1c7);
 
-  /// Solid file-audio icon
+  /// Solid Audio File icon
   ///
   /// https://fontawesome.com/icons/file-audio?style=solid
   /// document, mp3, music, page, play, sound
   static const IconData solidFileAudio = const IconDataSolid(0xf1c7);
 
-  /// Regular file-code icon
+  /// Regular Code File icon
   ///
   /// https://fontawesome.com/icons/file-code?style=regular
   /// css, development, document, html
   static const IconData fileCode = const IconDataRegular(0xf1c9);
 
-  /// Solid file-code icon
+  /// Solid Code File icon
   ///
   /// https://fontawesome.com/icons/file-code?style=solid
   /// css, development, document, html
   static const IconData solidFileCode = const IconDataSolid(0xf1c9);
 
-  /// Solid file-contract icon
+  /// Solid File Contract icon
   ///
   /// https://fontawesome.com/icons/file-contract?style=solid
   /// agreement, binding, document, legal, signature
   static const IconData fileContract = const IconDataSolid(0xf56c);
 
-  /// Solid file-csv icon
+  /// Solid File CSV icon
   ///
   /// https://fontawesome.com/icons/file-csv?style=solid
   /// document, excel, numbers, spreadsheets, table
   static const IconData fileCsv = const IconDataSolid(0xf6dd);
 
-  /// Solid file-download icon
+  /// Solid File Download icon
   ///
   /// https://fontawesome.com/icons/file-download?style=solid
   /// document, export, save
   static const IconData fileDownload = const IconDataSolid(0xf56d);
 
-  /// Regular file-excel icon
+  /// Regular Excel File icon
   ///
   /// https://fontawesome.com/icons/file-excel?style=regular
   /// csv, document, numbers, spreadsheets, table
   static const IconData fileExcel = const IconDataRegular(0xf1c3);
 
-  /// Solid file-excel icon
+  /// Solid Excel File icon
   ///
   /// https://fontawesome.com/icons/file-excel?style=solid
   /// csv, document, numbers, spreadsheets, table
   static const IconData solidFileExcel = const IconDataSolid(0xf1c3);
 
-  /// Solid file-export icon
+  /// Solid File Export icon
   ///
   /// https://fontawesome.com/icons/file-export?style=solid
   /// download, save
   static const IconData fileExport = const IconDataSolid(0xf56e);
 
-  /// Regular file-image icon
+  /// Regular Image File icon
   ///
   /// https://fontawesome.com/icons/file-image?style=regular
   /// document, image, jpg, photo, png
   static const IconData fileImage = const IconDataRegular(0xf1c5);
 
-  /// Solid file-image icon
+  /// Solid Image File icon
   ///
   /// https://fontawesome.com/icons/file-image?style=solid
   /// document, image, jpg, photo, png
   static const IconData solidFileImage = const IconDataSolid(0xf1c5);
 
-  /// Solid file-import icon
+  /// Solid File Import icon
   ///
   /// https://fontawesome.com/icons/file-import?style=solid
   /// copy, document, send, upload
   static const IconData fileImport = const IconDataSolid(0xf56f);
 
-  /// Solid file-invoice icon
+  /// Solid File Invoice icon
   ///
   /// https://fontawesome.com/icons/file-invoice?style=solid
   /// account, bill, charge, document, payment, receipt
   static const IconData fileInvoice = const IconDataSolid(0xf570);
 
-  /// Solid file-invoice-dollar icon
+  /// Solid File Invoice with US Dollar icon
   ///
   /// https://fontawesome.com/icons/file-invoice-dollar?style=solid
   /// $, account, bill, charge, document, dollar-sign, money, payment, receipt, usd
   static const IconData fileInvoiceDollar = const IconDataSolid(0xf571);
 
-  /// Solid file-medical icon
+  /// Solid Medical File icon
   ///
   /// https://fontawesome.com/icons/file-medical?style=solid
   /// document, health, history, prescription, record
   static const IconData fileMedical = const IconDataSolid(0xf477);
 
-  /// Solid file-medical-alt icon
+  /// Solid Alternate Medical File icon
   ///
   /// https://fontawesome.com/icons/file-medical-alt?style=solid
   /// document, health, history, prescription, record
   static const IconData fileMedicalAlt = const IconDataSolid(0xf478);
 
-  /// Regular file-pdf icon
+  /// Regular PDF File icon
   ///
   /// https://fontawesome.com/icons/file-pdf?style=regular
   /// acrobat, document, preview, save
   static const IconData filePdf = const IconDataRegular(0xf1c1);
 
-  /// Solid file-pdf icon
+  /// Solid PDF File icon
   ///
   /// https://fontawesome.com/icons/file-pdf?style=solid
   /// acrobat, document, preview, save
   static const IconData solidFilePdf = const IconDataSolid(0xf1c1);
 
-  /// Regular file-powerpoint icon
+  /// Regular Powerpoint File icon
   ///
   /// https://fontawesome.com/icons/file-powerpoint?style=regular
   /// display, document, keynote, presentation
   static const IconData filePowerpoint = const IconDataRegular(0xf1c4);
 
-  /// Solid file-powerpoint icon
+  /// Solid Powerpoint File icon
   ///
   /// https://fontawesome.com/icons/file-powerpoint?style=solid
   /// display, document, keynote, presentation
   static const IconData solidFilePowerpoint = const IconDataSolid(0xf1c4);
 
-  /// Solid file-prescription icon
+  /// Solid File Prescription icon
   ///
   /// https://fontawesome.com/icons/file-prescription?style=solid
   /// document, drugs, medical, medicine, rx
   static const IconData filePrescription = const IconDataSolid(0xf572);
 
-  /// Solid file-signature icon
+  /// Solid File Signature icon
   ///
   /// https://fontawesome.com/icons/file-signature?style=solid
   /// John Hancock, contract, document, name
   static const IconData fileSignature = const IconDataSolid(0xf573);
 
-  /// Solid file-upload icon
+  /// Solid File Upload icon
   ///
   /// https://fontawesome.com/icons/file-upload?style=solid
   /// document, import, page, save
   static const IconData fileUpload = const IconDataSolid(0xf574);
 
-  /// Regular file-video icon
+  /// Regular Video File icon
   ///
   /// https://fontawesome.com/icons/file-video?style=regular
   /// document, m4v, movie, mp4, play
   static const IconData fileVideo = const IconDataRegular(0xf1c8);
 
-  /// Solid file-video icon
+  /// Solid Video File icon
   ///
   /// https://fontawesome.com/icons/file-video?style=solid
   /// document, m4v, movie, mp4, play
   static const IconData solidFileVideo = const IconDataSolid(0xf1c8);
 
-  /// Regular file-word icon
+  /// Regular Word File icon
   ///
   /// https://fontawesome.com/icons/file-word?style=regular
   /// document, edit, page, text, writing
   static const IconData fileWord = const IconDataRegular(0xf1c2);
 
-  /// Solid file-word icon
+  /// Solid Word File icon
   ///
   /// https://fontawesome.com/icons/file-word?style=solid
   /// document, edit, page, text, writing
   static const IconData solidFileWord = const IconDataSolid(0xf1c2);
 
-  /// Solid fill icon
+  /// Solid Fill icon
   ///
   /// https://fontawesome.com/icons/fill?style=solid
   /// bucket, color, paint, paint bucket
   static const IconData fill = const IconDataSolid(0xf575);
 
-  /// Solid fill-drip icon
+  /// Solid Fill Drip icon
   ///
   /// https://fontawesome.com/icons/fill-drip?style=solid
   /// bucket, color, drop, paint, paint bucket, spill
   static const IconData fillDrip = const IconDataSolid(0xf576);
 
-  /// Solid film icon
+  /// Solid Film icon
   ///
   /// https://fontawesome.com/icons/film?style=solid
   /// cinema, movie, strip, video
   static const IconData film = const IconDataSolid(0xf008);
 
-  /// Solid filter icon
+  /// Solid Filter icon
   ///
   /// https://fontawesome.com/icons/filter?style=solid
   /// funnel, options, separate, sort
   static const IconData filter = const IconDataSolid(0xf0b0);
 
-  /// Solid fingerprint icon
+  /// Solid Fingerprint icon
   ///
   /// https://fontawesome.com/icons/fingerprint?style=solid
   /// human, id, identification, lock, smudge, touch, unique, unlock
@@ -3158,7 +3158,7 @@ class FontAwesomeIcons {
   /// burn, caliente, flame, heat, hot, popular
   static const IconData fire = const IconDataSolid(0xf06d);
 
-  /// Solid fire-alt icon
+  /// Solid Alternate Fire icon
   ///
   /// https://fontawesome.com/icons/fire-alt?style=solid
   /// burn, caliente, flame, heat, hot, popular
@@ -3170,30 +3170,30 @@ class FontAwesomeIcons {
   /// burn, caliente, fire fighter, flame, heat, hot, rescue
   static const IconData fireExtinguisher = const IconDataSolid(0xf134);
 
-  /// Brands firefox icon
+  /// Brands Firefox icon
   ///
   /// https://fontawesome.com/icons/firefox?style=brands
   /// browser
   static const IconData firefox = const IconDataBrands(0xf269);
 
-  /// Brands firefox-browser icon
+  /// Brands Firefox Browser icon
   ///
   /// https://fontawesome.com/icons/firefox-browser?style=brands
   /// browser
   static const IconData firefoxBrowser = const IconDataBrands(0xe007);
 
-  /// Solid first-aid icon
+  /// Solid First Aid icon
   ///
   /// https://fontawesome.com/icons/first-aid?style=solid
   /// emergency, emt, health, medical, rescue
   static const IconData firstAid = const IconDataSolid(0xf479);
 
-  /// Brands first-order icon
+  /// Brands First Order icon
   ///
   /// https://fontawesome.com/icons/first-order?style=brands
   static const IconData firstOrder = const IconDataBrands(0xf2b0);
 
-  /// Brands first-order-alt icon
+  /// Brands Alternate First Order icon
   ///
   /// https://fontawesome.com/icons/first-order-alt?style=brands
   static const IconData firstOrderAlt = const IconDataBrands(0xf50a);
@@ -3203,13 +3203,13 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/firstdraft?style=brands
   static const IconData firstdraft = const IconDataBrands(0xf3a1);
 
-  /// Solid fish icon
+  /// Solid Fish icon
   ///
   /// https://fontawesome.com/icons/fish?style=solid
   /// fauna, gold, seafood, swimming
   static const IconData fish = const IconDataSolid(0xf578);
 
-  /// Solid fist-raised icon
+  /// Solid Raised Fist icon
   ///
   /// https://fontawesome.com/icons/fist-raised?style=solid
   /// Dungeons & Dragons, d&d, dnd, fantasy, hand, ki, monk, resist, strength, unarmed combat
@@ -3233,76 +3233,76 @@ class FontAwesomeIcons {
   /// notice, notification, notify, pole, racing, report, symbol
   static const IconData flagCheckered = const IconDataSolid(0xf11e);
 
-  /// Solid flag-usa icon
+  /// Solid United States of America Flag icon
   ///
   /// https://fontawesome.com/icons/flag-usa?style=solid
   /// betsy ross, country, old glory, stars, stripes, symbol
   static const IconData flagUsa = const IconDataSolid(0xf74d);
 
-  /// Solid flask icon
+  /// Solid Flask icon
   ///
   /// https://fontawesome.com/icons/flask?style=solid
   /// beaker, experimental, labs, science
   static const IconData flask = const IconDataSolid(0xf0c3);
 
-  /// Brands flickr icon
+  /// Brands Flickr icon
   ///
   /// https://fontawesome.com/icons/flickr?style=brands
   static const IconData flickr = const IconDataBrands(0xf16e);
 
-  /// Brands flipboard icon
+  /// Brands Flipboard icon
   ///
   /// https://fontawesome.com/icons/flipboard?style=brands
   static const IconData flipboard = const IconDataBrands(0xf44d);
 
-  /// Regular flushed icon
+  /// Regular Flushed Face icon
   ///
   /// https://fontawesome.com/icons/flushed?style=regular
   /// embarrassed, emoticon, face
   static const IconData flushed = const IconDataRegular(0xf579);
 
-  /// Solid flushed icon
+  /// Solid Flushed Face icon
   ///
   /// https://fontawesome.com/icons/flushed?style=solid
   /// embarrassed, emoticon, face
   static const IconData solidFlushed = const IconDataSolid(0xf579);
 
-  /// Brands fly icon
+  /// Brands Fly icon
   ///
   /// https://fontawesome.com/icons/fly?style=brands
   static const IconData fly = const IconDataBrands(0xf417);
 
-  /// Regular folder icon
+  /// Regular Folder icon
   ///
   /// https://fontawesome.com/icons/folder?style=regular
   /// archive, directory, document, file
   static const IconData folder = const IconDataRegular(0xf07b);
 
-  /// Solid folder icon
+  /// Solid Folder icon
   ///
   /// https://fontawesome.com/icons/folder?style=solid
   /// archive, directory, document, file
   static const IconData solidFolder = const IconDataSolid(0xf07b);
 
-  /// Solid folder-minus icon
+  /// Solid Folder Minus icon
   ///
   /// https://fontawesome.com/icons/folder-minus?style=solid
   /// archive, delete, directory, document, file, negative, remove
   static const IconData folderMinus = const IconDataSolid(0xf65d);
 
-  /// Regular folder-open icon
+  /// Regular Folder Open icon
   ///
   /// https://fontawesome.com/icons/folder-open?style=regular
   /// archive, directory, document, empty, file, new
   static const IconData folderOpen = const IconDataRegular(0xf07c);
 
-  /// Solid folder-open icon
+  /// Solid Folder Open icon
   ///
   /// https://fontawesome.com/icons/folder-open?style=solid
   /// archive, directory, document, empty, file, new
   static const IconData solidFolderOpen = const IconDataSolid(0xf07c);
 
-  /// Solid folder-plus icon
+  /// Solid Folder Plus icon
   ///
   /// https://fontawesome.com/icons/folder-plus?style=solid
   /// add, archive, create, directory, document, file, new, positive
@@ -3314,51 +3314,51 @@ class FontAwesomeIcons {
   /// alphabet, glyph, text, type, typeface
   static const IconData font = const IconDataSolid(0xf031);
 
-  /// Brands font-awesome icon
+  /// Brands Font Awesome icon
   ///
   /// https://fontawesome.com/icons/font-awesome?style=brands
   /// meanpath
   static const IconData fontAwesome = const IconDataBrands(0xf2b4);
 
-  /// Brands font-awesome-alt icon
+  /// Brands Alternate Font Awesome icon
   ///
   /// https://fontawesome.com/icons/font-awesome-alt?style=brands
   static const IconData fontAwesomeAlt = const IconDataBrands(0xf35c);
 
-  /// Brands font-awesome-flag icon
+  /// Brands Font Awesome Flag icon
   ///
   /// https://fontawesome.com/icons/font-awesome-flag?style=brands
   static const IconData fontAwesomeFlag = const IconDataBrands(0xf425);
 
-  /// Brands fonticons icon
+  /// Brands Fonticons icon
   ///
   /// https://fontawesome.com/icons/fonticons?style=brands
   static const IconData fonticons = const IconDataBrands(0xf280);
 
-  /// Brands fonticons-fi icon
+  /// Brands Fonticons Fi icon
   ///
   /// https://fontawesome.com/icons/fonticons-fi?style=brands
   static const IconData fonticonsFi = const IconDataBrands(0xf3a2);
 
-  /// Solid football-ball icon
+  /// Solid Football Ball icon
   ///
   /// https://fontawesome.com/icons/football-ball?style=solid
   /// ball, fall, nfl, pigskin, seasonal
   static const IconData footballBall = const IconDataSolid(0xf44e);
 
-  /// Brands fort-awesome icon
+  /// Brands Fort Awesome icon
   ///
   /// https://fontawesome.com/icons/fort-awesome?style=brands
   /// castle
   static const IconData fortAwesome = const IconDataBrands(0xf286);
 
-  /// Brands fort-awesome-alt icon
+  /// Brands Alternate Fort Awesome icon
   ///
   /// https://fontawesome.com/icons/fort-awesome-alt?style=brands
   /// castle
   static const IconData fortAwesomeAlt = const IconDataBrands(0xf3a3);
 
-  /// Brands forumbee icon
+  /// Brands Forumbee icon
   ///
   /// https://fontawesome.com/icons/forumbee?style=brands
   static const IconData forumbee = const IconDataBrands(0xf211);
@@ -3369,138 +3369,138 @@ class FontAwesomeIcons {
   /// forward, next, skip
   static const IconData forward = const IconDataSolid(0xf04e);
 
-  /// Brands foursquare icon
+  /// Brands Foursquare icon
   ///
   /// https://fontawesome.com/icons/foursquare?style=brands
   static const IconData foursquare = const IconDataBrands(0xf180);
 
-  /// Brands free-code-camp icon
+  /// Brands freeCodeCamp icon
   ///
   /// https://fontawesome.com/icons/free-code-camp?style=brands
   static const IconData freeCodeCamp = const IconDataBrands(0xf2c5);
 
-  /// Brands freebsd icon
+  /// Brands FreeBSD icon
   ///
   /// https://fontawesome.com/icons/freebsd?style=brands
   static const IconData freebsd = const IconDataBrands(0xf3a4);
 
-  /// Solid frog icon
+  /// Solid Frog icon
   ///
   /// https://fontawesome.com/icons/frog?style=solid
   /// amphibian, bullfrog, fauna, hop, kermit, kiss, prince, ribbit, toad, wart
   static const IconData frog = const IconDataSolid(0xf52e);
 
-  /// Regular frown icon
+  /// Regular Frowning Face icon
   ///
   /// https://fontawesome.com/icons/frown?style=regular
   /// disapprove, emoticon, face, rating, sad
   static const IconData frown = const IconDataRegular(0xf119);
 
-  /// Solid frown icon
+  /// Solid Frowning Face icon
   ///
   /// https://fontawesome.com/icons/frown?style=solid
   /// disapprove, emoticon, face, rating, sad
   static const IconData solidFrown = const IconDataSolid(0xf119);
 
-  /// Regular frown-open icon
+  /// Regular Frowning Face With Open Mouth icon
   ///
   /// https://fontawesome.com/icons/frown-open?style=regular
   /// disapprove, emoticon, face, rating, sad
   static const IconData frownOpen = const IconDataRegular(0xf57a);
 
-  /// Solid frown-open icon
+  /// Solid Frowning Face With Open Mouth icon
   ///
   /// https://fontawesome.com/icons/frown-open?style=solid
   /// disapprove, emoticon, face, rating, sad
   static const IconData solidFrownOpen = const IconDataSolid(0xf57a);
 
-  /// Brands fulcrum icon
+  /// Brands Fulcrum icon
   ///
   /// https://fontawesome.com/icons/fulcrum?style=brands
   static const IconData fulcrum = const IconDataBrands(0xf50b);
 
-  /// Solid funnel-dollar icon
+  /// Solid Funnel Dollar icon
   ///
   /// https://fontawesome.com/icons/funnel-dollar?style=solid
   /// filter, money, options, separate, sort
   static const IconData funnelDollar = const IconDataSolid(0xf662);
 
-  /// Regular futbol icon
+  /// Regular Futbol icon
   ///
   /// https://fontawesome.com/icons/futbol?style=regular
   /// ball, football, mls, soccer
   static const IconData futbol = const IconDataRegular(0xf1e3);
 
-  /// Solid futbol icon
+  /// Solid Futbol icon
   ///
   /// https://fontawesome.com/icons/futbol?style=solid
   /// ball, football, mls, soccer
   static const IconData solidFutbol = const IconDataSolid(0xf1e3);
 
-  /// Brands galactic-republic icon
+  /// Brands Galactic Republic icon
   ///
   /// https://fontawesome.com/icons/galactic-republic?style=brands
   /// politics, star wars
   static const IconData galacticRepublic = const IconDataBrands(0xf50c);
 
-  /// Brands galactic-senate icon
+  /// Brands Galactic Senate icon
   ///
   /// https://fontawesome.com/icons/galactic-senate?style=brands
   /// star wars
   static const IconData galacticSenate = const IconDataBrands(0xf50d);
 
-  /// Solid gamepad icon
+  /// Solid Gamepad icon
   ///
   /// https://fontawesome.com/icons/gamepad?style=solid
   /// arcade, controller, d-pad, joystick, video, video game
   static const IconData gamepad = const IconDataSolid(0xf11b);
 
-  /// Solid gas-pump icon
+  /// Solid Gas Pump icon
   ///
   /// https://fontawesome.com/icons/gas-pump?style=solid
   /// car, fuel, gasoline, petrol
   static const IconData gasPump = const IconDataSolid(0xf52f);
 
-  /// Solid gavel icon
+  /// Solid Gavel icon
   ///
   /// https://fontawesome.com/icons/gavel?style=solid
   /// hammer, judge, law, lawyer, opinion
   static const IconData gavel = const IconDataSolid(0xf0e3);
 
-  /// Regular gem icon
+  /// Regular Gem icon
   ///
   /// https://fontawesome.com/icons/gem?style=regular
   /// diamond, jewelry, sapphire, stone, treasure
   static const IconData gem = const IconDataRegular(0xf3a5);
 
-  /// Solid gem icon
+  /// Solid Gem icon
   ///
   /// https://fontawesome.com/icons/gem?style=solid
   /// diamond, jewelry, sapphire, stone, treasure
   static const IconData solidGem = const IconDataSolid(0xf3a5);
 
-  /// Solid genderless icon
+  /// Solid Genderless icon
   ///
   /// https://fontawesome.com/icons/genderless?style=solid
   /// androgynous, asexual, sexless
   static const IconData genderless = const IconDataSolid(0xf22d);
 
-  /// Brands get-pocket icon
+  /// Brands Get Pocket icon
   ///
   /// https://fontawesome.com/icons/get-pocket?style=brands
   static const IconData getPocket = const IconDataBrands(0xf265);
 
-  /// Brands gg icon
+  /// Brands GG Currency icon
   ///
   /// https://fontawesome.com/icons/gg?style=brands
   static const IconData gg = const IconDataBrands(0xf260);
 
-  /// Brands gg-circle icon
+  /// Brands GG Currency Circle icon
   ///
   /// https://fontawesome.com/icons/gg-circle?style=brands
   static const IconData ggCircle = const IconDataBrands(0xf261);
 
-  /// Solid ghost icon
+  /// Solid Ghost icon
   ///
   /// https://fontawesome.com/icons/ghost?style=solid
   /// apparition, blinky, clyde, floating, halloween, holiday, inky, pinky, spirit
@@ -3512,770 +3512,770 @@ class FontAwesomeIcons {
   /// christmas, generosity, giving, holiday, party, present, wrapped, xmas
   static const IconData gift = const IconDataSolid(0xf06b);
 
-  /// Solid gifts icon
+  /// Solid Gifts icon
   ///
   /// https://fontawesome.com/icons/gifts?style=solid
   /// christmas, generosity, giving, holiday, party, present, wrapped, xmas
   static const IconData gifts = const IconDataSolid(0xf79c);
 
-  /// Brands git icon
+  /// Brands Git icon
   ///
   /// https://fontawesome.com/icons/git?style=brands
   static const IconData git = const IconDataBrands(0xf1d3);
 
-  /// Brands git-alt icon
+  /// Brands Git Alt icon
   ///
   /// https://fontawesome.com/icons/git-alt?style=brands
   static const IconData gitAlt = const IconDataBrands(0xf841);
 
-  /// Brands git-square icon
+  /// Brands Git Square icon
   ///
   /// https://fontawesome.com/icons/git-square?style=brands
   static const IconData gitSquare = const IconDataBrands(0xf1d2);
 
-  /// Brands github icon
+  /// Brands GitHub icon
   ///
   /// https://fontawesome.com/icons/github?style=brands
   /// octocat
   static const IconData github = const IconDataBrands(0xf09b);
 
-  /// Brands github-alt icon
+  /// Brands Alternate GitHub icon
   ///
   /// https://fontawesome.com/icons/github-alt?style=brands
   /// octocat
   static const IconData githubAlt = const IconDataBrands(0xf113);
 
-  /// Brands github-square icon
+  /// Brands GitHub Square icon
   ///
   /// https://fontawesome.com/icons/github-square?style=brands
   /// octocat
   static const IconData githubSquare = const IconDataBrands(0xf092);
 
-  /// Brands gitkraken icon
+  /// Brands GitKraken icon
   ///
   /// https://fontawesome.com/icons/gitkraken?style=brands
   static const IconData gitkraken = const IconDataBrands(0xf3a6);
 
-  /// Brands gitlab icon
+  /// Brands GitLab icon
   ///
   /// https://fontawesome.com/icons/gitlab?style=brands
   /// Axosoft
   static const IconData gitlab = const IconDataBrands(0xf296);
 
-  /// Brands gitter icon
+  /// Brands Gitter icon
   ///
   /// https://fontawesome.com/icons/gitter?style=brands
   static const IconData gitter = const IconDataBrands(0xf426);
 
-  /// Solid glass-cheers icon
+  /// Solid Glass Cheers icon
   ///
   /// https://fontawesome.com/icons/glass-cheers?style=solid
   /// alcohol, bar, beverage, celebration, champagne, clink, drink, holiday, new year's eve, party, toast
   static const IconData glassCheers = const IconDataSolid(0xf79f);
 
-  /// Solid glass-martini icon
+  /// Solid Martini Glass icon
   ///
   /// https://fontawesome.com/icons/glass-martini?style=solid
   /// alcohol, bar, beverage, drink, liquor
   static const IconData glassMartini = const IconDataSolid(0xf000);
 
-  /// Solid glass-martini-alt icon
+  /// Solid Alternate Glass Martini icon
   ///
   /// https://fontawesome.com/icons/glass-martini-alt?style=solid
   /// alcohol, bar, beverage, drink, liquor
   static const IconData glassMartiniAlt = const IconDataSolid(0xf57b);
 
-  /// Solid glass-whiskey icon
+  /// Solid Glass Whiskey icon
   ///
   /// https://fontawesome.com/icons/glass-whiskey?style=solid
   /// alcohol, bar, beverage, bourbon, drink, liquor, neat, rye, scotch, whisky
   static const IconData glassWhiskey = const IconDataSolid(0xf7a0);
 
-  /// Solid glasses icon
+  /// Solid Glasses icon
   ///
   /// https://fontawesome.com/icons/glasses?style=solid
   /// hipster, nerd, reading, sight, spectacles, vision
   static const IconData glasses = const IconDataSolid(0xf530);
 
-  /// Brands glide icon
+  /// Brands Glide icon
   ///
   /// https://fontawesome.com/icons/glide?style=brands
   static const IconData glide = const IconDataBrands(0xf2a5);
 
-  /// Brands glide-g icon
+  /// Brands Glide G icon
   ///
   /// https://fontawesome.com/icons/glide-g?style=brands
   static const IconData glideG = const IconDataBrands(0xf2a6);
 
-  /// Solid globe icon
+  /// Solid Globe icon
   ///
   /// https://fontawesome.com/icons/globe?style=solid
   /// all, coordinates, country, earth, global, gps, language, localize, location, map, online, place, planet, translate, travel, world
   static const IconData globe = const IconDataSolid(0xf0ac);
 
-  /// Solid globe-africa icon
+  /// Solid Globe with Africa shown icon
   ///
   /// https://fontawesome.com/icons/globe-africa?style=solid
   /// all, country, earth, global, gps, language, localize, location, map, online, place, planet, translate, travel, world
   static const IconData globeAfrica = const IconDataSolid(0xf57c);
 
-  /// Solid globe-americas icon
+  /// Solid Globe with Americas shown icon
   ///
   /// https://fontawesome.com/icons/globe-americas?style=solid
   /// all, country, earth, global, gps, language, localize, location, map, online, place, planet, translate, travel, world
   static const IconData globeAmericas = const IconDataSolid(0xf57d);
 
-  /// Solid globe-asia icon
+  /// Solid Globe with Asia shown icon
   ///
   /// https://fontawesome.com/icons/globe-asia?style=solid
   /// all, country, earth, global, gps, language, localize, location, map, online, place, planet, translate, travel, world
   static const IconData globeAsia = const IconDataSolid(0xf57e);
 
-  /// Solid globe-europe icon
+  /// Solid Globe with Europe shown icon
   ///
   /// https://fontawesome.com/icons/globe-europe?style=solid
   /// all, country, earth, global, gps, language, localize, location, map, online, place, planet, translate, travel, world
   static const IconData globeEurope = const IconDataSolid(0xf7a2);
 
-  /// Brands gofore icon
+  /// Brands Gofore icon
   ///
   /// https://fontawesome.com/icons/gofore?style=brands
   static const IconData gofore = const IconDataBrands(0xf3a7);
 
-  /// Solid golf-ball icon
+  /// Solid Golf Ball icon
   ///
   /// https://fontawesome.com/icons/golf-ball?style=solid
   /// caddy, eagle, putt, tee
   static const IconData golfBall = const IconDataSolid(0xf450);
 
-  /// Brands goodreads icon
+  /// Brands Goodreads icon
   ///
   /// https://fontawesome.com/icons/goodreads?style=brands
   static const IconData goodreads = const IconDataBrands(0xf3a8);
 
-  /// Brands goodreads-g icon
+  /// Brands Goodreads G icon
   ///
   /// https://fontawesome.com/icons/goodreads-g?style=brands
   static const IconData goodreadsG = const IconDataBrands(0xf3a9);
 
-  /// Brands google icon
+  /// Brands Google Logo icon
   ///
   /// https://fontawesome.com/icons/google?style=brands
   static const IconData google = const IconDataBrands(0xf1a0);
 
-  /// Brands google-drive icon
+  /// Brands Google Drive icon
   ///
   /// https://fontawesome.com/icons/google-drive?style=brands
   static const IconData googleDrive = const IconDataBrands(0xf3aa);
 
-  /// Brands google-pay icon
+  /// Brands Google Pay icon
   ///
   /// https://fontawesome.com/icons/google-pay?style=brands
   static const IconData googlePay = const IconDataBrands(0xe079);
 
-  /// Brands google-play icon
+  /// Brands Google Play icon
   ///
   /// https://fontawesome.com/icons/google-play?style=brands
   static const IconData googlePlay = const IconDataBrands(0xf3ab);
 
-  /// Brands google-plus icon
+  /// Brands Google Plus icon
   ///
   /// https://fontawesome.com/icons/google-plus?style=brands
   /// google-plus-circle, google-plus-official
   static const IconData googlePlus = const IconDataBrands(0xf2b3);
 
-  /// Brands google-plus-g icon
+  /// Brands Google Plus G icon
   ///
   /// https://fontawesome.com/icons/google-plus-g?style=brands
   /// google-plus, social network
   static const IconData googlePlusG = const IconDataBrands(0xf0d5);
 
-  /// Brands google-plus-square icon
+  /// Brands Google Plus Square icon
   ///
   /// https://fontawesome.com/icons/google-plus-square?style=brands
   /// social network
   static const IconData googlePlusSquare = const IconDataBrands(0xf0d4);
 
-  /// Brands google-wallet icon
+  /// Brands Google Wallet icon
   ///
   /// https://fontawesome.com/icons/google-wallet?style=brands
   static const IconData googleWallet = const IconDataBrands(0xf1ee);
 
-  /// Solid gopuram icon
+  /// Solid Gopuram icon
   ///
   /// https://fontawesome.com/icons/gopuram?style=solid
   /// building, entrance, hinduism, temple, tower
   static const IconData gopuram = const IconDataSolid(0xf664);
 
-  /// Solid graduation-cap icon
+  /// Solid Graduation Cap icon
   ///
   /// https://fontawesome.com/icons/graduation-cap?style=solid
   /// ceremony, college, graduate, learning, school, student
   static const IconData graduationCap = const IconDataSolid(0xf19d);
 
-  /// Brands gratipay icon
+  /// Brands Gratipay (Gittip) icon
   ///
   /// https://fontawesome.com/icons/gratipay?style=brands
   /// favorite, heart, like, love
   static const IconData gratipay = const IconDataBrands(0xf184);
 
-  /// Brands grav icon
+  /// Brands Grav icon
   ///
   /// https://fontawesome.com/icons/grav?style=brands
   static const IconData grav = const IconDataBrands(0xf2d6);
 
-  /// Solid greater-than icon
+  /// Solid Greater Than icon
   ///
   /// https://fontawesome.com/icons/greater-than?style=solid
   /// arithmetic, compare, math
   static const IconData greaterThan = const IconDataSolid(0xf531);
 
-  /// Solid greater-than-equal icon
+  /// Solid Greater Than Equal To icon
   ///
   /// https://fontawesome.com/icons/greater-than-equal?style=solid
   /// arithmetic, compare, math
   static const IconData greaterThanEqual = const IconDataSolid(0xf532);
 
-  /// Regular grimace icon
+  /// Regular Grimacing Face icon
   ///
   /// https://fontawesome.com/icons/grimace?style=regular
   /// cringe, emoticon, face, teeth
   static const IconData grimace = const IconDataRegular(0xf57f);
 
-  /// Solid grimace icon
+  /// Solid Grimacing Face icon
   ///
   /// https://fontawesome.com/icons/grimace?style=solid
   /// cringe, emoticon, face, teeth
   static const IconData solidGrimace = const IconDataSolid(0xf57f);
 
-  /// Regular grin icon
+  /// Regular Grinning Face icon
   ///
   /// https://fontawesome.com/icons/grin?style=regular
   /// emoticon, face, laugh, smile
   static const IconData grin = const IconDataRegular(0xf580);
 
-  /// Solid grin icon
+  /// Solid Grinning Face icon
   ///
   /// https://fontawesome.com/icons/grin?style=solid
   /// emoticon, face, laugh, smile
   static const IconData solidGrin = const IconDataSolid(0xf580);
 
-  /// Regular grin-alt icon
+  /// Regular Alternate Grinning Face icon
   ///
   /// https://fontawesome.com/icons/grin-alt?style=regular
   /// emoticon, face, laugh, smile
   static const IconData grinAlt = const IconDataRegular(0xf581);
 
-  /// Solid grin-alt icon
+  /// Solid Alternate Grinning Face icon
   ///
   /// https://fontawesome.com/icons/grin-alt?style=solid
   /// emoticon, face, laugh, smile
   static const IconData solidGrinAlt = const IconDataSolid(0xf581);
 
-  /// Regular grin-beam icon
+  /// Regular Grinning Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/grin-beam?style=regular
   /// emoticon, face, laugh, smile
   static const IconData grinBeam = const IconDataRegular(0xf582);
 
-  /// Solid grin-beam icon
+  /// Solid Grinning Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/grin-beam?style=solid
   /// emoticon, face, laugh, smile
   static const IconData solidGrinBeam = const IconDataSolid(0xf582);
 
-  /// Regular grin-beam-sweat icon
+  /// Regular Grinning Face With Sweat icon
   ///
   /// https://fontawesome.com/icons/grin-beam-sweat?style=regular
   /// embarass, emoticon, face, smile
   static const IconData grinBeamSweat = const IconDataRegular(0xf583);
 
-  /// Solid grin-beam-sweat icon
+  /// Solid Grinning Face With Sweat icon
   ///
   /// https://fontawesome.com/icons/grin-beam-sweat?style=solid
   /// embarass, emoticon, face, smile
   static const IconData solidGrinBeamSweat = const IconDataSolid(0xf583);
 
-  /// Regular grin-hearts icon
+  /// Regular Smiling Face With Heart-Eyes icon
   ///
   /// https://fontawesome.com/icons/grin-hearts?style=regular
   /// emoticon, face, love, smile
   static const IconData grinHearts = const IconDataRegular(0xf584);
 
-  /// Solid grin-hearts icon
+  /// Solid Smiling Face With Heart-Eyes icon
   ///
   /// https://fontawesome.com/icons/grin-hearts?style=solid
   /// emoticon, face, love, smile
   static const IconData solidGrinHearts = const IconDataSolid(0xf584);
 
-  /// Regular grin-squint icon
+  /// Regular Grinning Squinting Face icon
   ///
   /// https://fontawesome.com/icons/grin-squint?style=regular
   /// emoticon, face, laugh, smile
   static const IconData grinSquint = const IconDataRegular(0xf585);
 
-  /// Solid grin-squint icon
+  /// Solid Grinning Squinting Face icon
   ///
   /// https://fontawesome.com/icons/grin-squint?style=solid
   /// emoticon, face, laugh, smile
   static const IconData solidGrinSquint = const IconDataSolid(0xf585);
 
-  /// Regular grin-squint-tears icon
+  /// Regular Rolling on the Floor Laughing icon
   ///
   /// https://fontawesome.com/icons/grin-squint-tears?style=regular
   /// emoticon, face, happy, smile
   static const IconData grinSquintTears = const IconDataRegular(0xf586);
 
-  /// Solid grin-squint-tears icon
+  /// Solid Rolling on the Floor Laughing icon
   ///
   /// https://fontawesome.com/icons/grin-squint-tears?style=solid
   /// emoticon, face, happy, smile
   static const IconData solidGrinSquintTears = const IconDataSolid(0xf586);
 
-  /// Regular grin-stars icon
+  /// Regular Star-Struck icon
   ///
   /// https://fontawesome.com/icons/grin-stars?style=regular
   /// emoticon, face, star-struck
   static const IconData grinStars = const IconDataRegular(0xf587);
 
-  /// Solid grin-stars icon
+  /// Solid Star-Struck icon
   ///
   /// https://fontawesome.com/icons/grin-stars?style=solid
   /// emoticon, face, star-struck
   static const IconData solidGrinStars = const IconDataSolid(0xf587);
 
-  /// Regular grin-tears icon
+  /// Regular Face With Tears of Joy icon
   ///
   /// https://fontawesome.com/icons/grin-tears?style=regular
   /// LOL, emoticon, face
   static const IconData grinTears = const IconDataRegular(0xf588);
 
-  /// Solid grin-tears icon
+  /// Solid Face With Tears of Joy icon
   ///
   /// https://fontawesome.com/icons/grin-tears?style=solid
   /// LOL, emoticon, face
   static const IconData solidGrinTears = const IconDataSolid(0xf588);
 
-  /// Regular grin-tongue icon
+  /// Regular Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue?style=regular
   /// LOL, emoticon, face
   static const IconData grinTongue = const IconDataRegular(0xf589);
 
-  /// Solid grin-tongue icon
+  /// Solid Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue?style=solid
   /// LOL, emoticon, face
   static const IconData solidGrinTongue = const IconDataSolid(0xf589);
 
-  /// Regular grin-tongue-squint icon
+  /// Regular Squinting Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue-squint?style=regular
   /// LOL, emoticon, face
   static const IconData grinTongueSquint = const IconDataRegular(0xf58a);
 
-  /// Solid grin-tongue-squint icon
+  /// Solid Squinting Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue-squint?style=solid
   /// LOL, emoticon, face
   static const IconData solidGrinTongueSquint = const IconDataSolid(0xf58a);
 
-  /// Regular grin-tongue-wink icon
+  /// Regular Winking Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue-wink?style=regular
   /// LOL, emoticon, face
   static const IconData grinTongueWink = const IconDataRegular(0xf58b);
 
-  /// Solid grin-tongue-wink icon
+  /// Solid Winking Face With Tongue icon
   ///
   /// https://fontawesome.com/icons/grin-tongue-wink?style=solid
   /// LOL, emoticon, face
   static const IconData solidGrinTongueWink = const IconDataSolid(0xf58b);
 
-  /// Regular grin-wink icon
+  /// Regular Grinning Winking Face icon
   ///
   /// https://fontawesome.com/icons/grin-wink?style=regular
   /// emoticon, face, flirt, laugh, smile
   static const IconData grinWink = const IconDataRegular(0xf58c);
 
-  /// Solid grin-wink icon
+  /// Solid Grinning Winking Face icon
   ///
   /// https://fontawesome.com/icons/grin-wink?style=solid
   /// emoticon, face, flirt, laugh, smile
   static const IconData solidGrinWink = const IconDataSolid(0xf58c);
 
-  /// Solid grip-horizontal icon
+  /// Solid Grip Horizontal icon
   ///
   /// https://fontawesome.com/icons/grip-horizontal?style=solid
   /// affordance, drag, drop, grab, handle
   static const IconData gripHorizontal = const IconDataSolid(0xf58d);
 
-  /// Solid grip-lines icon
+  /// Solid Grip Lines icon
   ///
   /// https://fontawesome.com/icons/grip-lines?style=solid
   /// affordance, drag, drop, grab, handle
   static const IconData gripLines = const IconDataSolid(0xf7a4);
 
-  /// Solid grip-lines-vertical icon
+  /// Solid Grip Lines Vertical icon
   ///
   /// https://fontawesome.com/icons/grip-lines-vertical?style=solid
   /// affordance, drag, drop, grab, handle
   static const IconData gripLinesVertical = const IconDataSolid(0xf7a5);
 
-  /// Solid grip-vertical icon
+  /// Solid Grip Vertical icon
   ///
   /// https://fontawesome.com/icons/grip-vertical?style=solid
   /// affordance, drag, drop, grab, handle
   static const IconData gripVertical = const IconDataSolid(0xf58e);
 
-  /// Brands gripfire icon
+  /// Brands Gripfire, Inc. icon
   ///
   /// https://fontawesome.com/icons/gripfire?style=brands
   static const IconData gripfire = const IconDataBrands(0xf3ac);
 
-  /// Brands grunt icon
+  /// Brands Grunt icon
   ///
   /// https://fontawesome.com/icons/grunt?style=brands
   static const IconData grunt = const IconDataBrands(0xf3ad);
 
-  /// Brands guilded icon
+  /// Brands Guilded icon
   ///
   /// https://fontawesome.com/icons/guilded?style=brands
   static const IconData guilded = const IconDataBrands(0xe07e);
 
-  /// Solid guitar icon
+  /// Solid Guitar icon
   ///
   /// https://fontawesome.com/icons/guitar?style=solid
   /// acoustic, instrument, music, rock, rock and roll, song, strings
   static const IconData guitar = const IconDataSolid(0xf7a6);
 
-  /// Brands gulp icon
+  /// Brands Gulp icon
   ///
   /// https://fontawesome.com/icons/gulp?style=brands
   static const IconData gulp = const IconDataBrands(0xf3ae);
 
-  /// Solid h-square icon
+  /// Solid H Square icon
   ///
   /// https://fontawesome.com/icons/h-square?style=solid
   /// directions, emergency, hospital, hotel, map
   static const IconData hSquare = const IconDataSolid(0xf0fd);
 
-  /// Brands hacker-news icon
+  /// Brands Hacker News icon
   ///
   /// https://fontawesome.com/icons/hacker-news?style=brands
   static const IconData hackerNews = const IconDataBrands(0xf1d4);
 
-  /// Brands hacker-news-square icon
+  /// Brands Hacker News Square icon
   ///
   /// https://fontawesome.com/icons/hacker-news-square?style=brands
   static const IconData hackerNewsSquare = const IconDataBrands(0xf3af);
 
-  /// Brands hackerrank icon
+  /// Brands Hackerrank icon
   ///
   /// https://fontawesome.com/icons/hackerrank?style=brands
   static const IconData hackerrank = const IconDataBrands(0xf5f7);
 
-  /// Solid hamburger icon
+  /// Solid Hamburger icon
   ///
   /// https://fontawesome.com/icons/hamburger?style=solid
   /// bacon, beef, burger, burger king, cheeseburger, fast food, grill, ground beef, mcdonalds, sandwich
   static const IconData hamburger = const IconDataSolid(0xf805);
 
-  /// Solid hammer icon
+  /// Solid Hammer icon
   ///
   /// https://fontawesome.com/icons/hammer?style=solid
   /// admin, fix, repair, settings, tool
   static const IconData hammer = const IconDataSolid(0xf6e3);
 
-  /// Solid hamsa icon
+  /// Solid Hamsa icon
   ///
   /// https://fontawesome.com/icons/hamsa?style=solid
   /// amulet, christianity, islam, jewish, judaism, muslim, protection
   static const IconData hamsa = const IconDataSolid(0xf665);
 
-  /// Solid hand-holding icon
+  /// Solid Hand Holding icon
   ///
   /// https://fontawesome.com/icons/hand-holding?style=solid
   /// carry, lift
   static const IconData handHolding = const IconDataSolid(0xf4bd);
 
-  /// Solid hand-holding-heart icon
+  /// Solid Hand Holding Heart icon
   ///
   /// https://fontawesome.com/icons/hand-holding-heart?style=solid
   /// carry, charity, gift, lift, package
   static const IconData handHoldingHeart = const IconDataSolid(0xf4be);
 
-  /// Solid hand-holding-medical icon
+  /// Solid Hand Holding Medical Cross icon
   ///
   /// https://fontawesome.com/icons/hand-holding-medical?style=solid
   /// care, covid-19, donate, help
   static const IconData handHoldingMedical = const IconDataSolid(0xe05c);
 
-  /// Solid hand-holding-usd icon
+  /// Solid Hand Holding US Dollar icon
   ///
   /// https://fontawesome.com/icons/hand-holding-usd?style=solid
   /// $, carry, dollar sign, donation, giving, lift, money, price
   static const IconData handHoldingUsd = const IconDataSolid(0xf4c0);
 
-  /// Solid hand-holding-water icon
+  /// Solid Hand Holding Water icon
   ///
   /// https://fontawesome.com/icons/hand-holding-water?style=solid
   /// carry, covid-19, drought, grow, lift
   static const IconData handHoldingWater = const IconDataSolid(0xf4c1);
 
-  /// Regular hand-lizard icon
+  /// Regular Lizard (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-lizard?style=regular
   /// game, roshambo
   static const IconData handLizard = const IconDataRegular(0xf258);
 
-  /// Solid hand-lizard icon
+  /// Solid Lizard (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-lizard?style=solid
   /// game, roshambo
   static const IconData solidHandLizard = const IconDataSolid(0xf258);
 
-  /// Solid hand-middle-finger icon
+  /// Solid Hand with Middle Finger Raised icon
   ///
   /// https://fontawesome.com/icons/hand-middle-finger?style=solid
   /// flip the bird, gesture, hate, rude
   static const IconData handMiddleFinger = const IconDataSolid(0xf806);
 
-  /// Regular hand-paper icon
+  /// Regular Paper (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-paper?style=regular
   /// game, halt, roshambo, stop
   static const IconData handPaper = const IconDataRegular(0xf256);
 
-  /// Solid hand-paper icon
+  /// Solid Paper (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-paper?style=solid
   /// game, halt, roshambo, stop
   static const IconData solidHandPaper = const IconDataSolid(0xf256);
 
-  /// Regular hand-peace icon
+  /// Regular Peace (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-peace?style=regular
   /// rest, truce
   static const IconData handPeace = const IconDataRegular(0xf25b);
 
-  /// Solid hand-peace icon
+  /// Solid Peace (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-peace?style=solid
   /// rest, truce
   static const IconData solidHandPeace = const IconDataSolid(0xf25b);
 
-  /// Regular hand-point-down icon
+  /// Regular Hand Pointing Down icon
   ///
   /// https://fontawesome.com/icons/hand-point-down?style=regular
   /// finger, hand-o-down, point
   static const IconData handPointDown = const IconDataRegular(0xf0a7);
 
-  /// Solid hand-point-down icon
+  /// Solid Hand Pointing Down icon
   ///
   /// https://fontawesome.com/icons/hand-point-down?style=solid
   /// finger, hand-o-down, point
   static const IconData solidHandPointDown = const IconDataSolid(0xf0a7);
 
-  /// Regular hand-point-left icon
+  /// Regular Hand Pointing Left icon
   ///
   /// https://fontawesome.com/icons/hand-point-left?style=regular
   /// back, finger, hand-o-left, left, point, previous
   static const IconData handPointLeft = const IconDataRegular(0xf0a5);
 
-  /// Solid hand-point-left icon
+  /// Solid Hand Pointing Left icon
   ///
   /// https://fontawesome.com/icons/hand-point-left?style=solid
   /// back, finger, hand-o-left, left, point, previous
   static const IconData solidHandPointLeft = const IconDataSolid(0xf0a5);
 
-  /// Regular hand-point-right icon
+  /// Regular Hand Pointing Right icon
   ///
   /// https://fontawesome.com/icons/hand-point-right?style=regular
   /// finger, forward, hand-o-right, next, point, right
   static const IconData handPointRight = const IconDataRegular(0xf0a4);
 
-  /// Solid hand-point-right icon
+  /// Solid Hand Pointing Right icon
   ///
   /// https://fontawesome.com/icons/hand-point-right?style=solid
   /// finger, forward, hand-o-right, next, point, right
   static const IconData solidHandPointRight = const IconDataSolid(0xf0a4);
 
-  /// Regular hand-point-up icon
+  /// Regular Hand Pointing Up icon
   ///
   /// https://fontawesome.com/icons/hand-point-up?style=regular
   /// finger, hand-o-up, point
   static const IconData handPointUp = const IconDataRegular(0xf0a6);
 
-  /// Solid hand-point-up icon
+  /// Solid Hand Pointing Up icon
   ///
   /// https://fontawesome.com/icons/hand-point-up?style=solid
   /// finger, hand-o-up, point
   static const IconData solidHandPointUp = const IconDataSolid(0xf0a6);
 
-  /// Regular hand-pointer icon
+  /// Regular Pointer (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-pointer?style=regular
   /// arrow, cursor, select
   static const IconData handPointer = const IconDataRegular(0xf25a);
 
-  /// Solid hand-pointer icon
+  /// Solid Pointer (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-pointer?style=solid
   /// arrow, cursor, select
   static const IconData solidHandPointer = const IconDataSolid(0xf25a);
 
-  /// Regular hand-rock icon
+  /// Regular Rock (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-rock?style=regular
   /// fist, game, roshambo
   static const IconData handRock = const IconDataRegular(0xf255);
 
-  /// Solid hand-rock icon
+  /// Solid Rock (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-rock?style=solid
   /// fist, game, roshambo
   static const IconData solidHandRock = const IconDataSolid(0xf255);
 
-  /// Regular hand-scissors icon
+  /// Regular Scissors (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-scissors?style=regular
   /// cut, game, roshambo
   static const IconData handScissors = const IconDataRegular(0xf257);
 
-  /// Solid hand-scissors icon
+  /// Solid Scissors (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-scissors?style=solid
   /// cut, game, roshambo
   static const IconData solidHandScissors = const IconDataSolid(0xf257);
 
-  /// Solid hand-sparkles icon
+  /// Solid Hand Sparkles icon
   ///
   /// https://fontawesome.com/icons/hand-sparkles?style=solid
   /// clean, covid-19, hygiene, magic, soap, wash
   static const IconData handSparkles = const IconDataSolid(0xe05d);
 
-  /// Regular hand-spock icon
+  /// Regular Spock (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-spock?style=regular
   /// live long, prosper, salute, star trek, vulcan
   static const IconData handSpock = const IconDataRegular(0xf259);
 
-  /// Solid hand-spock icon
+  /// Solid Spock (Hand) icon
   ///
   /// https://fontawesome.com/icons/hand-spock?style=solid
   /// live long, prosper, salute, star trek, vulcan
   static const IconData solidHandSpock = const IconDataSolid(0xf259);
 
-  /// Solid hands icon
+  /// Solid Hands icon
   ///
   /// https://fontawesome.com/icons/hands?style=solid
   /// carry, hold, lift
   static const IconData hands = const IconDataSolid(0xf4c2);
 
-  /// Solid hands-helping icon
+  /// Solid Helping Hands icon
   ///
   /// https://fontawesome.com/icons/hands-helping?style=solid
   /// aid, assistance, handshake, partnership, volunteering
   static const IconData handsHelping = const IconDataSolid(0xf4c4);
 
-  /// Solid hands-wash icon
+  /// Solid Hands Wash icon
   ///
   /// https://fontawesome.com/icons/hands-wash?style=solid
   /// covid-19, hygiene, soap, wash
   static const IconData handsWash = const IconDataSolid(0xe05e);
 
-  /// Regular handshake icon
+  /// Regular Handshake icon
   ///
   /// https://fontawesome.com/icons/handshake?style=regular
   /// agreement, greeting, meeting, partnership
   static const IconData handshake = const IconDataRegular(0xf2b5);
 
-  /// Solid handshake icon
+  /// Solid Handshake icon
   ///
   /// https://fontawesome.com/icons/handshake?style=solid
   /// agreement, greeting, meeting, partnership
   static const IconData solidHandshake = const IconDataSolid(0xf2b5);
 
-  /// Solid handshake-alt-slash icon
+  /// Solid Handshake Alternate Slash icon
   ///
   /// https://fontawesome.com/icons/handshake-alt-slash?style=solid
   /// broken, covid-19, social distance
   static const IconData handshakeAltSlash = const IconDataSolid(0xe05f);
 
-  /// Solid handshake-slash icon
+  /// Solid Handshake Slash icon
   ///
   /// https://fontawesome.com/icons/handshake-slash?style=solid
   /// broken, covid-19, social distance
   static const IconData handshakeSlash = const IconDataSolid(0xe060);
 
-  /// Solid hanukiah icon
+  /// Solid Hanukiah icon
   ///
   /// https://fontawesome.com/icons/hanukiah?style=solid
   /// candle, hanukkah, jewish, judaism, light
   static const IconData hanukiah = const IconDataSolid(0xf6e6);
 
-  /// Solid hard-hat icon
+  /// Solid Hard Hat icon
   ///
   /// https://fontawesome.com/icons/hard-hat?style=solid
   /// construction, hardhat, helmet, safety
   static const IconData hardHat = const IconDataSolid(0xf807);
 
-  /// Solid hashtag icon
+  /// Solid Hashtag icon
   ///
   /// https://fontawesome.com/icons/hashtag?style=solid
   /// Twitter, instagram, pound, social media, tag
   static const IconData hashtag = const IconDataSolid(0xf292);
 
-  /// Solid hat-cowboy icon
+  /// Solid Cowboy Hat icon
   ///
   /// https://fontawesome.com/icons/hat-cowboy?style=solid
   /// buckaroo, horse, jackeroo, john b., old west, pardner, ranch, rancher, rodeo, western, wrangler
   static const IconData hatCowboy = const IconDataSolid(0xf8c0);
 
-  /// Solid hat-cowboy-side icon
+  /// Solid Cowboy Hat Side icon
   ///
   /// https://fontawesome.com/icons/hat-cowboy-side?style=solid
   /// buckaroo, horse, jackeroo, john b., old west, pardner, ranch, rancher, rodeo, western, wrangler
   static const IconData hatCowboySide = const IconDataSolid(0xf8c1);
 
-  /// Solid hat-wizard icon
+  /// Solid Wizard's Hat icon
   ///
   /// https://fontawesome.com/icons/hat-wizard?style=solid
   /// Dungeons & Dragons, accessory, buckle, clothing, d&d, dnd, fantasy, halloween, head, holiday, mage, magic, pointy, witch
   static const IconData hatWizard = const IconDataSolid(0xf6e8);
 
-  /// Regular hdd icon
+  /// Regular HDD icon
   ///
   /// https://fontawesome.com/icons/hdd?style=regular
   /// cpu, hard drive, harddrive, machine, save, storage
   static const IconData hdd = const IconDataRegular(0xf0a0);
 
-  /// Solid hdd icon
+  /// Solid HDD icon
   ///
   /// https://fontawesome.com/icons/hdd?style=solid
   /// cpu, hard drive, harddrive, machine, save, storage
   static const IconData solidHdd = const IconDataSolid(0xf0a0);
 
-  /// Solid head-side-cough icon
+  /// Solid Head Side Cough icon
   ///
   /// https://fontawesome.com/icons/head-side-cough?style=solid
   /// cough, covid-19, germs, lungs, respiratory, sick
   static const IconData headSideCough = const IconDataSolid(0xe061);
 
-  /// Solid head-side-cough-slash icon
+  /// Solid Head Side-cough-slash icon
   ///
   /// https://fontawesome.com/icons/head-side-cough-slash?style=solid
   /// cough, covid-19, germs, lungs, respiratory, sick
   static const IconData headSideCoughSlash = const IconDataSolid(0xe062);
 
-  /// Solid head-side-mask icon
+  /// Solid Head Side Mask icon
   ///
   /// https://fontawesome.com/icons/head-side-mask?style=solid
   /// breath, covid-19, filter, respirator, virus
   static const IconData headSideMask = const IconDataSolid(0xe063);
 
-  /// Solid head-side-virus icon
+  /// Solid Head Side Virus icon
   ///
   /// https://fontawesome.com/icons/head-side-virus?style=solid
   /// cold, covid-19, flu, sick
@@ -4293,94 +4293,94 @@ class FontAwesomeIcons {
   /// audio, listen, music, sound, speaker
   static const IconData headphones = const IconDataSolid(0xf025);
 
-  /// Solid headphones-alt icon
+  /// Solid Alternate Headphones icon
   ///
   /// https://fontawesome.com/icons/headphones-alt?style=solid
   /// audio, listen, music, sound, speaker
   static const IconData headphonesAlt = const IconDataSolid(0xf58f);
 
-  /// Solid headset icon
+  /// Solid Headset icon
   ///
   /// https://fontawesome.com/icons/headset?style=solid
   /// audio, gamer, gaming, listen, live chat, microphone, shot caller, sound, support, telemarketer
   static const IconData headset = const IconDataSolid(0xf590);
 
-  /// Regular heart icon
+  /// Regular Heart icon
   ///
   /// https://fontawesome.com/icons/heart?style=regular
   /// favorite, like, love, relationship, valentine
   static const IconData heart = const IconDataRegular(0xf004);
 
-  /// Solid heart icon
+  /// Solid Heart icon
   ///
   /// https://fontawesome.com/icons/heart?style=solid
   /// favorite, like, love, relationship, valentine
   static const IconData solidHeart = const IconDataSolid(0xf004);
 
-  /// Solid heart-broken icon
+  /// Solid Heart Broken icon
   ///
   /// https://fontawesome.com/icons/heart-broken?style=solid
   /// breakup, crushed, dislike, dumped, grief, love, lovesick, relationship, sad
   static const IconData heartBroken = const IconDataSolid(0xf7a9);
 
-  /// Solid heartbeat icon
+  /// Solid Heartbeat icon
   ///
   /// https://fontawesome.com/icons/heartbeat?style=solid
   /// ekg, electrocardiogram, health, lifeline, vital signs
   static const IconData heartbeat = const IconDataSolid(0xf21e);
 
-  /// Solid helicopter icon
+  /// Solid Helicopter icon
   ///
   /// https://fontawesome.com/icons/helicopter?style=solid
   /// airwolf, apache, chopper, flight, fly, travel
   static const IconData helicopter = const IconDataSolid(0xf533);
 
-  /// Solid highlighter icon
+  /// Solid Highlighter icon
   ///
   /// https://fontawesome.com/icons/highlighter?style=solid
   /// edit, marker, sharpie, update, write
   static const IconData highlighter = const IconDataSolid(0xf591);
 
-  /// Solid hiking icon
+  /// Solid Hiking icon
   ///
   /// https://fontawesome.com/icons/hiking?style=solid
   /// activity, backpack, fall, fitness, outdoors, person, seasonal, walking
   static const IconData hiking = const IconDataSolid(0xf6ec);
 
-  /// Solid hippo icon
+  /// Solid Hippo icon
   ///
   /// https://fontawesome.com/icons/hippo?style=solid
   /// animal, fauna, hippopotamus, hungry, mammal
   static const IconData hippo = const IconDataSolid(0xf6ed);
 
-  /// Brands hips icon
+  /// Brands Hips icon
   ///
   /// https://fontawesome.com/icons/hips?style=brands
   static const IconData hips = const IconDataBrands(0xf452);
 
-  /// Brands hire-a-helper icon
+  /// Brands HireAHelper icon
   ///
   /// https://fontawesome.com/icons/hire-a-helper?style=brands
   static const IconData hireAHelper = const IconDataBrands(0xf3b0);
 
-  /// Solid history icon
+  /// Solid History icon
   ///
   /// https://fontawesome.com/icons/history?style=solid
   /// Rewind, clock, reverse, time, time machine
   static const IconData history = const IconDataSolid(0xf1da);
 
-  /// Brands hive icon
+  /// Brands Hive Blockchain Network icon
   ///
   /// https://fontawesome.com/icons/hive?style=brands
   static const IconData hive = const IconDataBrands(0xe07f);
 
-  /// Solid hockey-puck icon
+  /// Solid Hockey Puck icon
   ///
   /// https://fontawesome.com/icons/hockey-puck?style=solid
   /// ice, nhl, sport
   static const IconData hockeyPuck = const IconDataSolid(0xf453);
 
-  /// Solid holly-berry icon
+  /// Solid Holly Berry icon
   ///
   /// https://fontawesome.com/icons/holly-berry?style=solid
   /// catwoman, christmas, decoration, flora, halle, holiday, ororo munroe, plant, storm, xmas
@@ -4392,23 +4392,23 @@ class FontAwesomeIcons {
   /// abode, building, house, main
   static const IconData home = const IconDataSolid(0xf015);
 
-  /// Brands hooli icon
+  /// Brands Hooli icon
   ///
   /// https://fontawesome.com/icons/hooli?style=brands
   static const IconData hooli = const IconDataBrands(0xf427);
 
-  /// Brands hornbill icon
+  /// Brands Hornbill icon
   ///
   /// https://fontawesome.com/icons/hornbill?style=brands
   static const IconData hornbill = const IconDataBrands(0xf592);
 
-  /// Solid horse icon
+  /// Solid Horse icon
   ///
   /// https://fontawesome.com/icons/horse?style=solid
   /// equus, fauna, mammmal, mare, neigh, pony
   static const IconData horse = const IconDataSolid(0xf6f0);
 
-  /// Solid horse-head icon
+  /// Solid Horse Head icon
   ///
   /// https://fontawesome.com/icons/horse-head?style=solid
   /// equus, fauna, mammmal, mare, neigh, pony
@@ -4426,200 +4426,200 @@ class FontAwesomeIcons {
   /// building, covid-19, emergency room, medical center
   static const IconData solidHospital = const IconDataSolid(0xf0f8);
 
-  /// Solid hospital-alt icon
+  /// Solid Alternate Hospital icon
   ///
   /// https://fontawesome.com/icons/hospital-alt?style=solid
   /// building, covid-19, emergency room, medical center
   static const IconData hospitalAlt = const IconDataSolid(0xf47d);
 
-  /// Solid hospital-symbol icon
+  /// Solid Hospital Symbol icon
   ///
   /// https://fontawesome.com/icons/hospital-symbol?style=solid
   /// clinic, covid-19, emergency, map
   static const IconData hospitalSymbol = const IconDataSolid(0xf47e);
 
-  /// Solid hospital-user icon
+  /// Solid Hospital with User icon
   ///
   /// https://fontawesome.com/icons/hospital-user?style=solid
   /// covid-19, doctor, network, patient, primary care
   static const IconData hospitalUser = const IconDataSolid(0xf80d);
 
-  /// Solid hot-tub icon
+  /// Solid Hot Tub icon
   ///
   /// https://fontawesome.com/icons/hot-tub?style=solid
   /// bath, jacuzzi, massage, sauna, spa
   static const IconData hotTub = const IconDataSolid(0xf593);
 
-  /// Solid hotdog icon
+  /// Solid Hot Dog icon
   ///
   /// https://fontawesome.com/icons/hotdog?style=solid
   /// bun, chili, frankfurt, frankfurter, kosher, polish, sandwich, sausage, vienna, weiner
   static const IconData hotdog = const IconDataSolid(0xf80f);
 
-  /// Solid hotel icon
+  /// Solid Hotel icon
   ///
   /// https://fontawesome.com/icons/hotel?style=solid
   /// building, inn, lodging, motel, resort, travel
   static const IconData hotel = const IconDataSolid(0xf594);
 
-  /// Brands hotjar icon
+  /// Brands Hotjar icon
   ///
   /// https://fontawesome.com/icons/hotjar?style=brands
   static const IconData hotjar = const IconDataBrands(0xf3b1);
 
-  /// Regular hourglass icon
+  /// Regular Hourglass icon
   ///
   /// https://fontawesome.com/icons/hourglass?style=regular
   /// hour, minute, sand, stopwatch, time
   static const IconData hourglass = const IconDataRegular(0xf254);
 
-  /// Solid hourglass icon
+  /// Solid Hourglass icon
   ///
   /// https://fontawesome.com/icons/hourglass?style=solid
   /// hour, minute, sand, stopwatch, time
   static const IconData solidHourglass = const IconDataSolid(0xf254);
 
-  /// Solid hourglass-end icon
+  /// Solid Hourglass End icon
   ///
   /// https://fontawesome.com/icons/hourglass-end?style=solid
   /// hour, minute, sand, stopwatch, time
   static const IconData hourglassEnd = const IconDataSolid(0xf253);
 
-  /// Solid hourglass-half icon
+  /// Solid Hourglass Half icon
   ///
   /// https://fontawesome.com/icons/hourglass-half?style=solid
   /// hour, minute, sand, stopwatch, time
   static const IconData hourglassHalf = const IconDataSolid(0xf252);
 
-  /// Solid hourglass-start icon
+  /// Solid Hourglass Start icon
   ///
   /// https://fontawesome.com/icons/hourglass-start?style=solid
   /// hour, minute, sand, stopwatch, time
   static const IconData hourglassStart = const IconDataSolid(0xf251);
 
-  /// Solid house-damage icon
+  /// Solid Damaged House icon
   ///
   /// https://fontawesome.com/icons/house-damage?style=solid
   /// building, devastation, disaster, home, insurance
   static const IconData houseDamage = const IconDataSolid(0xf6f1);
 
-  /// Solid house-user icon
+  /// Solid House User icon
   ///
   /// https://fontawesome.com/icons/house-user?style=solid
   /// covid-19, home, isolation, quarantine
   static const IconData houseUser = const IconDataSolid(0xe065);
 
-  /// Brands houzz icon
+  /// Brands Houzz icon
   ///
   /// https://fontawesome.com/icons/houzz?style=brands
   static const IconData houzz = const IconDataBrands(0xf27c);
 
-  /// Solid hryvnia icon
+  /// Solid Hryvnia icon
   ///
   /// https://fontawesome.com/icons/hryvnia?style=solid
   /// currency, money, ukraine, ukrainian
   static const IconData hryvnia = const IconDataSolid(0xf6f2);
 
-  /// Brands html5 icon
+  /// Brands HTML 5 Logo icon
   ///
   /// https://fontawesome.com/icons/html5?style=brands
   static const IconData html5 = const IconDataBrands(0xf13b);
 
-  /// Brands hubspot icon
+  /// Brands HubSpot icon
   ///
   /// https://fontawesome.com/icons/hubspot?style=brands
   static const IconData hubspot = const IconDataBrands(0xf3b2);
 
-  /// Solid i-cursor icon
+  /// Solid I Beam Cursor icon
   ///
   /// https://fontawesome.com/icons/i-cursor?style=solid
   /// editing, i-beam, type, writing
   static const IconData iCursor = const IconDataSolid(0xf246);
 
-  /// Solid ice-cream icon
+  /// Solid Ice Cream icon
   ///
   /// https://fontawesome.com/icons/ice-cream?style=solid
   /// chocolate, cone, dessert, frozen, scoop, sorbet, vanilla, yogurt
   static const IconData iceCream = const IconDataSolid(0xf810);
 
-  /// Solid icicles icon
+  /// Solid Icicles icon
   ///
   /// https://fontawesome.com/icons/icicles?style=solid
   /// cold, frozen, hanging, ice, seasonal, sharp
   static const IconData icicles = const IconDataSolid(0xf7ad);
 
-  /// Solid icons icon
+  /// Solid Icons icon
   ///
   /// https://fontawesome.com/icons/icons?style=solid
   /// bolt, emoji, heart, image, music, photo, symbols
   static const IconData icons = const IconDataSolid(0xf86d);
 
-  /// Regular id-badge icon
+  /// Regular Identification Badge icon
   ///
   /// https://fontawesome.com/icons/id-badge?style=regular
   /// address, contact, identification, license, profile
   static const IconData idBadge = const IconDataRegular(0xf2c1);
 
-  /// Solid id-badge icon
+  /// Solid Identification Badge icon
   ///
   /// https://fontawesome.com/icons/id-badge?style=solid
   /// address, contact, identification, license, profile
   static const IconData solidIdBadge = const IconDataSolid(0xf2c1);
 
-  /// Regular id-card icon
+  /// Regular Identification Card icon
   ///
   /// https://fontawesome.com/icons/id-card?style=regular
   /// contact, demographics, document, identification, issued, profile
   static const IconData idCard = const IconDataRegular(0xf2c2);
 
-  /// Solid id-card icon
+  /// Solid Identification Card icon
   ///
   /// https://fontawesome.com/icons/id-card?style=solid
   /// contact, demographics, document, identification, issued, profile
   static const IconData solidIdCard = const IconDataSolid(0xf2c2);
 
-  /// Solid id-card-alt icon
+  /// Solid Alternate Identification Card icon
   ///
   /// https://fontawesome.com/icons/id-card-alt?style=solid
   /// contact, demographics, document, identification, issued, profile
   static const IconData idCardAlt = const IconDataSolid(0xf47f);
 
-  /// Brands ideal icon
+  /// Brands iDeal icon
   ///
   /// https://fontawesome.com/icons/ideal?style=brands
   static const IconData ideal = const IconDataBrands(0xe013);
 
-  /// Solid igloo icon
+  /// Solid Igloo icon
   ///
   /// https://fontawesome.com/icons/igloo?style=solid
   /// dome, dwelling, eskimo, home, house, ice, snow
   static const IconData igloo = const IconDataSolid(0xf7ae);
 
-  /// Regular image icon
+  /// Regular Image icon
   ///
   /// https://fontawesome.com/icons/image?style=regular
   /// album, landscape, photo, picture
   static const IconData image = const IconDataRegular(0xf03e);
 
-  /// Solid image icon
+  /// Solid Image icon
   ///
   /// https://fontawesome.com/icons/image?style=solid
   /// album, landscape, photo, picture
   static const IconData solidImage = const IconDataSolid(0xf03e);
 
-  /// Regular images icon
+  /// Regular Images icon
   ///
   /// https://fontawesome.com/icons/images?style=regular
   /// album, landscape, photo, picture
   static const IconData images = const IconDataRegular(0xf302);
 
-  /// Solid images icon
+  /// Solid Images icon
   ///
   /// https://fontawesome.com/icons/images?style=solid
   /// album, landscape, photo, picture
   static const IconData solidImages = const IconDataSolid(0xf302);
 
-  /// Brands imdb icon
+  /// Brands IMDB icon
   ///
   /// https://fontawesome.com/icons/imdb?style=brands
   static const IconData imdb = const IconDataBrands(0xf2d8);
@@ -4630,69 +4630,69 @@ class FontAwesomeIcons {
   /// archive, desk, email, mail, message
   static const IconData inbox = const IconDataSolid(0xf01c);
 
-  /// Solid indent icon
+  /// Solid Indent icon
   ///
   /// https://fontawesome.com/icons/indent?style=solid
   /// align, justify, paragraph, tab
   static const IconData indent = const IconDataSolid(0xf03c);
 
-  /// Solid industry icon
+  /// Solid Industry icon
   ///
   /// https://fontawesome.com/icons/industry?style=solid
   /// building, factory, industrial, manufacturing, mill, warehouse
   static const IconData industry = const IconDataSolid(0xf275);
 
-  /// Solid infinity icon
+  /// Solid Infinity icon
   ///
   /// https://fontawesome.com/icons/infinity?style=solid
   /// eternity, forever, math
   static const IconData infinity = const IconDataSolid(0xf534);
 
-  /// Solid info icon
+  /// Solid Info icon
   ///
   /// https://fontawesome.com/icons/info?style=solid
   /// details, help, information, more, support
   static const IconData info = const IconDataSolid(0xf129);
 
-  /// Solid info-circle icon
+  /// Solid Info Circle icon
   ///
   /// https://fontawesome.com/icons/info-circle?style=solid
   /// details, help, information, more, support
   static const IconData infoCircle = const IconDataSolid(0xf05a);
 
-  /// Brands innosoft icon
+  /// Brands Innosoft icon
   ///
   /// https://fontawesome.com/icons/innosoft?style=brands
   static const IconData innosoft = const IconDataBrands(0xe080);
 
-  /// Brands instagram icon
+  /// Brands Instagram icon
   ///
   /// https://fontawesome.com/icons/instagram?style=brands
   static const IconData instagram = const IconDataBrands(0xf16d);
 
-  /// Brands instagram-square icon
+  /// Brands Instagram Square icon
   ///
   /// https://fontawesome.com/icons/instagram-square?style=brands
   static const IconData instagramSquare = const IconDataBrands(0xe055);
 
-  /// Brands instalod icon
+  /// Brands InstaLOD icon
   ///
   /// https://fontawesome.com/icons/instalod?style=brands
   static const IconData instalod = const IconDataBrands(0xe081);
 
-  /// Brands intercom icon
+  /// Brands Intercom icon
   ///
   /// https://fontawesome.com/icons/intercom?style=brands
   /// app, customer, messenger
   static const IconData intercom = const IconDataBrands(0xf7af);
 
-  /// Brands internet-explorer icon
+  /// Brands Internet-explorer icon
   ///
   /// https://fontawesome.com/icons/internet-explorer?style=brands
   /// browser, ie
   static const IconData internetExplorer = const IconDataBrands(0xf26b);
 
-  /// Brands invision icon
+  /// Brands InVision icon
   ///
   /// https://fontawesome.com/icons/invision?style=brands
   /// app, design, interface
@@ -4709,93 +4709,93 @@ class FontAwesomeIcons {
   /// edit, emphasis, font, format, text, type
   static const IconData italic = const IconDataSolid(0xf033);
 
-  /// Brands itch-io icon
+  /// Brands itch.io icon
   ///
   /// https://fontawesome.com/icons/itch-io?style=brands
   static const IconData itchIo = const IconDataBrands(0xf83a);
 
-  /// Brands itunes icon
+  /// Brands iTunes icon
   ///
   /// https://fontawesome.com/icons/itunes?style=brands
   static const IconData itunes = const IconDataBrands(0xf3b4);
 
-  /// Brands itunes-note icon
+  /// Brands Itunes Note icon
   ///
   /// https://fontawesome.com/icons/itunes-note?style=brands
   static const IconData itunesNote = const IconDataBrands(0xf3b5);
 
-  /// Brands java icon
+  /// Brands Java icon
   ///
   /// https://fontawesome.com/icons/java?style=brands
   static const IconData java = const IconDataBrands(0xf4e4);
 
-  /// Solid jedi icon
+  /// Solid Jedi icon
   ///
   /// https://fontawesome.com/icons/jedi?style=solid
   /// crest, force, sith, skywalker, star wars, yoda
   static const IconData jedi = const IconDataSolid(0xf669);
 
-  /// Brands jedi-order icon
+  /// Brands Jedi Order icon
   ///
   /// https://fontawesome.com/icons/jedi-order?style=brands
   /// star wars
   static const IconData jediOrder = const IconDataBrands(0xf50e);
 
-  /// Brands jenkins icon
+  /// Brands Jenkis icon
   ///
   /// https://fontawesome.com/icons/jenkins?style=brands
   static const IconData jenkins = const IconDataBrands(0xf3b6);
 
-  /// Brands jira icon
+  /// Brands Jira icon
   ///
   /// https://fontawesome.com/icons/jira?style=brands
   /// atlassian
   static const IconData jira = const IconDataBrands(0xf7b1);
 
-  /// Brands joget icon
+  /// Brands Joget icon
   ///
   /// https://fontawesome.com/icons/joget?style=brands
   static const IconData joget = const IconDataBrands(0xf3b7);
 
-  /// Solid joint icon
+  /// Solid Joint icon
   ///
   /// https://fontawesome.com/icons/joint?style=solid
   /// blunt, cannabis, doobie, drugs, marijuana, roach, smoke, smoking, spliff
   static const IconData joint = const IconDataSolid(0xf595);
 
-  /// Brands joomla icon
+  /// Brands Joomla Logo icon
   ///
   /// https://fontawesome.com/icons/joomla?style=brands
   static const IconData joomla = const IconDataBrands(0xf1aa);
 
-  /// Solid journal-whills icon
+  /// Solid Journal of the Whills icon
   ///
   /// https://fontawesome.com/icons/journal-whills?style=solid
   /// book, force, jedi, sith, star wars, yoda
   static const IconData journalWhills = const IconDataSolid(0xf66a);
 
-  /// Brands js icon
+  /// Brands JavaScript (JS) icon
   ///
   /// https://fontawesome.com/icons/js?style=brands
   static const IconData js = const IconDataBrands(0xf3b8);
 
-  /// Brands js-square icon
+  /// Brands JavaScript (JS) Square icon
   ///
   /// https://fontawesome.com/icons/js-square?style=brands
   static const IconData jsSquare = const IconDataBrands(0xf3b9);
 
-  /// Brands jsfiddle icon
+  /// Brands jsFiddle icon
   ///
   /// https://fontawesome.com/icons/jsfiddle?style=brands
   static const IconData jsfiddle = const IconDataBrands(0xf1cc);
 
-  /// Solid kaaba icon
+  /// Solid Kaaba icon
   ///
   /// https://fontawesome.com/icons/kaaba?style=solid
   /// building, cube, islam, muslim
   static const IconData kaaba = const IconDataSolid(0xf66b);
 
-  /// Brands kaggle icon
+  /// Brands Kaggle icon
   ///
   /// https://fontawesome.com/icons/kaggle?style=brands
   static const IconData kaggle = const IconDataBrands(0xf5fa);
@@ -4806,191 +4806,191 @@ class FontAwesomeIcons {
   /// lock, password, private, secret, unlock
   static const IconData key = const IconDataSolid(0xf084);
 
-  /// Brands keybase icon
+  /// Brands Keybase icon
   ///
   /// https://fontawesome.com/icons/keybase?style=brands
   static const IconData keybase = const IconDataBrands(0xf4f5);
 
-  /// Regular keyboard icon
+  /// Regular Keyboard icon
   ///
   /// https://fontawesome.com/icons/keyboard?style=regular
   /// accessory, edit, input, text, type, write
   static const IconData keyboard = const IconDataRegular(0xf11c);
 
-  /// Solid keyboard icon
+  /// Solid Keyboard icon
   ///
   /// https://fontawesome.com/icons/keyboard?style=solid
   /// accessory, edit, input, text, type, write
   static const IconData solidKeyboard = const IconDataSolid(0xf11c);
 
-  /// Brands keycdn icon
+  /// Brands KeyCDN icon
   ///
   /// https://fontawesome.com/icons/keycdn?style=brands
   static const IconData keycdn = const IconDataBrands(0xf3ba);
 
-  /// Solid khanda icon
+  /// Solid Khanda icon
   ///
   /// https://fontawesome.com/icons/khanda?style=solid
   /// chakkar, sikh, sikhism, sword
   static const IconData khanda = const IconDataSolid(0xf66d);
 
-  /// Brands kickstarter icon
+  /// Brands Kickstarter icon
   ///
   /// https://fontawesome.com/icons/kickstarter?style=brands
   static const IconData kickstarter = const IconDataBrands(0xf3bb);
 
-  /// Brands kickstarter-k icon
+  /// Brands Kickstarter K icon
   ///
   /// https://fontawesome.com/icons/kickstarter-k?style=brands
   static const IconData kickstarterK = const IconDataBrands(0xf3bc);
 
-  /// Regular kiss icon
+  /// Regular Kissing Face icon
   ///
   /// https://fontawesome.com/icons/kiss?style=regular
   /// beso, emoticon, face, love, smooch
   static const IconData kiss = const IconDataRegular(0xf596);
 
-  /// Solid kiss icon
+  /// Solid Kissing Face icon
   ///
   /// https://fontawesome.com/icons/kiss?style=solid
   /// beso, emoticon, face, love, smooch
   static const IconData solidKiss = const IconDataSolid(0xf596);
 
-  /// Regular kiss-beam icon
+  /// Regular Kissing Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/kiss-beam?style=regular
   /// beso, emoticon, face, love, smooch
   static const IconData kissBeam = const IconDataRegular(0xf597);
 
-  /// Solid kiss-beam icon
+  /// Solid Kissing Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/kiss-beam?style=solid
   /// beso, emoticon, face, love, smooch
   static const IconData solidKissBeam = const IconDataSolid(0xf597);
 
-  /// Regular kiss-wink-heart icon
+  /// Regular Face Blowing a Kiss icon
   ///
   /// https://fontawesome.com/icons/kiss-wink-heart?style=regular
   /// beso, emoticon, face, love, smooch
   static const IconData kissWinkHeart = const IconDataRegular(0xf598);
 
-  /// Solid kiss-wink-heart icon
+  /// Solid Face Blowing a Kiss icon
   ///
   /// https://fontawesome.com/icons/kiss-wink-heart?style=solid
   /// beso, emoticon, face, love, smooch
   static const IconData solidKissWinkHeart = const IconDataSolid(0xf598);
 
-  /// Solid kiwi-bird icon
+  /// Solid Kiwi Bird icon
   ///
   /// https://fontawesome.com/icons/kiwi-bird?style=solid
   /// bird, fauna, new zealand
   static const IconData kiwiBird = const IconDataSolid(0xf535);
 
-  /// Brands korvue icon
+  /// Brands KORVUE icon
   ///
   /// https://fontawesome.com/icons/korvue?style=brands
   static const IconData korvue = const IconDataBrands(0xf42f);
 
-  /// Solid landmark icon
+  /// Solid Landmark icon
   ///
   /// https://fontawesome.com/icons/landmark?style=solid
   /// building, historic, memorable, monument, politics
   static const IconData landmark = const IconDataSolid(0xf66f);
 
-  /// Solid language icon
+  /// Solid Language icon
   ///
   /// https://fontawesome.com/icons/language?style=solid
   /// dialect, idiom, localize, speech, translate, vernacular
   static const IconData language = const IconDataSolid(0xf1ab);
 
-  /// Solid laptop icon
+  /// Solid Laptop icon
   ///
   /// https://fontawesome.com/icons/laptop?style=solid
   /// computer, cpu, dell, demo, device, mac, macbook, machine, pc
   static const IconData laptop = const IconDataSolid(0xf109);
 
-  /// Solid laptop-code icon
+  /// Solid Laptop Code icon
   ///
   /// https://fontawesome.com/icons/laptop-code?style=solid
   /// computer, cpu, dell, demo, develop, device, mac, macbook, machine, pc
   static const IconData laptopCode = const IconDataSolid(0xf5fc);
 
-  /// Solid laptop-house icon
+  /// Solid Laptop House icon
   ///
   /// https://fontawesome.com/icons/laptop-house?style=solid
   /// computer, covid-19, device, office, remote, work from home
   static const IconData laptopHouse = const IconDataSolid(0xe066);
 
-  /// Solid laptop-medical icon
+  /// Solid Laptop Medical icon
   ///
   /// https://fontawesome.com/icons/laptop-medical?style=solid
   /// computer, device, ehr, electronic health records, history
   static const IconData laptopMedical = const IconDataSolid(0xf812);
 
-  /// Brands laravel icon
+  /// Brands Laravel icon
   ///
   /// https://fontawesome.com/icons/laravel?style=brands
   static const IconData laravel = const IconDataBrands(0xf3bd);
 
-  /// Brands lastfm icon
+  /// Brands last.fm icon
   ///
   /// https://fontawesome.com/icons/lastfm?style=brands
   static const IconData lastfm = const IconDataBrands(0xf202);
 
-  /// Brands lastfm-square icon
+  /// Brands last.fm Square icon
   ///
   /// https://fontawesome.com/icons/lastfm-square?style=brands
   static const IconData lastfmSquare = const IconDataBrands(0xf203);
 
-  /// Regular laugh icon
+  /// Regular Grinning Face With Big Eyes icon
   ///
   /// https://fontawesome.com/icons/laugh?style=regular
   /// LOL, emoticon, face, laugh, smile
   static const IconData laugh = const IconDataRegular(0xf599);
 
-  /// Solid laugh icon
+  /// Solid Grinning Face With Big Eyes icon
   ///
   /// https://fontawesome.com/icons/laugh?style=solid
   /// LOL, emoticon, face, laugh, smile
   static const IconData solidLaugh = const IconDataSolid(0xf599);
 
-  /// Regular laugh-beam icon
+  /// Regular Laugh Face with Beaming Eyes icon
   ///
   /// https://fontawesome.com/icons/laugh-beam?style=regular
   /// LOL, emoticon, face, happy, smile
   static const IconData laughBeam = const IconDataRegular(0xf59a);
 
-  /// Solid laugh-beam icon
+  /// Solid Laugh Face with Beaming Eyes icon
   ///
   /// https://fontawesome.com/icons/laugh-beam?style=solid
   /// LOL, emoticon, face, happy, smile
   static const IconData solidLaughBeam = const IconDataSolid(0xf59a);
 
-  /// Regular laugh-squint icon
+  /// Regular Laughing Squinting Face icon
   ///
   /// https://fontawesome.com/icons/laugh-squint?style=regular
   /// LOL, emoticon, face, happy, smile
   static const IconData laughSquint = const IconDataRegular(0xf59b);
 
-  /// Solid laugh-squint icon
+  /// Solid Laughing Squinting Face icon
   ///
   /// https://fontawesome.com/icons/laugh-squint?style=solid
   /// LOL, emoticon, face, happy, smile
   static const IconData solidLaughSquint = const IconDataSolid(0xf59b);
 
-  /// Regular laugh-wink icon
+  /// Regular Laughing Winking Face icon
   ///
   /// https://fontawesome.com/icons/laugh-wink?style=regular
   /// LOL, emoticon, face, happy, smile
   static const IconData laughWink = const IconDataRegular(0xf59c);
 
-  /// Solid laugh-wink icon
+  /// Solid Laughing Winking Face icon
   ///
   /// https://fontawesome.com/icons/laugh-wink?style=solid
   /// LOL, emoticon, face, happy, smile
   static const IconData solidLaughWink = const IconDataSolid(0xf59c);
 
-  /// Solid layer-group icon
+  /// Solid Layer Group icon
   ///
   /// https://fontawesome.com/icons/layer-group?style=solid
   /// arrange, develop, layers, map, stack
@@ -5002,129 +5002,129 @@ class FontAwesomeIcons {
   /// eco, flora, nature, plant, vegan
   static const IconData leaf = const IconDataSolid(0xf06c);
 
-  /// Brands leanpub icon
+  /// Brands Leanpub icon
   ///
   /// https://fontawesome.com/icons/leanpub?style=brands
   static const IconData leanpub = const IconDataBrands(0xf212);
 
-  /// Regular lemon icon
+  /// Regular Lemon icon
   ///
   /// https://fontawesome.com/icons/lemon?style=regular
   /// citrus, lemonade, lime, tart
   static const IconData lemon = const IconDataRegular(0xf094);
 
-  /// Solid lemon icon
+  /// Solid Lemon icon
   ///
   /// https://fontawesome.com/icons/lemon?style=solid
   /// citrus, lemonade, lime, tart
   static const IconData solidLemon = const IconDataSolid(0xf094);
 
-  /// Brands less icon
+  /// Brands Less icon
   ///
   /// https://fontawesome.com/icons/less?style=brands
   static const IconData less = const IconDataBrands(0xf41d);
 
-  /// Solid less-than icon
+  /// Solid Less Than icon
   ///
   /// https://fontawesome.com/icons/less-than?style=solid
   /// arithmetic, compare, math
   static const IconData lessThan = const IconDataSolid(0xf536);
 
-  /// Solid less-than-equal icon
+  /// Solid Less Than Equal To icon
   ///
   /// https://fontawesome.com/icons/less-than-equal?style=solid
   /// arithmetic, compare, math
   static const IconData lessThanEqual = const IconDataSolid(0xf537);
 
-  /// Solid level-down-alt icon
+  /// Solid Alternate Level Down icon
   ///
   /// https://fontawesome.com/icons/level-down-alt?style=solid
   /// arrow, level-down
   static const IconData levelDownAlt = const IconDataSolid(0xf3be);
 
-  /// Solid level-up-alt icon
+  /// Solid Alternate Level Up icon
   ///
   /// https://fontawesome.com/icons/level-up-alt?style=solid
   /// arrow, level-up
   static const IconData levelUpAlt = const IconDataSolid(0xf3bf);
 
-  /// Regular life-ring icon
+  /// Regular Life Ring icon
   ///
   /// https://fontawesome.com/icons/life-ring?style=regular
   /// coast guard, help, overboard, save, support
   static const IconData lifeRing = const IconDataRegular(0xf1cd);
 
-  /// Solid life-ring icon
+  /// Solid Life Ring icon
   ///
   /// https://fontawesome.com/icons/life-ring?style=solid
   /// coast guard, help, overboard, save, support
   static const IconData solidLifeRing = const IconDataSolid(0xf1cd);
 
-  /// Regular lightbulb icon
+  /// Regular Lightbulb icon
   ///
   /// https://fontawesome.com/icons/lightbulb?style=regular
   /// energy, idea, inspiration, light
   static const IconData lightbulb = const IconDataRegular(0xf0eb);
 
-  /// Solid lightbulb icon
+  /// Solid Lightbulb icon
   ///
   /// https://fontawesome.com/icons/lightbulb?style=solid
   /// energy, idea, inspiration, light
   static const IconData solidLightbulb = const IconDataSolid(0xf0eb);
 
-  /// Brands line icon
+  /// Brands Line icon
   ///
   /// https://fontawesome.com/icons/line?style=brands
   static const IconData line = const IconDataBrands(0xf3c0);
 
-  /// Solid link icon
+  /// Solid Link icon
   ///
   /// https://fontawesome.com/icons/link?style=solid
   /// attach, attachment, chain, connect
   static const IconData link = const IconDataSolid(0xf0c1);
 
-  /// Brands linkedin icon
+  /// Brands LinkedIn icon
   ///
   /// https://fontawesome.com/icons/linkedin?style=brands
   /// linkedin-square
   static const IconData linkedin = const IconDataBrands(0xf08c);
 
-  /// Brands linkedin-in icon
+  /// Brands LinkedIn In icon
   ///
   /// https://fontawesome.com/icons/linkedin-in?style=brands
   /// linkedin
   static const IconData linkedinIn = const IconDataBrands(0xf0e1);
 
-  /// Brands linode icon
+  /// Brands Linode icon
   ///
   /// https://fontawesome.com/icons/linode?style=brands
   static const IconData linode = const IconDataBrands(0xf2b8);
 
-  /// Brands linux icon
+  /// Brands Linux icon
   ///
   /// https://fontawesome.com/icons/linux?style=brands
   /// tux
   static const IconData linux = const IconDataBrands(0xf17c);
 
-  /// Solid lira-sign icon
+  /// Solid Turkish Lira Sign icon
   ///
   /// https://fontawesome.com/icons/lira-sign?style=solid
   /// currency, money, try, turkish
   static const IconData liraSign = const IconDataSolid(0xf195);
 
-  /// Solid list icon
+  /// Solid List icon
   ///
   /// https://fontawesome.com/icons/list?style=solid
   /// checklist, completed, done, finished, ol, todo, ul
   static const IconData list = const IconDataSolid(0xf03a);
 
-  /// Regular list-alt icon
+  /// Regular Alternate List icon
   ///
   /// https://fontawesome.com/icons/list-alt?style=regular
   /// checklist, completed, done, finished, ol, todo, ul
   static const IconData listAlt = const IconDataRegular(0xf022);
 
-  /// Solid list-alt icon
+  /// Solid Alternate List icon
   ///
   /// https://fontawesome.com/icons/list-alt?style=solid
   /// checklist, completed, done, finished, ol, todo, ul
@@ -5154,55 +5154,55 @@ class FontAwesomeIcons {
   /// admin, lock, open, password, private, protect, security
   static const IconData lock = const IconDataSolid(0xf023);
 
-  /// Solid lock-open icon
+  /// Solid Lock Open icon
   ///
   /// https://fontawesome.com/icons/lock-open?style=solid
   /// admin, lock, open, password, private, protect, security
   static const IconData lockOpen = const IconDataSolid(0xf3c1);
 
-  /// Solid long-arrow-alt-down icon
+  /// Solid Alternate Long Arrow Down icon
   ///
   /// https://fontawesome.com/icons/long-arrow-alt-down?style=solid
   /// download, long-arrow-down
   static const IconData longArrowAltDown = const IconDataSolid(0xf309);
 
-  /// Solid long-arrow-alt-left icon
+  /// Solid Alternate Long Arrow Left icon
   ///
   /// https://fontawesome.com/icons/long-arrow-alt-left?style=solid
   /// back, long-arrow-left, previous
   static const IconData longArrowAltLeft = const IconDataSolid(0xf30a);
 
-  /// Solid long-arrow-alt-right icon
+  /// Solid Alternate Long Arrow Right icon
   ///
   /// https://fontawesome.com/icons/long-arrow-alt-right?style=solid
   /// forward, long-arrow-right, next
   static const IconData longArrowAltRight = const IconDataSolid(0xf30b);
 
-  /// Solid long-arrow-alt-up icon
+  /// Solid Alternate Long Arrow Up icon
   ///
   /// https://fontawesome.com/icons/long-arrow-alt-up?style=solid
   /// long-arrow-up, upload
   static const IconData longArrowAltUp = const IconDataSolid(0xf30c);
 
-  /// Solid low-vision icon
+  /// Solid Low Vision icon
   ///
   /// https://fontawesome.com/icons/low-vision?style=solid
   /// blind, eye, sight
   static const IconData lowVision = const IconDataSolid(0xf2a8);
 
-  /// Solid luggage-cart icon
+  /// Solid Luggage Cart icon
   ///
   /// https://fontawesome.com/icons/luggage-cart?style=solid
   /// bag, baggage, suitcase, travel
   static const IconData luggageCart = const IconDataSolid(0xf59d);
 
-  /// Solid lungs icon
+  /// Solid Lungs icon
   ///
   /// https://fontawesome.com/icons/lungs?style=solid
   /// air, breath, covid-19, organ, respiratory
   static const IconData lungs = const IconDataSolid(0xf604);
 
-  /// Solid lungs-virus icon
+  /// Solid Lungs Virus icon
   ///
   /// https://fontawesome.com/icons/lungs-virus?style=solid
   /// breath, covid-19, respiratory, sick
@@ -5213,7 +5213,7 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/lyft?style=brands
   static const IconData lyft = const IconDataBrands(0xf3c3);
 
-  /// Brands magento icon
+  /// Brands Magento icon
   ///
   /// https://fontawesome.com/icons/magento?style=brands
   static const IconData magento = const IconDataBrands(0xf3c4);
@@ -5230,47 +5230,47 @@ class FontAwesomeIcons {
   /// Attract, lodestone, tool
   static const IconData magnet = const IconDataSolid(0xf076);
 
-  /// Solid mail-bulk icon
+  /// Solid Mail Bulk icon
   ///
   /// https://fontawesome.com/icons/mail-bulk?style=solid
   /// archive, envelope, letter, post office, postal, postcard, send, stamp, usps
   static const IconData mailBulk = const IconDataSolid(0xf674);
 
-  /// Brands mailchimp icon
+  /// Brands Mailchimp icon
   ///
   /// https://fontawesome.com/icons/mailchimp?style=brands
   static const IconData mailchimp = const IconDataBrands(0xf59e);
 
-  /// Solid male icon
+  /// Solid Male icon
   ///
   /// https://fontawesome.com/icons/male?style=solid
   /// human, man, person, profile, user
   static const IconData male = const IconDataSolid(0xf183);
 
-  /// Brands mandalorian icon
+  /// Brands Mandalorian icon
   ///
   /// https://fontawesome.com/icons/mandalorian?style=brands
   static const IconData mandalorian = const IconDataBrands(0xf50f);
 
-  /// Regular map icon
+  /// Regular Map icon
   ///
   /// https://fontawesome.com/icons/map?style=regular
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
   static const IconData map = const IconDataRegular(0xf279);
 
-  /// Solid map icon
+  /// Solid Map icon
   ///
   /// https://fontawesome.com/icons/map?style=solid
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
   static const IconData solidMap = const IconDataSolid(0xf279);
 
-  /// Solid map-marked icon
+  /// Solid Map Marked icon
   ///
   /// https://fontawesome.com/icons/map-marked?style=solid
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
   static const IconData mapMarked = const IconDataSolid(0xf59f);
 
-  /// Solid map-marked-alt icon
+  /// Solid Alternate Map Marked icon
   ///
   /// https://fontawesome.com/icons/map-marked-alt?style=solid
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
@@ -5282,99 +5282,99 @@ class FontAwesomeIcons {
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
   static const IconData mapMarker = const IconDataSolid(0xf041);
 
-  /// Solid map-marker-alt icon
+  /// Solid Alternate Map Marker icon
   ///
   /// https://fontawesome.com/icons/map-marker-alt?style=solid
   /// address, coordinates, destination, gps, localize, location, map, navigation, paper, pin, place, point of interest, position, route, travel
   static const IconData mapMarkerAlt = const IconDataSolid(0xf3c5);
 
-  /// Solid map-pin icon
+  /// Solid Map Pin icon
   ///
   /// https://fontawesome.com/icons/map-pin?style=solid
   /// address, agree, coordinates, destination, gps, localize, location, map, marker, navigation, pin, place, position, travel
   static const IconData mapPin = const IconDataSolid(0xf276);
 
-  /// Solid map-signs icon
+  /// Solid Map Signs icon
   ///
   /// https://fontawesome.com/icons/map-signs?style=solid
   /// directions, directory, map, signage, wayfinding
   static const IconData mapSigns = const IconDataSolid(0xf277);
 
-  /// Brands markdown icon
+  /// Brands Markdown icon
   ///
   /// https://fontawesome.com/icons/markdown?style=brands
   static const IconData markdown = const IconDataBrands(0xf60f);
 
-  /// Solid marker icon
+  /// Solid Marker icon
   ///
   /// https://fontawesome.com/icons/marker?style=solid
   /// design, edit, sharpie, update, write
   static const IconData marker = const IconDataSolid(0xf5a1);
 
-  /// Solid mars icon
+  /// Solid Mars icon
   ///
   /// https://fontawesome.com/icons/mars?style=solid
   /// male
   static const IconData mars = const IconDataSolid(0xf222);
 
-  /// Solid mars-double icon
+  /// Solid Mars Double icon
   ///
   /// https://fontawesome.com/icons/mars-double?style=solid
   static const IconData marsDouble = const IconDataSolid(0xf227);
 
-  /// Solid mars-stroke icon
+  /// Solid Mars Stroke icon
   ///
   /// https://fontawesome.com/icons/mars-stroke?style=solid
   static const IconData marsStroke = const IconDataSolid(0xf229);
 
-  /// Solid mars-stroke-h icon
+  /// Solid Mars Stroke Horizontal icon
   ///
   /// https://fontawesome.com/icons/mars-stroke-h?style=solid
   static const IconData marsStrokeH = const IconDataSolid(0xf22b);
 
-  /// Solid mars-stroke-v icon
+  /// Solid Mars Stroke Vertical icon
   ///
   /// https://fontawesome.com/icons/mars-stroke-v?style=solid
   static const IconData marsStrokeV = const IconDataSolid(0xf22a);
 
-  /// Solid mask icon
+  /// Solid Mask icon
   ///
   /// https://fontawesome.com/icons/mask?style=solid
   /// carnivale, costume, disguise, halloween, secret, super hero
   static const IconData mask = const IconDataSolid(0xf6fa);
 
-  /// Brands mastodon icon
+  /// Brands Mastodon icon
   ///
   /// https://fontawesome.com/icons/mastodon?style=brands
   static const IconData mastodon = const IconDataBrands(0xf4f6);
 
-  /// Brands maxcdn icon
+  /// Brands MaxCDN icon
   ///
   /// https://fontawesome.com/icons/maxcdn?style=brands
   static const IconData maxcdn = const IconDataBrands(0xf136);
 
-  /// Brands mdb icon
+  /// Brands Material Design for Bootstrap icon
   ///
   /// https://fontawesome.com/icons/mdb?style=brands
   static const IconData mdb = const IconDataBrands(0xf8ca);
 
-  /// Solid medal icon
+  /// Solid Medal icon
   ///
   /// https://fontawesome.com/icons/medal?style=solid
   /// award, ribbon, star, trophy
   static const IconData medal = const IconDataSolid(0xf5a2);
 
-  /// Brands medapps icon
+  /// Brands MedApps icon
   ///
   /// https://fontawesome.com/icons/medapps?style=brands
   static const IconData medapps = const IconDataBrands(0xf3c6);
 
-  /// Brands medium icon
+  /// Brands Medium icon
   ///
   /// https://fontawesome.com/icons/medium?style=brands
   static const IconData medium = const IconDataBrands(0xf23a);
 
-  /// Brands medium-m icon
+  /// Brands Medium M icon
   ///
   /// https://fontawesome.com/icons/medium-m?style=brands
   static const IconData mediumM = const IconDataBrands(0xf3c7);
@@ -5385,92 +5385,92 @@ class FontAwesomeIcons {
   /// first aid, firstaid, health, help, support
   static const IconData medkit = const IconDataSolid(0xf0fa);
 
-  /// Brands medrt icon
+  /// Brands MRT icon
   ///
   /// https://fontawesome.com/icons/medrt?style=brands
   static const IconData medrt = const IconDataBrands(0xf3c8);
 
-  /// Brands meetup icon
+  /// Brands Meetup icon
   ///
   /// https://fontawesome.com/icons/meetup?style=brands
   static const IconData meetup = const IconDataBrands(0xf2e0);
 
-  /// Brands megaport icon
+  /// Brands Megaport icon
   ///
   /// https://fontawesome.com/icons/megaport?style=brands
   static const IconData megaport = const IconDataBrands(0xf5a3);
 
-  /// Regular meh icon
+  /// Regular Neutral Face icon
   ///
   /// https://fontawesome.com/icons/meh?style=regular
   /// emoticon, face, neutral, rating
   static const IconData meh = const IconDataRegular(0xf11a);
 
-  /// Solid meh icon
+  /// Solid Neutral Face icon
   ///
   /// https://fontawesome.com/icons/meh?style=solid
   /// emoticon, face, neutral, rating
   static const IconData solidMeh = const IconDataSolid(0xf11a);
 
-  /// Regular meh-blank icon
+  /// Regular Face Without Mouth icon
   ///
   /// https://fontawesome.com/icons/meh-blank?style=regular
   /// emoticon, face, neutral, rating
   static const IconData mehBlank = const IconDataRegular(0xf5a4);
 
-  /// Solid meh-blank icon
+  /// Solid Face Without Mouth icon
   ///
   /// https://fontawesome.com/icons/meh-blank?style=solid
   /// emoticon, face, neutral, rating
   static const IconData solidMehBlank = const IconDataSolid(0xf5a4);
 
-  /// Regular meh-rolling-eyes icon
+  /// Regular Face With Rolling Eyes icon
   ///
   /// https://fontawesome.com/icons/meh-rolling-eyes?style=regular
   /// emoticon, face, neutral, rating
   static const IconData mehRollingEyes = const IconDataRegular(0xf5a5);
 
-  /// Solid meh-rolling-eyes icon
+  /// Solid Face With Rolling Eyes icon
   ///
   /// https://fontawesome.com/icons/meh-rolling-eyes?style=solid
   /// emoticon, face, neutral, rating
   static const IconData solidMehRollingEyes = const IconDataSolid(0xf5a5);
 
-  /// Solid memory icon
+  /// Solid Memory icon
   ///
   /// https://fontawesome.com/icons/memory?style=solid
   /// DIMM, RAM, hardware, storage, technology
   static const IconData memory = const IconDataSolid(0xf538);
 
-  /// Brands mendeley icon
+  /// Brands Mendeley icon
   ///
   /// https://fontawesome.com/icons/mendeley?style=brands
   static const IconData mendeley = const IconDataBrands(0xf7b3);
 
-  /// Solid menorah icon
+  /// Solid Menorah icon
   ///
   /// https://fontawesome.com/icons/menorah?style=solid
   /// candle, hanukkah, jewish, judaism, light
   static const IconData menorah = const IconDataSolid(0xf676);
 
-  /// Solid mercury icon
+  /// Solid Mercury icon
   ///
   /// https://fontawesome.com/icons/mercury?style=solid
   /// transgender
   static const IconData mercury = const IconDataSolid(0xf223);
 
-  /// Solid meteor icon
+  /// Solid Meteor icon
   ///
   /// https://fontawesome.com/icons/meteor?style=solid
   /// armageddon, asteroid, comet, shooting star, space
   static const IconData meteor = const IconDataSolid(0xf753);
 
-  /// Brands microblog icon
+  /// Brands Micro.blog icon
   ///
   /// https://fontawesome.com/icons/microblog?style=brands
   static const IconData microblog = const IconDataBrands(0xe01a);
 
-  /// Solid microchip icon
+  /// Solid Microchip icon
   ///
   /// https://fontawesome.com/icons/microchip?style=solid
   /// cpu, hardware, processor, technology
@@ -5482,31 +5482,31 @@ class FontAwesomeIcons {
   /// audio, podcast, record, sing, sound, voice
   static const IconData microphone = const IconDataSolid(0xf130);
 
-  /// Solid microphone-alt icon
+  /// Solid Alternate Microphone icon
   ///
   /// https://fontawesome.com/icons/microphone-alt?style=solid
   /// audio, podcast, record, sing, sound, voice
   static const IconData microphoneAlt = const IconDataSolid(0xf3c9);
 
-  /// Solid microphone-alt-slash icon
+  /// Solid Alternate Microphone Slash icon
   ///
   /// https://fontawesome.com/icons/microphone-alt-slash?style=solid
   /// audio, disable, mute, podcast, record, sing, sound, voice
   static const IconData microphoneAltSlash = const IconDataSolid(0xf539);
 
-  /// Solid microphone-slash icon
+  /// Solid Microphone Slash icon
   ///
   /// https://fontawesome.com/icons/microphone-slash?style=solid
   /// audio, disable, mute, podcast, record, sing, sound, voice
   static const IconData microphoneSlash = const IconDataSolid(0xf131);
 
-  /// Solid microscope icon
+  /// Solid Microscope icon
   ///
   /// https://fontawesome.com/icons/microscope?style=solid
   /// covid-19, electron, lens, optics, science, shrink
   static const IconData microscope = const IconDataSolid(0xf610);
 
-  /// Brands microsoft icon
+  /// Brands Microsoft icon
   ///
   /// https://fontawesome.com/icons/microsoft?style=brands
   static const IconData microsoft = const IconDataBrands(0xf3ca);
@@ -5517,235 +5517,235 @@ class FontAwesomeIcons {
   /// collapse, delete, hide, minify, negative, remove, trash
   static const IconData minus = const IconDataSolid(0xf068);
 
-  /// Solid minus-circle icon
+  /// Solid Minus Circle icon
   ///
   /// https://fontawesome.com/icons/minus-circle?style=solid
   /// delete, hide, negative, remove, shape, trash
   static const IconData minusCircle = const IconDataSolid(0xf056);
 
-  /// Regular minus-square icon
+  /// Regular Minus Square icon
   ///
   /// https://fontawesome.com/icons/minus-square?style=regular
   /// collapse, delete, hide, minify, negative, remove, shape, trash
   static const IconData minusSquare = const IconDataRegular(0xf146);
 
-  /// Solid minus-square icon
+  /// Solid Minus Square icon
   ///
   /// https://fontawesome.com/icons/minus-square?style=solid
   /// collapse, delete, hide, minify, negative, remove, shape, trash
   static const IconData solidMinusSquare = const IconDataSolid(0xf146);
 
-  /// Solid mitten icon
+  /// Solid Mitten icon
   ///
   /// https://fontawesome.com/icons/mitten?style=solid
   /// clothing, cold, glove, hands, knitted, seasonal, warmth
   static const IconData mitten = const IconDataSolid(0xf7b5);
 
-  /// Brands mix icon
+  /// Brands Mix icon
   ///
   /// https://fontawesome.com/icons/mix?style=brands
   static const IconData mix = const IconDataBrands(0xf3cb);
 
-  /// Brands mixcloud icon
+  /// Brands Mixcloud icon
   ///
   /// https://fontawesome.com/icons/mixcloud?style=brands
   static const IconData mixcloud = const IconDataBrands(0xf289);
 
-  /// Brands mixer icon
+  /// Brands Mixer icon
   ///
   /// https://fontawesome.com/icons/mixer?style=brands
   static const IconData mixer = const IconDataBrands(0xe056);
 
-  /// Brands mizuni icon
+  /// Brands Mizuni icon
   ///
   /// https://fontawesome.com/icons/mizuni?style=brands
   static const IconData mizuni = const IconDataBrands(0xf3cc);
 
-  /// Solid mobile icon
+  /// Solid Mobile Phone icon
   ///
   /// https://fontawesome.com/icons/mobile?style=solid
   /// apple, call, cell phone, cellphone, device, iphone, number, screen, telephone
   static const IconData mobile = const IconDataSolid(0xf10b);
 
-  /// Solid mobile-alt icon
+  /// Solid Alternate Mobile icon
   ///
   /// https://fontawesome.com/icons/mobile-alt?style=solid
   /// apple, call, cell phone, cellphone, device, iphone, number, screen, telephone
   static const IconData mobileAlt = const IconDataSolid(0xf3cd);
 
-  /// Brands modx icon
+  /// Brands MODX icon
   ///
   /// https://fontawesome.com/icons/modx?style=brands
   static const IconData modx = const IconDataBrands(0xf285);
 
-  /// Brands monero icon
+  /// Brands Monero icon
   ///
   /// https://fontawesome.com/icons/monero?style=brands
   static const IconData monero = const IconDataBrands(0xf3d0);
 
-  /// Solid money-bill icon
+  /// Solid Money Bill icon
   ///
   /// https://fontawesome.com/icons/money-bill?style=solid
   /// buy, cash, checkout, money, payment, price, purchase
   static const IconData moneyBill = const IconDataSolid(0xf0d6);
 
-  /// Regular money-bill-alt icon
+  /// Regular Alternate Money Bill icon
   ///
   /// https://fontawesome.com/icons/money-bill-alt?style=regular
   /// buy, cash, checkout, money, payment, price, purchase
   static const IconData moneyBillAlt = const IconDataRegular(0xf3d1);
 
-  /// Solid money-bill-alt icon
+  /// Solid Alternate Money Bill icon
   ///
   /// https://fontawesome.com/icons/money-bill-alt?style=solid
   /// buy, cash, checkout, money, payment, price, purchase
   static const IconData solidMoneyBillAlt = const IconDataSolid(0xf3d1);
 
-  /// Solid money-bill-wave icon
+  /// Solid Wavy Money Bill icon
   ///
   /// https://fontawesome.com/icons/money-bill-wave?style=solid
   /// buy, cash, checkout, money, payment, price, purchase
   static const IconData moneyBillWave = const IconDataSolid(0xf53a);
 
-  /// Solid money-bill-wave-alt icon
+  /// Solid Alternate Wavy Money Bill icon
   ///
   /// https://fontawesome.com/icons/money-bill-wave-alt?style=solid
   /// buy, cash, checkout, money, payment, price, purchase
   static const IconData moneyBillWaveAlt = const IconDataSolid(0xf53b);
 
-  /// Solid money-check icon
+  /// Solid Money Check icon
   ///
   /// https://fontawesome.com/icons/money-check?style=solid
   /// bank check, buy, checkout, cheque, money, payment, price, purchase
   static const IconData moneyCheck = const IconDataSolid(0xf53c);
 
-  /// Solid money-check-alt icon
+  /// Solid Alternate Money Check icon
   ///
   /// https://fontawesome.com/icons/money-check-alt?style=solid
   /// bank check, buy, checkout, cheque, money, payment, price, purchase
   static const IconData moneyCheckAlt = const IconDataSolid(0xf53d);
 
-  /// Solid monument icon
+  /// Solid Monument icon
   ///
   /// https://fontawesome.com/icons/monument?style=solid
   /// building, historic, landmark, memorable
   static const IconData monument = const IconDataSolid(0xf5a6);
 
-  /// Regular moon icon
+  /// Regular Moon icon
   ///
   /// https://fontawesome.com/icons/moon?style=regular
   /// contrast, crescent, dark, lunar, night
   static const IconData moon = const IconDataRegular(0xf186);
 
-  /// Solid moon icon
+  /// Solid Moon icon
   ///
   /// https://fontawesome.com/icons/moon?style=solid
   /// contrast, crescent, dark, lunar, night
   static const IconData solidMoon = const IconDataSolid(0xf186);
 
-  /// Solid mortar-pestle icon
+  /// Solid Mortar Pestle icon
   ///
   /// https://fontawesome.com/icons/mortar-pestle?style=solid
   /// crush, culinary, grind, medical, mix, pharmacy, prescription, spices
   static const IconData mortarPestle = const IconDataSolid(0xf5a7);
 
-  /// Solid mosque icon
+  /// Solid Mosque icon
   ///
   /// https://fontawesome.com/icons/mosque?style=solid
   /// building, islam, landmark, muslim
   static const IconData mosque = const IconDataSolid(0xf678);
 
-  /// Solid motorcycle icon
+  /// Solid Motorcycle icon
   ///
   /// https://fontawesome.com/icons/motorcycle?style=solid
   /// bike, machine, transportation, vehicle
   static const IconData motorcycle = const IconDataSolid(0xf21c);
 
-  /// Solid mountain icon
+  /// Solid Mountain icon
   ///
   /// https://fontawesome.com/icons/mountain?style=solid
   /// glacier, hiking, hill, landscape, travel, view
   static const IconData mountain = const IconDataSolid(0xf6fc);
 
-  /// Solid mouse icon
+  /// Solid Mouse icon
   ///
   /// https://fontawesome.com/icons/mouse?style=solid
   /// click, computer, cursor, input, peripheral
   static const IconData mouse = const IconDataSolid(0xf8cc);
 
-  /// Solid mouse-pointer icon
+  /// Solid Mouse Pointer icon
   ///
   /// https://fontawesome.com/icons/mouse-pointer?style=solid
   /// arrow, cursor, select
   static const IconData mousePointer = const IconDataSolid(0xf245);
 
-  /// Solid mug-hot icon
+  /// Solid Mug Hot icon
   ///
   /// https://fontawesome.com/icons/mug-hot?style=solid
   /// caliente, cocoa, coffee, cup, drink, holiday, hot chocolate, steam, tea, warmth
   static const IconData mugHot = const IconDataSolid(0xf7b6);
 
-  /// Solid music icon
+  /// Solid Music icon
   ///
   /// https://fontawesome.com/icons/music?style=solid
   /// lyrics, melody, note, sing, sound
   static const IconData music = const IconDataSolid(0xf001);
 
-  /// Brands napster icon
+  /// Brands Napster icon
   ///
   /// https://fontawesome.com/icons/napster?style=brands
   static const IconData napster = const IconDataBrands(0xf3d2);
 
-  /// Brands neos icon
+  /// Brands Neos icon
   ///
   /// https://fontawesome.com/icons/neos?style=brands
   static const IconData neos = const IconDataBrands(0xf612);
 
-  /// Solid network-wired icon
+  /// Solid Wired Network icon
   ///
   /// https://fontawesome.com/icons/network-wired?style=solid
   /// computer, connect, ethernet, internet, intranet
   static const IconData networkWired = const IconDataSolid(0xf6ff);
 
-  /// Solid neuter icon
+  /// Solid Neuter icon
   ///
   /// https://fontawesome.com/icons/neuter?style=solid
   static const IconData neuter = const IconDataSolid(0xf22c);
 
-  /// Regular newspaper icon
+  /// Regular Newspaper icon
   ///
   /// https://fontawesome.com/icons/newspaper?style=regular
   /// article, editorial, headline, journal, journalism, news, press
   static const IconData newspaper = const IconDataRegular(0xf1ea);
 
-  /// Solid newspaper icon
+  /// Solid Newspaper icon
   ///
   /// https://fontawesome.com/icons/newspaper?style=solid
   /// article, editorial, headline, journal, journalism, news, press
   static const IconData solidNewspaper = const IconDataSolid(0xf1ea);
 
-  /// Brands nimblr icon
+  /// Brands Nimblr icon
   ///
   /// https://fontawesome.com/icons/nimblr?style=brands
   static const IconData nimblr = const IconDataBrands(0xf5a8);
 
-  /// Brands node icon
+  /// Brands Node.js icon
   ///
   /// https://fontawesome.com/icons/node?style=brands
   static const IconData node = const IconDataBrands(0xf419);
 
-  /// Brands node-js icon
+  /// Brands Node.js JS icon
   ///
   /// https://fontawesome.com/icons/node-js?style=brands
   static const IconData nodeJs = const IconDataBrands(0xf3d3);
 
-  /// Solid not-equal icon
+  /// Solid Not Equal icon
   ///
   /// https://fontawesome.com/icons/not-equal?style=solid
   /// arithmetic, compare, math
   static const IconData notEqual = const IconDataSolid(0xf53e);
 
-  /// Solid notes-medical icon
+  /// Solid Medical Notes icon
   ///
   /// https://fontawesome.com/icons/notes-medical?style=solid
   /// clipboard, doctor, ehr, health, history, records
@@ -5756,180 +5756,180 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/npm?style=brands
   static const IconData npm = const IconDataBrands(0xf3d4);
 
-  /// Brands ns8 icon
+  /// Brands NS8 icon
   ///
   /// https://fontawesome.com/icons/ns8?style=brands
   static const IconData ns8 = const IconDataBrands(0xf3d5);
 
-  /// Brands nutritionix icon
+  /// Brands Nutritionix icon
   ///
   /// https://fontawesome.com/icons/nutritionix?style=brands
   static const IconData nutritionix = const IconDataBrands(0xf3d6);
 
-  /// Regular object-group icon
+  /// Regular Object Group icon
   ///
   /// https://fontawesome.com/icons/object-group?style=regular
   /// combine, copy, design, merge, select
   static const IconData objectGroup = const IconDataRegular(0xf247);
 
-  /// Solid object-group icon
+  /// Solid Object Group icon
   ///
   /// https://fontawesome.com/icons/object-group?style=solid
   /// combine, copy, design, merge, select
   static const IconData solidObjectGroup = const IconDataSolid(0xf247);
 
-  /// Regular object-ungroup icon
+  /// Regular Object Ungroup icon
   ///
   /// https://fontawesome.com/icons/object-ungroup?style=regular
   /// copy, design, merge, select, separate
   static const IconData objectUngroup = const IconDataRegular(0xf248);
 
-  /// Solid object-ungroup icon
+  /// Solid Object Ungroup icon
   ///
   /// https://fontawesome.com/icons/object-ungroup?style=solid
   /// copy, design, merge, select, separate
   static const IconData solidObjectUngroup = const IconDataSolid(0xf248);
 
-  /// Brands octopus-deploy icon
+  /// Brands Octopus Deploy icon
   ///
   /// https://fontawesome.com/icons/octopus-deploy?style=brands
   static const IconData octopusDeploy = const IconDataBrands(0xe082);
 
-  /// Brands odnoklassniki icon
+  /// Brands Odnoklassniki icon
   ///
   /// https://fontawesome.com/icons/odnoklassniki?style=brands
   static const IconData odnoklassniki = const IconDataBrands(0xf263);
 
-  /// Brands odnoklassniki-square icon
+  /// Brands Odnoklassniki Square icon
   ///
   /// https://fontawesome.com/icons/odnoklassniki-square?style=brands
   static const IconData odnoklassnikiSquare = const IconDataBrands(0xf264);
 
-  /// Solid oil-can icon
+  /// Solid Oil Can icon
   ///
   /// https://fontawesome.com/icons/oil-can?style=solid
   /// auto, crude, gasoline, grease, lubricate, petroleum
   static const IconData oilCan = const IconDataSolid(0xf613);
 
-  /// Brands old-republic icon
+  /// Brands Old Republic icon
   ///
   /// https://fontawesome.com/icons/old-republic?style=brands
   /// politics, star wars
   static const IconData oldRepublic = const IconDataBrands(0xf510);
 
-  /// Solid om icon
+  /// Solid Om icon
   ///
   /// https://fontawesome.com/icons/om?style=solid
   /// buddhism, hinduism, jainism, mantra
   static const IconData om = const IconDataSolid(0xf679);
 
-  /// Brands opencart icon
+  /// Brands OpenCart icon
   ///
   /// https://fontawesome.com/icons/opencart?style=brands
   static const IconData opencart = const IconDataBrands(0xf23d);
 
-  /// Brands openid icon
+  /// Brands OpenID icon
   ///
   /// https://fontawesome.com/icons/openid?style=brands
   static const IconData openid = const IconDataBrands(0xf19b);
 
-  /// Brands opera icon
+  /// Brands Opera icon
   ///
   /// https://fontawesome.com/icons/opera?style=brands
   static const IconData opera = const IconDataBrands(0xf26a);
 
-  /// Brands optin-monster icon
+  /// Brands Optin Monster icon
   ///
   /// https://fontawesome.com/icons/optin-monster?style=brands
   static const IconData optinMonster = const IconDataBrands(0xf23c);
 
-  /// Brands orcid icon
+  /// Brands ORCID icon
   ///
   /// https://fontawesome.com/icons/orcid?style=brands
   static const IconData orcid = const IconDataBrands(0xf8d2);
 
-  /// Brands osi icon
+  /// Brands Open Source Initiative icon
   ///
   /// https://fontawesome.com/icons/osi?style=brands
   static const IconData osi = const IconDataBrands(0xf41a);
 
-  /// Solid otter icon
+  /// Solid Otter icon
   ///
   /// https://fontawesome.com/icons/otter?style=solid
   /// animal, badger, fauna, fur, mammal, marten
   static const IconData otter = const IconDataSolid(0xf700);
 
-  /// Solid outdent icon
+  /// Solid Outdent icon
   ///
   /// https://fontawesome.com/icons/outdent?style=solid
   /// align, justify, paragraph, tab
   static const IconData outdent = const IconDataSolid(0xf03b);
 
-  /// Brands page4 icon
+  /// Brands page4 Corporation icon
   ///
   /// https://fontawesome.com/icons/page4?style=brands
   static const IconData page4 = const IconDataBrands(0xf3d7);
 
-  /// Brands pagelines icon
+  /// Brands Pagelines icon
   ///
   /// https://fontawesome.com/icons/pagelines?style=brands
   /// eco, flora, leaf, leaves, nature, plant, tree
   static const IconData pagelines = const IconDataBrands(0xf18c);
 
-  /// Solid pager icon
+  /// Solid Pager icon
   ///
   /// https://fontawesome.com/icons/pager?style=solid
   /// beeper, cellphone, communication
   static const IconData pager = const IconDataSolid(0xf815);
 
-  /// Solid paint-brush icon
+  /// Solid Paint Brush icon
   ///
   /// https://fontawesome.com/icons/paint-brush?style=solid
   /// acrylic, art, brush, color, fill, paint, pigment, watercolor
   static const IconData paintBrush = const IconDataSolid(0xf1fc);
 
-  /// Solid paint-roller icon
+  /// Solid Paint Roller icon
   ///
   /// https://fontawesome.com/icons/paint-roller?style=solid
   /// acrylic, art, brush, color, fill, paint, pigment, watercolor
   static const IconData paintRoller = const IconDataSolid(0xf5aa);
 
-  /// Solid palette icon
+  /// Solid Palette icon
   ///
   /// https://fontawesome.com/icons/palette?style=solid
   /// acrylic, art, brush, color, fill, paint, pigment, watercolor
   static const IconData palette = const IconDataSolid(0xf53f);
 
-  /// Brands palfed icon
+  /// Brands Palfed icon
   ///
   /// https://fontawesome.com/icons/palfed?style=brands
   static const IconData palfed = const IconDataBrands(0xf3d8);
 
-  /// Solid pallet icon
+  /// Solid Pallet icon
   ///
   /// https://fontawesome.com/icons/pallet?style=solid
   /// archive, box, inventory, shipping, warehouse
   static const IconData pallet = const IconDataSolid(0xf482);
 
-  /// Regular paper-plane icon
+  /// Regular Paper Plane icon
   ///
   /// https://fontawesome.com/icons/paper-plane?style=regular
   /// air, float, fold, mail, paper, send
   static const IconData paperPlane = const IconDataRegular(0xf1d8);
 
-  /// Solid paper-plane icon
+  /// Solid Paper Plane icon
   ///
   /// https://fontawesome.com/icons/paper-plane?style=solid
   /// air, float, fold, mail, paper, send
   static const IconData solidPaperPlane = const IconDataSolid(0xf1d8);
 
-  /// Solid paperclip icon
+  /// Solid Paperclip icon
   ///
   /// https://fontawesome.com/icons/paperclip?style=solid
   /// attach, attachment, connect, link
   static const IconData paperclip = const IconDataSolid(0xf0c6);
 
-  /// Solid parachute-box icon
+  /// Solid Parachute Box icon
   ///
   /// https://fontawesome.com/icons/parachute-box?style=solid
   /// aid, assistance, rescue, supplies
@@ -5941,31 +5941,31 @@ class FontAwesomeIcons {
   /// edit, format, text, writing
   static const IconData paragraph = const IconDataSolid(0xf1dd);
 
-  /// Solid parking icon
+  /// Solid Parking icon
   ///
   /// https://fontawesome.com/icons/parking?style=solid
   /// auto, car, garage, meter
   static const IconData parking = const IconDataSolid(0xf540);
 
-  /// Solid passport icon
+  /// Solid Passport icon
   ///
   /// https://fontawesome.com/icons/passport?style=solid
   /// document, id, identification, issued, travel
   static const IconData passport = const IconDataSolid(0xf5ab);
 
-  /// Solid pastafarianism icon
+  /// Solid Pastafarianism icon
   ///
   /// https://fontawesome.com/icons/pastafarianism?style=solid
   /// agnosticism, atheism, flying spaghetti monster, fsm
   static const IconData pastafarianism = const IconDataSolid(0xf67b);
 
-  /// Solid paste icon
+  /// Solid Paste icon
   ///
   /// https://fontawesome.com/icons/paste?style=solid
   /// clipboard, copy, document, paper
   static const IconData paste = const IconDataSolid(0xf0ea);
 
-  /// Brands patreon icon
+  /// Brands Patreon icon
   ///
   /// https://fontawesome.com/icons/patreon?style=brands
   static const IconData patreon = const IconDataBrands(0xf3d9);
@@ -5976,251 +5976,251 @@ class FontAwesomeIcons {
   /// hold, wait
   static const IconData pause = const IconDataSolid(0xf04c);
 
-  /// Regular pause-circle icon
+  /// Regular Pause Circle icon
   ///
   /// https://fontawesome.com/icons/pause-circle?style=regular
   /// hold, wait
   static const IconData pauseCircle = const IconDataRegular(0xf28b);
 
-  /// Solid pause-circle icon
+  /// Solid Pause Circle icon
   ///
   /// https://fontawesome.com/icons/pause-circle?style=solid
   /// hold, wait
   static const IconData solidPauseCircle = const IconDataSolid(0xf28b);
 
-  /// Solid paw icon
+  /// Solid Paw icon
   ///
   /// https://fontawesome.com/icons/paw?style=solid
   /// animal, cat, dog, pet, print
   static const IconData paw = const IconDataSolid(0xf1b0);
 
-  /// Brands paypal icon
+  /// Brands Paypal icon
   ///
   /// https://fontawesome.com/icons/paypal?style=brands
   static const IconData paypal = const IconDataBrands(0xf1ed);
 
-  /// Solid peace icon
+  /// Solid Peace icon
   ///
   /// https://fontawesome.com/icons/peace?style=solid
   /// serenity, tranquility, truce, war
   static const IconData peace = const IconDataSolid(0xf67c);
 
-  /// Solid pen icon
+  /// Solid Pen icon
   ///
   /// https://fontawesome.com/icons/pen?style=solid
   /// design, edit, update, write
   static const IconData pen = const IconDataSolid(0xf304);
 
-  /// Solid pen-alt icon
+  /// Solid Alternate Pen icon
   ///
   /// https://fontawesome.com/icons/pen-alt?style=solid
   /// design, edit, update, write
   static const IconData penAlt = const IconDataSolid(0xf305);
 
-  /// Solid pen-fancy icon
+  /// Solid Pen Fancy icon
   ///
   /// https://fontawesome.com/icons/pen-fancy?style=solid
   /// design, edit, fountain pen, update, write
   static const IconData penFancy = const IconDataSolid(0xf5ac);
 
-  /// Solid pen-nib icon
+  /// Solid Pen Nib icon
   ///
   /// https://fontawesome.com/icons/pen-nib?style=solid
   /// design, edit, fountain pen, update, write
   static const IconData penNib = const IconDataSolid(0xf5ad);
 
-  /// Solid pen-square icon
+  /// Solid Pen Square icon
   ///
   /// https://fontawesome.com/icons/pen-square?style=solid
   /// edit, pencil-square, update, write
   static const IconData penSquare = const IconDataSolid(0xf14b);
 
-  /// Solid pencil-alt icon
+  /// Solid Alternate Pencil icon
   ///
   /// https://fontawesome.com/icons/pencil-alt?style=solid
   /// design, edit, pencil, update, write
   static const IconData pencilAlt = const IconDataSolid(0xf303);
 
-  /// Solid pencil-ruler icon
+  /// Solid Pencil Ruler icon
   ///
   /// https://fontawesome.com/icons/pencil-ruler?style=solid
   /// design, draft, draw, pencil
   static const IconData pencilRuler = const IconDataSolid(0xf5ae);
 
-  /// Brands penny-arcade icon
+  /// Brands Penny Arcade icon
   ///
   /// https://fontawesome.com/icons/penny-arcade?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, game, gaming, pax, tabletop
   static const IconData pennyArcade = const IconDataBrands(0xf704);
 
-  /// Solid people-arrows icon
+  /// Solid People Arrows icon
   ///
   /// https://fontawesome.com/icons/people-arrows?style=solid
   /// covid-19, personal space, social distance, space, spread, users
   static const IconData peopleArrows = const IconDataSolid(0xe068);
 
-  /// Solid people-carry icon
+  /// Solid People Carry icon
   ///
   /// https://fontawesome.com/icons/people-carry?style=solid
   /// box, carry, fragile, help, movers, package
   static const IconData peopleCarry = const IconDataSolid(0xf4ce);
 
-  /// Solid pepper-hot icon
+  /// Solid Hot Pepper icon
   ///
   /// https://fontawesome.com/icons/pepper-hot?style=solid
   /// buffalo wings, capsicum, chili, chilli, habanero, jalapeno, mexican, spicy, tabasco, vegetable
   static const IconData pepperHot = const IconDataSolid(0xf816);
 
-  /// Brands perbyte icon
+  /// Brands PerByte icon
   ///
   /// https://fontawesome.com/icons/perbyte?style=brands
   static const IconData perbyte = const IconDataBrands(0xe083);
 
-  /// Solid percent icon
+  /// Solid Percent icon
   ///
   /// https://fontawesome.com/icons/percent?style=solid
   /// discount, fraction, proportion, rate, ratio
   static const IconData percent = const IconDataSolid(0xf295);
 
-  /// Solid percentage icon
+  /// Solid Percentage icon
   ///
   /// https://fontawesome.com/icons/percentage?style=solid
   /// discount, fraction, proportion, rate, ratio
   static const IconData percentage = const IconDataSolid(0xf541);
 
-  /// Brands periscope icon
+  /// Brands Periscope icon
   ///
   /// https://fontawesome.com/icons/periscope?style=brands
   static const IconData periscope = const IconDataBrands(0xf3da);
 
-  /// Solid person-booth icon
+  /// Solid Person Entering Booth icon
   ///
   /// https://fontawesome.com/icons/person-booth?style=solid
   /// changing, changing room, election, human, person, vote, voting
   static const IconData personBooth = const IconDataSolid(0xf756);
 
-  /// Brands phabricator icon
+  /// Brands Phabricator icon
   ///
   /// https://fontawesome.com/icons/phabricator?style=brands
   static const IconData phabricator = const IconDataBrands(0xf3db);
 
-  /// Brands phoenix-framework icon
+  /// Brands Phoenix Framework icon
   ///
   /// https://fontawesome.com/icons/phoenix-framework?style=brands
   static const IconData phoenixFramework = const IconDataBrands(0xf3dc);
 
-  /// Brands phoenix-squadron icon
+  /// Brands Phoenix Squadron icon
   ///
   /// https://fontawesome.com/icons/phoenix-squadron?style=brands
   static const IconData phoenixSquadron = const IconDataBrands(0xf511);
 
-  /// Solid phone icon
+  /// Solid Phone icon
   ///
   /// https://fontawesome.com/icons/phone?style=solid
   /// call, earphone, number, support, telephone, voice
   static const IconData phone = const IconDataSolid(0xf095);
 
-  /// Solid phone-alt icon
+  /// Solid Alternate Phone icon
   ///
   /// https://fontawesome.com/icons/phone-alt?style=solid
   /// call, earphone, number, support, telephone, voice
   static const IconData phoneAlt = const IconDataSolid(0xf879);
 
-  /// Solid phone-slash icon
+  /// Solid Phone Slash icon
   ///
   /// https://fontawesome.com/icons/phone-slash?style=solid
   /// call, cancel, earphone, mute, number, support, telephone, voice
   static const IconData phoneSlash = const IconDataSolid(0xf3dd);
 
-  /// Solid phone-square icon
+  /// Solid Phone Square icon
   ///
   /// https://fontawesome.com/icons/phone-square?style=solid
   /// call, earphone, number, support, telephone, voice
   static const IconData phoneSquare = const IconDataSolid(0xf098);
 
-  /// Solid phone-square-alt icon
+  /// Solid Alternate Phone Square icon
   ///
   /// https://fontawesome.com/icons/phone-square-alt?style=solid
   /// call, earphone, number, support, telephone, voice
   static const IconData phoneSquareAlt = const IconDataSolid(0xf87b);
 
-  /// Solid phone-volume icon
+  /// Solid Phone Volume icon
   ///
   /// https://fontawesome.com/icons/phone-volume?style=solid
   /// call, earphone, number, sound, support, telephone, voice, volume-control-phone
   static const IconData phoneVolume = const IconDataSolid(0xf2a0);
 
-  /// Solid photo-video icon
+  /// Solid Photo Video icon
   ///
   /// https://fontawesome.com/icons/photo-video?style=solid
   /// av, film, image, library, media
   static const IconData photoVideo = const IconDataSolid(0xf87c);
 
-  /// Brands php icon
+  /// Brands PHP icon
   ///
   /// https://fontawesome.com/icons/php?style=brands
   static const IconData php = const IconDataBrands(0xf457);
 
-  /// Brands pied-piper icon
+  /// Brands Pied Piper Logo icon
   ///
   /// https://fontawesome.com/icons/pied-piper?style=brands
   static const IconData piedPiper = const IconDataBrands(0xf2ae);
 
-  /// Brands pied-piper-alt icon
+  /// Brands Alternate Pied Piper Logo (Old) icon
   ///
   /// https://fontawesome.com/icons/pied-piper-alt?style=brands
   static const IconData piedPiperAlt = const IconDataBrands(0xf1a8);
 
-  /// Brands pied-piper-hat icon
+  /// Brands Pied Piper Hat (Old) icon
   ///
   /// https://fontawesome.com/icons/pied-piper-hat?style=brands
   /// clothing
   static const IconData piedPiperHat = const IconDataBrands(0xf4e5);
 
-  /// Brands pied-piper-pp icon
+  /// Brands Pied Piper PP Logo (Old) icon
   ///
   /// https://fontawesome.com/icons/pied-piper-pp?style=brands
   static const IconData piedPiperPp = const IconDataBrands(0xf1a7);
 
-  /// Brands pied-piper-square icon
+  /// Brands Pied Piper Square Logo (Old) icon
   ///
   /// https://fontawesome.com/icons/pied-piper-square?style=brands
   static const IconData piedPiperSquare = const IconDataBrands(0xe01e);
 
-  /// Solid piggy-bank icon
+  /// Solid Piggy Bank icon
   ///
   /// https://fontawesome.com/icons/piggy-bank?style=solid
   /// bank, save, savings
   static const IconData piggyBank = const IconDataSolid(0xf4d3);
 
-  /// Solid pills icon
+  /// Solid Pills icon
   ///
   /// https://fontawesome.com/icons/pills?style=solid
   /// drugs, medicine, prescription, tablets
   static const IconData pills = const IconDataSolid(0xf484);
 
-  /// Brands pinterest icon
+  /// Brands Pinterest icon
   ///
   /// https://fontawesome.com/icons/pinterest?style=brands
   static const IconData pinterest = const IconDataBrands(0xf0d2);
 
-  /// Brands pinterest-p icon
+  /// Brands Pinterest P icon
   ///
   /// https://fontawesome.com/icons/pinterest-p?style=brands
   static const IconData pinterestP = const IconDataBrands(0xf231);
 
-  /// Brands pinterest-square icon
+  /// Brands Pinterest Square icon
   ///
   /// https://fontawesome.com/icons/pinterest-square?style=brands
   static const IconData pinterestSquare = const IconDataBrands(0xf0d3);
 
-  /// Solid pizza-slice icon
+  /// Solid Pizza Slice icon
   ///
   /// https://fontawesome.com/icons/pizza-slice?style=solid
   /// cheese, chicago, italian, mozzarella, new york, pepperoni, pie, slice, teenage mutant ninja turtles, tomato
   static const IconData pizzaSlice = const IconDataSolid(0xf818);
 
-  /// Solid place-of-worship icon
+  /// Solid Place of Worship icon
   ///
   /// https://fontawesome.com/icons/place-of-worship?style=solid
   /// building, church, holy, mosque, synagogue
@@ -6232,19 +6232,19 @@ class FontAwesomeIcons {
   /// airplane, destination, fly, location, mode, travel, trip
   static const IconData plane = const IconDataSolid(0xf072);
 
-  /// Solid plane-arrival icon
+  /// Solid Plane Arrival icon
   ///
   /// https://fontawesome.com/icons/plane-arrival?style=solid
   /// airplane, arriving, destination, fly, land, landing, location, mode, travel, trip
   static const IconData planeArrival = const IconDataSolid(0xf5af);
 
-  /// Solid plane-departure icon
+  /// Solid Plane Departure icon
   ///
   /// https://fontawesome.com/icons/plane-departure?style=solid
   /// airplane, departing, destination, fly, location, mode, take off, taking off, travel, trip
   static const IconData planeDeparture = const IconDataSolid(0xf5b0);
 
-  /// Solid plane-slash icon
+  /// Solid Plane Slash icon
   ///
   /// https://fontawesome.com/icons/plane-slash?style=solid
   /// airplane mode, canceled, covid-19, delayed, grounded, travel
@@ -6256,24 +6256,24 @@ class FontAwesomeIcons {
   /// audio, music, playing, sound, start, video
   static const IconData play = const IconDataSolid(0xf04b);
 
-  /// Regular play-circle icon
+  /// Regular Play Circle icon
   ///
   /// https://fontawesome.com/icons/play-circle?style=regular
   /// audio, music, playing, sound, start, video
   static const IconData playCircle = const IconDataRegular(0xf144);
 
-  /// Solid play-circle icon
+  /// Solid Play Circle icon
   ///
   /// https://fontawesome.com/icons/play-circle?style=solid
   /// audio, music, playing, sound, start, video
   static const IconData solidPlayCircle = const IconDataSolid(0xf144);
 
-  /// Brands playstation icon
+  /// Brands PlayStation icon
   ///
   /// https://fontawesome.com/icons/playstation?style=brands
   static const IconData playstation = const IconDataBrands(0xf3df);
 
-  /// Solid plug icon
+  /// Solid Plug icon
   ///
   /// https://fontawesome.com/icons/plug?style=solid
   /// connect, electric, online, power
@@ -6285,103 +6285,103 @@ class FontAwesomeIcons {
   /// add, create, expand, new, positive, shape
   static const IconData plus = const IconDataSolid(0xf067);
 
-  /// Solid plus-circle icon
+  /// Solid Plus Circle icon
   ///
   /// https://fontawesome.com/icons/plus-circle?style=solid
   /// add, create, expand, new, positive, shape
   static const IconData plusCircle = const IconDataSolid(0xf055);
 
-  /// Regular plus-square icon
+  /// Regular Plus Square icon
   ///
   /// https://fontawesome.com/icons/plus-square?style=regular
   /// add, create, expand, new, positive, shape
   static const IconData plusSquare = const IconDataRegular(0xf0fe);
 
-  /// Solid plus-square icon
+  /// Solid Plus Square icon
   ///
   /// https://fontawesome.com/icons/plus-square?style=solid
   /// add, create, expand, new, positive, shape
   static const IconData solidPlusSquare = const IconDataSolid(0xf0fe);
 
-  /// Solid podcast icon
+  /// Solid Podcast icon
   ///
   /// https://fontawesome.com/icons/podcast?style=solid
   /// audio, broadcast, music, sound
   static const IconData podcast = const IconDataSolid(0xf2ce);
 
-  /// Solid poll icon
+  /// Solid Poll icon
   ///
   /// https://fontawesome.com/icons/poll?style=solid
   /// results, survey, trend, vote, voting
   static const IconData poll = const IconDataSolid(0xf681);
 
-  /// Solid poll-h icon
+  /// Solid Poll H icon
   ///
   /// https://fontawesome.com/icons/poll-h?style=solid
   /// results, survey, trend, vote, voting
   static const IconData pollH = const IconDataSolid(0xf682);
 
-  /// Solid poo icon
+  /// Solid Poo icon
   ///
   /// https://fontawesome.com/icons/poo?style=solid
   /// crap, poop, shit, smile, turd
   static const IconData poo = const IconDataSolid(0xf2fe);
 
-  /// Solid poo-storm icon
+  /// Solid Poo Storm icon
   ///
   /// https://fontawesome.com/icons/poo-storm?style=solid
   /// bolt, cloud, euphemism, lightning, mess, poop, shit, turd
   static const IconData pooStorm = const IconDataSolid(0xf75a);
 
-  /// Solid poop icon
+  /// Solid Poop icon
   ///
   /// https://fontawesome.com/icons/poop?style=solid
   /// crap, poop, shit, smile, turd
   static const IconData poop = const IconDataSolid(0xf619);
 
-  /// Solid portrait icon
+  /// Solid Portrait icon
   ///
   /// https://fontawesome.com/icons/portrait?style=solid
   /// id, image, photo, picture, selfie
   static const IconData portrait = const IconDataSolid(0xf3e0);
 
-  /// Solid pound-sign icon
+  /// Solid Pound Sign icon
   ///
   /// https://fontawesome.com/icons/pound-sign?style=solid
   /// currency, gbp, money
   static const IconData poundSign = const IconDataSolid(0xf154);
 
-  /// Solid power-off icon
+  /// Solid Power Off icon
   ///
   /// https://fontawesome.com/icons/power-off?style=solid
   /// cancel, computer, on, reboot, restart
   static const IconData powerOff = const IconDataSolid(0xf011);
 
-  /// Solid pray icon
+  /// Solid Pray icon
   ///
   /// https://fontawesome.com/icons/pray?style=solid
   /// kneel, preach, religion, worship
   static const IconData pray = const IconDataSolid(0xf683);
 
-  /// Solid praying-hands icon
+  /// Solid Praying Hands icon
   ///
   /// https://fontawesome.com/icons/praying-hands?style=solid
   /// kneel, preach, religion, worship
   static const IconData prayingHands = const IconDataSolid(0xf684);
 
-  /// Solid prescription icon
+  /// Solid Prescription icon
   ///
   /// https://fontawesome.com/icons/prescription?style=solid
   /// drugs, medical, medicine, pharmacy, rx
   static const IconData prescription = const IconDataSolid(0xf5b1);
 
-  /// Solid prescription-bottle icon
+  /// Solid Prescription Bottle icon
   ///
   /// https://fontawesome.com/icons/prescription-bottle?style=solid
   /// drugs, medical, medicine, pharmacy, rx
   static const IconData prescriptionBottle = const IconDataSolid(0xf485);
 
-  /// Solid prescription-bottle-alt icon
+  /// Solid Alternate Prescription Bottle icon
   ///
   /// https://fontawesome.com/icons/prescription-bottle-alt?style=solid
   /// drugs, medical, medicine, pharmacy, rx
@@ -6393,52 +6393,52 @@ class FontAwesomeIcons {
   /// business, copy, document, office, paper
   static const IconData print = const IconDataSolid(0xf02f);
 
-  /// Solid procedures icon
+  /// Solid Procedures icon
   ///
   /// https://fontawesome.com/icons/procedures?style=solid
   /// EKG, bed, electrocardiogram, health, hospital, life, patient, vital
   static const IconData procedures = const IconDataSolid(0xf487);
 
-  /// Brands product-hunt icon
+  /// Brands Product Hunt icon
   ///
   /// https://fontawesome.com/icons/product-hunt?style=brands
   static const IconData productHunt = const IconDataBrands(0xf288);
 
-  /// Solid project-diagram icon
+  /// Solid Project Diagram icon
   ///
   /// https://fontawesome.com/icons/project-diagram?style=solid
   /// chart, graph, network, pert
   static const IconData projectDiagram = const IconDataSolid(0xf542);
 
-  /// Solid pump-medical icon
+  /// Solid Pump Medical icon
   ///
   /// https://fontawesome.com/icons/pump-medical?style=solid
   /// anti-bacterial, clean, covid-19, disinfect, hygiene, medical grade, sanitizer, soap
   static const IconData pumpMedical = const IconDataSolid(0xe06a);
 
-  /// Solid pump-soap icon
+  /// Solid Pump Soap icon
   ///
   /// https://fontawesome.com/icons/pump-soap?style=solid
   /// anti-bacterial, clean, covid-19, disinfect, hygiene, sanitizer, soap
   static const IconData pumpSoap = const IconDataSolid(0xe06b);
 
-  /// Brands pushed icon
+  /// Brands Pushed icon
   ///
   /// https://fontawesome.com/icons/pushed?style=brands
   static const IconData pushed = const IconDataBrands(0xf3e1);
 
-  /// Solid puzzle-piece icon
+  /// Solid Puzzle Piece icon
   ///
   /// https://fontawesome.com/icons/puzzle-piece?style=solid
   /// add-on, addon, game, section
   static const IconData puzzlePiece = const IconDataSolid(0xf12e);
 
-  /// Brands python icon
+  /// Brands Python icon
   ///
   /// https://fontawesome.com/icons/python?style=brands
   static const IconData python = const IconDataBrands(0xf3e2);
 
-  /// Brands qq icon
+  /// Brands QQ icon
   ///
   /// https://fontawesome.com/icons/qq?style=brands
   static const IconData qq = const IconDataBrands(0xf1d6);
@@ -6449,36 +6449,36 @@ class FontAwesomeIcons {
   /// barcode, info, information, scan
   static const IconData qrcode = const IconDataSolid(0xf029);
 
-  /// Solid question icon
+  /// Solid Question icon
   ///
   /// https://fontawesome.com/icons/question?style=solid
   /// help, information, support, unknown
   static const IconData question = const IconDataSolid(0xf128);
 
-  /// Regular question-circle icon
+  /// Regular Question Circle icon
   ///
   /// https://fontawesome.com/icons/question-circle?style=regular
   /// help, information, support, unknown
   static const IconData questionCircle = const IconDataRegular(0xf059);
 
-  /// Solid question-circle icon
+  /// Solid Question Circle icon
   ///
   /// https://fontawesome.com/icons/question-circle?style=solid
   /// help, information, support, unknown
   static const IconData solidQuestionCircle = const IconDataSolid(0xf059);
 
-  /// Solid quidditch icon
+  /// Solid Quidditch icon
   ///
   /// https://fontawesome.com/icons/quidditch?style=solid
   /// ball, bludger, broom, golden snitch, harry potter, hogwarts, quaffle, sport, wizard
   static const IconData quidditch = const IconDataSolid(0xf458);
 
-  /// Brands quinscape icon
+  /// Brands QuinScape icon
   ///
   /// https://fontawesome.com/icons/quinscape?style=brands
   static const IconData quinscape = const IconDataBrands(0xf459);
 
-  /// Brands quora icon
+  /// Brands Quora icon
   ///
   /// https://fontawesome.com/icons/quora?style=brands
   static const IconData quora = const IconDataBrands(0xf2c4);
@@ -6495,30 +6495,30 @@ class FontAwesomeIcons {
   /// mention, note, phrase, text, type
   static const IconData quoteRight = const IconDataSolid(0xf10e);
 
-  /// Solid quran icon
+  /// Solid Quran icon
   ///
   /// https://fontawesome.com/icons/quran?style=solid
   /// book, islam, muslim, religion
   static const IconData quran = const IconDataSolid(0xf687);
 
-  /// Brands r-project icon
+  /// Brands R Project icon
   ///
   /// https://fontawesome.com/icons/r-project?style=brands
   static const IconData rProject = const IconDataBrands(0xf4f7);
 
-  /// Solid radiation icon
+  /// Solid Radiation icon
   ///
   /// https://fontawesome.com/icons/radiation?style=solid
   /// danger, dangerous, deadly, hazard, nuclear, radioactive, warning
   static const IconData radiation = const IconDataSolid(0xf7b9);
 
-  /// Solid radiation-alt icon
+  /// Solid Alternate Radiation icon
   ///
   /// https://fontawesome.com/icons/radiation-alt?style=solid
   /// danger, dangerous, deadly, hazard, nuclear, radioactive, warning
   static const IconData radiationAlt = const IconDataSolid(0xf7ba);
 
-  /// Solid rainbow icon
+  /// Solid Rainbow icon
   ///
   /// https://fontawesome.com/icons/rainbow?style=solid
   /// gold, leprechaun, prism, rain, sky
@@ -6530,116 +6530,116 @@ class FontAwesomeIcons {
   /// arrows, shuffle, sort, swap, switch, transfer
   static const IconData random = const IconDataSolid(0xf074);
 
-  /// Brands raspberry-pi icon
+  /// Brands Raspberry Pi icon
   ///
   /// https://fontawesome.com/icons/raspberry-pi?style=brands
   static const IconData raspberryPi = const IconDataBrands(0xf7bb);
 
-  /// Brands ravelry icon
+  /// Brands Ravelry icon
   ///
   /// https://fontawesome.com/icons/ravelry?style=brands
   static const IconData ravelry = const IconDataBrands(0xf2d9);
 
-  /// Brands react icon
+  /// Brands React icon
   ///
   /// https://fontawesome.com/icons/react?style=brands
   static const IconData react = const IconDataBrands(0xf41b);
 
-  /// Brands reacteurope icon
+  /// Brands ReactEurope icon
   ///
   /// https://fontawesome.com/icons/reacteurope?style=brands
   static const IconData reacteurope = const IconDataBrands(0xf75d);
 
-  /// Brands readme icon
+  /// Brands ReadMe icon
   ///
   /// https://fontawesome.com/icons/readme?style=brands
   static const IconData readme = const IconDataBrands(0xf4d5);
 
-  /// Brands rebel icon
+  /// Brands Rebel Alliance icon
   ///
   /// https://fontawesome.com/icons/rebel?style=brands
   static const IconData rebel = const IconDataBrands(0xf1d0);
 
-  /// Solid receipt icon
+  /// Solid Receipt icon
   ///
   /// https://fontawesome.com/icons/receipt?style=solid
   /// check, invoice, money, pay, table
   static const IconData receipt = const IconDataSolid(0xf543);
 
-  /// Solid record-vinyl icon
+  /// Solid Record Vinyl icon
   ///
   /// https://fontawesome.com/icons/record-vinyl?style=solid
   /// LP, album, analog, music, phonograph, sound
   static const IconData recordVinyl = const IconDataSolid(0xf8d9);
 
-  /// Solid recycle icon
+  /// Solid Recycle icon
   ///
   /// https://fontawesome.com/icons/recycle?style=solid
   /// Waste, compost, garbage, reuse, trash
   static const IconData recycle = const IconDataSolid(0xf1b8);
 
-  /// Brands red-river icon
+  /// Brands red river icon
   ///
   /// https://fontawesome.com/icons/red-river?style=brands
   static const IconData redRiver = const IconDataBrands(0xf3e3);
 
-  /// Brands reddit icon
+  /// Brands reddit Logo icon
   ///
   /// https://fontawesome.com/icons/reddit?style=brands
   static const IconData reddit = const IconDataBrands(0xf1a1);
 
-  /// Brands reddit-alien icon
+  /// Brands reddit Alien icon
   ///
   /// https://fontawesome.com/icons/reddit-alien?style=brands
   static const IconData redditAlien = const IconDataBrands(0xf281);
 
-  /// Brands reddit-square icon
+  /// Brands reddit Square icon
   ///
   /// https://fontawesome.com/icons/reddit-square?style=brands
   static const IconData redditSquare = const IconDataBrands(0xf1a2);
 
-  /// Brands redhat icon
+  /// Brands Redhat icon
   ///
   /// https://fontawesome.com/icons/redhat?style=brands
   /// linux, operating system, os
   static const IconData redhat = const IconDataBrands(0xf7bc);
 
-  /// Solid redo icon
+  /// Solid Redo icon
   ///
   /// https://fontawesome.com/icons/redo?style=solid
   /// forward, refresh, reload, repeat
   static const IconData redo = const IconDataSolid(0xf01e);
 
-  /// Solid redo-alt icon
+  /// Solid Alternate Redo icon
   ///
   /// https://fontawesome.com/icons/redo-alt?style=solid
   /// forward, refresh, reload, repeat
   static const IconData redoAlt = const IconDataSolid(0xf2f9);
 
-  /// Regular registered icon
+  /// Regular Registered Trademark icon
   ///
   /// https://fontawesome.com/icons/registered?style=regular
   /// copyright, mark, trademark
   static const IconData registered = const IconDataRegular(0xf25d);
 
-  /// Solid registered icon
+  /// Solid Registered Trademark icon
   ///
   /// https://fontawesome.com/icons/registered?style=solid
   /// copyright, mark, trademark
   static const IconData solidRegistered = const IconDataSolid(0xf25d);
 
-  /// Solid remove-format icon
+  /// Solid Remove Format icon
   ///
   /// https://fontawesome.com/icons/remove-format?style=solid
   /// cancel, font, format, remove, style, text
   static const IconData removeFormat = const IconDataSolid(0xf87d);
 
-  /// Brands renren icon
+  /// Brands Renren icon
   ///
   /// https://fontawesome.com/icons/renren?style=brands
   static const IconData renren = const IconDataBrands(0xf18b);
 
-  /// Solid reply icon
+  /// Solid Reply icon
   ///
   /// https://fontawesome.com/icons/reply?style=solid
   /// mail, message, respond
@@ -6656,46 +6656,46 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/replyd?style=brands
   static const IconData replyd = const IconDataBrands(0xf3e6);
 
-  /// Solid republican icon
+  /// Solid Republican icon
   ///
   /// https://fontawesome.com/icons/republican?style=solid
   /// american, conservative, election, elephant, politics, republican party, right, right-wing, usa
   static const IconData republican = const IconDataSolid(0xf75e);
 
-  /// Brands researchgate icon
+  /// Brands Researchgate icon
   ///
   /// https://fontawesome.com/icons/researchgate?style=brands
   static const IconData researchgate = const IconDataBrands(0xf4f8);
 
-  /// Brands resolving icon
+  /// Brands Resolving icon
   ///
   /// https://fontawesome.com/icons/resolving?style=brands
   static const IconData resolving = const IconDataBrands(0xf3e7);
 
-  /// Solid restroom icon
+  /// Solid Restroom icon
   ///
   /// https://fontawesome.com/icons/restroom?style=solid
   /// bathroom, john, loo, potty, washroom, waste, wc
   static const IconData restroom = const IconDataSolid(0xf7bd);
 
-  /// Solid retweet icon
+  /// Solid Retweet icon
   ///
   /// https://fontawesome.com/icons/retweet?style=solid
   /// refresh, reload, share, swap
   static const IconData retweet = const IconDataSolid(0xf079);
 
-  /// Brands rev icon
+  /// Brands Rev.io icon
   ///
   /// https://fontawesome.com/icons/rev?style=brands
   static const IconData rev = const IconDataBrands(0xf5b2);
 
-  /// Solid ribbon icon
+  /// Solid Ribbon icon
   ///
   /// https://fontawesome.com/icons/ribbon?style=solid
   /// badge, cause, lapel, pin
   static const IconData ribbon = const IconDataSolid(0xf4d6);
 
-  /// Solid ring icon
+  /// Solid Ring icon
   ///
   /// https://fontawesome.com/icons/ring?style=solid
   /// Dungeons & Dragons, Gollum, band, binding, d&d, dnd, engagement, fantasy, gold, jewelry, marriage, precious
@@ -6707,7 +6707,7 @@ class FontAwesomeIcons {
   /// highway, map, pavement, route, street, travel
   static const IconData road = const IconDataSolid(0xf018);
 
-  /// Solid robot icon
+  /// Solid Robot icon
   ///
   /// https://fontawesome.com/icons/robot?style=solid
   /// android, automate, computer, cyborg
@@ -6719,17 +6719,17 @@ class FontAwesomeIcons {
   /// aircraft, app, jet, launch, nasa, space
   static const IconData rocket = const IconDataSolid(0xf135);
 
-  /// Brands rocketchat icon
+  /// Brands Rocket.Chat icon
   ///
   /// https://fontawesome.com/icons/rocketchat?style=brands
   static const IconData rocketchat = const IconDataBrands(0xf3e8);
 
-  /// Brands rockrms icon
+  /// Brands Rockrms icon
   ///
   /// https://fontawesome.com/icons/rockrms?style=brands
   static const IconData rockrms = const IconDataBrands(0xf3e9);
 
-  /// Solid route icon
+  /// Solid Route icon
   ///
   /// https://fontawesome.com/icons/route?style=solid
   /// directions, navigation, travel
@@ -6741,309 +6741,309 @@ class FontAwesomeIcons {
   /// blog, feed, journal, news, writing
   static const IconData rss = const IconDataSolid(0xf09e);
 
-  /// Solid rss-square icon
+  /// Solid RSS Square icon
   ///
   /// https://fontawesome.com/icons/rss-square?style=solid
   /// blog, feed, journal, news, writing
   static const IconData rssSquare = const IconDataSolid(0xf143);
 
-  /// Solid ruble-sign icon
+  /// Solid Ruble Sign icon
   ///
   /// https://fontawesome.com/icons/ruble-sign?style=solid
   /// currency, money, rub
   static const IconData rubleSign = const IconDataSolid(0xf158);
 
-  /// Solid ruler icon
+  /// Solid Ruler icon
   ///
   /// https://fontawesome.com/icons/ruler?style=solid
   /// design, draft, length, measure, planning
   static const IconData ruler = const IconDataSolid(0xf545);
 
-  /// Solid ruler-combined icon
+  /// Solid Ruler Combined icon
   ///
   /// https://fontawesome.com/icons/ruler-combined?style=solid
   /// design, draft, length, measure, planning
   static const IconData rulerCombined = const IconDataSolid(0xf546);
 
-  /// Solid ruler-horizontal icon
+  /// Solid Ruler Horizontal icon
   ///
   /// https://fontawesome.com/icons/ruler-horizontal?style=solid
   /// design, draft, length, measure, planning
   static const IconData rulerHorizontal = const IconDataSolid(0xf547);
 
-  /// Solid ruler-vertical icon
+  /// Solid Ruler Vertical icon
   ///
   /// https://fontawesome.com/icons/ruler-vertical?style=solid
   /// design, draft, length, measure, planning
   static const IconData rulerVertical = const IconDataSolid(0xf548);
 
-  /// Solid running icon
+  /// Solid Running icon
   ///
   /// https://fontawesome.com/icons/running?style=solid
   /// exercise, health, jog, person, run, sport, sprint
   static const IconData running = const IconDataSolid(0xf70c);
 
-  /// Solid rupee-sign icon
+  /// Solid Indian Rupee Sign icon
   ///
   /// https://fontawesome.com/icons/rupee-sign?style=solid
   /// currency, indian, inr, money
   static const IconData rupeeSign = const IconDataSolid(0xf156);
 
-  /// Brands rust icon
+  /// Brands Rust icon
   ///
   /// https://fontawesome.com/icons/rust?style=brands
   static const IconData rust = const IconDataBrands(0xe07a);
 
-  /// Regular sad-cry icon
+  /// Regular Crying Face icon
   ///
   /// https://fontawesome.com/icons/sad-cry?style=regular
   /// emoticon, face, tear, tears
   static const IconData sadCry = const IconDataRegular(0xf5b3);
 
-  /// Solid sad-cry icon
+  /// Solid Crying Face icon
   ///
   /// https://fontawesome.com/icons/sad-cry?style=solid
   /// emoticon, face, tear, tears
   static const IconData solidSadCry = const IconDataSolid(0xf5b3);
 
-  /// Regular sad-tear icon
+  /// Regular Loudly Crying Face icon
   ///
   /// https://fontawesome.com/icons/sad-tear?style=regular
   /// emoticon, face, tear, tears
   static const IconData sadTear = const IconDataRegular(0xf5b4);
 
-  /// Solid sad-tear icon
+  /// Solid Loudly Crying Face icon
   ///
   /// https://fontawesome.com/icons/sad-tear?style=solid
   /// emoticon, face, tear, tears
   static const IconData solidSadTear = const IconDataSolid(0xf5b4);
 
-  /// Brands safari icon
+  /// Brands Safari icon
   ///
   /// https://fontawesome.com/icons/safari?style=brands
   /// browser
   static const IconData safari = const IconDataBrands(0xf267);
 
-  /// Brands salesforce icon
+  /// Brands Salesforce icon
   ///
   /// https://fontawesome.com/icons/salesforce?style=brands
   static const IconData salesforce = const IconDataBrands(0xf83b);
 
-  /// Brands sass icon
+  /// Brands Sass icon
   ///
   /// https://fontawesome.com/icons/sass?style=brands
   static const IconData sass = const IconDataBrands(0xf41e);
 
-  /// Solid satellite icon
+  /// Solid Satellite icon
   ///
   /// https://fontawesome.com/icons/satellite?style=solid
   /// communications, hardware, orbit, space
   static const IconData satellite = const IconDataSolid(0xf7bf);
 
-  /// Solid satellite-dish icon
+  /// Solid Satellite Dish icon
   ///
   /// https://fontawesome.com/icons/satellite-dish?style=solid
   /// SETI, communications, hardware, receiver, saucer, signal, space
   static const IconData satelliteDish = const IconDataSolid(0xf7c0);
 
-  /// Regular save icon
+  /// Regular Save icon
   ///
   /// https://fontawesome.com/icons/save?style=regular
   /// disk, download, floppy, floppy-o
   static const IconData save = const IconDataRegular(0xf0c7);
 
-  /// Solid save icon
+  /// Solid Save icon
   ///
   /// https://fontawesome.com/icons/save?style=solid
   /// disk, download, floppy, floppy-o
   static const IconData solidSave = const IconDataSolid(0xf0c7);
 
-  /// Brands schlix icon
+  /// Brands SCHLIX icon
   ///
   /// https://fontawesome.com/icons/schlix?style=brands
   static const IconData schlix = const IconDataBrands(0xf3ea);
 
-  /// Solid school icon
+  /// Solid School icon
   ///
   /// https://fontawesome.com/icons/school?style=solid
   /// building, education, learn, student, teacher
   static const IconData school = const IconDataSolid(0xf549);
 
-  /// Solid screwdriver icon
+  /// Solid Screwdriver icon
   ///
   /// https://fontawesome.com/icons/screwdriver?style=solid
   /// admin, fix, mechanic, repair, settings, tool
   static const IconData screwdriver = const IconDataSolid(0xf54a);
 
-  /// Brands scribd icon
+  /// Brands Scribd icon
   ///
   /// https://fontawesome.com/icons/scribd?style=brands
   static const IconData scribd = const IconDataBrands(0xf28a);
 
-  /// Solid scroll icon
+  /// Solid Scroll icon
   ///
   /// https://fontawesome.com/icons/scroll?style=solid
   /// Dungeons & Dragons, announcement, d&d, dnd, fantasy, paper, script
   static const IconData scroll = const IconDataSolid(0xf70e);
 
-  /// Solid sd-card icon
+  /// Solid Sd Card icon
   ///
   /// https://fontawesome.com/icons/sd-card?style=solid
   /// image, memory, photo, save
   static const IconData sdCard = const IconDataSolid(0xf7c2);
 
-  /// Solid search icon
+  /// Solid Search icon
   ///
   /// https://fontawesome.com/icons/search?style=solid
   /// bigger, enlarge, find, magnify, preview, zoom
   static const IconData search = const IconDataSolid(0xf002);
 
-  /// Solid search-dollar icon
+  /// Solid Search Dollar icon
   ///
   /// https://fontawesome.com/icons/search-dollar?style=solid
   /// bigger, enlarge, find, magnify, money, preview, zoom
   static const IconData searchDollar = const IconDataSolid(0xf688);
 
-  /// Solid search-location icon
+  /// Solid Search Location icon
   ///
   /// https://fontawesome.com/icons/search-location?style=solid
   /// bigger, enlarge, find, magnify, preview, zoom
   static const IconData searchLocation = const IconDataSolid(0xf689);
 
-  /// Solid search-minus icon
+  /// Solid Search Minus icon
   ///
   /// https://fontawesome.com/icons/search-minus?style=solid
   /// minify, negative, smaller, zoom, zoom out
   static const IconData searchMinus = const IconDataSolid(0xf010);
 
-  /// Solid search-plus icon
+  /// Solid Search Plus icon
   ///
   /// https://fontawesome.com/icons/search-plus?style=solid
   /// bigger, enlarge, magnify, positive, zoom, zoom in
   static const IconData searchPlus = const IconDataSolid(0xf00e);
 
-  /// Brands searchengin icon
+  /// Brands Searchengin icon
   ///
   /// https://fontawesome.com/icons/searchengin?style=brands
   static const IconData searchengin = const IconDataBrands(0xf3eb);
 
-  /// Solid seedling icon
+  /// Solid Seedling icon
   ///
   /// https://fontawesome.com/icons/seedling?style=solid
   /// flora, grow, plant, vegan
   static const IconData seedling = const IconDataSolid(0xf4d8);
 
-  /// Brands sellcast icon
+  /// Brands Sellcast icon
   ///
   /// https://fontawesome.com/icons/sellcast?style=brands
   /// eercast
   static const IconData sellcast = const IconDataBrands(0xf2da);
 
-  /// Brands sellsy icon
+  /// Brands Sellsy icon
   ///
   /// https://fontawesome.com/icons/sellsy?style=brands
   static const IconData sellsy = const IconDataBrands(0xf213);
 
-  /// Solid server icon
+  /// Solid Server icon
   ///
   /// https://fontawesome.com/icons/server?style=solid
   /// computer, cpu, database, hardware, network
   static const IconData server = const IconDataSolid(0xf233);
 
-  /// Brands servicestack icon
+  /// Brands Servicestack icon
   ///
   /// https://fontawesome.com/icons/servicestack?style=brands
   static const IconData servicestack = const IconDataBrands(0xf3ec);
 
-  /// Solid shapes icon
+  /// Solid Shapes icon
   ///
   /// https://fontawesome.com/icons/shapes?style=solid
   /// blocks, build, circle, square, triangle
   static const IconData shapes = const IconDataSolid(0xf61f);
 
-  /// Solid share icon
+  /// Solid Share icon
   ///
   /// https://fontawesome.com/icons/share?style=solid
   /// forward, save, send, social
   static const IconData share = const IconDataSolid(0xf064);
 
-  /// Solid share-alt icon
+  /// Solid Alternate Share icon
   ///
   /// https://fontawesome.com/icons/share-alt?style=solid
   /// forward, save, send, social
   static const IconData shareAlt = const IconDataSolid(0xf1e0);
 
-  /// Solid share-alt-square icon
+  /// Solid Alternate Share Square icon
   ///
   /// https://fontawesome.com/icons/share-alt-square?style=solid
   /// forward, save, send, social
   static const IconData shareAltSquare = const IconDataSolid(0xf1e1);
 
-  /// Regular share-square icon
+  /// Regular Share Square icon
   ///
   /// https://fontawesome.com/icons/share-square?style=regular
   /// forward, save, send, social
   static const IconData shareSquare = const IconDataRegular(0xf14d);
 
-  /// Solid share-square icon
+  /// Solid Share Square icon
   ///
   /// https://fontawesome.com/icons/share-square?style=solid
   /// forward, save, send, social
   static const IconData solidShareSquare = const IconDataSolid(0xf14d);
 
-  /// Solid shekel-sign icon
+  /// Solid Shekel Sign icon
   ///
   /// https://fontawesome.com/icons/shekel-sign?style=solid
   /// currency, ils, money
   static const IconData shekelSign = const IconDataSolid(0xf20b);
 
-  /// Solid shield-alt icon
+  /// Solid Alternate Shield icon
   ///
   /// https://fontawesome.com/icons/shield-alt?style=solid
   /// achievement, award, block, defend, security, winner
   static const IconData shieldAlt = const IconDataSolid(0xf3ed);
 
-  /// Solid shield-virus icon
+  /// Solid Shield Virus icon
   ///
   /// https://fontawesome.com/icons/shield-virus?style=solid
   /// antibodies, barrier, covid-19, health, protect
   static const IconData shieldVirus = const IconDataSolid(0xe06c);
 
-  /// Solid ship icon
+  /// Solid Ship icon
   ///
   /// https://fontawesome.com/icons/ship?style=solid
   /// boat, sea, water
   static const IconData ship = const IconDataSolid(0xf21a);
 
-  /// Solid shipping-fast icon
+  /// Solid Shipping Fast icon
   ///
   /// https://fontawesome.com/icons/shipping-fast?style=solid
   /// express, fedex, mail, overnight, package, ups
   static const IconData shippingFast = const IconDataSolid(0xf48b);
 
-  /// Brands shirtsinbulk icon
+  /// Brands Shirts in Bulk icon
   ///
   /// https://fontawesome.com/icons/shirtsinbulk?style=brands
   static const IconData shirtsinbulk = const IconDataBrands(0xf214);
 
-  /// Solid shoe-prints icon
+  /// Solid Shoe Prints icon
   ///
   /// https://fontawesome.com/icons/shoe-prints?style=solid
   /// feet, footprints, steps, walk
   static const IconData shoePrints = const IconDataSolid(0xf54b);
 
-  /// Brands shopify icon
+  /// Brands Shopify icon
   ///
   /// https://fontawesome.com/icons/shopify?style=brands
   static const IconData shopify = const IconDataBrands(0xe057);
 
-  /// Solid shopping-bag icon
+  /// Solid Shopping Bag icon
   ///
   /// https://fontawesome.com/icons/shopping-bag?style=solid
   /// buy, checkout, grocery, payment, purchase
   static const IconData shoppingBag = const IconDataSolid(0xf290);
 
-  /// Solid shopping-basket icon
+  /// Solid Shopping Basket icon
   ///
   /// https://fontawesome.com/icons/shopping-basket?style=solid
   /// buy, checkout, grocery, payment, purchase
@@ -7055,42 +7055,42 @@ class FontAwesomeIcons {
   /// buy, checkout, grocery, payment, purchase
   static const IconData shoppingCart = const IconDataSolid(0xf07a);
 
-  /// Brands shopware icon
+  /// Brands Shopware icon
   ///
   /// https://fontawesome.com/icons/shopware?style=brands
   static const IconData shopware = const IconDataBrands(0xf5b5);
 
-  /// Solid shower icon
+  /// Solid Shower icon
   ///
   /// https://fontawesome.com/icons/shower?style=solid
   /// bath, clean, faucet, water
   static const IconData shower = const IconDataSolid(0xf2cc);
 
-  /// Solid shuttle-van icon
+  /// Solid Shuttle Van icon
   ///
   /// https://fontawesome.com/icons/shuttle-van?style=solid
   /// airport, machine, public-transportation, transportation, travel, vehicle
   static const IconData shuttleVan = const IconDataSolid(0xf5b6);
 
-  /// Solid sign icon
+  /// Solid Sign icon
   ///
   /// https://fontawesome.com/icons/sign?style=solid
   /// directions, real estate, signage, wayfinding
   static const IconData sign = const IconDataSolid(0xf4d9);
 
-  /// Solid sign-in-alt icon
+  /// Solid Alternate Sign In icon
   ///
   /// https://fontawesome.com/icons/sign-in-alt?style=solid
   /// arrow, enter, join, log in, login, sign in, sign up, sign-in, signin, signup
   static const IconData signInAlt = const IconDataSolid(0xf2f6);
 
-  /// Solid sign-language icon
+  /// Solid Sign Language icon
   ///
   /// https://fontawesome.com/icons/sign-language?style=solid
   /// Translate, asl, deaf, hands
   static const IconData signLanguage = const IconDataSolid(0xf2a7);
 
-  /// Solid sign-out-alt icon
+  /// Solid Alternate Sign Out icon
   ///
   /// https://fontawesome.com/icons/sign-out-alt?style=solid
   /// arrow, exit, leave, log out, logout, sign-out
@@ -7102,76 +7102,76 @@ class FontAwesomeIcons {
   /// bars, graph, online, reception, status
   static const IconData signal = const IconDataSolid(0xf012);
 
-  /// Solid signature icon
+  /// Solid Signature icon
   ///
   /// https://fontawesome.com/icons/signature?style=solid
   /// John Hancock, cursive, name, writing
   static const IconData signature = const IconDataSolid(0xf5b7);
 
-  /// Solid sim-card icon
+  /// Solid SIM Card icon
   ///
   /// https://fontawesome.com/icons/sim-card?style=solid
   /// hard drive, hardware, portable, storage, technology, tiny
   static const IconData simCard = const IconDataSolid(0xf7c4);
 
-  /// Brands simplybuilt icon
+  /// Brands SimplyBuilt icon
   ///
   /// https://fontawesome.com/icons/simplybuilt?style=brands
   static const IconData simplybuilt = const IconDataBrands(0xf215);
 
-  /// Solid sink icon
+  /// Solid Sink icon
   ///
   /// https://fontawesome.com/icons/sink?style=solid
   /// bathroom, covid-19, faucet, kitchen, wash
   static const IconData sink = const IconDataSolid(0xe06d);
 
-  /// Brands sistrix icon
+  /// Brands SISTRIX icon
   ///
   /// https://fontawesome.com/icons/sistrix?style=brands
   static const IconData sistrix = const IconDataBrands(0xf3ee);
 
-  /// Solid sitemap icon
+  /// Solid Sitemap icon
   ///
   /// https://fontawesome.com/icons/sitemap?style=solid
   /// directory, hierarchy, ia, information architecture, organization
   static const IconData sitemap = const IconDataSolid(0xf0e8);
 
-  /// Brands sith icon
+  /// Brands Sith icon
   ///
   /// https://fontawesome.com/icons/sith?style=brands
   static const IconData sith = const IconDataBrands(0xf512);
 
-  /// Solid skating icon
+  /// Solid Skating icon
   ///
   /// https://fontawesome.com/icons/skating?style=solid
   /// activity, figure skating, fitness, ice, person, winter
   static const IconData skating = const IconDataSolid(0xf7c5);
 
-  /// Brands sketch icon
+  /// Brands Sketch icon
   ///
   /// https://fontawesome.com/icons/sketch?style=brands
   /// app, design, interface
   static const IconData sketch = const IconDataBrands(0xf7c6);
 
-  /// Solid skiing icon
+  /// Solid Skiing icon
   ///
   /// https://fontawesome.com/icons/skiing?style=solid
   /// activity, downhill, fast, fitness, olympics, outdoors, person, seasonal, slalom
   static const IconData skiing = const IconDataSolid(0xf7c9);
 
-  /// Solid skiing-nordic icon
+  /// Solid Skiing Nordic icon
   ///
   /// https://fontawesome.com/icons/skiing-nordic?style=solid
   /// activity, cross country, fitness, outdoors, person, seasonal
   static const IconData skiingNordic = const IconDataSolid(0xf7ca);
 
-  /// Solid skull icon
+  /// Solid Skull icon
   ///
   /// https://fontawesome.com/icons/skull?style=solid
   /// bones, skeleton, x-ray, yorick
   static const IconData skull = const IconDataSolid(0xf54c);
 
-  /// Solid skull-crossbones icon
+  /// Solid Skull & Crossbones icon
   ///
   /// https://fontawesome.com/icons/skull-crossbones?style=solid
   /// Dungeons & Dragons, alert, bones, d&d, danger, dead, deadly, death, dnd, fantasy, halloween, holiday, jolly-roger, pirate, poison, skeleton, warning
@@ -7182,389 +7182,389 @@ class FontAwesomeIcons {
   /// https://fontawesome.com/icons/skyatlas?style=brands
   static const IconData skyatlas = const IconDataBrands(0xf216);
 
-  /// Brands skype icon
+  /// Brands Skype icon
   ///
   /// https://fontawesome.com/icons/skype?style=brands
   static const IconData skype = const IconDataBrands(0xf17e);
 
-  /// Brands slack icon
+  /// Brands Slack Logo icon
   ///
   /// https://fontawesome.com/icons/slack?style=brands
   /// anchor, hash, hashtag
   static const IconData slack = const IconDataBrands(0xf198);
 
-  /// Brands slack-hash icon
+  /// Brands Slack Hashtag icon
   ///
   /// https://fontawesome.com/icons/slack-hash?style=brands
   /// anchor, hash, hashtag
   static const IconData slackHash = const IconDataBrands(0xf3ef);
 
-  /// Solid slash icon
+  /// Solid Slash icon
   ///
   /// https://fontawesome.com/icons/slash?style=solid
   /// cancel, close, mute, off, stop, x
   static const IconData slash = const IconDataSolid(0xf715);
 
-  /// Solid sleigh icon
+  /// Solid Sleigh icon
   ///
   /// https://fontawesome.com/icons/sleigh?style=solid
   /// christmas, claus, fly, holiday, santa, sled, snow, xmas
   static const IconData sleigh = const IconDataSolid(0xf7cc);
 
-  /// Solid sliders-h icon
+  /// Solid Horizontal Sliders icon
   ///
   /// https://fontawesome.com/icons/sliders-h?style=solid
   /// adjust, settings, sliders, toggle
   static const IconData slidersH = const IconDataSolid(0xf1de);
 
-  /// Brands slideshare icon
+  /// Brands Slideshare icon
   ///
   /// https://fontawesome.com/icons/slideshare?style=brands
   static const IconData slideshare = const IconDataBrands(0xf1e7);
 
-  /// Regular smile icon
+  /// Regular Smiling Face icon
   ///
   /// https://fontawesome.com/icons/smile?style=regular
   /// approve, emoticon, face, happy, rating, satisfied
   static const IconData smile = const IconDataRegular(0xf118);
 
-  /// Solid smile icon
+  /// Solid Smiling Face icon
   ///
   /// https://fontawesome.com/icons/smile?style=solid
   /// approve, emoticon, face, happy, rating, satisfied
   static const IconData solidSmile = const IconDataSolid(0xf118);
 
-  /// Regular smile-beam icon
+  /// Regular Beaming Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/smile-beam?style=regular
   /// emoticon, face, happy, positive
   static const IconData smileBeam = const IconDataRegular(0xf5b8);
 
-  /// Solid smile-beam icon
+  /// Solid Beaming Face With Smiling Eyes icon
   ///
   /// https://fontawesome.com/icons/smile-beam?style=solid
   /// emoticon, face, happy, positive
   static const IconData solidSmileBeam = const IconDataSolid(0xf5b8);
 
-  /// Regular smile-wink icon
+  /// Regular Winking Face icon
   ///
   /// https://fontawesome.com/icons/smile-wink?style=regular
   /// emoticon, face, happy, hint, joke
   static const IconData smileWink = const IconDataRegular(0xf4da);
 
-  /// Solid smile-wink icon
+  /// Solid Winking Face icon
   ///
   /// https://fontawesome.com/icons/smile-wink?style=solid
   /// emoticon, face, happy, hint, joke
   static const IconData solidSmileWink = const IconDataSolid(0xf4da);
 
-  /// Solid smog icon
+  /// Solid Smog icon
   ///
   /// https://fontawesome.com/icons/smog?style=solid
   /// dragon, fog, haze, pollution, smoke, weather
   static const IconData smog = const IconDataSolid(0xf75f);
 
-  /// Solid smoking icon
+  /// Solid Smoking icon
   ///
   /// https://fontawesome.com/icons/smoking?style=solid
   /// cancer, cigarette, nicotine, smoking status, tobacco
   static const IconData smoking = const IconDataSolid(0xf48d);
 
-  /// Solid smoking-ban icon
+  /// Solid Smoking Ban icon
   ///
   /// https://fontawesome.com/icons/smoking-ban?style=solid
   /// ban, cancel, no smoking, non-smoking
   static const IconData smokingBan = const IconDataSolid(0xf54d);
 
-  /// Solid sms icon
+  /// Solid SMS icon
   ///
   /// https://fontawesome.com/icons/sms?style=solid
   /// chat, conversation, message, mobile, notification, phone, sms, texting
   static const IconData sms = const IconDataSolid(0xf7cd);
 
-  /// Brands snapchat icon
+  /// Brands Snapchat icon
   ///
   /// https://fontawesome.com/icons/snapchat?style=brands
   static const IconData snapchat = const IconDataBrands(0xf2ab);
 
-  /// Brands snapchat-ghost icon
+  /// Brands Snapchat Ghost icon
   ///
   /// https://fontawesome.com/icons/snapchat-ghost?style=brands
   static const IconData snapchatGhost = const IconDataBrands(0xf2ac);
 
-  /// Brands snapchat-square icon
+  /// Brands Snapchat Square icon
   ///
   /// https://fontawesome.com/icons/snapchat-square?style=brands
   static const IconData snapchatSquare = const IconDataBrands(0xf2ad);
 
-  /// Solid snowboarding icon
+  /// Solid Snowboarding icon
   ///
   /// https://fontawesome.com/icons/snowboarding?style=solid
   /// activity, fitness, olympics, outdoors, person
   static const IconData snowboarding = const IconDataSolid(0xf7ce);
 
-  /// Regular snowflake icon
+  /// Regular Snowflake icon
   ///
   /// https://fontawesome.com/icons/snowflake?style=regular
   /// precipitation, rain, winter
   static const IconData snowflake = const IconDataRegular(0xf2dc);
 
-  /// Solid snowflake icon
+  /// Solid Snowflake icon
   ///
   /// https://fontawesome.com/icons/snowflake?style=solid
   /// precipitation, rain, winter
   static const IconData solidSnowflake = const IconDataSolid(0xf2dc);
 
-  /// Solid snowman icon
+  /// Solid Snowman icon
   ///
   /// https://fontawesome.com/icons/snowman?style=solid
   /// decoration, frost, frosty, holiday
   static const IconData snowman = const IconDataSolid(0xf7d0);
 
-  /// Solid snowplow icon
+  /// Solid Snowplow icon
   ///
   /// https://fontawesome.com/icons/snowplow?style=solid
   /// clean up, cold, road, storm, winter
   static const IconData snowplow = const IconDataSolid(0xf7d2);
 
-  /// Solid soap icon
+  /// Solid Soap icon
   ///
   /// https://fontawesome.com/icons/soap?style=solid
   /// bubbles, clean, covid-19, hygiene, wash
   static const IconData soap = const IconDataSolid(0xe06e);
 
-  /// Solid socks icon
+  /// Solid Socks icon
   ///
   /// https://fontawesome.com/icons/socks?style=solid
   /// business socks, business time, clothing, feet, flight of the conchords, wednesday
   static const IconData socks = const IconDataSolid(0xf696);
 
-  /// Solid solar-panel icon
+  /// Solid Solar Panel icon
   ///
   /// https://fontawesome.com/icons/solar-panel?style=solid
   /// clean, eco-friendly, energy, green, sun
   static const IconData solarPanel = const IconDataSolid(0xf5ba);
 
-  /// Solid sort icon
+  /// Solid Sort icon
   ///
   /// https://fontawesome.com/icons/sort?style=solid
   /// filter, order
   static const IconData sort = const IconDataSolid(0xf0dc);
 
-  /// Solid sort-alpha-down icon
+  /// Solid Sort Alphabetical Down icon
   ///
   /// https://fontawesome.com/icons/sort-alpha-down?style=solid
   /// alphabetical, arrange, filter, order, sort-alpha-asc
   static const IconData sortAlphaDown = const IconDataSolid(0xf15d);
 
-  /// Solid sort-alpha-down-alt icon
+  /// Solid Alternate Sort Alphabetical Down icon
   ///
   /// https://fontawesome.com/icons/sort-alpha-down-alt?style=solid
   /// alphabetical, arrange, filter, order, sort-alpha-asc
   static const IconData sortAlphaDownAlt = const IconDataSolid(0xf881);
 
-  /// Solid sort-alpha-up icon
+  /// Solid Sort Alphabetical Up icon
   ///
   /// https://fontawesome.com/icons/sort-alpha-up?style=solid
   /// alphabetical, arrange, filter, order, sort-alpha-desc
   static const IconData sortAlphaUp = const IconDataSolid(0xf15e);
 
-  /// Solid sort-alpha-up-alt icon
+  /// Solid Alternate Sort Alphabetical Up icon
   ///
   /// https://fontawesome.com/icons/sort-alpha-up-alt?style=solid
   /// alphabetical, arrange, filter, order, sort-alpha-desc
   static const IconData sortAlphaUpAlt = const IconDataSolid(0xf882);
 
-  /// Solid sort-amount-down icon
+  /// Solid Sort Amount Down icon
   ///
   /// https://fontawesome.com/icons/sort-amount-down?style=solid
   /// arrange, filter, number, order, sort-amount-asc
   static const IconData sortAmountDown = const IconDataSolid(0xf160);
 
-  /// Solid sort-amount-down-alt icon
+  /// Solid Alternate Sort Amount Down icon
   ///
   /// https://fontawesome.com/icons/sort-amount-down-alt?style=solid
   /// arrange, filter, order, sort-amount-asc
   static const IconData sortAmountDownAlt = const IconDataSolid(0xf884);
 
-  /// Solid sort-amount-up icon
+  /// Solid Sort Amount Up icon
   ///
   /// https://fontawesome.com/icons/sort-amount-up?style=solid
   /// arrange, filter, order, sort-amount-desc
   static const IconData sortAmountUp = const IconDataSolid(0xf161);
 
-  /// Solid sort-amount-up-alt icon
+  /// Solid Alternate Sort Amount Up icon
   ///
   /// https://fontawesome.com/icons/sort-amount-up-alt?style=solid
   /// arrange, filter, order, sort-amount-desc
   static const IconData sortAmountUpAlt = const IconDataSolid(0xf885);
 
-  /// Solid sort-down icon
+  /// Solid Sort Down (Descending) icon
   ///
   /// https://fontawesome.com/icons/sort-down?style=solid
   /// arrow, descending, filter, order, sort-desc
   static const IconData sortDown = const IconDataSolid(0xf0dd);
 
-  /// Solid sort-numeric-down icon
+  /// Solid Sort Numeric Down icon
   ///
   /// https://fontawesome.com/icons/sort-numeric-down?style=solid
   /// arrange, filter, numbers, order, sort-numeric-asc
   static const IconData sortNumericDown = const IconDataSolid(0xf162);
 
-  /// Solid sort-numeric-down-alt icon
+  /// Solid Alternate Sort Numeric Down icon
   ///
   /// https://fontawesome.com/icons/sort-numeric-down-alt?style=solid
   /// arrange, filter, numbers, order, sort-numeric-asc
   static const IconData sortNumericDownAlt = const IconDataSolid(0xf886);
 
-  /// Solid sort-numeric-up icon
+  /// Solid Sort Numeric Up icon
   ///
   /// https://fontawesome.com/icons/sort-numeric-up?style=solid
   /// arrange, filter, numbers, order, sort-numeric-desc
   static const IconData sortNumericUp = const IconDataSolid(0xf163);
 
-  /// Solid sort-numeric-up-alt icon
+  /// Solid Alternate Sort Numeric Up icon
   ///
   /// https://fontawesome.com/icons/sort-numeric-up-alt?style=solid
   /// arrange, filter, numbers, order, sort-numeric-desc
   static const IconData sortNumericUpAlt = const IconDataSolid(0xf887);
 
-  /// Solid sort-up icon
+  /// Solid Sort Up (Ascending) icon
   ///
   /// https://fontawesome.com/icons/sort-up?style=solid
   /// arrow, ascending, filter, order, sort-asc
   static const IconData sortUp = const IconDataSolid(0xf0de);
 
-  /// Brands soundcloud icon
+  /// Brands SoundCloud icon
   ///
   /// https://fontawesome.com/icons/soundcloud?style=brands
   static const IconData soundcloud = const IconDataBrands(0xf1be);
 
-  /// Brands sourcetree icon
+  /// Brands Sourcetree icon
   ///
   /// https://fontawesome.com/icons/sourcetree?style=brands
   static const IconData sourcetree = const IconDataBrands(0xf7d3);
 
-  /// Solid spa icon
+  /// Solid Spa icon
   ///
   /// https://fontawesome.com/icons/spa?style=solid
   /// flora, massage, mindfulness, plant, wellness
   static const IconData spa = const IconDataSolid(0xf5bb);
 
-  /// Solid space-shuttle icon
+  /// Solid Space Shuttle icon
   ///
   /// https://fontawesome.com/icons/space-shuttle?style=solid
   /// astronaut, machine, nasa, rocket, space, transportation
   static const IconData spaceShuttle = const IconDataSolid(0xf197);
 
-  /// Brands speakap icon
+  /// Brands Speakap icon
   ///
   /// https://fontawesome.com/icons/speakap?style=brands
   static const IconData speakap = const IconDataBrands(0xf3f3);
 
-  /// Brands speaker-deck icon
+  /// Brands Speaker Deck icon
   ///
   /// https://fontawesome.com/icons/speaker-deck?style=brands
   static const IconData speakerDeck = const IconDataBrands(0xf83c);
 
-  /// Solid spell-check icon
+  /// Solid Spell Check icon
   ///
   /// https://fontawesome.com/icons/spell-check?style=solid
   /// dictionary, edit, editor, grammar, text
   static const IconData spellCheck = const IconDataSolid(0xf891);
 
-  /// Solid spider icon
+  /// Solid Spider icon
   ///
   /// https://fontawesome.com/icons/spider?style=solid
   /// arachnid, bug, charlotte, crawl, eight, halloween
   static const IconData spider = const IconDataSolid(0xf717);
 
-  /// Solid spinner icon
+  /// Solid Spinner icon
   ///
   /// https://fontawesome.com/icons/spinner?style=solid
   /// circle, loading, progress
   static const IconData spinner = const IconDataSolid(0xf110);
 
-  /// Solid splotch icon
+  /// Solid Splotch icon
   ///
   /// https://fontawesome.com/icons/splotch?style=solid
   /// Ink, blob, blotch, glob, stain
   static const IconData splotch = const IconDataSolid(0xf5bc);
 
-  /// Brands spotify icon
+  /// Brands Spotify icon
   ///
   /// https://fontawesome.com/icons/spotify?style=brands
   static const IconData spotify = const IconDataBrands(0xf1bc);
 
-  /// Solid spray-can icon
+  /// Solid Spray Can icon
   ///
   /// https://fontawesome.com/icons/spray-can?style=solid
   /// Paint, aerosol, design, graffiti, tag
   static const IconData sprayCan = const IconDataSolid(0xf5bd);
 
-  /// Regular square icon
+  /// Regular Square icon
   ///
   /// https://fontawesome.com/icons/square?style=regular
   /// block, box, shape
   static const IconData square = const IconDataRegular(0xf0c8);
 
-  /// Solid square icon
+  /// Solid Square icon
   ///
   /// https://fontawesome.com/icons/square?style=solid
   /// block, box, shape
   static const IconData solidSquare = const IconDataSolid(0xf0c8);
 
-  /// Solid square-full icon
+  /// Solid Square Full icon
   ///
   /// https://fontawesome.com/icons/square-full?style=solid
   /// block, box, shape
   static const IconData squareFull = const IconDataSolid(0xf45c);
 
-  /// Solid square-root-alt icon
+  /// Solid Alternate Square Root icon
   ///
   /// https://fontawesome.com/icons/square-root-alt?style=solid
   /// arithmetic, calculus, division, math
   static const IconData squareRootAlt = const IconDataSolid(0xf698);
 
-  /// Brands squarespace icon
+  /// Brands Squarespace icon
   ///
   /// https://fontawesome.com/icons/squarespace?style=brands
   static const IconData squarespace = const IconDataBrands(0xf5be);
 
-  /// Brands stack-exchange icon
+  /// Brands Stack Exchange icon
   ///
   /// https://fontawesome.com/icons/stack-exchange?style=brands
   static const IconData stackExchange = const IconDataBrands(0xf18d);
 
-  /// Brands stack-overflow icon
+  /// Brands Stack Overflow icon
   ///
   /// https://fontawesome.com/icons/stack-overflow?style=brands
   static const IconData stackOverflow = const IconDataBrands(0xf16c);
 
-  /// Brands stackpath icon
+  /// Brands Stackpath icon
   ///
   /// https://fontawesome.com/icons/stackpath?style=brands
   static const IconData stackpath = const IconDataBrands(0xf842);
 
-  /// Solid stamp icon
+  /// Solid Stamp icon
   ///
   /// https://fontawesome.com/icons/stamp?style=solid
   /// art, certificate, imprint, rubber, seal
   static const IconData stamp = const IconDataSolid(0xf5bf);
 
-  /// Regular star icon
+  /// Regular Star icon
   ///
   /// https://fontawesome.com/icons/star?style=regular
   /// achievement, award, favorite, important, night, rating, score
   static const IconData star = const IconDataRegular(0xf005);
 
-  /// Solid star icon
+  /// Solid Star icon
   ///
   /// https://fontawesome.com/icons/star?style=solid
   /// achievement, award, favorite, important, night, rating, score
   static const IconData solidStar = const IconDataSolid(0xf005);
 
-  /// Solid star-and-crescent icon
+  /// Solid Star and Crescent icon
   ///
   /// https://fontawesome.com/icons/star-and-crescent?style=solid
   /// islam, muslim, religion
@@ -7582,40 +7582,40 @@ class FontAwesomeIcons {
   /// achievement, award, rating, score, star-half-empty, star-half-full
   static const IconData solidStarHalf = const IconDataSolid(0xf089);
 
-  /// Solid star-half-alt icon
+  /// Solid Alternate Star Half icon
   ///
   /// https://fontawesome.com/icons/star-half-alt?style=solid
   /// achievement, award, rating, score, star-half-empty, star-half-full
   static const IconData starHalfAlt = const IconDataSolid(0xf5c0);
 
-  /// Solid star-of-david icon
+  /// Solid Star of David icon
   ///
   /// https://fontawesome.com/icons/star-of-david?style=solid
   /// jewish, judaism, religion
   static const IconData starOfDavid = const IconDataSolid(0xf69a);
 
-  /// Solid star-of-life icon
+  /// Solid Star of Life icon
   ///
   /// https://fontawesome.com/icons/star-of-life?style=solid
   /// doctor, emt, first aid, health, medical
   static const IconData starOfLife = const IconDataSolid(0xf621);
 
-  /// Brands staylinked icon
+  /// Brands StayLinked icon
   ///
   /// https://fontawesome.com/icons/staylinked?style=brands
   static const IconData staylinked = const IconDataBrands(0xf3f5);
 
-  /// Brands steam icon
+  /// Brands Steam icon
   ///
   /// https://fontawesome.com/icons/steam?style=brands
   static const IconData steam = const IconDataBrands(0xf1b6);
 
-  /// Brands steam-square icon
+  /// Brands Steam Square icon
   ///
   /// https://fontawesome.com/icons/steam-square?style=brands
   static const IconData steamSquare = const IconDataBrands(0xf1b7);
 
-  /// Brands steam-symbol icon
+  /// Brands Steam Symbol icon
   ///
   /// https://fontawesome.com/icons/steam-symbol?style=brands
   static const IconData steamSymbol = const IconDataBrands(0xf3f6);
@@ -7632,24 +7632,24 @@ class FontAwesomeIcons {
   /// end, last, next
   static const IconData stepForward = const IconDataSolid(0xf051);
 
-  /// Solid stethoscope icon
+  /// Solid Stethoscope icon
   ///
   /// https://fontawesome.com/icons/stethoscope?style=solid
   /// covid-19, diagnosis, doctor, general practitioner, hospital, infirmary, medicine, office, outpatient
   static const IconData stethoscope = const IconDataSolid(0xf0f1);
 
-  /// Brands sticker-mule icon
+  /// Brands Sticker Mule icon
   ///
   /// https://fontawesome.com/icons/sticker-mule?style=brands
   static const IconData stickerMule = const IconDataBrands(0xf3f7);
 
-  /// Regular sticky-note icon
+  /// Regular Sticky Note icon
   ///
   /// https://fontawesome.com/icons/sticky-note?style=regular
   /// message, note, paper, reminder, sticker
   static const IconData stickyNote = const IconDataRegular(0xf249);
 
-  /// Solid sticky-note icon
+  /// Solid Sticky Note icon
   ///
   /// https://fontawesome.com/icons/sticky-note?style=solid
   /// message, note, paper, reminder, sticker
@@ -7661,104 +7661,104 @@ class FontAwesomeIcons {
   /// block, box, square
   static const IconData stop = const IconDataSolid(0xf04d);
 
-  /// Regular stop-circle icon
+  /// Regular Stop Circle icon
   ///
   /// https://fontawesome.com/icons/stop-circle?style=regular
   /// block, box, circle, square
   static const IconData stopCircle = const IconDataRegular(0xf28d);
 
-  /// Solid stop-circle icon
+  /// Solid Stop Circle icon
   ///
   /// https://fontawesome.com/icons/stop-circle?style=solid
   /// block, box, circle, square
   static const IconData solidStopCircle = const IconDataSolid(0xf28d);
 
-  /// Solid stopwatch icon
+  /// Solid Stopwatch icon
   ///
   /// https://fontawesome.com/icons/stopwatch?style=solid
   /// clock, reminder, time
   static const IconData stopwatch = const IconDataSolid(0xf2f2);
 
-  /// Solid stopwatch-20 icon
+  /// Solid Stopwatch 20 icon
   ///
   /// https://fontawesome.com/icons/stopwatch-20?style=solid
   /// ABCs, countdown, covid-19, happy birthday, i will survive, reminder, seconds, time, timer
   static const IconData stopwatch20 = const IconDataSolid(0xe06f);
 
-  /// Solid store icon
+  /// Solid Store icon
   ///
   /// https://fontawesome.com/icons/store?style=solid
   /// building, buy, purchase, shopping
   static const IconData store = const IconDataSolid(0xf54e);
 
-  /// Solid store-alt icon
+  /// Solid Alternate Store icon
   ///
   /// https://fontawesome.com/icons/store-alt?style=solid
   /// building, buy, purchase, shopping
   static const IconData storeAlt = const IconDataSolid(0xf54f);
 
-  /// Solid store-alt-slash icon
+  /// Solid Alternate Store Slash icon
   ///
   /// https://fontawesome.com/icons/store-alt-slash?style=solid
   /// building, buy, closed, covid-19, purchase, shopping
   static const IconData storeAltSlash = const IconDataSolid(0xe070);
 
-  /// Solid store-slash icon
+  /// Solid Store Slash icon
   ///
   /// https://fontawesome.com/icons/store-slash?style=solid
   /// building, buy, closed, covid-19, purchase, shopping
   static const IconData storeSlash = const IconDataSolid(0xe071);
 
-  /// Brands strava icon
+  /// Brands Strava icon
   ///
   /// https://fontawesome.com/icons/strava?style=brands
   static const IconData strava = const IconDataBrands(0xf428);
 
-  /// Solid stream icon
+  /// Solid Stream icon
   ///
   /// https://fontawesome.com/icons/stream?style=solid
   /// flow, list, timeline
   static const IconData stream = const IconDataSolid(0xf550);
 
-  /// Solid street-view icon
+  /// Solid Street View icon
   ///
   /// https://fontawesome.com/icons/street-view?style=solid
   /// directions, location, map, navigation
   static const IconData streetView = const IconDataSolid(0xf21d);
 
-  /// Solid strikethrough icon
+  /// Solid Strikethrough icon
   ///
   /// https://fontawesome.com/icons/strikethrough?style=solid
   /// cancel, edit, font, format, text, type
   static const IconData strikethrough = const IconDataSolid(0xf0cc);
 
-  /// Brands stripe icon
+  /// Brands Stripe icon
   ///
   /// https://fontawesome.com/icons/stripe?style=brands
   static const IconData stripe = const IconDataBrands(0xf429);
 
-  /// Brands stripe-s icon
+  /// Brands Stripe S icon
   ///
   /// https://fontawesome.com/icons/stripe-s?style=brands
   static const IconData stripeS = const IconDataBrands(0xf42a);
 
-  /// Solid stroopwafel icon
+  /// Solid Stroopwafel icon
   ///
   /// https://fontawesome.com/icons/stroopwafel?style=solid
   /// caramel, cookie, dessert, sweets, waffle
   static const IconData stroopwafel = const IconDataSolid(0xf551);
 
-  /// Brands studiovinari icon
+  /// Brands Studio Vinari icon
   ///
   /// https://fontawesome.com/icons/studiovinari?style=brands
   static const IconData studiovinari = const IconDataBrands(0xf3f8);
 
-  /// Brands stumbleupon icon
+  /// Brands StumbleUpon Logo icon
   ///
   /// https://fontawesome.com/icons/stumbleupon?style=brands
   static const IconData stumbleupon = const IconDataBrands(0xf1a4);
 
-  /// Brands stumbleupon-circle icon
+  /// Brands StumbleUpon Circle icon
   ///
   /// https://fontawesome.com/icons/stumbleupon-circle?style=brands
   static const IconData stumbleuponCircle = const IconDataBrands(0xf1a3);
@@ -7769,37 +7769,37 @@ class FontAwesomeIcons {
   /// edit, font, format, text, type
   static const IconData subscript = const IconDataSolid(0xf12c);
 
-  /// Solid subway icon
+  /// Solid Subway icon
   ///
   /// https://fontawesome.com/icons/subway?style=solid
   /// machine, railway, train, transportation, vehicle
   static const IconData subway = const IconDataSolid(0xf239);
 
-  /// Solid suitcase icon
+  /// Solid Suitcase icon
   ///
   /// https://fontawesome.com/icons/suitcase?style=solid
   /// baggage, luggage, move, suitcase, travel, trip
   static const IconData suitcase = const IconDataSolid(0xf0f2);
 
-  /// Solid suitcase-rolling icon
+  /// Solid Suitcase Rolling icon
   ///
   /// https://fontawesome.com/icons/suitcase-rolling?style=solid
   /// baggage, luggage, move, suitcase, travel, trip
   static const IconData suitcaseRolling = const IconDataSolid(0xf5c1);
 
-  /// Regular sun icon
+  /// Regular Sun icon
   ///
   /// https://fontawesome.com/icons/sun?style=regular
   /// brighten, contrast, day, lighter, sol, solar, star, weather
   static const IconData sun = const IconDataRegular(0xf185);
 
-  /// Solid sun icon
+  /// Solid Sun icon
   ///
   /// https://fontawesome.com/icons/sun?style=solid
   /// brighten, contrast, day, lighter, sol, solar, star, weather
   static const IconData solidSun = const IconDataSolid(0xf185);
 
-  /// Brands superpowers icon
+  /// Brands Superpowers icon
   ///
   /// https://fontawesome.com/icons/superpowers?style=brands
   static const IconData superpowers = const IconDataBrands(0xf2dd);
@@ -7810,76 +7810,76 @@ class FontAwesomeIcons {
   /// edit, exponential, font, format, text, type
   static const IconData superscript = const IconDataSolid(0xf12b);
 
-  /// Brands supple icon
+  /// Brands Supple icon
   ///
   /// https://fontawesome.com/icons/supple?style=brands
   static const IconData supple = const IconDataBrands(0xf3f9);
 
-  /// Regular surprise icon
+  /// Regular Hushed Face icon
   ///
   /// https://fontawesome.com/icons/surprise?style=regular
   /// emoticon, face, shocked
   static const IconData surprise = const IconDataRegular(0xf5c2);
 
-  /// Solid surprise icon
+  /// Solid Hushed Face icon
   ///
   /// https://fontawesome.com/icons/surprise?style=solid
   /// emoticon, face, shocked
   static const IconData solidSurprise = const IconDataSolid(0xf5c2);
 
-  /// Brands suse icon
+  /// Brands Suse icon
   ///
   /// https://fontawesome.com/icons/suse?style=brands
   /// linux, operating system, os
   static const IconData suse = const IconDataBrands(0xf7d6);
 
-  /// Solid swatchbook icon
+  /// Solid Swatchbook icon
   ///
   /// https://fontawesome.com/icons/swatchbook?style=solid
   /// Pantone, color, design, hue, palette
   static const IconData swatchbook = const IconDataSolid(0xf5c3);
 
-  /// Brands swift icon
+  /// Brands Swift icon
   ///
   /// https://fontawesome.com/icons/swift?style=brands
   static const IconData swift = const IconDataBrands(0xf8e1);
 
-  /// Solid swimmer icon
+  /// Solid Swimmer icon
   ///
   /// https://fontawesome.com/icons/swimmer?style=solid
   /// athlete, head, man, olympics, person, pool, water
   static const IconData swimmer = const IconDataSolid(0xf5c4);
 
-  /// Solid swimming-pool icon
+  /// Solid Swimming Pool icon
   ///
   /// https://fontawesome.com/icons/swimming-pool?style=solid
   /// ladder, recreation, swim, water
   static const IconData swimmingPool = const IconDataSolid(0xf5c5);
 
-  /// Brands symfony icon
+  /// Brands Symfony icon
   ///
   /// https://fontawesome.com/icons/symfony?style=brands
   static const IconData symfony = const IconDataBrands(0xf83d);
 
-  /// Solid synagogue icon
+  /// Solid Synagogue icon
   ///
   /// https://fontawesome.com/icons/synagogue?style=solid
   /// building, jewish, judaism, religion, star of david, temple
   static const IconData synagogue = const IconDataSolid(0xf69b);
 
-  /// Solid sync icon
+  /// Solid Sync icon
   ///
   /// https://fontawesome.com/icons/sync?style=solid
   /// exchange, refresh, reload, rotate, swap
   static const IconData sync = const IconDataSolid(0xf021);
 
-  /// Solid sync-alt icon
+  /// Solid Alternate Sync icon
   ///
   /// https://fontawesome.com/icons/sync-alt?style=solid
   /// exchange, refresh, reload, rotate, swap
   static const IconData syncAlt = const IconDataSolid(0xf2f1);
 
-  /// Solid syringe icon
+  /// Solid Syringe icon
   ///
   /// https://fontawesome.com/icons/syringe?style=solid
   /// covid-19, doctor, immunizations, medical, needle
@@ -7891,7 +7891,7 @@ class FontAwesomeIcons {
   /// data, excel, spreadsheet
   static const IconData table = const IconDataSolid(0xf0ce);
 
-  /// Solid table-tennis icon
+  /// Solid Table Tennis icon
   ///
   /// https://fontawesome.com/icons/table-tennis?style=solid
   /// ball, paddle, ping pong
@@ -7903,19 +7903,19 @@ class FontAwesomeIcons {
   /// apple, device, ipad, kindle, screen
   static const IconData tablet = const IconDataSolid(0xf10a);
 
-  /// Solid tablet-alt icon
+  /// Solid Alternate Tablet icon
   ///
   /// https://fontawesome.com/icons/tablet-alt?style=solid
   /// apple, device, ipad, kindle, screen
   static const IconData tabletAlt = const IconDataSolid(0xf3fa);
 
-  /// Solid tablets icon
+  /// Solid Tablets icon
   ///
   /// https://fontawesome.com/icons/tablets?style=solid
   /// drugs, medicine, pills, prescription
   static const IconData tablets = const IconDataSolid(0xf490);
 
-  /// Solid tachometer-alt icon
+  /// Solid Alternate Tachometer icon
   ///
   /// https://fontawesome.com/icons/tachometer-alt?style=solid
   /// dashboard, fast, odometer, speed, speedometer
@@ -7933,75 +7933,75 @@ class FontAwesomeIcons {
   /// discount, label, price, shopping
   static const IconData tags = const IconDataSolid(0xf02c);
 
-  /// Solid tape icon
+  /// Solid Tape icon
   ///
   /// https://fontawesome.com/icons/tape?style=solid
   /// design, package, sticky
   static const IconData tape = const IconDataSolid(0xf4db);
 
-  /// Solid tasks icon
+  /// Solid Tasks icon
   ///
   /// https://fontawesome.com/icons/tasks?style=solid
   /// checklist, downloading, downloads, loading, progress, project management, settings, to do
   static const IconData tasks = const IconDataSolid(0xf0ae);
 
-  /// Solid taxi icon
+  /// Solid Taxi icon
   ///
   /// https://fontawesome.com/icons/taxi?style=solid
   /// cab, cabbie, car, car service, lyft, machine, transportation, travel, uber, vehicle
   static const IconData taxi = const IconDataSolid(0xf1ba);
 
-  /// Brands teamspeak icon
+  /// Brands TeamSpeak icon
   ///
   /// https://fontawesome.com/icons/teamspeak?style=brands
   static const IconData teamspeak = const IconDataBrands(0xf4f9);
 
-  /// Solid teeth icon
+  /// Solid Teeth icon
   ///
   /// https://fontawesome.com/icons/teeth?style=solid
   /// bite, dental, dentist, gums, mouth, smile, tooth
   static const IconData teeth = const IconDataSolid(0xf62e);
 
-  /// Solid teeth-open icon
+  /// Solid Teeth Open icon
   ///
   /// https://fontawesome.com/icons/teeth-open?style=solid
   /// dental, dentist, gums bite, mouth, smile, tooth
   static const IconData teethOpen = const IconDataSolid(0xf62f);
 
-  /// Brands telegram icon
+  /// Brands Telegram icon
   ///
   /// https://fontawesome.com/icons/telegram?style=brands
   static const IconData telegram = const IconDataBrands(0xf2c6);
 
-  /// Brands telegram-plane icon
+  /// Brands Telegram Plane icon
   ///
   /// https://fontawesome.com/icons/telegram-plane?style=brands
   static const IconData telegramPlane = const IconDataBrands(0xf3fe);
 
-  /// Solid temperature-high icon
+  /// Solid High Temperature icon
   ///
   /// https://fontawesome.com/icons/temperature-high?style=solid
   /// cook, covid-19, mercury, summer, thermometer, warm
   static const IconData temperatureHigh = const IconDataSolid(0xf769);
 
-  /// Solid temperature-low icon
+  /// Solid Low Temperature icon
   ///
   /// https://fontawesome.com/icons/temperature-low?style=solid
   /// cold, cool, covid-19, mercury, thermometer, winter
   static const IconData temperatureLow = const IconDataSolid(0xf76b);
 
-  /// Brands tencent-weibo icon
+  /// Brands Tencent Weibo icon
   ///
   /// https://fontawesome.com/icons/tencent-weibo?style=brands
   static const IconData tencentWeibo = const IconDataBrands(0xf1d5);
 
-  /// Solid tenge icon
+  /// Solid Tenge icon
   ///
   /// https://fontawesome.com/icons/tenge?style=solid
   /// currency, kazakhstan, money, price
   static const IconData tenge = const IconDataSolid(0xf7d7);
 
-  /// Solid terminal icon
+  /// Solid Terminal icon
   ///
   /// https://fontawesome.com/icons/terminal?style=solid
   /// code, command, console, development, prompt
@@ -8013,7 +8013,7 @@ class FontAwesomeIcons {
   /// edit, font, format, text, type
   static const IconData textHeight = const IconDataSolid(0xf034);
 
-  /// Solid text-width icon
+  /// Solid Text Width icon
   ///
   /// https://fontawesome.com/icons/text-width?style=solid
   /// edit, font, format, text, type
@@ -8037,64 +8037,64 @@ class FontAwesomeIcons {
   /// checklist, completed, done, finished, ol, todo, ul
   static const IconData thList = const IconDataSolid(0xf00b);
 
-  /// Brands the-red-yeti icon
+  /// Brands The Red Yeti icon
   ///
   /// https://fontawesome.com/icons/the-red-yeti?style=brands
   static const IconData theRedYeti = const IconDataBrands(0xf69d);
 
-  /// Solid theater-masks icon
+  /// Solid Theater Masks icon
   ///
   /// https://fontawesome.com/icons/theater-masks?style=solid
   /// comedy, perform, theatre, tragedy
   static const IconData theaterMasks = const IconDataSolid(0xf630);
 
-  /// Brands themeco icon
+  /// Brands Themeco icon
   ///
   /// https://fontawesome.com/icons/themeco?style=brands
   static const IconData themeco = const IconDataBrands(0xf5c6);
 
-  /// Brands themeisle icon
+  /// Brands ThemeIsle icon
   ///
   /// https://fontawesome.com/icons/themeisle?style=brands
   static const IconData themeisle = const IconDataBrands(0xf2b2);
 
-  /// Solid thermometer icon
+  /// Solid Thermometer icon
   ///
   /// https://fontawesome.com/icons/thermometer?style=solid
   /// covid-19, mercury, status, temperature
   static const IconData thermometer = const IconDataSolid(0xf491);
 
-  /// Solid thermometer-empty icon
+  /// Solid Thermometer Empty icon
   ///
   /// https://fontawesome.com/icons/thermometer-empty?style=solid
   /// cold, mercury, status, temperature
   static const IconData thermometerEmpty = const IconDataSolid(0xf2cb);
 
-  /// Solid thermometer-full icon
+  /// Solid Thermometer Full icon
   ///
   /// https://fontawesome.com/icons/thermometer-full?style=solid
   /// fever, hot, mercury, status, temperature
   static const IconData thermometerFull = const IconDataSolid(0xf2c7);
 
-  /// Solid thermometer-half icon
+  /// Solid Thermometer 1/2 Full icon
   ///
   /// https://fontawesome.com/icons/thermometer-half?style=solid
   /// mercury, status, temperature
   static const IconData thermometerHalf = const IconDataSolid(0xf2c9);
 
-  /// Solid thermometer-quarter icon
+  /// Solid Thermometer 1/4 Full icon
   ///
   /// https://fontawesome.com/icons/thermometer-quarter?style=solid
   /// mercury, status, temperature
   static const IconData thermometerQuarter = const IconDataSolid(0xf2ca);
 
-  /// Solid thermometer-three-quarters icon
+  /// Solid Thermometer 3/4 Full icon
   ///
   /// https://fontawesome.com/icons/thermometer-three-quarters?style=solid
   /// mercury, status, temperature
   static const IconData thermometerThreeQuarters = const IconDataSolid(0xf2c8);
 
-  /// Brands think-peaks icon
+  /// Brands Think Peaks icon
   ///
   /// https://fontawesome.com/icons/think-peaks?style=brands
   static const IconData thinkPeaks = const IconDataBrands(0xf731);
@@ -8123,36 +8123,36 @@ class FontAwesomeIcons {
   /// agree, approve, favorite, hand, like, ok, okay, social, success, thumbs-o-up, yes, you got it dude
   static const IconData solidThumbsUp = const IconDataSolid(0xf164);
 
-  /// Solid thumbtack icon
+  /// Solid Thumbtack icon
   ///
   /// https://fontawesome.com/icons/thumbtack?style=solid
   /// coordinates, location, marker, pin, thumb-tack
   static const IconData thumbtack = const IconDataSolid(0xf08d);
 
-  /// Solid ticket-alt icon
+  /// Solid Alternate Ticket icon
   ///
   /// https://fontawesome.com/icons/ticket-alt?style=solid
   /// movie, pass, support, ticket
   static const IconData ticketAlt = const IconDataSolid(0xf3ff);
 
-  /// Brands tiktok icon
+  /// Brands TikTok icon
   ///
   /// https://fontawesome.com/icons/tiktok?style=brands
   static const IconData tiktok = const IconDataBrands(0xe07b);
 
-  /// Solid times icon
+  /// Solid Times icon
   ///
   /// https://fontawesome.com/icons/times?style=solid
   /// close, cross, error, exit, incorrect, notice, notification, notify, problem, wrong, x
   static const IconData times = const IconDataSolid(0xf00d);
 
-  /// Regular times-circle icon
+  /// Regular Times Circle icon
   ///
   /// https://fontawesome.com/icons/times-circle?style=regular
   /// close, cross, exit, incorrect, notice, notification, notify, problem, wrong, x
   static const IconData timesCircle = const IconDataRegular(0xf057);
 
-  /// Solid times-circle icon
+  /// Solid Times Circle icon
   ///
   /// https://fontawesome.com/icons/times-circle?style=solid
   /// close, cross, exit, incorrect, notice, notification, notify, problem, wrong, x
@@ -8164,180 +8164,180 @@ class FontAwesomeIcons {
   /// color, drop, droplet, raindrop, waterdrop
   static const IconData tint = const IconDataSolid(0xf043);
 
-  /// Solid tint-slash icon
+  /// Solid Tint Slash icon
   ///
   /// https://fontawesome.com/icons/tint-slash?style=solid
   /// color, drop, droplet, raindrop, waterdrop
   static const IconData tintSlash = const IconDataSolid(0xf5c7);
 
-  /// Regular tired icon
+  /// Regular Tired Face icon
   ///
   /// https://fontawesome.com/icons/tired?style=regular
   /// angry, emoticon, face, grumpy, upset
   static const IconData tired = const IconDataRegular(0xf5c8);
 
-  /// Solid tired icon
+  /// Solid Tired Face icon
   ///
   /// https://fontawesome.com/icons/tired?style=solid
   /// angry, emoticon, face, grumpy, upset
   static const IconData solidTired = const IconDataSolid(0xf5c8);
 
-  /// Solid toggle-off icon
+  /// Solid Toggle Off icon
   ///
   /// https://fontawesome.com/icons/toggle-off?style=solid
   /// switch
   static const IconData toggleOff = const IconDataSolid(0xf204);
 
-  /// Solid toggle-on icon
+  /// Solid Toggle On icon
   ///
   /// https://fontawesome.com/icons/toggle-on?style=solid
   /// switch
   static const IconData toggleOn = const IconDataSolid(0xf205);
 
-  /// Solid toilet icon
+  /// Solid Toilet icon
   ///
   /// https://fontawesome.com/icons/toilet?style=solid
   /// bathroom, flush, john, loo, pee, plumbing, poop, porcelain, potty, restroom, throne, washroom, waste, wc
   static const IconData toilet = const IconDataSolid(0xf7d8);
 
-  /// Solid toilet-paper icon
+  /// Solid Toilet Paper icon
   ///
   /// https://fontawesome.com/icons/toilet-paper?style=solid
   /// bathroom, covid-19, halloween, holiday, lavatory, prank, restroom, roll
   static const IconData toiletPaper = const IconDataSolid(0xf71e);
 
-  /// Solid toilet-paper-slash icon
+  /// Solid Toilet Paper Slash icon
   ///
   /// https://fontawesome.com/icons/toilet-paper-slash?style=solid
   /// bathroom, covid-19, halloween, holiday, lavatory, leaves, prank, restroom, roll, trouble, ut oh
   static const IconData toiletPaperSlash = const IconDataSolid(0xe072);
 
-  /// Solid toolbox icon
+  /// Solid Toolbox icon
   ///
   /// https://fontawesome.com/icons/toolbox?style=solid
   /// admin, container, fix, repair, settings, tools
   static const IconData toolbox = const IconDataSolid(0xf552);
 
-  /// Solid tools icon
+  /// Solid Tools icon
   ///
   /// https://fontawesome.com/icons/tools?style=solid
   /// admin, fix, repair, screwdriver, settings, tools, wrench
   static const IconData tools = const IconDataSolid(0xf7d9);
 
-  /// Solid tooth icon
+  /// Solid Tooth icon
   ///
   /// https://fontawesome.com/icons/tooth?style=solid
   /// bicuspid, dental, dentist, molar, mouth, teeth
   static const IconData tooth = const IconDataSolid(0xf5c9);
 
-  /// Solid torah icon
+  /// Solid Torah icon
   ///
   /// https://fontawesome.com/icons/torah?style=solid
   /// book, jewish, judaism, religion, scroll
   static const IconData torah = const IconDataSolid(0xf6a0);
 
-  /// Solid torii-gate icon
+  /// Solid Torii Gate icon
   ///
   /// https://fontawesome.com/icons/torii-gate?style=solid
   /// building, shintoism
   static const IconData toriiGate = const IconDataSolid(0xf6a1);
 
-  /// Solid tractor icon
+  /// Solid Tractor icon
   ///
   /// https://fontawesome.com/icons/tractor?style=solid
   /// agriculture, farm, vehicle
   static const IconData tractor = const IconDataSolid(0xf722);
 
-  /// Brands trade-federation icon
+  /// Brands Trade Federation icon
   ///
   /// https://fontawesome.com/icons/trade-federation?style=brands
   static const IconData tradeFederation = const IconDataBrands(0xf513);
 
-  /// Solid trademark icon
+  /// Solid Trademark icon
   ///
   /// https://fontawesome.com/icons/trademark?style=solid
   /// copyright, register, symbol
   static const IconData trademark = const IconDataSolid(0xf25c);
 
-  /// Solid traffic-light icon
+  /// Solid Traffic Light icon
   ///
   /// https://fontawesome.com/icons/traffic-light?style=solid
   /// direction, road, signal, travel
   static const IconData trafficLight = const IconDataSolid(0xf637);
 
-  /// Solid trailer icon
+  /// Solid Trailer icon
   ///
   /// https://fontawesome.com/icons/trailer?style=solid
   /// carry, haul, moving, travel
   static const IconData trailer = const IconDataSolid(0xe041);
 
-  /// Solid train icon
+  /// Solid Train icon
   ///
   /// https://fontawesome.com/icons/train?style=solid
   /// bullet, commute, locomotive, railway, subway
   static const IconData train = const IconDataSolid(0xf238);
 
-  /// Solid tram icon
+  /// Solid Tram icon
   ///
   /// https://fontawesome.com/icons/tram?style=solid
   /// crossing, machine, mountains, seasonal, transportation
   static const IconData tram = const IconDataSolid(0xf7da);
 
-  /// Solid transgender icon
+  /// Solid Transgender icon
   ///
   /// https://fontawesome.com/icons/transgender?style=solid
   /// intersex
   static const IconData transgender = const IconDataSolid(0xf224);
 
-  /// Solid transgender-alt icon
+  /// Solid Alternate Transgender icon
   ///
   /// https://fontawesome.com/icons/transgender-alt?style=solid
   /// intersex
   static const IconData transgenderAlt = const IconDataSolid(0xf225);
 
-  /// Solid trash icon
+  /// Solid Trash icon
   ///
   /// https://fontawesome.com/icons/trash?style=solid
   /// delete, garbage, hide, remove
   static const IconData trash = const IconDataSolid(0xf1f8);
 
-  /// Regular trash-alt icon
+  /// Regular Alternate Trash icon
   ///
   /// https://fontawesome.com/icons/trash-alt?style=regular
   /// delete, garbage, hide, remove, trash-o
   static const IconData trashAlt = const IconDataRegular(0xf2ed);
 
-  /// Solid trash-alt icon
+  /// Solid Alternate Trash icon
   ///
   /// https://fontawesome.com/icons/trash-alt?style=solid
   /// delete, garbage, hide, remove, trash-o
   static const IconData solidTrashAlt = const IconDataSolid(0xf2ed);
 
-  /// Solid trash-restore icon
+  /// Solid Trash Restore icon
   ///
   /// https://fontawesome.com/icons/trash-restore?style=solid
   /// back, control z, oops, undo
   static const IconData trashRestore = const IconDataSolid(0xf829);
 
-  /// Solid trash-restore-alt icon
+  /// Solid Alternative Trash Restore icon
   ///
   /// https://fontawesome.com/icons/trash-restore-alt?style=solid
   /// back, control z, oops, undo
   static const IconData trashRestoreAlt = const IconDataSolid(0xf82a);
 
-  /// Solid tree icon
+  /// Solid Tree icon
   ///
   /// https://fontawesome.com/icons/tree?style=solid
   /// bark, fall, flora, forest, nature, plant, seasonal
   static const IconData tree = const IconDataSolid(0xf1bb);
 
-  /// Brands trello icon
+  /// Brands Trello icon
   ///
   /// https://fontawesome.com/icons/trello?style=brands
   /// atlassian
   static const IconData trello = const IconDataBrands(0xf181);
 
-  /// Brands tripadvisor icon
+  /// Brands TripAdvisor icon
   ///
   /// https://fontawesome.com/icons/tripadvisor?style=brands
   static const IconData tripadvisor = const IconDataBrands(0xf262);
@@ -8354,153 +8354,153 @@ class FontAwesomeIcons {
   /// cargo, delivery, shipping, vehicle
   static const IconData truck = const IconDataSolid(0xf0d1);
 
-  /// Solid truck-loading icon
+  /// Solid Truck Loading icon
   ///
   /// https://fontawesome.com/icons/truck-loading?style=solid
   /// box, cargo, delivery, inventory, moving, rental, vehicle
   static const IconData truckLoading = const IconDataSolid(0xf4de);
 
-  /// Solid truck-monster icon
+  /// Solid Truck Monster icon
   ///
   /// https://fontawesome.com/icons/truck-monster?style=solid
   /// offroad, vehicle, wheel
   static const IconData truckMonster = const IconDataSolid(0xf63b);
 
-  /// Solid truck-moving icon
+  /// Solid Truck Moving icon
   ///
   /// https://fontawesome.com/icons/truck-moving?style=solid
   /// cargo, inventory, rental, vehicle
   static const IconData truckMoving = const IconDataSolid(0xf4df);
 
-  /// Solid truck-pickup icon
+  /// Solid Truck Side icon
   ///
   /// https://fontawesome.com/icons/truck-pickup?style=solid
   /// cargo, vehicle
   static const IconData truckPickup = const IconDataSolid(0xf63c);
 
-  /// Solid tshirt icon
+  /// Solid T-Shirt icon
   ///
   /// https://fontawesome.com/icons/tshirt?style=solid
   /// clothing, fashion, garment, shirt
   static const IconData tshirt = const IconDataSolid(0xf553);
 
-  /// Solid tty icon
+  /// Solid TTY icon
   ///
   /// https://fontawesome.com/icons/tty?style=solid
   /// communication, deaf, telephone, teletypewriter, text
   static const IconData tty = const IconDataSolid(0xf1e4);
 
-  /// Brands tumblr icon
+  /// Brands Tumblr icon
   ///
   /// https://fontawesome.com/icons/tumblr?style=brands
   static const IconData tumblr = const IconDataBrands(0xf173);
 
-  /// Brands tumblr-square icon
+  /// Brands Tumblr Square icon
   ///
   /// https://fontawesome.com/icons/tumblr-square?style=brands
   static const IconData tumblrSquare = const IconDataBrands(0xf174);
 
-  /// Solid tv icon
+  /// Solid Television icon
   ///
   /// https://fontawesome.com/icons/tv?style=solid
   /// computer, display, monitor, television
   static const IconData tv = const IconDataSolid(0xf26c);
 
-  /// Brands twitch icon
+  /// Brands Twitch icon
   ///
   /// https://fontawesome.com/icons/twitch?style=brands
   static const IconData twitch = const IconDataBrands(0xf1e8);
 
-  /// Brands twitter icon
+  /// Brands Twitter icon
   ///
   /// https://fontawesome.com/icons/twitter?style=brands
   /// social network, tweet
   static const IconData twitter = const IconDataBrands(0xf099);
 
-  /// Brands twitter-square icon
+  /// Brands Twitter Square icon
   ///
   /// https://fontawesome.com/icons/twitter-square?style=brands
   /// social network, tweet
   static const IconData twitterSquare = const IconDataBrands(0xf081);
 
-  /// Brands typo3 icon
+  /// Brands Typo3 icon
   ///
   /// https://fontawesome.com/icons/typo3?style=brands
   static const IconData typo3 = const IconDataBrands(0xf42b);
 
-  /// Brands uber icon
+  /// Brands Uber icon
   ///
   /// https://fontawesome.com/icons/uber?style=brands
   static const IconData uber = const IconDataBrands(0xf402);
 
-  /// Brands ubuntu icon
+  /// Brands Ubuntu icon
   ///
   /// https://fontawesome.com/icons/ubuntu?style=brands
   /// linux, operating system, os
   static const IconData ubuntu = const IconDataBrands(0xf7df);
 
-  /// Brands uikit icon
+  /// Brands UIkit icon
   ///
   /// https://fontawesome.com/icons/uikit?style=brands
   static const IconData uikit = const IconDataBrands(0xf403);
 
-  /// Brands umbraco icon
+  /// Brands Umbraco icon
   ///
   /// https://fontawesome.com/icons/umbraco?style=brands
   static const IconData umbraco = const IconDataBrands(0xf8e8);
 
-  /// Solid umbrella icon
+  /// Solid Umbrella icon
   ///
   /// https://fontawesome.com/icons/umbrella?style=solid
   /// protection, rain, storm, wet
   static const IconData umbrella = const IconDataSolid(0xf0e9);
 
-  /// Solid umbrella-beach icon
+  /// Solid Umbrella Beach icon
   ///
   /// https://fontawesome.com/icons/umbrella-beach?style=solid
   /// protection, recreation, sand, shade, summer, sun
   static const IconData umbrellaBeach = const IconDataSolid(0xf5ca);
 
-  /// Brands uncharted icon
+  /// Brands Uncharted Software icon
   ///
   /// https://fontawesome.com/icons/uncharted?style=brands
   static const IconData uncharted = const IconDataBrands(0xe084);
 
-  /// Solid underline icon
+  /// Solid Underline icon
   ///
   /// https://fontawesome.com/icons/underline?style=solid
   /// edit, emphasis, format, text, writing
   static const IconData underline = const IconDataSolid(0xf0cd);
 
-  /// Solid undo icon
+  /// Solid Undo icon
   ///
   /// https://fontawesome.com/icons/undo?style=solid
   /// back, control z, exchange, oops, return, rotate, swap
   static const IconData undo = const IconDataSolid(0xf0e2);
 
-  /// Solid undo-alt icon
+  /// Solid Alternate Undo icon
   ///
   /// https://fontawesome.com/icons/undo-alt?style=solid
   /// back, control z, exchange, oops, return, swap
   static const IconData undoAlt = const IconDataSolid(0xf2ea);
 
-  /// Brands uniregistry icon
+  /// Brands Uniregistry icon
   ///
   /// https://fontawesome.com/icons/uniregistry?style=brands
   static const IconData uniregistry = const IconDataBrands(0xf404);
 
-  /// Brands unity icon
+  /// Brands Unity 3D icon
   ///
   /// https://fontawesome.com/icons/unity?style=brands
   static const IconData unity = const IconDataBrands(0xe049);
 
-  /// Solid universal-access icon
+  /// Solid Universal Access icon
   ///
   /// https://fontawesome.com/icons/universal-access?style=solid
   /// accessibility, hearing, person, seeing, visual impairment
   static const IconData universalAccess = const IconDataSolid(0xf29a);
 
-  /// Solid university icon
+  /// Solid University icon
   ///
   /// https://fontawesome.com/icons/university?style=solid
   /// bank, building, college, higher education - students, institution
@@ -8518,260 +8518,260 @@ class FontAwesomeIcons {
   /// admin, lock, password, private, protect
   static const IconData unlock = const IconDataSolid(0xf09c);
 
-  /// Solid unlock-alt icon
+  /// Solid Alternate Unlock icon
   ///
   /// https://fontawesome.com/icons/unlock-alt?style=solid
   /// admin, lock, password, private, protect
   static const IconData unlockAlt = const IconDataSolid(0xf13e);
 
-  /// Brands unsplash icon
+  /// Brands Unsplash icon
   ///
   /// https://fontawesome.com/icons/unsplash?style=brands
   static const IconData unsplash = const IconDataBrands(0xe07c);
 
-  /// Brands untappd icon
+  /// Brands Untappd icon
   ///
   /// https://fontawesome.com/icons/untappd?style=brands
   static const IconData untappd = const IconDataBrands(0xf405);
 
-  /// Solid upload icon
+  /// Solid Upload icon
   ///
   /// https://fontawesome.com/icons/upload?style=solid
   /// hard drive, import, publish
   static const IconData upload = const IconDataSolid(0xf093);
 
-  /// Brands ups icon
+  /// Brands UPS icon
   ///
   /// https://fontawesome.com/icons/ups?style=brands
   /// United Parcel Service, package, shipping
   static const IconData ups = const IconDataBrands(0xf7e0);
 
-  /// Brands usb icon
+  /// Brands USB icon
   ///
   /// https://fontawesome.com/icons/usb?style=brands
   static const IconData usb = const IconDataBrands(0xf287);
 
-  /// Regular user icon
+  /// Regular User icon
   ///
   /// https://fontawesome.com/icons/user?style=regular
   /// account, avatar, head, human, man, person, profile
   static const IconData user = const IconDataRegular(0xf007);
 
-  /// Solid user icon
+  /// Solid User icon
   ///
   /// https://fontawesome.com/icons/user?style=solid
   /// account, avatar, head, human, man, person, profile
   static const IconData solidUser = const IconDataSolid(0xf007);
 
-  /// Solid user-alt icon
+  /// Solid Alternate User icon
   ///
   /// https://fontawesome.com/icons/user-alt?style=solid
   /// account, avatar, head, human, man, person, profile
   static const IconData userAlt = const IconDataSolid(0xf406);
 
-  /// Solid user-alt-slash icon
+  /// Solid Alternate User Slash icon
   ///
   /// https://fontawesome.com/icons/user-alt-slash?style=solid
   /// account, avatar, head, human, man, person, profile
   static const IconData userAltSlash = const IconDataSolid(0xf4fa);
 
-  /// Solid user-astronaut icon
+  /// Solid User Astronaut icon
   ///
   /// https://fontawesome.com/icons/user-astronaut?style=solid
   /// avatar, clothing, cosmonaut, nasa, space, suit
   static const IconData userAstronaut = const IconDataSolid(0xf4fb);
 
-  /// Solid user-check icon
+  /// Solid User Check icon
   ///
   /// https://fontawesome.com/icons/user-check?style=solid
   /// accept, check, person, verified
   static const IconData userCheck = const IconDataSolid(0xf4fc);
 
-  /// Regular user-circle icon
+  /// Regular User Circle icon
   ///
   /// https://fontawesome.com/icons/user-circle?style=regular
   /// account, avatar, head, human, man, person, profile
   static const IconData userCircle = const IconDataRegular(0xf2bd);
 
-  /// Solid user-circle icon
+  /// Solid User Circle icon
   ///
   /// https://fontawesome.com/icons/user-circle?style=solid
   /// account, avatar, head, human, man, person, profile
   static const IconData solidUserCircle = const IconDataSolid(0xf2bd);
 
-  /// Solid user-clock icon
+  /// Solid User Clock icon
   ///
   /// https://fontawesome.com/icons/user-clock?style=solid
   /// alert, person, remind, time
   static const IconData userClock = const IconDataSolid(0xf4fd);
 
-  /// Solid user-cog icon
+  /// Solid User Cog icon
   ///
   /// https://fontawesome.com/icons/user-cog?style=solid
   /// admin, cog, person, settings
   static const IconData userCog = const IconDataSolid(0xf4fe);
 
-  /// Solid user-edit icon
+  /// Solid User Edit icon
   ///
   /// https://fontawesome.com/icons/user-edit?style=solid
   /// edit, pen, pencil, person, update, write
   static const IconData userEdit = const IconDataSolid(0xf4ff);
 
-  /// Solid user-friends icon
+  /// Solid User Friends icon
   ///
   /// https://fontawesome.com/icons/user-friends?style=solid
   /// group, people, person, team, users
   static const IconData userFriends = const IconDataSolid(0xf500);
 
-  /// Solid user-graduate icon
+  /// Solid User Graduate icon
   ///
   /// https://fontawesome.com/icons/user-graduate?style=solid
   /// cap, clothing, commencement, gown, graduation, person, student
   static const IconData userGraduate = const IconDataSolid(0xf501);
 
-  /// Solid user-injured icon
+  /// Solid User Injured icon
   ///
   /// https://fontawesome.com/icons/user-injured?style=solid
   /// cast, injury, ouch, patient, person, sling
   static const IconData userInjured = const IconDataSolid(0xf728);
 
-  /// Solid user-lock icon
+  /// Solid User Lock icon
   ///
   /// https://fontawesome.com/icons/user-lock?style=solid
   /// admin, lock, person, private, unlock
   static const IconData userLock = const IconDataSolid(0xf502);
 
-  /// Solid user-md icon
+  /// Solid Doctor icon
   ///
   /// https://fontawesome.com/icons/user-md?style=solid
   /// covid-19, job, medical, nurse, occupation, physician, profile, surgeon
   static const IconData userMd = const IconDataSolid(0xf0f0);
 
-  /// Solid user-minus icon
+  /// Solid User Minus icon
   ///
   /// https://fontawesome.com/icons/user-minus?style=solid
   /// delete, negative, remove
   static const IconData userMinus = const IconDataSolid(0xf503);
 
-  /// Solid user-ninja icon
+  /// Solid User Ninja icon
   ///
   /// https://fontawesome.com/icons/user-ninja?style=solid
   /// assassin, avatar, dangerous, deadly, sneaky
   static const IconData userNinja = const IconDataSolid(0xf504);
 
-  /// Solid user-nurse icon
+  /// Solid Nurse icon
   ///
   /// https://fontawesome.com/icons/user-nurse?style=solid
   /// covid-19, doctor, midwife, practitioner, surgeon
   static const IconData userNurse = const IconDataSolid(0xf82f);
 
-  /// Solid user-plus icon
+  /// Solid User Plus icon
   ///
   /// https://fontawesome.com/icons/user-plus?style=solid
   /// add, avatar, positive, sign up, signup, team
   static const IconData userPlus = const IconDataSolid(0xf234);
 
-  /// Solid user-secret icon
+  /// Solid User Secret icon
   ///
   /// https://fontawesome.com/icons/user-secret?style=solid
   /// clothing, coat, hat, incognito, person, privacy, spy, whisper
   static const IconData userSecret = const IconDataSolid(0xf21b);
 
-  /// Solid user-shield icon
+  /// Solid User Shield icon
   ///
   /// https://fontawesome.com/icons/user-shield?style=solid
   /// admin, person, private, protect, safe
   static const IconData userShield = const IconDataSolid(0xf505);
 
-  /// Solid user-slash icon
+  /// Solid User Slash icon
   ///
   /// https://fontawesome.com/icons/user-slash?style=solid
   /// ban, delete, remove
   static const IconData userSlash = const IconDataSolid(0xf506);
 
-  /// Solid user-tag icon
+  /// Solid User Tag icon
   ///
   /// https://fontawesome.com/icons/user-tag?style=solid
   /// avatar, discount, label, person, role, special
   static const IconData userTag = const IconDataSolid(0xf507);
 
-  /// Solid user-tie icon
+  /// Solid User Tie icon
   ///
   /// https://fontawesome.com/icons/user-tie?style=solid
   /// avatar, business, clothing, formal, professional, suit
   static const IconData userTie = const IconDataSolid(0xf508);
 
-  /// Solid user-times icon
+  /// Solid Remove User icon
   ///
   /// https://fontawesome.com/icons/user-times?style=solid
   /// archive, delete, remove, x
   static const IconData userTimes = const IconDataSolid(0xf235);
 
-  /// Solid users icon
+  /// Solid Users icon
   ///
   /// https://fontawesome.com/icons/users?style=solid
   /// friends, group, people, persons, profiles, team
   static const IconData users = const IconDataSolid(0xf0c0);
 
-  /// Solid users-cog icon
+  /// Solid Users Cog icon
   ///
   /// https://fontawesome.com/icons/users-cog?style=solid
   /// admin, cog, group, person, settings, team
   static const IconData usersCog = const IconDataSolid(0xf509);
 
-  /// Solid users-slash icon
+  /// Solid Users Slash icon
   ///
   /// https://fontawesome.com/icons/users-slash?style=solid
   /// disband, friends, group, people, persons, profiles, separate, team, ungroup
   static const IconData usersSlash = const IconDataSolid(0xe073);
 
-  /// Brands usps icon
+  /// Brands United States Postal Service icon
   ///
   /// https://fontawesome.com/icons/usps?style=brands
   /// american, package, shipping, usa
   static const IconData usps = const IconDataBrands(0xf7e1);
 
-  /// Brands ussunnah icon
+  /// Brands us-Sunnah Foundation icon
   ///
   /// https://fontawesome.com/icons/ussunnah?style=brands
   static const IconData ussunnah = const IconDataBrands(0xf407);
 
-  /// Solid utensil-spoon icon
+  /// Solid Utensil Spoon icon
   ///
   /// https://fontawesome.com/icons/utensil-spoon?style=solid
   /// cutlery, dining, scoop, silverware, spoon
   static const IconData utensilSpoon = const IconDataSolid(0xf2e5);
 
-  /// Solid utensils icon
+  /// Solid Utensils icon
   ///
   /// https://fontawesome.com/icons/utensils?style=solid
   /// cutlery, dining, dinner, eat, food, fork, knife, restaurant
   static const IconData utensils = const IconDataSolid(0xf2e7);
 
-  /// Brands vaadin icon
+  /// Brands Vaadin icon
   ///
   /// https://fontawesome.com/icons/vaadin?style=brands
   static const IconData vaadin = const IconDataBrands(0xf408);
 
-  /// Solid vector-square icon
+  /// Solid Vector Square icon
   ///
   /// https://fontawesome.com/icons/vector-square?style=solid
   /// anchors, lines, object, render, shape
   static const IconData vectorSquare = const IconDataSolid(0xf5cb);
 
-  /// Solid venus icon
+  /// Solid Venus icon
   ///
   /// https://fontawesome.com/icons/venus?style=solid
   /// female
   static const IconData venus = const IconDataSolid(0xf221);
 
-  /// Solid venus-double icon
+  /// Solid Venus Double icon
   ///
   /// https://fontawesome.com/icons/venus-double?style=solid
   /// female
   static const IconData venusDouble = const IconDataSolid(0xf226);
 
-  /// Solid venus-mars icon
+  /// Solid Venus Mars icon
   ///
   /// https://fontawesome.com/icons/venus-mars?style=solid
   /// Gender
@@ -8789,383 +8789,383 @@ class FontAwesomeIcons {
   /// biker, fashion, style
   static const IconData vestPatches = const IconDataSolid(0xe086);
 
-  /// Brands viacoin icon
+  /// Brands Viacoin icon
   ///
   /// https://fontawesome.com/icons/viacoin?style=brands
   static const IconData viacoin = const IconDataBrands(0xf237);
 
-  /// Brands viadeo icon
+  /// Brands Video icon
   ///
   /// https://fontawesome.com/icons/viadeo?style=brands
   static const IconData viadeo = const IconDataBrands(0xf2a9);
 
-  /// Brands viadeo-square icon
+  /// Brands Video Square icon
   ///
   /// https://fontawesome.com/icons/viadeo-square?style=brands
   static const IconData viadeoSquare = const IconDataBrands(0xf2aa);
 
-  /// Solid vial icon
+  /// Solid Vial icon
   ///
   /// https://fontawesome.com/icons/vial?style=solid
   /// experiment, lab, sample, science, test, test tube
   static const IconData vial = const IconDataSolid(0xf492);
 
-  /// Solid vials icon
+  /// Solid Vials icon
   ///
   /// https://fontawesome.com/icons/vials?style=solid
   /// experiment, lab, sample, science, test, test tube
   static const IconData vials = const IconDataSolid(0xf493);
 
-  /// Brands viber icon
+  /// Brands Viber icon
   ///
   /// https://fontawesome.com/icons/viber?style=brands
   static const IconData viber = const IconDataBrands(0xf409);
 
-  /// Solid video icon
+  /// Solid Video icon
   ///
   /// https://fontawesome.com/icons/video?style=solid
   /// camera, film, movie, record, video-camera
   static const IconData video = const IconDataSolid(0xf03d);
 
-  /// Solid video-slash icon
+  /// Solid Video Slash icon
   ///
   /// https://fontawesome.com/icons/video-slash?style=solid
   /// add, create, film, new, positive, record, video
   static const IconData videoSlash = const IconDataSolid(0xf4e2);
 
-  /// Solid vihara icon
+  /// Solid Vihara icon
   ///
   /// https://fontawesome.com/icons/vihara?style=solid
   /// buddhism, buddhist, building, monastery
   static const IconData vihara = const IconDataSolid(0xf6a7);
 
-  /// Brands vimeo icon
+  /// Brands Vimeo icon
   ///
   /// https://fontawesome.com/icons/vimeo?style=brands
   static const IconData vimeo = const IconDataBrands(0xf40a);
 
-  /// Brands vimeo-square icon
+  /// Brands Vimeo Square icon
   ///
   /// https://fontawesome.com/icons/vimeo-square?style=brands
   static const IconData vimeoSquare = const IconDataBrands(0xf194);
 
-  /// Brands vimeo-v icon
+  /// Brands Vimeo icon
   ///
   /// https://fontawesome.com/icons/vimeo-v?style=brands
   /// vimeo
   static const IconData vimeoV = const IconDataBrands(0xf27d);
 
-  /// Brands vine icon
+  /// Brands Vine icon
   ///
   /// https://fontawesome.com/icons/vine?style=brands
   static const IconData vine = const IconDataBrands(0xf1ca);
 
-  /// Solid virus icon
+  /// Solid Virus icon
   ///
   /// https://fontawesome.com/icons/virus?style=solid
   /// bug, covid-19, flu, health, sick, viral
   static const IconData virus = const IconDataSolid(0xe074);
 
-  /// Solid virus-slash icon
+  /// Solid Virus Slash icon
   ///
   /// https://fontawesome.com/icons/virus-slash?style=solid
   /// bug, covid-19, cure, eliminate, flu, health, sick, viral
   static const IconData virusSlash = const IconDataSolid(0xe075);
 
-  /// Solid viruses icon
+  /// Solid Viruses icon
   ///
   /// https://fontawesome.com/icons/viruses?style=solid
   /// bugs, covid-19, flu, health, multiply, sick, spread, viral
   static const IconData viruses = const IconDataSolid(0xe076);
 
-  /// Brands vk icon
+  /// Brands VK icon
   ///
   /// https://fontawesome.com/icons/vk?style=brands
   static const IconData vk = const IconDataBrands(0xf189);
 
-  /// Brands vnv icon
+  /// Brands VNV icon
   ///
   /// https://fontawesome.com/icons/vnv?style=brands
   static const IconData vnv = const IconDataBrands(0xf40b);
 
-  /// Solid voicemail icon
+  /// Solid Voicemail icon
   ///
   /// https://fontawesome.com/icons/voicemail?style=solid
   /// answer, inbox, message, phone
   static const IconData voicemail = const IconDataSolid(0xf897);
 
-  /// Solid volleyball-ball icon
+  /// Solid Volleyball Ball icon
   ///
   /// https://fontawesome.com/icons/volleyball-ball?style=solid
   /// beach, olympics, sport
   static const IconData volleyballBall = const IconDataSolid(0xf45f);
 
-  /// Solid volume-down icon
+  /// Solid Volume Down icon
   ///
   /// https://fontawesome.com/icons/volume-down?style=solid
   /// audio, lower, music, quieter, sound, speaker
   static const IconData volumeDown = const IconDataSolid(0xf027);
 
-  /// Solid volume-mute icon
+  /// Solid Volume Mute icon
   ///
   /// https://fontawesome.com/icons/volume-mute?style=solid
   /// audio, music, quiet, sound, speaker
   static const IconData volumeMute = const IconDataSolid(0xf6a9);
 
-  /// Solid volume-off icon
+  /// Solid Volume Off icon
   ///
   /// https://fontawesome.com/icons/volume-off?style=solid
   /// audio, ban, music, mute, quiet, silent, sound
   static const IconData volumeOff = const IconDataSolid(0xf026);
 
-  /// Solid volume-up icon
+  /// Solid Volume Up icon
   ///
   /// https://fontawesome.com/icons/volume-up?style=solid
   /// audio, higher, louder, music, sound, speaker
   static const IconData volumeUp = const IconDataSolid(0xf028);
 
-  /// Solid vote-yea icon
+  /// Solid Vote Yea icon
   ///
   /// https://fontawesome.com/icons/vote-yea?style=solid
   /// accept, cast, election, politics, positive, yes
   static const IconData voteYea = const IconDataSolid(0xf772);
 
-  /// Solid vr-cardboard icon
+  /// Solid Cardboard VR icon
   ///
   /// https://fontawesome.com/icons/vr-cardboard?style=solid
   /// 3d, augment, google, reality, virtual
   static const IconData vrCardboard = const IconDataSolid(0xf729);
 
-  /// Brands vuejs icon
+  /// Brands Vue.js icon
   ///
   /// https://fontawesome.com/icons/vuejs?style=brands
   static const IconData vuejs = const IconDataBrands(0xf41f);
 
-  /// Solid walking icon
+  /// Solid Walking icon
   ///
   /// https://fontawesome.com/icons/walking?style=solid
   /// exercise, health, pedometer, person, steps
   static const IconData walking = const IconDataSolid(0xf554);
 
-  /// Solid wallet icon
+  /// Solid Wallet icon
   ///
   /// https://fontawesome.com/icons/wallet?style=solid
   /// billfold, cash, currency, money
   static const IconData wallet = const IconDataSolid(0xf555);
 
-  /// Solid warehouse icon
+  /// Solid Warehouse icon
   ///
   /// https://fontawesome.com/icons/warehouse?style=solid
   /// building, capacity, garage, inventory, storage
   static const IconData warehouse = const IconDataSolid(0xf494);
 
-  /// Brands watchman-monitoring icon
+  /// Brands Watchman Monitoring icon
   ///
   /// https://fontawesome.com/icons/watchman-monitoring?style=brands
   static const IconData watchmanMonitoring = const IconDataBrands(0xe087);
 
-  /// Solid water icon
+  /// Solid Water icon
   ///
   /// https://fontawesome.com/icons/water?style=solid
   /// lake, liquid, ocean, sea, swim, wet
   static const IconData water = const IconDataSolid(0xf773);
 
-  /// Solid wave-square icon
+  /// Solid Square Wave icon
   ///
   /// https://fontawesome.com/icons/wave-square?style=solid
   /// frequency, pulse, signal
   static const IconData waveSquare = const IconDataSolid(0xf83e);
 
-  /// Brands waze icon
+  /// Brands Waze icon
   ///
   /// https://fontawesome.com/icons/waze?style=brands
   static const IconData waze = const IconDataBrands(0xf83f);
 
-  /// Brands weebly icon
+  /// Brands Weebly icon
   ///
   /// https://fontawesome.com/icons/weebly?style=brands
   static const IconData weebly = const IconDataBrands(0xf5cc);
 
-  /// Brands weibo icon
+  /// Brands Weibo icon
   ///
   /// https://fontawesome.com/icons/weibo?style=brands
   static const IconData weibo = const IconDataBrands(0xf18a);
 
-  /// Solid weight icon
+  /// Solid Weight icon
   ///
   /// https://fontawesome.com/icons/weight?style=solid
   /// health, measurement, scale, weight
   static const IconData weight = const IconDataSolid(0xf496);
 
-  /// Solid weight-hanging icon
+  /// Solid Hanging Weight icon
   ///
   /// https://fontawesome.com/icons/weight-hanging?style=solid
   /// anvil, heavy, measurement
   static const IconData weightHanging = const IconDataSolid(0xf5cd);
 
-  /// Brands weixin icon
+  /// Brands Weixin (WeChat) icon
   ///
   /// https://fontawesome.com/icons/weixin?style=brands
   static const IconData weixin = const IconDataBrands(0xf1d7);
 
-  /// Brands whatsapp icon
+  /// Brands What's App icon
   ///
   /// https://fontawesome.com/icons/whatsapp?style=brands
   static const IconData whatsapp = const IconDataBrands(0xf232);
 
-  /// Brands whatsapp-square icon
+  /// Brands What's App Square icon
   ///
   /// https://fontawesome.com/icons/whatsapp-square?style=brands
   static const IconData whatsappSquare = const IconDataBrands(0xf40c);
 
-  /// Solid wheelchair icon
+  /// Solid Wheelchair icon
   ///
   /// https://fontawesome.com/icons/wheelchair?style=solid
   /// accessible, handicap, person
   static const IconData wheelchair = const IconDataSolid(0xf193);
 
-  /// Brands whmcs icon
+  /// Brands WHMCS icon
   ///
   /// https://fontawesome.com/icons/whmcs?style=brands
   static const IconData whmcs = const IconDataBrands(0xf40d);
 
-  /// Solid wifi icon
+  /// Solid WiFi icon
   ///
   /// https://fontawesome.com/icons/wifi?style=solid
   /// connection, hotspot, internet, network, wireless
   static const IconData wifi = const IconDataSolid(0xf1eb);
 
-  /// Brands wikipedia-w icon
+  /// Brands Wikipedia W icon
   ///
   /// https://fontawesome.com/icons/wikipedia-w?style=brands
   static const IconData wikipediaW = const IconDataBrands(0xf266);
 
-  /// Solid wind icon
+  /// Solid Wind icon
   ///
   /// https://fontawesome.com/icons/wind?style=solid
   /// air, blow, breeze, fall, seasonal, weather
   static const IconData wind = const IconDataSolid(0xf72e);
 
-  /// Regular window-close icon
+  /// Regular Window Close icon
   ///
   /// https://fontawesome.com/icons/window-close?style=regular
   /// browser, cancel, computer, development
   static const IconData windowClose = const IconDataRegular(0xf410);
 
-  /// Solid window-close icon
+  /// Solid Window Close icon
   ///
   /// https://fontawesome.com/icons/window-close?style=solid
   /// browser, cancel, computer, development
   static const IconData solidWindowClose = const IconDataSolid(0xf410);
 
-  /// Regular window-maximize icon
+  /// Regular Window Maximize icon
   ///
   /// https://fontawesome.com/icons/window-maximize?style=regular
   /// browser, computer, development, expand
   static const IconData windowMaximize = const IconDataRegular(0xf2d0);
 
-  /// Solid window-maximize icon
+  /// Solid Window Maximize icon
   ///
   /// https://fontawesome.com/icons/window-maximize?style=solid
   /// browser, computer, development, expand
   static const IconData solidWindowMaximize = const IconDataSolid(0xf2d0);
 
-  /// Regular window-minimize icon
+  /// Regular Window Minimize icon
   ///
   /// https://fontawesome.com/icons/window-minimize?style=regular
   /// browser, collapse, computer, development
   static const IconData windowMinimize = const IconDataRegular(0xf2d1);
 
-  /// Solid window-minimize icon
+  /// Solid Window Minimize icon
   ///
   /// https://fontawesome.com/icons/window-minimize?style=solid
   /// browser, collapse, computer, development
   static const IconData solidWindowMinimize = const IconDataSolid(0xf2d1);
 
-  /// Regular window-restore icon
+  /// Regular Window Restore icon
   ///
   /// https://fontawesome.com/icons/window-restore?style=regular
   /// browser, computer, development
   static const IconData windowRestore = const IconDataRegular(0xf2d2);
 
-  /// Solid window-restore icon
+  /// Solid Window Restore icon
   ///
   /// https://fontawesome.com/icons/window-restore?style=solid
   /// browser, computer, development
   static const IconData solidWindowRestore = const IconDataSolid(0xf2d2);
 
-  /// Brands windows icon
+  /// Brands Windows icon
   ///
   /// https://fontawesome.com/icons/windows?style=brands
   /// microsoft, operating system, os
   static const IconData windows = const IconDataBrands(0xf17a);
 
-  /// Solid wine-bottle icon
+  /// Solid Wine Bottle icon
   ///
   /// https://fontawesome.com/icons/wine-bottle?style=solid
   /// alcohol, beverage, cabernet, drink, glass, grapes, merlot, sauvignon
   static const IconData wineBottle = const IconDataSolid(0xf72f);
 
-  /// Solid wine-glass icon
+  /// Solid Wine Glass icon
   ///
   /// https://fontawesome.com/icons/wine-glass?style=solid
   /// alcohol, beverage, cabernet, drink, grapes, merlot, sauvignon
   static const IconData wineGlass = const IconDataSolid(0xf4e3);
 
-  /// Solid wine-glass-alt icon
+  /// Solid Alternate Wine Glas icon
   ///
   /// https://fontawesome.com/icons/wine-glass-alt?style=solid
   /// alcohol, beverage, cabernet, drink, grapes, merlot, sauvignon
   static const IconData wineGlassAlt = const IconDataSolid(0xf5ce);
 
-  /// Brands wix icon
+  /// Brands Wix icon
   ///
   /// https://fontawesome.com/icons/wix?style=brands
   static const IconData wix = const IconDataBrands(0xf5cf);
 
-  /// Brands wizards-of-the-coast icon
+  /// Brands Wizards of the Coast icon
   ///
   /// https://fontawesome.com/icons/wizards-of-the-coast?style=brands
   /// Dungeons & Dragons, d&d, dnd, fantasy, game, gaming, tabletop
   static const IconData wizardsOfTheCoast = const IconDataBrands(0xf730);
 
-  /// Brands wodu icon
+  /// Brands Wodu icon
   ///
   /// https://fontawesome.com/icons/wodu?style=brands
   static const IconData wodu = const IconDataBrands(0xe088);
 
-  /// Brands wolf-pack-battalion icon
+  /// Brands Wolf Pack Battalion icon
   ///
   /// https://fontawesome.com/icons/wolf-pack-battalion?style=brands
   static const IconData wolfPackBattalion = const IconDataBrands(0xf514);
 
-  /// Solid won-sign icon
+  /// Solid Won Sign icon
   ///
   /// https://fontawesome.com/icons/won-sign?style=solid
   /// currency, krw, money
   static const IconData wonSign = const IconDataSolid(0xf159);
 
-  /// Brands wordpress icon
+  /// Brands WordPress Logo icon
   ///
   /// https://fontawesome.com/icons/wordpress?style=brands
   static const IconData wordpress = const IconDataBrands(0xf19a);
 
-  /// Brands wordpress-simple icon
+  /// Brands Wordpress Simple icon
   ///
   /// https://fontawesome.com/icons/wordpress-simple?style=brands
   static const IconData wordpressSimple = const IconDataBrands(0xf411);
 
-  /// Brands wpbeginner icon
+  /// Brands WPBeginner icon
   ///
   /// https://fontawesome.com/icons/wpbeginner?style=brands
   static const IconData wpbeginner = const IconDataBrands(0xf297);
 
-  /// Brands wpexplorer icon
+  /// Brands WPExplorer icon
   ///
   /// https://fontawesome.com/icons/wpexplorer?style=brands
   static const IconData wpexplorer = const IconDataBrands(0xf2de);
 
-  /// Brands wpforms icon
+  /// Brands WPForms icon
   ///
   /// https://fontawesome.com/icons/wpforms?style=brands
   static const IconData wpforms = const IconDataBrands(0xf298);
@@ -9176,97 +9176,97 @@ class FontAwesomeIcons {
   /// rendact
   static const IconData wpressr = const IconDataBrands(0xf3e4);
 
-  /// Solid wrench icon
+  /// Solid Wrench icon
   ///
   /// https://fontawesome.com/icons/wrench?style=solid
   /// construction, fix, mechanic, plumbing, settings, spanner, tool, update
   static const IconData wrench = const IconDataSolid(0xf0ad);
 
-  /// Solid x-ray icon
+  /// Solid X-Ray icon
   ///
   /// https://fontawesome.com/icons/x-ray?style=solid
   /// health, medical, radiological images, radiology, skeleton
   static const IconData xRay = const IconDataSolid(0xf497);
 
-  /// Brands xbox icon
+  /// Brands Xbox icon
   ///
   /// https://fontawesome.com/icons/xbox?style=brands
   static const IconData xbox = const IconDataBrands(0xf412);
 
-  /// Brands xing icon
+  /// Brands Xing icon
   ///
   /// https://fontawesome.com/icons/xing?style=brands
   static const IconData xing = const IconDataBrands(0xf168);
 
-  /// Brands xing-square icon
+  /// Brands Xing Square icon
   ///
   /// https://fontawesome.com/icons/xing-square?style=brands
   static const IconData xingSquare = const IconDataBrands(0xf169);
 
-  /// Brands y-combinator icon
+  /// Brands Y Combinator icon
   ///
   /// https://fontawesome.com/icons/y-combinator?style=brands
   static const IconData yCombinator = const IconDataBrands(0xf23b);
 
-  /// Brands yahoo icon
+  /// Brands Yahoo Logo icon
   ///
   /// https://fontawesome.com/icons/yahoo?style=brands
   static const IconData yahoo = const IconDataBrands(0xf19e);
 
-  /// Brands yammer icon
+  /// Brands Yammer icon
   ///
   /// https://fontawesome.com/icons/yammer?style=brands
   static const IconData yammer = const IconDataBrands(0xf840);
 
-  /// Brands yandex icon
+  /// Brands Yandex icon
   ///
   /// https://fontawesome.com/icons/yandex?style=brands
   static const IconData yandex = const IconDataBrands(0xf413);
 
-  /// Brands yandex-international icon
+  /// Brands Yandex International icon
   ///
   /// https://fontawesome.com/icons/yandex-international?style=brands
   static const IconData yandexInternational = const IconDataBrands(0xf414);
 
-  /// Brands yarn icon
+  /// Brands Yarn icon
   ///
   /// https://fontawesome.com/icons/yarn?style=brands
   static const IconData yarn = const IconDataBrands(0xf7e3);
 
-  /// Brands yelp icon
+  /// Brands Yelp icon
   ///
   /// https://fontawesome.com/icons/yelp?style=brands
   static const IconData yelp = const IconDataBrands(0xf1e9);
 
-  /// Solid yen-sign icon
+  /// Solid Yen Sign icon
   ///
   /// https://fontawesome.com/icons/yen-sign?style=solid
   /// currency, jpy, money
   static const IconData yenSign = const IconDataSolid(0xf157);
 
-  /// Solid yin-yang icon
+  /// Solid Yin Yang icon
   ///
   /// https://fontawesome.com/icons/yin-yang?style=solid
   /// daoism, opposites, taoism
   static const IconData yinYang = const IconDataSolid(0xf6ad);
 
-  /// Brands yoast icon
+  /// Brands Yoast icon
   ///
   /// https://fontawesome.com/icons/yoast?style=brands
   static const IconData yoast = const IconDataBrands(0xf2b1);
 
-  /// Brands youtube icon
+  /// Brands YouTube icon
   ///
   /// https://fontawesome.com/icons/youtube?style=brands
   /// film, video, youtube-play, youtube-square
   static const IconData youtube = const IconDataBrands(0xf167);
 
-  /// Brands youtube-square icon
+  /// Brands YouTube Square icon
   ///
   /// https://fontawesome.com/icons/youtube-square?style=brands
   static const IconData youtubeSquare = const IconDataBrands(0xf431);
 
-  /// Brands zhihu icon
+  /// Brands Zhihu icon
   ///
   /// https://fontawesome.com/icons/zhihu?style=brands
   static const IconData zhihu = const IconDataBrands(0xf63f);
