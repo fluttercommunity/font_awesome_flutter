@@ -1,3 +1,6 @@
+// @dart=2.9
+// remove above once the version package has been updated for null-safety
+
 import 'dart:convert';
 import 'dart:io';
 
