@@ -106,10 +106,11 @@ a public github repository or other public file sharing services.
   * Remove `#`s from `pubspec.yaml` at the indicated position
   * run `flutter packages get`
   * Download your font awesome pro icons (web version)
-  * Move all `.ttf` files from the `webfonts` directory to `/path/to/your/font_awesome_flutter/lib/fonts` (replace existing fonts)
+  * Move **all** `.ttf` files from the `webfonts` directory to `/path/to/your/font_awesome_flutter/lib/fonts` (replace existing fonts)
+    * _Note:_ Please make sure **all** `.ttf` files (and the following `icons.json`) are of the same version to avoid missing icons!
   * Move `icons.json` from `metadata` to `/path/to/your/font_awesome_flutter`
   * From there run `./tool/update.sh` on linux or `.\tool\update.bat` on windows
-    * _Note for windows users:_ Please run the script only in cmd or powershell. Flutter is known to have problems with third-party shells.
+    * _Note for windows users:_ Please run the script in cmd or powershell only. Flutter is known to have problems with third-party shells.
   * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation:
 
 ```yaml
