@@ -110,6 +110,7 @@ class FaIcon extends StatelessWidget {
           fontSize: iconSize,
           fontFamily: icon.fontFamily,
           package: icon.fontPackage,
+          height: 1,
         ),
       ),
     );
