@@ -63,6 +63,12 @@ String generateExampleIcon(String iconName) {
     iconName = 'fiveHundredPx';
   }
 
+  // digit only icons
+  RegExp exp = new RegExp(r"^[0-9]{1}$");
+  if (exp.hasMatch(iconName)) {
+    iconName = 'digit$iconName';
+  }
+
   iconName = new ReCase(iconName).camelCase;
 
   return "ExampleIcon(FontAwesomeIcons.$iconName, '$iconName'),";
