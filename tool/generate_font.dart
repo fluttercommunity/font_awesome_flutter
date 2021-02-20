@@ -177,6 +177,12 @@ String normalizeIconName(String iconName) {
     iconName = 'fiveHundredPx';
   }
 
+  // digit only icons
+  RegExp exp = new RegExp(r"^[0-9]{1}$");
+  if (exp.hasMatch(iconName)) {
+    iconName = 'digit$iconName';
+  }
+
   return new ReCase(iconName).camelCase;
 }
 
