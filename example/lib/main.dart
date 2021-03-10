@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:font_awesome_flutter_example/icons.dart';
@@ -38,56 +39,58 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
             _searchTerm.isEmpty ||
             icon.title.toLowerCase().contains(_searchTerm.toLowerCase()))
         .toList();
-    final orientation = MediaQuery.of(context).orientation;
 
     return Scaffold(
       appBar: _isSearching ? _searchBar(context) : _titleBar(),
-      body: GridView.builder(
-        itemCount: filteredIcons.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
-        ),
-        itemBuilder: (context, index) {
-          final icon = filteredIcons[index];
+      body: Scrollbar(
+        isAlwaysShown: kIsWeb,
+        child: GridView.builder(
+          itemCount: filteredIcons.length,
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 300,
+          ),
+          itemBuilder: (context, index) {
+            final icon = filteredIcons[index];
 
-          return InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute<Null>(
-                  builder: (BuildContext context) {
-                    return GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: Container(
-                        color: Colors.white,
-                        alignment: Alignment.center,
-                        child: Hero(
-                          tag: icon,
-                          child: FaIcon(
-                            icon.iconData,
-                            size: 100,
+            return InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<Null>(
+                    builder: (BuildContext context) {
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Container(
+                          color: Colors.white,
+                          alignment: Alignment.center,
+                          child: Hero(
+                            tag: icon,
+                            child: FaIcon(
+                              icon.iconData,
+                              size: 100,
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  },
-                ),
-              );
-            },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Hero(tag: icon, child: FaIcon(icon.iconData)),
-                Container(
-                  padding: EdgeInsets.only(top: 16.0),
-                  child: Text(icon.title),
-                )
-              ],
-            ),
-          );
-        },
+                      );
+                    },
+                  ),
+                );
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Hero(tag: icon, child: FaIcon(icon.iconData)),
+                  Container(
+                    padding: EdgeInsets.only(top: 16.0),
+                    child: Text(icon.title),
+                  )
+                ],
+              ),
+            );
+          },
+        ),
       ),
     );
   }
