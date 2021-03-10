@@ -40,6 +40,8 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/fa-duotone-900.ttf
 #          weight: 900
+# Thin style is available in font awesome pro 6 and beyond
+# Leave commented if you don't own version 6
 #    - family: FontAwesomeThin
 #      fonts:
 #        - asset: lib/fonts/fa-thin-100.ttf
