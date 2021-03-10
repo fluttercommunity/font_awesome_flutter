@@ -74,7 +74,7 @@ void main(List<String> arguments) {
 
 String generateExampleIcon(String iconName) {
   if(nameAdjustments.containsKey(iconName)) {
-    iconName = nameAdjustments[iconName];
+    iconName = nameAdjustments[iconName]!;
   }
 
   iconName = new ReCase(iconName).camelCase;
