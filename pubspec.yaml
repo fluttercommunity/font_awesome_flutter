@@ -1,6 +1,6 @@
 name: font_awesome_flutter
 description: The Font Awesome Icon pack available as Flutter Icons. Provides 1500 additional icons to use in your apps.
-maintainer: Brian Egan (@brianegan)
+maintainer: Michael Spiss (@michaelspiss)
 homepage: https://github.com/fluttercommunity/font_awesome_flutter
 version: 8.12.0
 
@@ -36,12 +36,13 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/fa-light-300.ttf
 #          weight: 300
+# Leave commented out if you don't own duotone icons
 #    - family: FontAwesomeDuotone
 #      fonts:
 #        - asset: lib/fonts/fa-duotone-900.ttf
 #          weight: 900
 # Thin style is available in font awesome pro 6 and beyond
-# Leave commented if you don't own version 6
+# Leave commented out if you don't own version 6
 #    - family: FontAwesomeThin
 #      fonts:
 #        - asset: lib/fonts/fa-thin-100.ttf
