@@ -1,3 +1,6 @@
+## 8.12.0
+  * Upgrade to Font Awesome icons 5.15.2
+
 ## 8.11.0
   * Add support for font awesome 6's thin icons
 
