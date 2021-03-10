@@ -40,6 +40,7 @@ class MyWidget extends StatelessWidget {
 ### Icon names
 
 Icon names equal those on the [official website](https://fontawesome.com/icons), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
+Due to restrictions in dart, icons starting with numbers have those numbers written out.
 
 #### Examples:
 Icon name | Code | Style
@@ -47,7 +48,7 @@ Icon name | Code | Style
 [angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | `FontAwesomeIcons.angleDoubleUp` | solid _(this icon does not have other free styles)_
 [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | `FontAwesomeIcons.arrowAltCircleUp` | regular
 [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  `FontAwesomeIcons.solidArrowAltCircleUp` | solid
-
+[1](https://fontawesome.com/icons/1?style=solid) | `FontAwesomeIcons.solidOne` | solid
 
 ## Example App
 
