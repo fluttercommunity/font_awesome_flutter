@@ -4,6 +4,20 @@ import 'dart:io';
 import 'package:recase/recase.dart';
 import 'package:version/version.dart';
 
+const Map<String, String> nameAdjustments = {
+  "500px": "fiveHundredPx",
+  "1": "one",
+  "2": "two",
+  "3": "three",
+  "4": "four",
+  "5": "five",
+  "6": "six",
+  "7": "seven",
+  "8": "eight",
+  "9": "nine",
+  "0": "zero",
+};
+
 void main(List<String> arguments) {
   var file = new File(arguments.first);
 
@@ -146,13 +160,15 @@ String generateIconDocumentation(
   return doc;
 }
 
-String generateIconDefinition(
-    String iconName, String style, String unicode, List searchTerms, String iconLabel) {
+String generateIconDefinition(String iconName, String style, String unicode,
+    List searchTerms, String iconLabel) {
   if (style == 'duotone') {
-    return generateDuotoneIconDefinition(iconName, unicode, searchTerms, iconLabel);
+    return generateDuotoneIconDefinition(
+        iconName, unicode, searchTerms, iconLabel);
   }
 
-  String doc = generateIconDocumentation(iconName, style, searchTerms, iconLabel);
+  String doc =
+      generateIconDocumentation(iconName, style, searchTerms, iconLabel);
 
   iconName = normalizeIconName(iconName);
   String iconDataSource = styleToDataSource(style);
@@ -160,9 +176,10 @@ String generateIconDefinition(
   return '$doc\nstatic const IconData $iconName = const $iconDataSource(0x$unicode);';
 }
 
-String generateDuotoneIconDefinition(
-    String iconName, String primaryUnicode, List searchTerms, String iconLabel) {
-  String doc = generateIconDocumentation(iconName, "duotone", searchTerms, iconLabel);
+String generateDuotoneIconDefinition(String iconName, String primaryUnicode,
+    List searchTerms, String iconLabel) {
+  String doc =
+      generateIconDocumentation(iconName, "duotone", searchTerms, iconLabel);
 
   iconName = normalizeIconName(iconName);
   String secondaryUnicode = (int.parse(primaryUnicode, radix: 16) + 0x100000)
@@ -173,8 +190,8 @@ String generateDuotoneIconDefinition(
 }
 
 String normalizeIconName(String iconName) {
-  if (iconName == '500px') {
-    iconName = 'fiveHundredPx';
+  if(nameAdjustments.containsKey(iconName)) {
+    iconName = nameAdjustments[iconName];
   }
 
   return new ReCase(iconName).camelCase;
