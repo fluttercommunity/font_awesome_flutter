@@ -6,7 +6,7 @@
 
 The [Font Awesome](https://fontawesome.com/icons) Icon pack available as set of Flutter Icons.
 
-Based on Font Awesome 5.15.1. Includes all free icons:
+Based on Font Awesome 5.15.2. Includes all free icons:
 
   * Regular
   * Solid
@@ -40,6 +40,7 @@ class MyWidget extends StatelessWidget {
 ### Icon names
 
 Icon names equal those on the [official website](https://fontawesome.com/icons), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
+Due to restrictions in dart, icons starting with numbers have those numbers written out.
 
 #### Examples:
 Icon name | Code | Style
@@ -47,7 +48,7 @@ Icon name | Code | Style
 [angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | `FontAwesomeIcons.angleDoubleUp` | solid _(this icon does not have other free styles)_
 [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | `FontAwesomeIcons.arrowAltCircleUp` | regular
 [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  `FontAwesomeIcons.solidArrowAltCircleUp` | solid
-
+[1](https://fontawesome.com/icons/1?style=solid) | `FontAwesomeIcons.solidOne` | solid
 
 ## Example App
 
@@ -106,10 +107,11 @@ a public github repository or other public file sharing services.
   * Remove `#`s from `pubspec.yaml` at the indicated position
   * run `flutter packages get`
   * Download your font awesome pro icons (web version)
-  * Move all `.ttf` files from the `webfonts` directory to `/path/to/your/font_awesome_flutter/lib/fonts` (replace existing fonts)
+  * Move **all** `.ttf` files from the `webfonts` directory to `/path/to/your/font_awesome_flutter/lib/fonts` (replace existing fonts)
+    * _Note:_ Please make sure **all** `.ttf` files (and the following `icons.json`) are of the same version to avoid missing icons!
   * Move `icons.json` from `metadata` to `/path/to/your/font_awesome_flutter`
   * From there run `./tool/update.sh` on linux or `.\tool\update.bat` on windows
-    * _Note for windows users:_ Please run the script only in cmd or powershell. Flutter is known to have problems with third-party shells.
+    * _Note for windows users:_ Please run the script in cmd or powershell only. Flutter is known to have problems with third-party shells.
   * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation:
 
 ```yaml

@@ -7,6 +7,20 @@ import 'dart:io';
 import 'package:recase/recase.dart';
 import 'package:version/version.dart';
 
+const Map<String, String> nameAdjustments = {
+  "500px": "fiveHundredPx",
+  "1": "one",
+  "2": "two",
+  "3": "three",
+  "4": "four",
+  "5": "five",
+  "6": "six",
+  "7": "seven",
+  "8": "eight",
+  "9": "nine",
+  "0": "zero",
+};
+
 void main(List<String> arguments) {
   var file = new File(arguments.first);
 
@@ -69,6 +83,8 @@ void main(List<String> arguments) {
           iconName,
           'regular',
           unicode,
+          icon["search"]["terms"],
+          icon["label"],
         );
       }
 
@@ -82,6 +98,8 @@ void main(List<String> arguments) {
           name,
           style,
           unicode,
+          icon["search"]["terms"],
+          icon["label"],
         );
       }
     } else {
@@ -89,6 +107,8 @@ void main(List<String> arguments) {
         iconName,
         styles.first,
         unicode,
+        icon["search"]["terms"],
+        icon["label"],
       );
     }
   }
@@ -123,29 +143,58 @@ void main(List<String> arguments) {
   output.writeAsStringSync(generatedOutput.join('\n'));
 }
 
-String generateIconDefinition(String iconName, String style, String unicode) {
-  if (style == 'duotone') {
-    return generateDuotoneIconDefinition(iconName, unicode);
+String generateIconDocumentation(
+    String iconName, String style, List searchTerms, String iconLabel) {
+  searchTerms = searchTerms ?? [];
+  var searchTermsString = searchTerms.toString();
+  searchTermsString =
+      searchTermsString.substring(1, searchTermsString.length - 1);
+
+  iconName = iconName.replaceFirst("solid_", "");
+
+  var doc = '/// ${style.sentenceCase} $iconLabel icon\n'
+      '///\n'
+      '/// https://fontawesome.com/icons/$iconName?style=$style';
+
+  if (searchTermsString.length != 0) {
+    doc += '\n/// $searchTermsString';
   }
+
+  return doc;
+}
+
+String generateIconDefinition(String iconName, String style, String unicode,
+    List searchTerms, String iconLabel) {
+  if (style == 'duotone') {
+    return generateDuotoneIconDefinition(
+        iconName, unicode, searchTerms, iconLabel);
+  }
+
+  String doc =
+      generateIconDocumentation(iconName, style, searchTerms, iconLabel);
 
   iconName = normalizeIconName(iconName);
   String iconDataSource = styleToDataSource(style);
 
-  return 'static const IconData $iconName = const $iconDataSource(0x$unicode);';
+  return '$doc\nstatic const IconData $iconName = const $iconDataSource(0x$unicode);';
 }
 
-String generateDuotoneIconDefinition(String iconName, String primaryUnicode) {
+String generateDuotoneIconDefinition(String iconName, String primaryUnicode,
+    List searchTerms, String iconLabel) {
+  String doc =
+      generateIconDocumentation(iconName, "duotone", searchTerms, iconLabel);
+
   iconName = normalizeIconName(iconName);
   String secondaryUnicode = (int.parse(primaryUnicode, radix: 16) + 0x100000)
       .toRadixString(16)
       .toString();
 
-  return 'static const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+  return '$doc\nstatic const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
 }
 
 String normalizeIconName(String iconName) {
-  if (iconName == '500px') {
-    iconName = 'fiveHundredPx';
+  if(nameAdjustments.containsKey(iconName)) {
+    iconName = nameAdjustments[iconName];
   }
 
   return new ReCase(iconName).camelCase;

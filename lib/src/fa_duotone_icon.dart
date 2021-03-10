@@ -51,7 +51,6 @@ class FaDuotoneIcon extends StatelessWidget {
     return Semantics(
       label: semanticLabel,
       child: Stack(
-        key: key,
         children: <Widget>[
           FaIcon(
             icon,
