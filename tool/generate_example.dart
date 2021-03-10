@@ -3,6 +3,20 @@ import 'dart:io';
 
 import 'package:recase/recase.dart';
 
+const Map<String, String> nameAdjustments = {
+  "500px": "fiveHundredPx",
+  "1": "one",
+  "2": "two",
+  "3": "three",
+  "4": "four",
+  "5": "five",
+  "6": "six",
+  "7": "seven",
+  "8": "eight",
+  "9": "nine",
+  "0": "zero",
+};
+
 void main(List<String> arguments) {
   var file = new File(arguments.first);
 
@@ -59,14 +73,8 @@ void main(List<String> arguments) {
 }
 
 String generateExampleIcon(String iconName) {
-  if (iconName == '500px') {
-    iconName = 'fiveHundredPx';
-  }
-
-  // digit only icons
-  RegExp exp = new RegExp(r"^[0-9]{1}$");
-  if (exp.hasMatch(iconName)) {
-    iconName = 'digit$iconName';
+  if(nameAdjustments.containsKey(iconName)) {
+    iconName = nameAdjustments[iconName];
   }
 
   iconName = new ReCase(iconName).camelCase;
