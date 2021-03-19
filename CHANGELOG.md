@@ -1,4 +1,4 @@
-## 9.0.0-nullsafety
+## 9.0.0
 * Add support for null-safety
 
 ## 8.12.0
