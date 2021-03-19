@@ -1,6 +1,3 @@
-// @dart=2.9
-// remove above once the version package has been updated for null-safety
-
 import 'dart:convert';
 import 'dart:io';
 
@@ -145,7 +142,7 @@ void main(List<String> arguments) {
 
 String generateIconDocumentation(
     String iconName, String style, List searchTerms, String iconLabel) {
-  searchTerms = searchTerms ?? [];
+  searchTerms = searchTerms;
   var searchTermsString = searchTerms.toString();
   searchTermsString =
       searchTermsString.substring(1, searchTermsString.length - 1);
@@ -193,9 +190,7 @@ String generateDuotoneIconDefinition(String iconName, String primaryUnicode,
 }
 
 String normalizeIconName(String iconName) {
-  if(nameAdjustments.containsKey(iconName)) {
-    iconName = nameAdjustments[iconName];
-  }
+  iconName = nameAdjustments[iconName] ?? iconName;
 
   return new ReCase(iconName).camelCase;
 }
