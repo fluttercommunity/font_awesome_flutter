@@ -81,7 +81,15 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Hero(tag: icon, child: FaIcon(icon.iconData)),
+                  Hero(
+                      tag: icon,
+                      child: icon.iconData != null
+                          ? FaIcon(icon.iconData)
+                          : FaDuotoneIcon(
+                              icon.duotoneIconData as IconDataDuotone,
+                              primaryColor: Colors.black,
+                              secondaryColor: Colors.blueGrey[400],
+                            )),
                   Container(
                     padding: EdgeInsets.only(top: 16.0),
                     child: Text(icon.title),

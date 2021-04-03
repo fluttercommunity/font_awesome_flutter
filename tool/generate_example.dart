@@ -5,6 +5,7 @@ import 'package:recase/recase.dart';
 
 const Map<String, String> nameAdjustments = {
   "500px": "fiveHundredPx",
+  "360-degrees": "threeSixtyDegrees",
   "1": "one",
   "2": "two",
   "3": "three",
@@ -34,8 +35,8 @@ void main(List<String> arguments) {
 
     // At least one icon does not have a glyph in the font files. This property
     // is marked with "private": true in icons.json
-    if((icon as Map<String, dynamic>).containsKey('private') && icon['private'])
-      continue;
+    if ((icon as Map<String, dynamic>).containsKey('private') &&
+        icon['private']) continue;
 
     List<String> styles = (icon['styles'] as List).cast<String>();
 
@@ -56,6 +57,7 @@ void main(List<String> arguments) {
 
   List<String> generatedOutput = [
     '',
+    "import 'package:flutter/material.dart';",
     "import 'package:font_awesome_flutter/font_awesome_flutter.dart';",
     "import 'package:font_awesome_flutter_example/example_icon.dart';",
     '',
@@ -73,11 +75,14 @@ void main(List<String> arguments) {
 }
 
 String generateExampleIcon(String iconName) {
-  if(nameAdjustments.containsKey(iconName)) {
+  if (nameAdjustments.containsKey(iconName)) {
     iconName = nameAdjustments[iconName]!;
   }
 
   iconName = new ReCase(iconName).camelCase;
-
-  return "ExampleIcon(FontAwesomeIcons.$iconName, '$iconName'),";
+  if (iconName.contains('duotone')) {
+    return "ExampleIcon(null, FontAwesomeIcons.$iconName, '$iconName'),";
+  } else {
+    return "ExampleIcon(FontAwesomeIcons.$iconName, null, '$iconName'),";
+  }
 }

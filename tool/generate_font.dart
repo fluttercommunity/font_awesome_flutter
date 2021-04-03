@@ -6,6 +6,7 @@ import 'package:version/version.dart';
 
 const Map<String, String> nameAdjustments = {
   "500px": "fiveHundredPx",
+  "360-degrees": "threeSixtyDegrees",
   "1": "one",
   "2": "two",
   "3": "three",
@@ -186,7 +187,7 @@ String generateDuotoneIconDefinition(String iconName, String primaryUnicode,
       .toRadixString(16)
       .toString();
 
-  return '$doc\nstatic const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+  return '$doc\nstatic const IconDataDuotone $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
 }
 
 String normalizeIconName(String iconName) {
