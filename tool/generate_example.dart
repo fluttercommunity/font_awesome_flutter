@@ -57,7 +57,6 @@ void main(List<String> arguments) {
 
   List<String> generatedOutput = [
     '',
-    "import 'package:flutter/material.dart';",
     "import 'package:font_awesome_flutter/font_awesome_flutter.dart';",
     "import 'package:font_awesome_flutter_example/example_icon.dart';",
     '',
@@ -81,8 +80,8 @@ String generateExampleIcon(String iconName) {
 
   iconName = new ReCase(iconName).camelCase;
   if (iconName.contains('duotone')) {
-    return "ExampleIcon(null, FontAwesomeIcons.$iconName, '$iconName'),";
+    return "  ExampleIcon(null, FontAwesomeIcons.$iconName, '$iconName'),";
   } else {
-    return "ExampleIcon(FontAwesomeIcons.$iconName, null, '$iconName'),";
+    return "  ExampleIcon(FontAwesomeIcons.$iconName, null, '$iconName'),";
   }
 }
