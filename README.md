@@ -103,7 +103,7 @@ icon fonts and want to use them with Flutter, please follow these instructions.
 to keep these files private. This includes **not** uploading your package to
 a public github repository or other public file sharing services.
 
-  * Download this package's [newest release](https://github.com/fluttercommunity/font_awesome_flutter/archive/master.zip), extract the folder, move it to a location of your choice and go to that directory
+  * Download this package's [newest release](https://github.com/fluttercommunity/font_awesome_flutter/archive/master.zip), extract the folder, move it to a location of your choice and go to that directory *_or_* fork this repo and create a new local branch (don't push it!) so that as the main repo is updated, you can easily merge the new changes into your code
   * Remove `#`s from `pubspec.yaml` at the indicated position
   * run `flutter packages get`
   * Download your font awesome pro icons (web version)
