@@ -1,5 +1,8 @@
 ##9.0.1
 * Add support for fa6's 360-degrees icon
+* Fix #154 FaDuotoneIcon explicitly requires IconDataDuotone
+
+Thanks to @amkuchta for his work and input
 
 ## 9.0.0
 * Add support for null-safety

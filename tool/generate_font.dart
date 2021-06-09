@@ -187,7 +187,7 @@ String generateDuotoneIconDefinition(String iconName, String primaryUnicode,
       .toRadixString(16)
       .toString();
 
-  return '$doc\nstatic const IconData $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+  return '$doc\nstatic const IconDataDuotone $iconName = const IconDataDuotone(0x$primaryUnicode, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
 }
 
 String normalizeIconName(String iconName) {
