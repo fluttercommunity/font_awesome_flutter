@@ -1,3 +1,6 @@
+##9.0.1
+* Add support for fa6's 360-degrees icon
+
 ## 9.0.0
 * Add support for null-safety
 

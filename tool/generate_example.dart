@@ -5,6 +5,7 @@ import 'package:recase/recase.dart';
 
 const Map<String, String> nameAdjustments = {
   "500px": "fiveHundredPx",
+  "360-degrees": "threeHundredSixtyDegrees",
   "1": "one",
   "2": "two",
   "3": "three",
