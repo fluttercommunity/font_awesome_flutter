@@ -18,8 +18,10 @@ const Map<String, String> nameAdjustments = {
   "0": "zero",
 };
 
-void main(List<String> arguments) {
+void main(List<String> arguments) async {
   var file = new File(arguments.first);
+
+  bool hasDuotone = false;
 
   if (!file.existsSync()) {
     print('Cannot find the file "${arguments.first}".');
@@ -53,6 +55,10 @@ void main(List<String> arguments) {
     } else {
       iconDefinitions[iconName] = generateExampleIcon(iconName);
     }
+
+    if (styles.contains('duotone')) {
+      hasDuotone = true;
+    }
   }
 
   List<String> generatedOutput = [
@@ -71,6 +77,27 @@ void main(List<String> arguments) {
 
   File output = new File('example/lib/icons.dart');
   output.writeAsStringSync(generatedOutput.join('\n'));
+
+  // Enable duotone example if duotone icons exist
+
+  var exampleMain = new File('example/lib/main.dart').readAsStringSync();
+  var duotoneMainExists = exampleMain.contains('FaDuotoneIcon');
+
+  var result;
+  if(hasDuotone && !duotoneMainExists) {
+    print("Found duotone icons. Enabling duotone example.");
+    result = await Process.run('git', ['apply', 'tool/duotone_main.patch']);
+  } else if(!hasDuotone && duotoneMainExists) {
+    print("Did not find duotone icons. Disabling duotone example.");
+    result = await Process.run('git', ['apply', '-R', 'tool/duotone_main.patch']);
+  } else {
+    result = Null;
+  }
+
+  if(result != Null) {
+    stdout.write(result.stdout);
+    stderr.write(result.stderr);
+  }
 }
 
 String generateExampleIcon(String iconName) {
