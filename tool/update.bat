@@ -21,5 +21,5 @@ if exist icons.json (
     del "icons.json" /f /q
 )
 
-dartfmt -w .\lib\font_awesome_flutter.dart & ^
-dartfmt -w .\example\lib\icons.dart
+dart format -w .\lib\font_awesome_flutter.dart & ^
+dart format -w .\example\lib\icons.dart

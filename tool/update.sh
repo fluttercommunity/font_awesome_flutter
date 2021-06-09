@@ -22,8 +22,8 @@ curl -o /tmp/icons.json "https://raw.githubusercontent.com/FortAwesome/Font-Awes
 
 dart ./tool/generate_font.dart /tmp/icons.json
 dart ./tool/generate_example.dart /tmp/icons.json
-dartfmt -w ./lib/font_awesome_flutter.dart
-dartfmt -w ./example/lib/icons.dart
+dart format -w ./lib/font_awesome_flutter.dart
+dart format -w ./example/lib/icons.dart
 
 rm /tmp/icons.json
 fi
