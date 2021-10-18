@@ -1457,7 +1457,6 @@ final icons = <ExampleIcon>[
   ExampleIcon(FontAwesomeIcons.trashRestoreAlt, 'trashRestoreAlt'),
   ExampleIcon(FontAwesomeIcons.tree, 'tree'),
   ExampleIcon(FontAwesomeIcons.trello, 'trello'),
-  ExampleIcon(FontAwesomeIcons.tripadvisor, 'tripadvisor'),
   ExampleIcon(FontAwesomeIcons.trophy, 'trophy'),
   ExampleIcon(FontAwesomeIcons.truck, 'truck'),
   ExampleIcon(FontAwesomeIcons.truckLoading, 'truckLoading'),

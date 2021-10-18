@@ -1,3 +1,7 @@
+## 9.2.0
+* Upgrade to Font Awesome icons 5.15.4
+* Equalize windows and linux tool scripts
+
 ## 9.1.0
 * Add support for fa6's 360-degrees icon
 * Fix #154 FaDuotoneIcon explicitly requires IconDataDuotone
