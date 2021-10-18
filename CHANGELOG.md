@@ -1,4 +1,4 @@
-##9.1.0
+## 9.1.0
 * Add support for fa6's 360-degrees icon
 * Fix #154 FaDuotoneIcon explicitly requires IconDataDuotone
 * Use `dart format` instead of deprecated `dartfmt` in the updater
