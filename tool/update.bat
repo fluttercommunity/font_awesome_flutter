@@ -5,6 +5,9 @@ if exist icons.json (
 
     dart .\tool\generate_font.dart .\icons.json
     dart .\tool\generate_example.dart .\icons.json
+    dart format .\lib\font_awesome_flutter.dart
+    dart format .\example\lib\icons.dart
+
 ) else (
     echo Updating free icons to newest version.
     pushd lib\fonts
@@ -14,12 +17,13 @@ if exist icons.json (
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-solid-900.ttf', 'fa-solid-900.ttf')"
 
     popd
+
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json', 'icons.json')"
 
     dart .\tool\generate_font.dart .\icons.json
     dart .\tool\generate_example.dart .\icons.json
+    dart format .\lib\font_awesome_flutter.dart
+    dart format .\example\lib\icons.dart
+
     del "icons.json" /f /q
 )
-
-dart format -w .\lib\font_awesome_flutter.dart & ^
-dart format -w .\example\lib\icons.dart
