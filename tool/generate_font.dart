@@ -26,8 +26,16 @@ void main(List<String> arguments) {
     print('Cannot find the file "${arguments.first}".');
   }
 
-  var content = file.readAsStringSync();
-  Map<String, dynamic> icons = json.decode(content);
+  var content;
+  Map<String, dynamic> icons;
+
+  try {
+    content = file.readAsStringSync();
+    icons = json.decode(content);
+  } catch(_) {
+    print('Error: Invalid icons.json. Please make sure you copied the correct file.');
+    exit(1);
+  }
 
   Map<String, String> iconDefinitions = {};
 
