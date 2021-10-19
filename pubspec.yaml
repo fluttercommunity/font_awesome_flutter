@@ -13,6 +13,7 @@ dependencies:
 
 dev_dependencies:
   recase: ^4.0.0
+  args: ^2.3.0
   flutter_test:
     sdk: flutter
   version: ^2.0.0
