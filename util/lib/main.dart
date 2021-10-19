@@ -62,7 +62,7 @@ void main(List<String> rawArgs) async {
   }
 
   File iconsJson = File('lib/fonts/icons.json');
-  final hasCustomIconsJson = await iconsJson.exists();
+  final hasCustomIconsJson = iconsJson.existsSync();
 
   if (!hasCustomIconsJson) {
     await download(
@@ -96,23 +96,27 @@ void main(List<String> rawArgs) async {
   output = generateExamplesListClass(metadata, hasDuotoneIcons);
   File('example/lib/icons.dart').writeAsStringSync(output.join('\n'));
 
-  await enableDuotoneExample(hasDuotoneIcons);
+  enableDuotoneExample(hasDuotoneIcons);
 
   // format files
   var result;
-  result = await Process.run('dart', ['format', 'lib/font_awesome_flutter.dart']);
+  result = Process.runSync('dart', ['format', 'lib/font_awesome_flutter.dart']);
   stdout.write(result.stdout);
   stderr.write(result.stderr);
 
-  result = await Process.run('dart', ['format', 'example/lib/icons.dart']);
+  result = Process.runSync('dart', ['format', 'example/lib/icons.dart']);
   stdout.write(result.stdout);
   stderr.write(result.stderr);
+
+  if(!hasCustomIconsJson) {
+    iconsJson.deleteSync();
+  }
 }
 
 /// Enables duotone support in the example app if duotone icons were found
 ///
 /// Also disables it if no more duotone icons are present
-Future enableDuotoneExample(bool hasDuotoneIcons) async {
+void enableDuotoneExample(bool hasDuotoneIcons) {
   // Enable duotone example if duotone icons exist
 
   var exampleMain = new File('example/lib/main.dart').readAsStringSync();
@@ -121,10 +125,10 @@ Future enableDuotoneExample(bool hasDuotoneIcons) async {
   var result;
   if(hasDuotoneIcons && !duotoneMainExists) {
     print("Found duotone icons. Enabling duotone example.");
-    result = await Process.run('git', ['apply', 'tool/duotone_main.patch']);
+    result = Process.runSync('git', ['apply', 'tool/duotone_main.patch']);
   } else if(!hasDuotoneIcons && duotoneMainExists) {
     print("Did not find duotone icons. Disabling duotone example.");
-    result = await Process.run('git', ['apply', '-R', 'tool/duotone_main.patch']);
+    result = Process.runSync('git', ['apply', '-R', 'tool/duotone_main.patch']);
   } else {
     result = Null;
   }
