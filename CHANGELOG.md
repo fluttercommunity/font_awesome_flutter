@@ -1,6 +1,9 @@
 ## 9.2.0
 * Upgrade to Font Awesome icons 5.15.4
 * Equalize windows and linux tool scripts
+* Reworked updater tool into a full-fledged configurator
+  * Added support for ignoring styles
+  * Added optional support for dynamic icon retrieval by name (thanks to @Mythar)
 
 ## 9.1.0
 * Add support for fa6's 360-degrees icon
