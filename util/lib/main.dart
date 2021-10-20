@@ -248,10 +248,10 @@ void enableDuotoneExample(bool hasDuotoneIcons) {
   var result;
   if (hasDuotoneIcons && !duotoneMainExists) {
     print("Found duotone icons. Enabling duotone example.");
-    result = Process.runSync('git', ['apply', 'tool/duotone_main.patch']);
+    result = Process.runSync('git', ['apply', 'util/duotone_main.patch']);
   } else if (!hasDuotoneIcons && duotoneMainExists) {
     print("Did not find duotone icons. Disabling duotone example.");
-    result = Process.runSync('git', ['apply', '-R', 'tool/duotone_main.patch']);
+    result = Process.runSync('git', ['apply', '-R', 'util/duotone_main.patch']);
   } else {
     result = Null;
   }
@@ -458,7 +458,6 @@ Future download(String url, File target) async {
 ArgParser setUpArgParser() {
   final argParser = ArgParser();
 
-  // TODO: add option for dynamic icon mapping ("web name -> icon")
   // TODO: Enable pro icons in pubspec automatically
   // TODO: Update readme with new workflow for pro icons
   // TODO: Update readme with new workflow to exclude styles "customizing font awesome flutter"
