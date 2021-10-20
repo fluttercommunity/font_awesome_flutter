@@ -421,7 +421,7 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
       iconName,
       icon['label'],
       icon['unicode'],
-      (icon['search']['terms'] as List).cast<String>(),
+      (icon['search']['terms'] as List).map((e) => e.toString()).toList(),
       iconStyles,
     ));
   }
