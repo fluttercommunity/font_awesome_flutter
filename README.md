@@ -63,7 +63,7 @@ widget provided by Flutter. The `Icon` widget assumes all icons are square, but
 many Font Awesome Icons are not.
 
 ### What about file size
-This package has been written in a way so that it only uses the minimum amount of ressources required.
+This package has been written in a way so that it only uses the minimum amount of resources required.
 
 All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
 definitions are loaded into ram.
