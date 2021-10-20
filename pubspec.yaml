@@ -33,18 +33,14 @@ flutter:
       fonts:
         - asset: lib/fonts/fa-solid-900.ttf
           weight: 900
-# Uncomment the following lines to support pro icons
 #    - family: FontAwesomeLight
 #      fonts:
 #        - asset: lib/fonts/fa-light-300.ttf
 #          weight: 300
-# Leave commented out if you don't own duotone icons
 #    - family: FontAwesomeDuotone
 #      fonts:
 #        - asset: lib/fonts/fa-duotone-900.ttf
 #          weight: 900
-# Thin style is available in font awesome pro 6 and beyond
-# Leave commented out if you don't own version 6
 #    - family: FontAwesomeThin
 #      fonts:
 #        - asset: lib/fonts/fa-thin-100.ttf
