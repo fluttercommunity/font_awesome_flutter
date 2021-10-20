@@ -106,11 +106,11 @@ void main(List<String> rawArgs) async {
   if (args['dynamic']) {
     writeCodeToFile(
       () => generateIconNameMap(metadata, hasDuotoneIcons),
-      'lib/icon_name_mapping.dart',
+      'lib/name_icon_mapping.dart',
     );
   } else {
     // Remove file if dynamic is not requested. Helps things to stay consistent
-    final iconNameMappingFile = File('lib/icon_name_mapping.dart');
+    final iconNameMappingFile = File('lib/name_icon_mapping.dart');
     if (iconNameMappingFile.existsSync()) iconNameMappingFile.deleteSync();
   }
 
@@ -187,7 +187,7 @@ void writeCodeToFile(List<String> Function() generator, String filePath) {
 /// Enables the use of a map to dynamically load icons by their name
 ///
 /// To use, import:
-/// `import 'package:font_awesome_flutter/icon_name_mapping.dart'`
+/// `import 'package:font_awesome_flutter/name_icon_mapping.dart'`
 /// And then either use faIconNameMapping directly to look up specific icons,
 /// or use the getIconFromCss helper function.
 List<String> generateIconNameMap(
