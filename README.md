@@ -54,66 +54,23 @@ Icon name | Code | Style
 
 View the Flutter app in the `example` directory to see all the available `FontAwesomeIcons`.
 
-## FAQ
+## Customizing font awesome flutter
 
-### Why aren't the icons aligned properly or why are the icons being cut off?
+We supply a configurator tool to assist you with common customizations to this package.
+All options are interoperable.
+By default, if run without arguments and no `icons.json` in `lib/fonts` exists, it updates all icons to the
+newest free version of font awesome.
 
-Please use the `FaIcon` widget provided by the library instead of the `Icon` 
-widget provided by Flutter. The `Icon` widget assumes all icons are square, but
-many Font Awesome Icons are not.
+### Setup
+To use your custom version, you must first clone [this repository](https://github.com/fluttercommunity/font_awesome_flutter.git)
+to a location of your choice and run `flutter pub get` inside. This installs all dependencies.
 
-### What about file size
-This package has been written in a way so that it only uses the minimum amount of resources required.
+The configurator is located in the `util` folder and can be started by running `configurator.bat` on Windows, or
+`configurator.sh` on linux. All following examples use the `.sh` version, but are exactly the same for `.bat`.
+An overview of available options can be viewed with `configurator.sh --help`.
 
-All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
-definitions are loaded into ram.
-
-Flutter 1.22 added icon tree shaking. This means unused icon "images" will be removed as well. However, this only
-applies to styles of which at least one icon has been used. Assuming only icons of style "regular" are being used,
-"regular" will be minified and "solid" and "brands" will stay in their raw, complete form. This issue is being [tracked
-over in the flutter repository](https://github.com/flutter/flutter/issues/64106). While it is open, a workaround is
-to create an icon of each style and put it in an invisible container.
-
-### Why aren't the icons showing up on Mobile devices?
-
-If you're not seeing any icons at all, sometimes it means that Flutter has a cached version of the app on device and hasn't pushed the new fonts. I've run into that as well a few times...
-
-Please try:
-
-  1. Stopping the app
-  2. Running `flutter clean` in your app directory
-  3. Deleting the app from your simulator / emulator / device
-  4. Rebuild & Deploy the app.
-
-### Why aren't the icons showing up on Web?
-
-Most likely, the fonts were not correctly added to the `FontManifest.json`.
-Note: older versions of Flutter did not properly package non-Material fonts 
-in the `FontManifest.json` during the build step, but that issue has been 
-resolved and this shouldn't be much of a problem these days.
-
-Please ensure you are using `Flutter 1.14.6 beta` or newer! 
-
-### How can I use pro icons?
-
-This library only packages the free Font Awesome icon fonts. If you own the pro
-icon fonts and want to use them with Flutter, please follow these instructions.
-
-:exclamation: By importing pro icons you acknowledge that it is your obligation
-to keep these files private. This includes **not** uploading your package to
-a public github repository or other public file sharing services.
-
-  * Clone [this repository](https://github.com/fluttercommunity/font_awesome_flutter.git) to a location of your choice and go into the newly created directory.
-  * Remove `#`s from `pubspec.yaml` at the indicated position
-  * run `flutter packages get`
-  * Download your font awesome pro icons (web version)
-  * Move **all** `.ttf` files from the `webfonts` directory to `/path/to/your/font_awesome_flutter/lib/fonts` (replace existing fonts)
-    * _Note:_ Please make sure **all** `.ttf` files (and the following `icons.json`) are of the same version to avoid missing icons!
-  * Move `icons.json` from `metadata` to `/path/to/your/font_awesome_flutter`
-  * From there run `./tool/update.sh` on linux or `.\tool\update.bat` on windows
-    * _Note for windows users:_ Please run the script in cmd or powershell only. Flutter is known to have problems with third-party shells.
-  * Add version `>= 4.7.0` to your project's dependencies, Override it with the path to your local installation:
-
+To use your customized version in an app, go to the app's `pubspec.yaml` and add a dependency for
+`font_awesome_flutter: '>= 4.7.0'`. Then override the dependency's location:
 ```yaml
 dependencies:
   font_awesome_flutter: '>= 4.7.0'
@@ -125,14 +82,73 @@ dependency_overrides:
   ...
 ```
 
-### Duotone icons
+### Enable pro icons
+:exclamation: By importing pro icons you acknowledge that it is your obligation
+to keep these files private. This includes **not** uploading your package to
+a public github repository or other public file sharing services.
+
+* Go to the location of your custom font_awesome_flutter version (see [setup](#setup))
+* Download the web version of font awesome pro and open it
+* Move **all** `.ttf` files from the `webfonts` directory and `icons.json` from `metadata` to
+  `/path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files.
+* Run the configurator. It should say "Custom icons.json found"
+
+It may be required to run `flutter clean` in apps who use this version for changes to appear.
+
+### Excluding styles
+One or more styles can be excluded from all generation processes by passing them with the `--exclude` option:
+```
+$ configurator.sh --exclude solid
+$ configurator.sh --exclude solid,brands
+```
+
+See the [optimizations](#what-about-file-size-and-ram-usage) and [dynamic icon retrieval by name](#retrieve-icons-dynamically-by-their-name-or-css-class)
+sections for more information as to why it makes sense for your app.
+
+### Retrieve icons dynamically by their name or css class
+Probably the most requested feature after support for pro icons is the ability to retrieve an icon by their name.
+This was previously not possible, because a mapping from name to icon would break all
+[discussed optimizations](#what-about-file-size-and-ram-usage). Please bear in mind that this is still the case.
+As all icons could theoretically be requested, none can be removed by flutter. It is strongly advised to only use this
+option in conjunction with [a limited set of styles](#excluding-styles) and with as few of them as possible. You may
+need to build your app with the `--no-tree-shake-icons` flag for it to succeed.
+
+Using the new configurator tool, this is now an optional feature. Run the tool with the `--dynamic` flag to generate...
+```
+$ configurator.sh --dynamic
+```
+...and the following import to use the map. For normal icons, use `faIconMapping` with a key of this format:
+'style icon-name'. For duotone icon, use `faIconMappingDuotone` - the icon name is sufficient as key.
+```dart
+import 'package:font_awesome_flutter/name_icon_mapping.dart';
+
+...
+    FaIcon(
+      icon: faIconMapping['solid abacus'],
+    );
+...
+```
+
+To exclude unused styles combine the configurator options:
+```
+$ configurator.sh --dynamic --exclude solid
+```
+
+
+A common use case also includes fetching css classes from a server. The utility function `getIconFromCss()` takes a
+string of classes and returns the icon which would be shown by a browser:
+```dart
+getIconFromCss('far custom-class fa-abacus'); // returns the abacus icon in regular style. custom-class is ignored
+```
+
+## Duotone icons
 
 Duotone icons require special treatment. Instead of `FaIcon` a special class
 `FaDuotoneIcon` needs to be used. It allows to set the primary and secondary colors
 for the icon. If primary and / or secondary color are not defined, they will default
- to the standard `IconTheme` color. Please be aware that only duotone style icons
- can be passed to this class. `FaDuotoneIcon` is only available if at least one duotone
-icon is available.
+to the standard `IconTheme` color. Please be aware that only duotone style icons
+can be passed to this class. `FaDuotoneIcon` is only available if [at least one duotone
+icon was added using the configurator](#enable-pro-icons).
  
 
 ```dart
@@ -142,3 +158,46 @@ FaDuotoneIcon(
   secondaryColor: Colors.black,
 );
 ```
+
+## FAQ
+
+### Why aren't the icons aligned properly or why are the icons being cut off?
+
+Please use the `FaIcon` widget provided by the library instead of the `Icon`
+widget provided by Flutter. The `Icon` widget assumes all icons are square, but
+many Font Awesome Icons are not.
+
+### What about file size and ram usage
+This package has been written in a way so that it only uses the minimum amount of resources required.
+
+All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
+definitions are loaded into ram.
+
+Flutter 1.22 added icon tree shaking. This means unused icon "images" will be removed as well. However, this only
+applies to styles of which at least one icon has been used. Assuming only icons of style "regular" are being used,
+"regular" will be minified to only include the used icons and "solid" and "brands" will stay in their raw, complete
+form. This issue is being [tracked over in the flutter repository](https://github.com/flutter/flutter/issues/64106).
+
+However, using the configurator, you can easily exclude styles from the package. For more information, see
+[customizing font awesome flutter](#customizing-font-awesome-flutter)
+
+### Why aren't the icons showing up on Mobile devices?
+
+If you're not seeing any icons at all, sometimes it means that Flutter has a cached version of the app on device and
+hasn't pushed the new fonts. I've run into that as well a few times...
+
+Please try:
+
+1. Stopping the app
+2. Running `flutter clean` in your app directory
+3. Deleting the app from your simulator / emulator / device
+4. Rebuild & Deploy the app.
+
+### Why aren't the icons showing up on Web?
+
+Most likely, the fonts were not correctly added to the `FontManifest.json`.
+Note: older versions of Flutter did not properly package non-Material fonts
+in the `FontManifest.json` during the build step, but that issue has been
+resolved and this shouldn't be much of a problem these days.
+
+Please ensure you are using `Flutter 1.14.6 beta` or newer! 

@@ -537,8 +537,6 @@ Future download(String url, File target) async {
 ArgParser setUpArgParser() {
   final argParser = ArgParser();
 
-  // TODO: Update readme with new workflow for pro icons
-  // TODO: Update readme with new workflow to exclude styles "customizing font awesome flutter"
   argParser.addFlag('help',
       abbr: 'h',
       defaultsTo: false,
