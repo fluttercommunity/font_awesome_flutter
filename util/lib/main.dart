@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:ansicolor/ansicolor.dart';
 import 'package:args/args.dart';
 import 'package:recase/recase.dart';
 import 'package:version/version.dart';
@@ -32,6 +33,10 @@ const Map<String, String> nameAdjustments = {
   "0": "zero",
 };
 
+final AnsiPen red = AnsiPen()..xterm(009);
+final AnsiPen blue = AnsiPen()..xterm(012);
+final AnsiPen yellow = AnsiPen()..xterm(011);
+
 /// Utility program to customize font awesome flutter
 ///
 /// For usage information see [displayHelp]
@@ -53,6 +58,12 @@ const Map<String, String> nameAdjustments = {
 /// 6. format all generated files
 /// 7. if icons.json was downloaded by this tool, remove icons.json
 void main(List<String> rawArgs) async {
+  print(blue('''
+####  #   #####################################################################
+###  ###  ############ Font Awesome Flutter Configurator ######################
+#   #   # #####################################################################
+  '''));
+
   final argParser = setUpArgParser();
   final args = argParser.parse(rawArgs);
 
@@ -65,6 +76,7 @@ void main(List<String> rawArgs) async {
   final hasCustomIconsJson = iconsJson.existsSync();
 
   if (!hasCustomIconsJson) {
+    print(blue('No icons.json found, updating free icons'));
     await download(
         'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json',
         File('lib/fonts/icons.json'));
@@ -77,6 +89,8 @@ void main(List<String> rawArgs) async {
     await download(
         'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-solid-900.ttf',
         File('lib/fonts/fa-solid-900.ttf'));
+  } else {
+    print(blue('Custom icons.json found, generating files'));
   }
 
   // A list of all versions mentioned in the metadata
@@ -88,14 +102,14 @@ void main(List<String> rawArgs) async {
 
   final highestVersion = calculateFontAwesomeVersion(versions);
 
-  // Generate icon definitions
+  print(blue('\nGenerating icon definitions'));
   writeCodeToFile(
     () =>
         generateIconDefinitionClass(metadata, hasDuotoneIcons, highestVersion),
     'lib/font_awesome_flutter.dart',
   );
 
-  // Generate example
+  print(blue('\nGenerating example code'));
   writeCodeToFile(
     () => generateExamplesListClass(metadata, hasDuotoneIcons),
     'example/lib/icons.dart',
@@ -130,12 +144,12 @@ void adjustPubspecFontIncludes(Set<String> styles) {
 
   var startFlutterSection = pubspec.indexOf('flutter:');
   var line;
-  for(var i = startFlutterSection; i < pubspec.length; i++) {
+  for (var i = startFlutterSection; i < pubspec.length; i++) {
     line = uncommentYamlLine(pubspec[i]);
-    if(!line.trimLeft().startsWith('- family:')) continue;
+    if (!line.trimLeft().startsWith('- family:')) continue;
 
     styleName = line.substring(25).toLowerCase(); // - family: FontAwesomeXXXXXX
-    if(styles.contains(styleName)) {
+    if (styles.contains(styleName)) {
       pubspec[i] = uncommentYamlLine(pubspec[i]);
       pubspec[i + 1] = uncommentYamlLine(pubspec[i + 1]);
       pubspec[i + 2] = uncommentYamlLine(pubspec[i + 2]);
@@ -152,17 +166,22 @@ void adjustPubspecFontIncludes(Set<String> styles) {
 
   pubspecFile.writeAsStringSync(pubspec.join('\n'));
 
-  print('Found and enabled the following icon styles:');
-  enabledStyles.isEmpty ? print("None") : print(enabledStyles.join(','));
+  print(blue('\nFound and enabled the following icon styles:'));
+  enabledStyles.isEmpty
+      ? print(red("None"))
+      : print(blue(enabledStyles.join(', ')));
 
+  print(blue('\nRunning "dart pub get"'));
   final result = Process.runSync('dart', ['pub', 'get']);
   stdout.write(result.stdout);
-  stderr.write(result.stderr);
+  stderr.write(red(result.stderr));
+
+  print(blue('\nDone'));
 }
 
 /// Comments out a line of yaml code. Does nothing if already commented
 String commentYamlLine(String line) {
-  if(line.startsWith('#')) return line;
+  if (line.startsWith('#')) return line;
   return '#' + line;
 }
 
@@ -171,7 +190,7 @@ String commentYamlLine(String line) {
 /// Expects the rest of the line to be valid yaml and to have the correct
 /// indention after removing the first #.
 String uncommentYamlLine(String line) {
-  if(!line.startsWith('#')) return line;
+  if (!line.startsWith('#')) return line;
   return line.substring(1);
 }
 
@@ -181,7 +200,7 @@ void writeCodeToFile(List<String> Function() generator, String filePath) {
   File(filePath).writeAsStringSync(generated.join('\n'));
   final result = Process.runSync('dart', ['format', filePath]);
   stdout.write(result.stdout);
-  stderr.write(result.stderr);
+  stderr.write(red(result.stderr));
 }
 
 /// Enables the use of a map to dynamically load icons by their name
@@ -192,7 +211,7 @@ void writeCodeToFile(List<String> Function() generator, String filePath) {
 /// or use the getIconFromCss helper function.
 List<String> generateIconNameMap(
     List<IconMetadata> icons, bool hasDuotoneIcons) {
-  print('''
+  print(yellow('''
 
 ------------------------------- IMPORTANT NOTICE -------------------------------
 Dynamic icon retrieval by name disables icon tree shaking. This means unused
@@ -202,8 +221,9 @@ the "exclude" option, to remove styles which are not needed.
 You may need to pass --no-tree-shake-icons to the flutter build command for it
 to complete successfully.
 --------------------------------------------------------------------------------
+'''));
 
-''');
+  print(blue('Generating name to icon mapping'));
 
   List<String> output = [
     'library font_awesome_flutter;',
@@ -304,10 +324,10 @@ void enableDuotoneExample(bool hasDuotoneIcons) {
 
   var result;
   if (hasDuotoneIcons && !duotoneMainExists) {
-    print("Found duotone icons. Enabling duotone example.");
+    print(blue("\nFound duotone icons. Enabling duotone example."));
     result = Process.runSync('git', ['apply', 'util/duotone_main.patch']);
   } else if (!hasDuotoneIcons && duotoneMainExists) {
-    print("Did not find duotone icons. Disabling duotone example.");
+    print(blue("\nDid not find duotone icons. Disabling duotone example."));
     result = Process.runSync('git', ['apply', '-R', 'util/duotone_main.patch']);
   } else {
     result = Null;
@@ -315,7 +335,7 @@ void enableDuotoneExample(bool hasDuotoneIcons) {
 
   if (result != Null) {
     stdout.write(result.stdout);
-    stderr.write(result.stderr);
+    stderr.write(red(result.stderr));
   }
 }
 
@@ -544,10 +564,6 @@ ArgParser setUpArgParser() {
 void displayHelp(ArgParser argParser) {
   var fileType = Platform.isWindows ? 'bat' : 'sh';
   print('''
-####  #   #####################################################################
-###  ###  ############ Font Awesome Flutter Configurator ######################
-#   #   # #####################################################################
-
 This script helps you to customize the font awesome flutter package to fit your
 individual needs. Please follow the "customizing font awesome flutter" guide on
 github.

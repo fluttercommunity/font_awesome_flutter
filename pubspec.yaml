@@ -17,6 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   version: ^2.0.0
+  ansicolor: ^2.0.1
 
 flutter:
   fonts:
