@@ -82,8 +82,9 @@ void main(List<String> rawArgs) async {
   // A list of all versions mentioned in the metadata
   final List<String> versions = [];
   final List<IconMetadata> metadata = [];
-  final hasDuotoneIcons =
-      readAndPickMetadata(iconsJson, metadata, versions, args['exclude']);
+  final Set<String> styles = {};
+  final hasDuotoneIcons = readAndPickMetadata(
+      iconsJson, metadata, styles, versions, args['exclude']);
 
   final highestVersion = calculateFontAwesomeVersion(versions);
 
@@ -113,9 +114,65 @@ void main(List<String> rawArgs) async {
     if (iconNameMappingFile.existsSync()) iconNameMappingFile.deleteSync();
   }
 
+  adjustPubspecFontIncludes(styles);
+
   if (!hasCustomIconsJson) {
     iconsJson.deleteSync();
   }
+}
+
+/// Automatically (un)comments font definitions in pubspec.yaml
+void adjustPubspecFontIncludes(Set<String> styles) {
+  var pubspecFile = File('pubspec.yaml');
+  var pubspec = pubspecFile.readAsLinesSync();
+  String styleName;
+  Set<String> enabledStyles = {};
+
+  var startFlutterSection = pubspec.indexOf('flutter:');
+  var line;
+  for(var i = startFlutterSection; i < pubspec.length; i++) {
+    line = uncommentYamlLine(pubspec[i]);
+    if(!line.trimLeft().startsWith('- family:')) continue;
+
+    styleName = line.substring(25).toLowerCase(); // - family: FontAwesomeXXXXXX
+    if(styles.contains(styleName)) {
+      pubspec[i] = uncommentYamlLine(pubspec[i]);
+      pubspec[i + 1] = uncommentYamlLine(pubspec[i + 1]);
+      pubspec[i + 2] = uncommentYamlLine(pubspec[i + 2]);
+      pubspec[i + 3] = uncommentYamlLine(pubspec[i + 3]);
+      enabledStyles.add(styleName);
+    } else {
+      pubspec[i] = commentYamlLine(pubspec[i]);
+      pubspec[i + 1] = commentYamlLine(pubspec[i + 1]);
+      pubspec[i + 2] = commentYamlLine(pubspec[i + 2]);
+      pubspec[i + 3] = commentYamlLine(pubspec[i + 3]);
+    }
+    i = i + 3; // + 4 with i++
+  }
+
+  pubspecFile.writeAsStringSync(pubspec.join('\n'));
+
+  print('Found and enabled the following icon styles:');
+  enabledStyles.isEmpty ? print("None") : print(enabledStyles.join(','));
+
+  final result = Process.runSync('dart', ['pub', 'get']);
+  stdout.write(result.stdout);
+  stderr.write(result.stderr);
+}
+
+/// Comments out a line of yaml code. Does nothing if already commented
+String commentYamlLine(String line) {
+  if(line.startsWith('#')) return line;
+  return '#' + line;
+}
+
+/// Uncomments a line of yaml code. Does nothing if not commented.
+///
+/// Expects the rest of the line to be valid yaml and to have the correct
+/// indention after removing the first #.
+String uncommentYamlLine(String line) {
+  if(!line.startsWith('#')) return line;
+  return line.substring(1);
 }
 
 /// Writes lines of code created by a [generator] to [filePath] and formats it
@@ -388,7 +445,7 @@ String styleToDataSource(String style) {
 /// [excludedStyles], which can be set in the program arguments, are removed.
 /// Returns whether the dataset contains duotone icons.
 bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
-    List<String> versions, List<String> excludedStyles) {
+    Set<String> styles, List<String> versions, List<String> excludedStyles) {
   var hasDuotoneIcons = false;
 
   var rawMetadata;
@@ -416,6 +473,8 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     if (icon.containsKey('private') && icon['private']) continue;
 
     if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
+
+    styles.addAll(iconStyles);
 
     metadata.add(IconMetadata(
       iconName,
@@ -458,7 +517,6 @@ Future download(String url, File target) async {
 ArgParser setUpArgParser() {
   final argParser = ArgParser();
 
-  // TODO: Enable pro icons in pubspec automatically
   // TODO: Update readme with new workflow for pro icons
   // TODO: Update readme with new workflow to exclude styles "customizing font awesome flutter"
   argParser.addFlag('help',

@@ -4,6 +4,7 @@
 * Reworked updater tool into a full-fledged configurator
   * Added support for ignoring styles
   * Added optional support for dynamic icon retrieval by name (thanks to @Mythar)
+  * Fonts get enabled/disabled automatically based on availability and exclude list
 
 ## 9.1.0
 * Add support for fa6's 360-degrees icon
