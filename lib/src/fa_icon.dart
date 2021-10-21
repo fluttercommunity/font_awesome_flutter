@@ -99,9 +99,10 @@ class FaIcon extends StatelessWidget {
       iconColor = iconColor.withOpacity(iconColor.opacity * iconOpacity);
 
     Widget iconWidget = RichText(
-      overflow: TextOverflow.visible, // Never clip.
-      textDirection:
-          textDirection, // Since we already fetched it for the assert...
+      overflow: TextOverflow.visible,
+      // Never clip.
+      textDirection: textDirection,
+      // Since we already fetched it for the assert...
       text: TextSpan(
         text: String.fromCharCode(icon!.codePoint),
         style: TextStyle(
@@ -132,7 +133,13 @@ class FaIcon extends StatelessWidget {
     return Semantics(
       label: semanticLabel,
       child: ExcludeSemantics(
-        child: iconWidget,
+        child: IntrinsicWidth(
+          child: IntrinsicHeight(
+            child: Center(
+              child: iconWidget,
+            ),
+          ),
+        ),
       ),
     );
   }
