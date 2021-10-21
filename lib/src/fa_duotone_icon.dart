@@ -44,7 +44,7 @@ class FaDuotoneIcon extends StatelessWidget {
     this.primaryColor,
     this.secondaryColor,
     this.semanticLabel,
-  })  : super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
