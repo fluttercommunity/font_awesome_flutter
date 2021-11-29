@@ -304,7 +304,7 @@ to complete successfully.
   for (var icon in icons) {
     if (icon.styles.contains('duotone')) {
       iconName = normalizeIconName(icon.name, "duotone", icon.styles.length);
-      output.add("'${icon.name}': const FontAwesomeIcons.$iconName,");
+      output.add("'${icon.name}': FontAwesomeIcons.$iconName,");
     }
   }
 
