@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -143,7 +145,7 @@ void adjustPubspecFontIncludes(Set<String> styles) {
   Set<String> enabledStyles = {};
 
   var startFlutterSection = pubspec.indexOf('flutter:');
-  var line;
+  String line;
   for (var i = startFlutterSection; i < pubspec.length; i++) {
     line = uncommentYamlLine(pubspec[i]);
     if (!line.trimLeft().startsWith('- family:')) continue;
@@ -283,7 +285,7 @@ to complete successfully.
     'const Map<String, IconData> faIconNameMapping = {',
   ]);
 
-  var iconName;
+  String iconName;
   for (var icon in icons) {
     for (var style in icon.styles.where((style) => style != "duotone")) {
       iconName = normalizeIconName(icon.name, style, icon.styles.length);
@@ -319,21 +321,19 @@ to complete successfully.
 void enableDuotoneExample(bool hasDuotoneIcons) {
   // Enable duotone example if duotone icons exist
 
-  var exampleMain = new File('example/lib/main.dart').readAsStringSync();
+  var exampleMain = File('example/lib/main.dart').readAsStringSync();
   var duotoneMainExists = exampleMain.contains('FaDuotoneIcon');
 
-  var result;
+  ProcessResult? result;
   if (hasDuotoneIcons && !duotoneMainExists) {
     print(blue("\nFound duotone icons. Enabling duotone example."));
     result = Process.runSync('git', ['apply', 'util/duotone_main.patch']);
   } else if (!hasDuotoneIcons && duotoneMainExists) {
     print(blue("\nDid not find duotone icons. Disabling duotone example."));
     result = Process.runSync('git', ['apply', '-R', 'util/duotone_main.patch']);
-  } else {
-    result = Null;
   }
 
-  if (result != Null) {
+  if (result != null) {
     stdout.write(result.stdout);
     stderr.write(red(result.stderr));
   }
@@ -427,12 +427,12 @@ String generateIconDefinition(IconMetadata icon, String style) {
         .toRadixString(16)
         .toString();
 
-    return 'static const IconDataDuotone $iconName = const IconDataDuotone(0x${icon.unicode}, secondary: const IconDataDuotone(0x$secondaryUnicode),);';
+    return 'static const IconDataDuotone $iconName = IconDataDuotone(0x${icon.unicode}, secondary: IconDataDuotone(0x$secondaryUnicode),);';
   }
 
   String iconDataSource = styleToDataSource(style);
 
-  return 'static const IconData $iconName = const $iconDataSource(0x${icon.unicode});';
+  return 'static const IconData $iconName = $iconDataSource(0x${icon.unicode});';
 }
 
 /// Returns a normalized version of [iconName] which can be used as const name
@@ -468,7 +468,7 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     Set<String> styles, List<String> versions, List<String> excludedStyles) {
   var hasDuotoneIcons = false;
 
-  var rawMetadata;
+  dynamic rawMetadata;
   try {
     final content = iconsJson.readAsStringSync();
     rawMetadata = json.decode(content);
@@ -483,10 +483,14 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     icon = rawMetadata[iconName];
 
     // Add all changes to the list
-    (icon['changes'] as List).forEach((v) => versions.add(v));
+    for (var v in icon['changes'] as List) {
+      versions.add(v);
+    }
 
     List<String> iconStyles = (icon['styles'] as List).cast<String>();
-    excludedStyles.forEach((excluded) => iconStyles.remove(excluded));
+    for (var excluded in excludedStyles) {
+      iconStyles.remove(excluded);
+    }
 
     if (iconStyles.isEmpty) continue;
 
