@@ -1,8 +1,8 @@
 diff --git a/example/lib/main.dart b/example/lib/main.dart
-index e1bc76d..896ad55 100644
+index ad3495e..c829436 100644
 --- a/example/lib/main.dart
 +++ b/example/lib/main.dart
-@@ -67,10 +67,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
+@@ -71,10 +71,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                            alignment: Alignment.center,
                            child: Hero(
                              tag: icon,
@@ -14,21 +14,21 @@ index e1bc76d..896ad55 100644
                            ),
                          ),
                        );
-@@ -81,7 +78,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
+@@ -85,7 +82,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                child: Column(
                  mainAxisAlignment: MainAxisAlignment.center,
                  children: <Widget>[
 -                  Hero(tag: icon, child: FaIcon(icon.iconData)),
 +                  Hero(tag: icon, child: _icon(icon.iconData)),
                    Container(
-                     padding: EdgeInsets.only(top: 16.0),
+                     padding: const EdgeInsets.only(top: 16.0),
                      child: Text(icon.title),
-@@ -95,6 +92,18 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
+@@ -99,6 +96,18 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
      );
    }
  
 +  Widget _icon(IconData icon, {double? size}) {
-+    if(icon is IconDataDuotone) {
++    if (icon is IconDataDuotone) {
 +      return FaDuotoneIcon(
 +        icon,
 +        size: size,
@@ -41,4 +41,4 @@ index e1bc76d..896ad55 100644
 +
    AppBar _titleBar() {
      return AppBar(
-       title: Text("Font Awesome Flutter Gallery"),
+       title: const Text("Font Awesome Flutter Gallery"),
