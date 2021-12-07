@@ -4,26 +4,30 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:font_awesome_flutter_example/icons.dart';
 
 void main() {
-  runApp(FontAwesomeGalleryApp());
+  runApp(const FontAwesomeGalleryApp());
 }
 
 class FontAwesomeGalleryApp extends StatelessWidget {
+  const FontAwesomeGalleryApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Font Awesome Flutter Gallery',
       theme: ThemeData.light().copyWith(
-        iconTheme: IconThemeData(size: 36.0, color: Colors.black87),
-        textTheme: TextTheme(
+        iconTheme: const IconThemeData(size: 36.0, color: Colors.black87),
+        textTheme: const TextTheme(
           bodyText2: TextStyle(fontSize: 16.0, color: Colors.black87),
         ),
       ),
-      home: FontAwesomeGalleryHome(),
+      home: const FontAwesomeGalleryHome(),
     );
   }
 }
 
 class FontAwesomeGalleryHome extends StatefulWidget {
+  const FontAwesomeGalleryHome({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => FontAwesomeGalleryHomeState();
 }
@@ -46,7 +50,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         isAlwaysShown: kIsWeb,
         child: GridView.builder(
           itemCount: filteredIcons.length,
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 300,
           ),
           itemBuilder: (context, index) {
@@ -56,7 +60,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute<Null>(
+                  MaterialPageRoute<void>(
                     builder: (BuildContext context) {
                       return GestureDetector(
                         onTap: () {
@@ -83,7 +87,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
                 children: <Widget>[
                   Hero(tag: icon, child: FaIcon(icon.iconData)),
                   Container(
-                    padding: EdgeInsets.only(top: 16.0),
+                    padding: const EdgeInsets.only(top: 16.0),
                     child: Text(icon.title),
                   )
                 ],
@@ -97,10 +101,10 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
 
   AppBar _titleBar() {
     return AppBar(
-      title: Text("Font Awesome Flutter Gallery"),
+      title: const Text("Font Awesome Flutter Gallery"),
       actions: [
         IconButton(
-            icon: FaIcon(FontAwesomeIcons.search),
+            icon: const FaIcon(FontAwesomeIcons.search),
             onPressed: () {
               ModalRoute.of(context)?.addLocalHistoryEntry(
                 LocalHistoryEntry(
@@ -124,7 +128,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
   AppBar _searchBar(BuildContext context) {
     return AppBar(
       leading: IconButton(
-        icon: FaIcon(FontAwesomeIcons.arrowLeft),
+        icon: const FaIcon(FontAwesomeIcons.arrowLeft),
         onPressed: () {
           setState(
             () {
@@ -138,8 +142,8 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
       title: TextField(
         onChanged: (text) => setState(() => _searchTerm = text),
         autofocus: true,
-        style: TextStyle(fontSize: 18.0),
-        decoration: InputDecoration(border: InputBorder.none),
+        style: const TextStyle(fontSize: 18.0),
+        decoration: const InputDecoration(border: InputBorder.none),
       ),
     );
   }

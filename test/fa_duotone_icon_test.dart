@@ -20,8 +20,9 @@ void main() {
       ),
     );
 
-    final FaIcon primary = tester.widget(find.byKey(Key("primaryGlyph")));
-    final FaIcon secondary = tester.widget(find.byKey(Key("secondaryGlyph")));
+    final FaIcon primary = tester.widget(find.byKey(const Key("primaryGlyph")));
+    final FaIcon secondary =
+        tester.widget(find.byKey(const Key("secondaryGlyph")));
     expect(primary.color, Colors.red);
     expect(secondary.color, Colors.amber);
   });
@@ -39,8 +40,9 @@ void main() {
       ),
     );
 
-    final FaIcon primary = tester.widget(find.byKey(Key("primaryGlyph")));
-    final FaIcon secondary = tester.widget(find.byKey(Key("secondaryGlyph")));
+    final FaIcon primary = tester.widget(find.byKey(const Key("primaryGlyph")));
+    final FaIcon secondary =
+        tester.widget(find.byKey(const Key("secondaryGlyph")));
     expect(primary.icon!.codePoint, 0x01);
     expect(secondary.icon!.codePoint, 0x02);
   });
