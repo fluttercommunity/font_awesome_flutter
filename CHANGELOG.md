@@ -1,3 +1,7 @@
+## 10.0.0-beta2
+Update to support 6.0.0 naming conventions
+Ability to pull from FontAwesome API instead of icons.json
+
 ## 10.0.0-beta
 * Fix #132 FaIcon not centered when used as prefix icon
 * Fix linter warnings - thanks to @gslender!
