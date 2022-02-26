@@ -66,7 +66,7 @@ To use your custom version, you must first clone [this repository](https://githu
 to a location of your choice and run `flutter pub get` inside. This installs all dependencies.
 
 The configurator is located in the `util` folder and can be started by running `configurator.bat` on Windows, or
-`configurator.sh` on linux. All following examples use the `.sh` version, but are exactly the same for `.bat`.
+`configurator.sh` on linux, or possibly `./configurator.sh` on mac. All following examples use the `.sh` version, but are exactly the same for `.bat`.
 An overview of available options can be viewed with `configurator.sh --help`.
 
 To use your customized version in an app, go to the app's `pubspec.yaml` and add a dependency for
