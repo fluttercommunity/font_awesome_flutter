@@ -1,6 +1,8 @@
+## 10.0.0-beta2
+* Fix linter warnings - thanks to @gslender!
+
 ## 10.0.0-beta
 * Fix #132 FaIcon not centered when used as prefix icon
-* Fix linter warnings - thanks to @gslender!
 
 This is a change with the goal to align `FaIcon` more like the standard `Icon` class.
 However, this may impose breaking changes, which is why version 10.0.0 will stay a beta for a while. 
