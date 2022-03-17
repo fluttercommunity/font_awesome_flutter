@@ -65,9 +65,10 @@ newest free version of font awesome.
 To use your custom version, you must first clone [this repository](https://github.com/fluttercommunity/font_awesome_flutter.git)
 to a location of your choice and run `flutter pub get` inside. This installs all dependencies.
 
-The configurator is located in the `util` folder and can be started by running `configurator.bat` on Windows, or
-`configurator.sh` on linux, or possibly `./configurator.sh` on mac. All following examples use the `.sh` version, but are exactly the same for `.bat`.
-An overview of available options can be viewed with `configurator.sh --help`.
+The configurator is located in the `util` folder and can be started by running `configurator.bat` on Windows, or 
+`./configurator.sh` on linux and mac. All following examples use the `.sh` version, but work same for `.bat`.
+(If on windows, omit the `./` or replace it with `.\`.)
+An overview of available options can be viewed with `./configurator.sh --help`.
 
 To use your customized version in an app, go to the app's `pubspec.yaml` and add a dependency for
 `font_awesome_flutter: '>= 4.7.0'`. Then override the dependency's location:
@@ -98,8 +99,8 @@ It may be required to run `flutter clean` in apps who use this version for chang
 ### Excluding styles
 One or more styles can be excluded from all generation processes by passing them with the `--exclude` option:
 ```
-$ configurator.sh --exclude solid
-$ configurator.sh --exclude solid,brands
+$ ./configurator.sh --exclude solid
+$ ./configurator.sh --exclude solid,brands
 ```
 
 See the [optimizations](#what-about-file-size-and-ram-usage) and [dynamic icon retrieval by name](#retrieve-icons-dynamically-by-their-name-or-css-class)
@@ -115,7 +116,7 @@ need to build your app with the `--no-tree-shake-icons` flag for it to succeed.
 
 Using the new configurator tool, this is now an optional feature. Run the tool with the `--dynamic` flag to generate...
 ```
-$ configurator.sh --dynamic
+$ ./configurator.sh --dynamic
 ```
 ...and the following import to use the map. For normal icons, use `faIconMapping` with a key of this format:
 'style icon-name'. For duotone icon, use `faIconMappingDuotone` - the icon name is sufficient as key.
@@ -131,7 +132,7 @@ import 'package:font_awesome_flutter/name_icon_mapping.dart';
 
 To exclude unused styles combine the configurator options:
 ```
-$ configurator.sh --dynamic --exclude solid
+$ ./configurator.sh --dynamic --exclude solid
 ```
 
 
