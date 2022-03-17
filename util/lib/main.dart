@@ -33,6 +33,8 @@ const Map<String, String> nameAdjustments = {
   "8": "eight",
   "9": "nine",
   "0": "zero",
+  "42-group" : "fortyTwoGroup",
+  "00" : "zeroZero",
 };
 
 final AnsiPen red = AnsiPen()..xterm(009);
@@ -79,17 +81,22 @@ void main(List<String> rawArgs) async {
 
   if (!hasCustomIconsJson) {
     print(blue('No icons.json found, updating free icons'));
+    const repositoryName = 'FortAwesome/Font-Awesome';
+    final defaultBranch = await getRepositoryDefaultBranch(repositoryName);
+    print(blue(
+        'Choosing branch "$defaultBranch" of repository https://github.com/' +
+            repositoryName));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json',
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/metadata/icons.json',
         File('lib/fonts/icons.json'));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-brands-400.ttf',
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-brands-400.ttf',
         File('lib/fonts/fa-brands-400.ttf'));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-regular-400.ttf',
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-regular-400.ttf',
         File('lib/fonts/fa-regular-400.ttf'));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-solid-900.ttf',
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-solid-900.ttf',
         File('lib/fonts/fa-solid-900.ttf'));
   } else {
     print(blue('Custom icons.json found, generating files'));
@@ -454,6 +461,26 @@ String normalizeIconName(String iconName, String style, int styleCompetitors) {
 /// Utility function to generate the correct 'IconData' subclass for a [style]
 String styleToDataSource(String style) {
   return 'IconData${style[0].toUpperCase()}${style.substring(1)}';
+}
+
+/// Gets the default branch from github's metadata
+///
+/// Font awesome no longer uses the master branch, but instead version specific
+/// ones, like 5.x and 6.x. Master is no longer updated. In the spirit of always
+/// using the latest version, this tool always selects the default branch.
+Future<String> getRepositoryDefaultBranch(String repositoryName) async {
+  final tmpFile = File('fa-repo-metadata.tmp');
+  await download('https://api.github.com/repos/' + repositoryName, tmpFile);
+  try {
+    String rawGithubMetadata = await tmpFile.readAsString();
+    Map<String, dynamic> githubMetadata = json.decode(rawGithubMetadata);
+    return githubMetadata["default_branch"];
+  } catch (_) {
+    print(red('Error while getting font awesome\'s default branch. Aborting.'));
+  } finally {
+    tmpFile.delete();
+  }
+  exit(1);
 }
 
 /// Reads the [iconsJson] metadata and picks out relevant data
