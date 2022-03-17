@@ -118,7 +118,7 @@ Using the new configurator tool, this is now an optional feature. Run the tool w
 $ configurator.sh --dynamic
 ```
 ...and the following import to use the map. For normal icons, use `faIconMapping` with a key of this format:
-'style icon-name'. For duotone icon, use `faIconMappingDuotone` - the icon name is sufficient as key.
+'style icon-name'.
 ```dart
 import 'package:font_awesome_flutter/name_icon_mapping.dart';
 
@@ -143,21 +143,9 @@ getIconFromCss('far custom-class fa-abacus'); // returns the abacus icon in regu
 
 ## Duotone icons
 
-Duotone icons require special treatment. Instead of `FaIcon` a special class
-`FaDuotoneIcon` needs to be used. It allows to set the primary and secondary colors
-for the icon. If primary and / or secondary color are not defined, they will default
-to the standard `IconTheme` color. Please be aware that only duotone style icons
-can be passed to this class. `FaDuotoneIcon` is only available if [at least one duotone
-icon was added using the configurator](#enable-pro-icons).
- 
-
-```dart
-FaDuotoneIcon(
-  FontAwesomeIcons.duotoneAbacus,
-  primaryColor: Colors.black.withOpacity(.4),
-  secondaryColor: Colors.black,
-);
-```
+Duotone support has been discontinued after font awesome changed the way they lay out the icon glyphs inside the font's
+file. The new way using ligatures is not supported by flutter at the moment.
+Follow this issue for updates: [flutter/flutter#100325](https://github.com/flutter/flutter/issues/100325).
 
 ## FAQ
 

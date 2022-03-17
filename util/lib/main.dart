@@ -33,8 +33,8 @@ const Map<String, String> nameAdjustments = {
   "8": "eight",
   "9": "nine",
   "0": "zero",
-  "42-group" : "fortyTwoGroup",
-  "00" : "zeroZero",
+  "42-group": "fortyTwoGroup",
+  "00": "zeroZero",
 };
 
 final AnsiPen red = AnsiPen()..xterm(009);
@@ -106,8 +106,16 @@ void main(List<String> rawArgs) async {
   final List<String> versions = [];
   final List<IconMetadata> metadata = [];
   final Set<String> styles = {};
+  // duotone icons are no longer supported
+  final List<String> excludedStyles = ['duotone', ...args['exclude']];
   final hasDuotoneIcons = readAndPickMetadata(
-      iconsJson, metadata, styles, versions, args['exclude']);
+      iconsJson, metadata, styles, versions, excludedStyles);
+  if(hasDuotoneIcons) {
+    // Duotone are no longer supported - temporarily added notice to avoid
+    // confusion
+      print(red(
+          'Duotone icons are no longer supported. Automatically disabled them.'));
+  }
 
   final highestVersion = calculateFontAwesomeVersion(versions);
 
@@ -515,6 +523,10 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     }
 
     List<String> iconStyles = (icon['styles'] as List).cast<String>();
+
+    //TODO: Remove line once duotone support discontinuation notice is removed
+    if(iconStyles.contains('duotone')) hasDuotoneIcons = true;
+
     for (var excluded in excludedStyles) {
       iconStyles.remove(excluded);
     }
