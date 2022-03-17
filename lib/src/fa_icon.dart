@@ -1,53 +1,123 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// Copyright 2014 The Flutter Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
-/// Creates an Icon Widget that works for non-material Icons, such as the
-/// Font Awesome Icons.
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
+
+/// A graphical icon widget drawn with a glyph from a font described in
+/// an [IconData] such as material's predefined [IconData]s in [Icons].
 ///
-/// The default `Icon` Widget from the Material package assumes all Icons are
-/// square in size and wraps all Icons in a square SizedBox Widget. Icons from
-/// the FontAwesome package are often wider than they are tall, which causes
-/// alignment and cutoff issues.
+/// Icons are not interactive. For an interactive icon, consider material's
+/// [IconButton].
 ///
-/// This Widget does not wrap the icons in a fixed square box, which allows the
-/// icons to render based on their size.
+/// There must be an ambient [Directionality] widget when using [Icon].
+/// Typically this is introduced automatically by the [WidgetsApp] or
+/// [MaterialApp].
+///
+/// This widget assumes that the rendered icon is squared. Non-squared icons may
+/// render incorrectly.
+///
+/// {@tool snippet}
+///
+/// This example shows how to create a [Row] of [Icon]s in different colors and
+/// sizes. The first [Icon] uses a [semanticLabel] to announce in accessibility
+/// modes like TalkBack and VoiceOver.
+///
+/// ![The following code snippet would generate a row of icons consisting of a pink heart, a green musical note, and a blue umbrella, each progressively bigger than the last.](https://flutter.github.io/assets-for-api-docs/assets/widgets/icon.png)
+///
+/// ```dart
+/// Row(
+///   mainAxisAlignment: MainAxisAlignment.spaceAround,
+///   children: const <Widget>[
+///     Icon(
+///       Icons.favorite,
+///       color: Colors.pink,
+///       size: 24.0,
+///       semanticLabel: 'Text to announce in accessibility modes',
+///     ),
+///     Icon(
+///       Icons.audiotrack,
+///       color: Colors.green,
+///       size: 30.0,
+///     ),
+///     Icon(
+///       Icons.beach_access,
+///       color: Colors.blue,
+///       size: 36.0,
+///     ),
+///   ],
+/// )
+/// ```
+/// {@end-tool}
+///
+/// See also:
+///
+///  * [IconButton], for interactive icons.
+///  * [Icons], for the list of available icons for use with this class.
+///  * [IconTheme], which provides ambient configuration for icons.
+///  * [ImageIcon], for showing icons from [AssetImage]s or other [ImageProvider]s.
 class FaIcon extends StatelessWidget {
   /// Creates an icon.
   ///
   /// The [size] and [color] default to the value given by the current [IconTheme].
   const FaIcon(
-    this.icon, {
-    Key? key,
-    this.size,
-    this.color,
-    this.semanticLabel,
-    this.textDirection,
-  })  : assert(icon != null),
-        super(key: key);
+      this.icon, {
+        Key? key,
+        this.size,
+        this.color,
+        this.semanticLabel,
+        this.textDirection,
+      }) : super(key: key);
 
-  /// The icon to display. The available icons are described in
-  /// [FontAwesomeIcons].
+  /// The icon to display. The available icons are described in [Icons].
+  ///
+  /// The icon can be null, in which case the widget will render as an empty
+  /// space of the specified [size].
   final IconData? icon;
 
-  /// The font size of the icon.
+  /// The size of the icon in logical pixels.
+  ///
+  /// Icons occupy a square with width and height equal to size.
   ///
   /// Defaults to the current [IconTheme] size, if any. If there is no
   /// [IconTheme], or it does not specify an explicit size, then it defaults to
   /// 24.0.
   ///
-  /// If this [FaIcon] is being placed inside an [IconButton], then use
-  /// [IconButton.iconSize] instead, so that the [IconButton] can make the
-  /// splash area the appropriate size as well. The [IconButton] uses an
-  /// [IconTheme] to pass down the size to the [FaIcon].
+  /// If this [Icon] is being placed inside an [IconButton], then use
+  /// [IconButton.iconSize] instead, so that the [IconButton] can make the splash
+  /// area the appropriate size as well. The [IconButton] uses an [IconTheme] to
+  /// pass down the size to the [Icon].
   final double? size;
 
   /// The color to use when drawing the icon.
   ///
   /// Defaults to the current [IconTheme] color, if any.
   ///
-  /// The given color will be adjusted by the opacity of the current
+  /// The color (whether specified explicitly here or obtained from the
+  /// [IconTheme]) will be further adjusted by the opacity of the current
   /// [IconTheme], if any.
+  ///
+  /// In material apps, if there is a [Theme] without any [IconTheme]s
+  /// specified, icon colors default to white if the theme is dark
+  /// and black if the theme is light.
+  ///
+  /// If no [IconTheme] and no [Theme] is specified, icons will default to
+  /// black.
+  ///
+  /// See [Theme] to set the current theme and [ThemeData.brightness]
+  /// for setting the current theme's brightness.
+  ///
+  /// {@tool snippet}
+  /// Typically, a Material Design color will be used, as follows:
+  ///
+  /// ```dart
+  /// Icon(
+  ///   Icons.widgets,
+  ///   color: Colors.blue.shade400,
+  /// )
+  /// ```
+  /// {@end-tool}
   final Color? color;
 
   /// Semantic label for the icon.
@@ -55,10 +125,8 @@ class FaIcon extends StatelessWidget {
   /// Announced in accessibility modes (e.g TalkBack/VoiceOver).
   /// This label does not show in the UI.
   ///
-  /// See also:
-  ///
-  ///  * [Semantics.label], which is set to [semanticLabel] in the underlying
-  ///    [Semantics] widget.
+  ///  * [SemanticsProperties.label], which is set to [semanticLabel] in the
+  ///    underlying	 [Semantics] widget.
   final String? semanticLabel;
 
   /// The text direction to use for rendering the icon.
@@ -68,7 +136,7 @@ class FaIcon extends StatelessWidget {
   /// Some icons follow the reading direction. For example, "back" buttons point
   /// left in left-to-right environments and right in right-to-left
   /// environments. Such icons have their [IconData.matchTextDirection] field
-  /// set to true, and the [FaIcon] widget uses the [textDirection] to determine
+  /// set to true, and the [Icon] widget uses the [textDirection] to determine
   /// the orientation in which to draw the icon.
   ///
   /// This property has no effect if the [icon]'s [IconData.matchTextDirection]
@@ -79,8 +147,7 @@ class FaIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     assert(this.textDirection != null || debugCheckHasDirectionality(context));
-    final TextDirection textDirection =
-        this.textDirection ?? Directionality.of(context);
+    final TextDirection textDirection = this.textDirection ?? Directionality.of(context);
 
     final IconThemeData iconTheme = IconTheme.of(context);
 
@@ -95,15 +162,12 @@ class FaIcon extends StatelessWidget {
 
     final double iconOpacity = iconTheme.opacity ?? 1.0;
     Color iconColor = color ?? iconTheme.color!;
-    if (iconOpacity != 1.0) {
+    if (iconOpacity != 1.0)
       iconColor = iconColor.withOpacity(iconColor.opacity * iconOpacity);
-    }
 
     Widget iconWidget = RichText(
-      overflow: TextOverflow.visible,
-      // Never clip.
-      textDirection: textDirection,
-      // Since we already fetched it for the assert...
+      overflow: TextOverflow.visible, // Never clip.
+      textDirection: textDirection, // Since we already fetched it for the assert...
       text: TextSpan(
         text: String.fromCharCode(icon!.codePoint),
         style: TextStyle(
@@ -134,13 +198,7 @@ class FaIcon extends StatelessWidget {
     return Semantics(
       label: semanticLabel,
       child: ExcludeSemantics(
-        child: IntrinsicWidth(
-          child: IntrinsicHeight(
-            child: Center(
-              child: iconWidget,
-            ),
-          ),
-        ),
+        child: iconWidget,
       ),
     );
   }
@@ -148,8 +206,7 @@ class FaIcon extends StatelessWidget {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties.add(
-        IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
+    properties.add(IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
     properties.add(DoubleProperty('size', size, defaultValue: null));
     properties.add(ColorProperty('color', color, defaultValue: null));
   }
