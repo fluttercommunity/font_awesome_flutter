@@ -5,58 +5,16 @@
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
-/// A graphical icon widget drawn with a glyph from a font described in
-/// an [IconData] such as material's predefined [IconData]s in [Icons].
+/// Creates an Icon Widget that works for non-material Icons, such as the
+/// Font Awesome Icons.
 ///
-/// Icons are not interactive. For an interactive icon, consider material's
-/// [IconButton].
+/// The default `Icon` Widget from the Material package assumes all Icons are
+/// square in size and wraps all Icons in a square SizedBox Widget. Icons from
+/// the FontAwesome package are often wider than they are tall, which causes
+/// alignment and cutoff issues.
 ///
-/// There must be an ambient [Directionality] widget when using [Icon].
-/// Typically this is introduced automatically by the [WidgetsApp] or
-/// [MaterialApp].
-///
-/// This widget assumes that the rendered icon is squared. Non-squared icons may
-/// render incorrectly.
-///
-/// {@tool snippet}
-///
-/// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [semanticLabel] to announce in accessibility
-/// modes like TalkBack and VoiceOver.
-///
-/// ![The following code snippet would generate a row of icons consisting of a pink heart, a green musical note, and a blue umbrella, each progressively bigger than the last.](https://flutter.github.io/assets-for-api-docs/assets/widgets/icon.png)
-///
-/// ```dart
-/// Row(
-///   mainAxisAlignment: MainAxisAlignment.spaceAround,
-///   children: const <Widget>[
-///     Icon(
-///       Icons.favorite,
-///       color: Colors.pink,
-///       size: 24.0,
-///       semanticLabel: 'Text to announce in accessibility modes',
-///     ),
-///     Icon(
-///       Icons.audiotrack,
-///       color: Colors.green,
-///       size: 30.0,
-///     ),
-///     Icon(
-///       Icons.beach_access,
-///       color: Colors.blue,
-///       size: 36.0,
-///     ),
-///   ],
-/// )
-/// ```
-/// {@end-tool}
-///
-/// See also:
-///
-///  * [IconButton], for interactive icons.
-///  * [Icons], for the list of available icons for use with this class.
-///  * [IconTheme], which provides ambient configuration for icons.
-///  * [ImageIcon], for showing icons from [AssetImage]s or other [ImageProvider]s.
+/// This Widget does not wrap the icons in a fixed square box, which allows the
+/// icons to render based on their size.
 class FaIcon extends StatelessWidget {
   /// Creates an icon.
   ///
@@ -70,7 +28,7 @@ class FaIcon extends StatelessWidget {
         this.textDirection,
       }) : super(key: key);
 
-  /// The icon to display. The available icons are described in [Icons].
+  /// The icon to display. Available icons are listed in [FontAwesomeIcons].
   ///
   /// The icon can be null, in which case the widget will render as an empty
   /// space of the specified [size].
@@ -87,7 +45,7 @@ class FaIcon extends StatelessWidget {
   /// If this [Icon] is being placed inside an [IconButton], then use
   /// [IconButton.iconSize] instead, so that the [IconButton] can make the splash
   /// area the appropriate size as well. The [IconButton] uses an [IconTheme] to
-  /// pass down the size to the [Icon].
+  /// pass down the size to the [FaIcon].
   final double? size;
 
   /// The color to use when drawing the icon.
