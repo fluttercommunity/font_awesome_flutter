@@ -123,7 +123,7 @@ void main(List<String> rawArgs) async {
   final Set<String> styles = {};
   // duotone icons are no longer supported
   final List<String> excludedStyles = ['duotone', ...args['exclude']];
-  final hasDuotoneIcons = readAndPickMetadata(
+  var hasDuotoneIcons = readAndPickMetadata(
       iconsJson, metadata, styles, versions, excludedStyles);
   if (hasDuotoneIcons) {
     // Duotone are no longer supported - temporarily added notice to avoid
@@ -131,6 +131,7 @@ void main(List<String> rawArgs) async {
     print(red(
         'Duotone icons are no longer supported. Automatically disabled them.'));
   }
+  hasDuotoneIcons = false;
 
   final highestVersion = calculateFontAwesomeVersion(versions);
 
