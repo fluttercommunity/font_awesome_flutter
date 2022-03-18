@@ -146,7 +146,9 @@ getIconFromCss('far custom-class fa-abacus'); // returns the abacus icon in regu
 
 Duotone support has been discontinued after font awesome changed the way they lay out the icon glyphs inside the font's
 file. The new way using ligatures is not supported by flutter at the moment.
-Follow this issue for updates: [flutter/flutter#100325](https://github.com/flutter/flutter/issues/100325).
+
+For more information on why duotone icon support was discontinued, see
+[this discussion](https://github.com/fluttercommunity/font_awesome_flutter/issues/192).
 
 ## FAQ
 

@@ -1,14 +1,13 @@
-## 10.0.0-beta2
+## 10.0.0
+* Upgrade to Font Awesome icons 6.1.0
+* Update the configurator to work with version 6
+* Add alias support
+  (Aliases may be old names of renamed icons.
+  Since it is unclear if they are about to stay,
+  aliases are marked as @Deprecated with a message containing the new icon name.)
+* Update FaIcon with the latest changes to flutter's default Icon
+* DEPRECATE duotone icon support for pro users
 * Fix linter warnings - thanks to @gslender!
-
-## 10.0.0-beta
-* Fix #132 FaIcon not centered when used as prefix icon
-
-This is a change with the goal to align `FaIcon` more like the standard `Icon` class.
-However, this may impose breaking changes, which is why version 10.0.0 will stay a beta for a while. 
-
-Should you notice something not working as it did before, which does not match the behaviour of `Icon`, please
-open an issue on github!
 
 ## 9.2.0
 * Upgrade to Font Awesome icons 5.15.4
