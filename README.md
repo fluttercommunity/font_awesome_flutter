@@ -148,7 +148,7 @@ Duotone support has been discontinued after font awesome changed the way they la
 file. The new way using ligatures is not supported by flutter at the moment.
 
 For more information on why duotone icon support was discontinued, see
-[this discussion](https://github.com/fluttercommunity/font_awesome_flutter/issues/192).
+[this comment](https://github.com/fluttercommunity/font_awesome_flutter/issues/192#issuecomment-1073003668).
 
 ## FAQ
 
