@@ -370,6 +370,8 @@ final icons = <ExampleIcon>[
   ExampleIcon(FontAwesomeIcons.chevronRight, 'chevronRight'),
   ExampleIcon(FontAwesomeIcons.chevronUp, 'chevronUp'),
   ExampleIcon(FontAwesomeIcons.child, 'child'),
+  ExampleIcon(FontAwesomeIcons.childDress, 'childDress'),
+  ExampleIcon(FontAwesomeIcons.childReaching, 'childReaching'),
   ExampleIcon(FontAwesomeIcons.childRifle, 'childRifle'),
   ExampleIcon(FontAwesomeIcons.children, 'children'),
   ExampleIcon(FontAwesomeIcons.chrome, 'chrome'),

@@ -20,13 +20,13 @@ class FaIcon extends StatelessWidget {
   ///
   /// The [size] and [color] default to the value given by the current [IconTheme].
   const FaIcon(
-      this.icon, {
-        Key? key,
-        this.size,
-        this.color,
-        this.semanticLabel,
-        this.textDirection,
-      }) : super(key: key);
+    this.icon, {
+    Key? key,
+    this.size,
+    this.color,
+    this.semanticLabel,
+    this.textDirection,
+  }) : super(key: key);
 
   /// The icon to display. Available icons are listed in [FontAwesomeIcons].
   ///
@@ -105,7 +105,8 @@ class FaIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     assert(this.textDirection != null || debugCheckHasDirectionality(context));
-    final TextDirection textDirection = this.textDirection ?? Directionality.of(context);
+    final TextDirection textDirection =
+        this.textDirection ?? Directionality.of(context);
 
     final IconThemeData iconTheme = IconTheme.of(context);
 
@@ -125,8 +126,10 @@ class FaIcon extends StatelessWidget {
     }
 
     Widget iconWidget = RichText(
-      overflow: TextOverflow.visible, // Never clip.
-      textDirection: textDirection, // Since we already fetched it for the assert...
+      overflow: TextOverflow.visible,
+      // Never clip.
+      textDirection: textDirection,
+      // Since we already fetched it for the assert...
       text: TextSpan(
         text: String.fromCharCode(icon!.codePoint),
         style: TextStyle(
@@ -165,7 +168,8 @@ class FaIcon extends StatelessWidget {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties.add(IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
+    properties.add(
+        IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
     properties.add(DoubleProperty('size', size, defaultValue: null));
     properties.add(ColorProperty('color', color, defaultValue: null));
   }

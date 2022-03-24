@@ -24,7 +24,8 @@ void main() {
     expect(text.text.style!.color, const Color(0xFF666666).withOpacity(0.5));
   });
 
-  testWidgets('Icon sizing - no theme, default size', (WidgetTester tester) async {
+  testWidgets('Icon sizing - no theme, default size',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
@@ -38,7 +39,8 @@ void main() {
     expect(renderObject.size, equals(const Size.square(24.0)));
   });
 
-  testWidgets('Icon sizing - no theme, explicit size', (WidgetTester tester) async {
+  testWidgets('Icon sizing - no theme, explicit size',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
@@ -72,7 +74,8 @@ void main() {
     expect(renderObject.size, equals(const Size.square(36.0)));
   });
 
-  testWidgets('Icon sizing - sized theme, explicit size', (WidgetTester tester) async {
+  testWidgets('Icon sizing - sized theme, explicit size',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
@@ -92,7 +95,8 @@ void main() {
     expect(renderObject.size, equals(const Size.square(48.0)));
   });
 
-  testWidgets('Icon sizing - sizeless theme, default size', (WidgetTester tester) async {
+  testWidgets('Icon sizing - sizeless theme, default size',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
@@ -109,7 +113,8 @@ void main() {
     expect(renderObject.size, equals(const Size.square(24.0)));
   });
 
-  testWidgets("Changing semantic label from null doesn't rebuild tree ", (WidgetTester tester) async {
+  testWidgets("Changing semantic label from null doesn't rebuild tree ",
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
