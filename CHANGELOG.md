@@ -1,3 +1,7 @@
+## 10.1.0
+* Upgrade to Font Awesome 6.1.1
+* Perform automatic update check on configurator run
+
 ## 10.0.0
 * Upgrade to Font Awesome icons 6.1.0
 * Update the configurator to work with version 6
