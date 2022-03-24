@@ -7,6 +7,7 @@ import 'package:ansicolor/ansicolor.dart';
 import 'package:args/args.dart';
 import 'package:recase/recase.dart';
 import 'package:version/version.dart';
+import 'package:pub_semver/pub_semver.dart' as pub;
 
 /// A map which adjusts icon ids starting with a number
 ///
@@ -45,13 +46,13 @@ class IconMetadata {
   final List<String> aliases;
 
   IconMetadata(
-      this.name,
-      this.label,
-      this.unicode,
-      this.searchTerms,
-      this.styles,
-      this.aliases,
-      );
+    this.name,
+    this.label,
+    this.unicode,
+    this.searchTerms,
+    this.styles,
+    this.aliases,
+  );
 }
 
 final AnsiPen red = AnsiPen()..xterm(009);
@@ -92,6 +93,8 @@ void main(List<String> rawArgs) async {
     displayHelp(argParser);
     exit(0);
   }
+
+  await printVersionNotice('fluttercommunity/font_awesome_flutter');
 
   File iconsJson = File('lib/fonts/icons.json');
   final hasCustomIconsJson = iconsJson.existsSync();
@@ -168,6 +171,18 @@ void main(List<String> rawArgs) async {
   if (!hasCustomIconsJson) {
     iconsJson.deleteSync();
   }
+}
+
+/// Returns this package's current version
+String getPackageVersion() {
+  var pubspecFile = File('pubspec.yaml');
+  var pubspec = pubspecFile.readAsLinesSync();
+  for (final line in pubspec) {
+    if (line.startsWith('version:')) {
+      return line.substring('version'.length + 1).trim();
+    }
+  }
+  return 'no version found';
 }
 
 /// Automatically (un)comments font definitions in pubspec.yaml
@@ -475,8 +490,8 @@ String generateIconAliases(IconMetadata icon, String style) {
   var iconName = normalizeIconName(icon.name, style, icon.styles.length);
   final List<String> lines = [];
 
-  for(String alias in icon.aliases) {
-    if(ignoredAliases.contains(alias)) continue;
+  for (String alias in icon.aliases) {
+    if (ignoredAliases.contains(alias)) continue;
 
     var aliasName = normalizeIconName(alias, style, icon.styles.length);
     lines.add('/// Alias $alias for icon [$iconName]');
@@ -526,6 +541,69 @@ Future<String> getRepositoryDefaultBranch(String repositoryName) async {
     tmpFile.delete();
   }
   exit(1);
+}
+
+/// Prints a notice should the current font_awesome_flutter version not be the
+/// latest.
+Future printVersionNotice(String repositoryName) async {
+  final tmpFile = File('faf-releases-metadata.tmp');
+
+  try {
+    final packageVersion = pub.Version.parse(getPackageVersion());
+
+    print(blue(
+        'Using font_awesome_flutter version ' + packageVersion.toString()));
+
+    await download(
+        'https://api.github.com/repos/' + repositoryName + '/releases',
+        tmpFile);
+
+    String rawReleasesData = await tmpFile.readAsString();
+    List releasesData = json.decode(rawReleasesData);
+    List<pub.Version> releases = [];
+    List<pub.Version> preReleases = [];
+    for (final Map<String, dynamic> release in releasesData) {
+      var releaseName = release["name"] as String;
+      releaseName = releaseName.isEmpty ? release["tag_name"] : releaseName;
+      // remove possible prefixes
+      releaseName = releaseName
+          .toLowerCase()
+          .replaceAll('version', '')
+          .replaceAll('v.', '')
+          .replaceAll('v', '')
+          .trim();
+      final version = pub.Version.parse(releaseName);
+      if (version.isPreRelease) {
+        preReleases.add(version);
+      } else {
+        releases.add(version);
+      }
+    }
+
+    final primaryRelease = pub.Version.primary(releases);
+    final primaryPreRelease = pub.Version.primary(preReleases);
+
+    if (primaryRelease > packageVersion) {
+      print(red('A new version (' +
+          primaryRelease.toString() +
+          ') of font_awesome_flutter is available. Please update before reporting any errors. You can update via `git pull` or by downloading the source code from github. (https://github.com/' +
+          repositoryName +
+          ')'));
+    }
+    if (primaryPreRelease > packageVersion &&
+        primaryPreRelease > primaryRelease) {
+      print(yellow('A pre-release version (' +
+          primaryPreRelease.toString() +
+          ') of font_awesome_flutter is available. Should you encounter any problems, have a look if it fixes them.'));
+    }
+  } on FormatException catch (_) {
+    print(red(
+        'Error while getting font awesome flutter\'s version information. Could not determine whether you are using the latest version.'));
+  } finally {
+    tmpFile.delete();
+  }
+  // do not exit
+  print('');
 }
 
 /// Reads the [iconsJson] metadata and picks out relevant data

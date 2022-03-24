@@ -19,6 +19,7 @@ dev_dependencies:
   version: ^2.0.0
   ansicolor: ^2.0.1
   flutter_lints: ^1.0.0
+  pub_semver: ^2.1.1
 
 flutter:
   fonts:
