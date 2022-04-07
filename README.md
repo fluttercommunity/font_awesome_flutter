@@ -4,14 +4,9 @@
 
 [![Pub](https://img.shields.io/pub/v/font_awesome_flutter.svg)](https://pub.dartlang.org/packages/font_awesome_flutter)
 
-The *free* [Font Awesome](https://fontawesome.com/icons) Icon pack available as set of Flutter Icons.
+The *free* [Font Awesome](https://fontawesome.com/icons) Icon pack available as set of Flutter Icons - based on font awesome version 6.1.1.
 
-This icon pack includes only the *free* icons offered by Font Awesome.
-
-  * Regular
-  * Solid
-  * Brands
-
+This icon pack includes only the *free* icons offered by Font Awesome out-of-the-box.
 If you have purchased the pro icons and want to enable support for them, please see the instructions below.
 
 ## Installation
