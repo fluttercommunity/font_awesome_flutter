@@ -149,43 +149,48 @@ For more information on why duotone icon support was discontinued, see
 
 ## FAQ
 
-### Why aren't the icons aligned properly or why are the icons being cut off?
+<details>
+  <summary><h3>Why aren't the icons aligned properly or why are the icons being cut off?</h3></summary>
+  Please use the `FaIcon` widget provided by the library instead of the `Icon`
+  widget provided by Flutter. The `Icon` widget assumes all icons are square, but
+  many Font Awesome Icons are not.
+</details>
 
-Please use the `FaIcon` widget provided by the library instead of the `Icon`
-widget provided by Flutter. The `Icon` widget assumes all icons are square, but
-many Font Awesome Icons are not.
+<details>
+  <summary><h3>What about file size and ram usage</h3></summary>
+  This package has been written in a way so that it only uses the minimum amount of resources required.
 
-### What about file size and ram usage
-This package has been written in a way so that it only uses the minimum amount of resources required.
+  All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
+  definitions are loaded into ram.
 
-All links (eg. `FontAwesomeIcons.abacus`) to unused icons will be removed automatically, which means only required icon
-definitions are loaded into ram.
+  Flutter 1.22 added icon tree shaking. This means unused icon "images" will be removed as well. However, this only
+  applies to styles of which at least one icon has been used. Assuming only icons of style "regular" are being used,
+  "regular" will be minified to only include the used icons and "solid" and "brands" will stay in their raw, complete
+  form. This issue is being [tracked over in the flutter repository](https://github.com/flutter/flutter/issues/64106).
 
-Flutter 1.22 added icon tree shaking. This means unused icon "images" will be removed as well. However, this only
-applies to styles of which at least one icon has been used. Assuming only icons of style "regular" are being used,
-"regular" will be minified to only include the used icons and "solid" and "brands" will stay in their raw, complete
-form. This issue is being [tracked over in the flutter repository](https://github.com/flutter/flutter/issues/64106).
+  However, using the configurator, you can easily exclude styles from the package. For more information, see
+  [customizing font awesome flutter](#customizing-font-awesome-flutter)
+</details>
 
-However, using the configurator, you can easily exclude styles from the package. For more information, see
-[customizing font awesome flutter](#customizing-font-awesome-flutter)
+<details>
+  <summary><h3>Why aren't the icons showing up on Mobile devices?</h3></summary>
+  If you're not seeing any icons at all, sometimes it means that Flutter has a cached version of the app on device and
+  hasn't pushed the new fonts. I've run into that as well a few times...
 
-### Why aren't the icons showing up on Mobile devices?
+  Please try:
 
-If you're not seeing any icons at all, sometimes it means that Flutter has a cached version of the app on device and
-hasn't pushed the new fonts. I've run into that as well a few times...
+  1. Stopping the app
+  2. Running `flutter clean` in your app directory
+  3. Deleting the app from your simulator / emulator / device
+  4. Rebuild & Deploy the app.
+</details>
 
-Please try:
+<details>
+  <summary><h3>Why aren't the icons showing up on Web?</h3></summary>
+  Most likely, the fonts were not correctly added to the `FontManifest.json`.
+  Note: older versions of Flutter did not properly package non-Material fonts
+  in the `FontManifest.json` during the build step, but that issue has been
+  resolved and this shouldn't be much of a problem these days.
 
-1. Stopping the app
-2. Running `flutter clean` in your app directory
-3. Deleting the app from your simulator / emulator / device
-4. Rebuild & Deploy the app.
-
-### Why aren't the icons showing up on Web?
-
-Most likely, the fonts were not correctly added to the `FontManifest.json`.
-Note: older versions of Flutter did not properly package non-Material fonts
-in the `FontManifest.json` during the build step, but that issue has been
-resolved and this shouldn't be much of a problem these days.
-
-Please ensure you are using `Flutter 1.14.6 beta` or newer! 
+  Please ensure you are using `Flutter 1.14.6 beta` or newer! 
+</details>
