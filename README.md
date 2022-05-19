@@ -196,7 +196,7 @@ For more information on why duotone icon support was discontinued, see
 </details>
 
 <details>
-  <summary><h3>Why do I have problems running the configurator on mac/linux?</h3></summary>
+  <summary><h3>Why does mac/linux not run the configurator?</h3></summary>
   This is most probably due to missing file permissions. Downloaded scripts cannot be executed by default.
   
   Either give the execute permission to `util/configurator.sh` with `$ chmod +x configurator.sh` or run the commands by prepending an `sh`:
