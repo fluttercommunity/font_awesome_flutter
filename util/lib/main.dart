@@ -76,9 +76,8 @@ final AnsiPen yellow = AnsiPen()..xterm(011);
 /// 4. build icons, example
 /// if dynamic icons requested:
 ///   4.1 create map
-/// 5. if duotone icons exist, enable them
-/// 6. format all generated files
-/// 7. if icons.json was downloaded by this tool, remove icons.json
+/// 5. format all generated files
+/// 6. if icons.json was downloaded by this tool, remove icons.json
 void main(List<String> rawArgs) async {
   print(blue('''
 ####  #   #####################################################################
@@ -142,22 +141,19 @@ void main(List<String> rawArgs) async {
 
   print(blue('\nGenerating icon definitions'));
   writeCodeToFile(
-    () =>
-        generateIconDefinitionClass(metadata, hasDuotoneIcons, highestVersion),
+    () => generateIconDefinitionClass(metadata, highestVersion),
     'lib/font_awesome_flutter.dart',
   );
 
   print(blue('\nGenerating example code'));
   writeCodeToFile(
-    () => generateExamplesListClass(metadata, hasDuotoneIcons),
+    () => generateExamplesListClass(metadata),
     'example/lib/icons.dart',
   );
 
-  enableDuotoneExample(hasDuotoneIcons);
-
   if (args['dynamic']) {
     writeCodeToFile(
-      () => generateIconNameMap(metadata, hasDuotoneIcons),
+      () => generateIconNameMap(metadata),
       'lib/name_icon_mapping.dart',
     );
   } else {
@@ -259,8 +255,7 @@ void writeCodeToFile(List<String> Function() generator, String filePath) {
 /// `import 'package:font_awesome_flutter/name_icon_mapping.dart'`
 /// And then either use faIconNameMapping directly to look up specific icons,
 /// or use the getIconFromCss helper function.
-List<String> generateIconNameMap(
-    List<IconMetadata> icons, bool hasDuotoneIcons) {
+List<String> generateIconNameMap(List<IconMetadata> icons) {
   print(yellow('''
 
 ------------------------------- IMPORTANT NOTICE -------------------------------
@@ -289,9 +284,6 @@ to complete successfully.
     '/// for the known font awesome classes (far, fas, fab, ...) and an icon',
     '/// name starting with `fa-`. Should multiple classes fulfill these',
     '/// requirements, the first occurrence is chosen.',
-    '///',
-    '/// Returns duotone icons as IconData. Please cast them back to',
-    '/// [IconDataDuotone] via `getIconFromCss(...) as IconDataDuotone`.',
     '/// ',
     '/// Returns [FontAwesomeIcons.questionCircle] if no icon matches.',
     'IconData getIconFromCss(String cssClasses) {',
@@ -309,18 +301,6 @@ to complete successfully.
     "  var icon = separatedCssClasses.firstWhere((c) => c.startsWith('fa-'));",
     "  icon = icon.replaceFirst('fa-', '');",
     '',
-  ];
-
-  if (hasDuotoneIcons) {
-    output.addAll([
-      "if (style == 'duotone') {",
-      '  return faIconNameMappingDuotone[icon] ?? FontAwesomeIcons.questionCircle;',
-      '}',
-      '',
-    ]);
-  }
-
-  output.addAll([
     "  return faIconNameMapping[style + ' ' + icon] ?? FontAwesomeIcons.questionCircle;",
     '  } on StateError {',
     '  return FontAwesomeIcons.questionCircle;',
@@ -331,30 +311,13 @@ to complete successfully.
     '///',
     '/// Keys are in the following format: "style iconName"',
     'const Map<String, IconData> faIconNameMapping = {',
-  ]);
+  ];
 
   String iconName;
   for (var icon in icons) {
-    for (var style in icon.styles.where((style) => style != "duotone")) {
+    for (var style in icon.styles) {
       iconName = normalizeIconName(icon.name, style, icon.styles.length);
       output.add("'$style ${icon.name}': FontAwesomeIcons.$iconName,");
-    }
-  }
-
-  output.add('};');
-
-  if (!hasDuotoneIcons) return output;
-
-  output.addAll([
-    '',
-    '/// Icon name to icon mapping for duotone font awesome icons',
-    'const Map<String, IconDataDuotone> faIconNameMappingDuotone = {',
-  ]);
-
-  for (var icon in icons) {
-    if (icon.styles.contains('duotone')) {
-      iconName = normalizeIconName(icon.name, "duotone", icon.styles.length);
-      output.add("'${icon.name}': FontAwesomeIcons.$iconName,");
     }
   }
 
@@ -363,33 +326,9 @@ to complete successfully.
   return output;
 }
 
-/// Enables duotone support in the example app if duotone icons were found
-///
-/// Also disables it if no more duotone icons are present
-void enableDuotoneExample(bool hasDuotoneIcons) {
-  // Enable duotone example if duotone icons exist
-
-  var exampleMain = File('example/lib/main.dart').readAsStringSync();
-  var duotoneMainExists = exampleMain.contains('FaDuotoneIcon');
-
-  ProcessResult? result;
-  if (hasDuotoneIcons && !duotoneMainExists) {
-    print(blue("\nFound duotone icons. Enabling duotone example."));
-    result = Process.runSync('git', ['apply', 'util/duotone_main.patch']);
-  } else if (!hasDuotoneIcons && duotoneMainExists) {
-    print(blue("\nDid not find duotone icons. Disabling duotone example."));
-    result = Process.runSync('git', ['apply', '-R', 'util/duotone_main.patch']);
-  }
-
-  if (result != null) {
-    stdout.write(result.stdout);
-    stderr.write(red(result.stderr));
-  }
-}
-
 /// Builds the class with icon definitions and returns the output
 List<String> generateIconDefinitionClass(
-    List<IconMetadata> metadata, bool hasDuotoneIcons, Version version) {
+    List<IconMetadata> metadata, Version version) {
   final List<String> output = [
     'library font_awesome_flutter;',
     '',
@@ -398,11 +337,6 @@ List<String> generateIconDefinitionClass(
     "export 'package:font_awesome_flutter/src/fa_icon.dart';",
     "export 'package:font_awesome_flutter/src/icon_data.dart';",
   ];
-
-  if (hasDuotoneIcons) {
-    output
-        .add("export 'package:font_awesome_flutter/src/fa_duotone_icon.dart';");
-  }
 
   output.addAll([
     '',
@@ -425,8 +359,7 @@ List<String> generateIconDefinitionClass(
 }
 
 /// Builds the example icons
-List<String> generateExamplesListClass(
-    List<IconMetadata> metadata, bool hasDuotoneIcons) {
+List<String> generateExamplesListClass(List<IconMetadata> metadata) {
   final List<String> output = [
     "import 'package:font_awesome_flutter/font_awesome_flutter.dart';",
     "import 'package:font_awesome_flutter_example/example_icon.dart';",
@@ -470,14 +403,6 @@ String generateIconDocumentation(IconMetadata icon, String style) {
 /// Generates the icon's constant. Used by [generateIconDefinitionClass]
 String generateIconDefinition(IconMetadata icon, String style) {
   var iconName = normalizeIconName(icon.name, style, icon.styles.length);
-
-  if (style == 'duotone') {
-    String secondaryUnicode = (int.parse(icon.unicode, radix: 16) + 0x100000)
-        .toRadixString(16)
-        .toString();
-
-    return 'static const IconDataDuotone $iconName = IconDataDuotone(0x${icon.unicode}, secondary: IconDataDuotone(0x$secondaryUnicode),);';
-  }
 
   String iconDataSource = styleToDataSource(style);
 
@@ -649,10 +574,6 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     if (iconStyles.isEmpty) continue;
 
     if (icon.containsKey('private') && icon['private']) continue;
-
-    if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
-
-    styles.addAll(iconStyles);
 
     final List searchTermsRaw = (icon['search']?['terms'] ?? []);
     final searchTerms = searchTermsRaw.map((e) => e.toString()).toList();
