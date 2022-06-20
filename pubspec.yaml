@@ -21,8 +21,8 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   pub_semver: ^2.1.1
 
-flutter:
-  fonts:
+# flutter:
+#   fonts:
 #    - family: FontAwesomeBrands
 #      fonts:
 #        - asset: lib/fonts/fa-brands-400.ttf
