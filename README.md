@@ -59,14 +59,29 @@ By default, if run without arguments and no `icons.json` in `lib/fonts` exists, 
 newest free version of font awesome.
 
 ### Setup
-To use your custom version, you must first clone [this repository](https://github.com/fluttercommunity/font_awesome_flutter.git)
-to a location of your choice and run `flutter pub get` inside. This installs all dependencies.
+To use a custom version, you will need to:
+1. Clone [this repository](https://github.com/fluttercommunity/font_awesome_flutter.git)
+to a location of your choice
+1. Comment out lines the following lines in `pubspec.yaml`:
+  ```yaml
+  ...
+  flutter:
+    fonts:
+  ...
+  ```
+3. run `flutter pub get` from the root, to install all dependencies
+3. Uncomment the lines in `pubspec.yaml` from the previous step, the configurator uses those lines in the generation
+3. Add the files you need in `lib/fonts`, to enable pro icons see [here](https://github.com/fluttercommunity/font_awesome_flutter/edit/master/README.md#enable-pro-icons)
+3. Run the configurator
 
+#### Configurator
 The configurator is located in the `util` folder and can be started by running `configurator.bat` on Windows, or 
 `./configurator.sh` on linux and mac. All following examples use the `.sh` version, but work same for `.bat`.
 (If on windows, omit the `./` or replace it with `.\`.)
+
 An overview of available options can be viewed with `./configurator.sh --help`.
 
+#### Adding custom font_awesome_flutter in your app
 To use your customized version in an app, go to the app's `pubspec.yaml` and add a dependency for
 `font_awesome_flutter: '>= 4.7.0'`. Then override the dependency's location:
 ```yaml
