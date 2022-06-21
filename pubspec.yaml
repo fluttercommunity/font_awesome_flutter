@@ -23,18 +23,18 @@ dev_dependencies:
 
 flutter:
   fonts:
-#    - family: FontAwesomeBrands
-#      fonts:
-#        - asset: lib/fonts/fa-brands-400.ttf
-#          weight: 400
-#    - family: FontAwesomeRegular
-#      fonts:
-#        - asset: lib/fonts/fa-regular-400.ttf
-#          weight: 400
-#    - family: FontAwesomeSolid
-#      fonts:
-#        - asset: lib/fonts/fa-solid-900.ttf
-#          weight: 900
+    - family: FontAwesomeBrands
+      fonts:
+        - asset: lib/fonts/fa-brands-400.ttf
+          weight: 400
+    - family: FontAwesomeRegular
+      fonts:
+        - asset: lib/fonts/fa-regular-400.ttf
+          weight: 400
+    - family: FontAwesomeSolid
+      fonts:
+        - asset: lib/fonts/fa-solid-900.ttf
+          weight: 900
 #    - family: FontAwesomeLight
 #      fonts:
 #        - asset: lib/fonts/fa-light-300.ttf

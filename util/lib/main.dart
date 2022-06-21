@@ -575,6 +575,8 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
 
     if (icon.containsKey('private') && icon['private']) continue;
 
+    styles.addAll(iconStyles);
+
     final List searchTermsRaw = (icon['search']?['terms'] ?? []);
     final searchTerms = searchTermsRaw.map((e) => e.toString()).toList();
 
