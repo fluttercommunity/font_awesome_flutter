@@ -76,7 +76,7 @@ dependencies:
   
 dependency_overrides:
   font_awesome_flutter:
-    path: /path/to/your/font_awesome_flutter
+    path: path/to/your/font_awesome_flutter
   ...
 ```
 
@@ -88,7 +88,7 @@ a public github repository or other public file sharing services.
 * Go to the location of your custom font_awesome_flutter version (see [setup](#setup))
 * Download the web version of font awesome pro and open it
 * Move **all** `.ttf` files from the `webfonts` directory and `icons.json` from `metadata` to
-  `/path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files.
+  `path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files.
 * Run the configurator. It should say "Custom icons.json found"
 
 It may be required to run `flutter clean` in apps who use this version for changes to appear.
