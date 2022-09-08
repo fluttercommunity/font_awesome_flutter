@@ -1,5 +1,6 @@
-## 10.2.0 (unreleased)
+## 10.2.0
 * Remove duotone generator functionality from configurator
+* Upgrade to Font Awesome 6.2.0
 
 ## 10.1.0
 * Upgrade to Font Awesome 6.1.1
