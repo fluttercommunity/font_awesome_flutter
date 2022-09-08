@@ -218,7 +218,7 @@ void adjustPubspecFontIncludes(Set<String> styles) {
       : print(blue(enabledStyles.join(', ')));
 
   print(blue('\nRunning "flutter pub get"'));
-  final result = Process.runSync('flutter', ['pub', 'get']);
+  final result = Process.runSync('flutter', ['pub', 'get'], runInShell: true);
   stdout.write(result.stdout);
   stderr.write(red(result.stderr));
 
