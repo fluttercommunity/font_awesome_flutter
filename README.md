@@ -40,12 +40,12 @@ Icon names equal those on the [official website](https://fontawesome.com/icons),
 Due to restrictions in dart, icons starting with numbers have those numbers written out.
 
 #### Examples:
-Icon name | Code | Style
---- | --- | ---
-[angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid) | `FontAwesomeIcons.angleDoubleUp` | solid _(this icon does not have other free styles)_
-[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | `FontAwesomeIcons.arrowAltCircleUp` | regular
-[arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid) |  `FontAwesomeIcons.solidArrowAltCircleUp` | solid
-[1](https://fontawesome.com/icons/1?style=solid) | `FontAwesomeIcons.solidOne` | solid
+| Icon name                                                                             | Code | Style|
+|---------------------------------------------------------------------------------------| --- | ---|
+| [angle-double-up](https://fontawesome.com/icons/angle-double-up?style=solid)          | `FontAwesomeIcons.angleDoubleUp` | solid _(this icon does not have other free styles)_ |
+| [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=regular) | `FontAwesomeIcons.arrowAltCircleUp` | regular |
+| [arrow-alt-circle-up](https://fontawesome.com/icons/arrow-alt-circle-up?style=solid)  |  `FontAwesomeIcons.solidArrowAltCircleUp` | solid |
+| [1](https://fontawesome.com/icons/1?style=solid)                                      | `FontAwesomeIcons.solidOne` | solid |
 
 ## Example App
 
