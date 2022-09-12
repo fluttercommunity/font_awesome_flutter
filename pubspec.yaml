@@ -44,3 +44,7 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/fa-thin-100.ttf
 #          weight: 100
+#    - family: FontAwesomeSharp
+#      fonts:
+#        - asset: lib/fonts/fa-sharp-solid-900.ttf
+#          weight: 900
