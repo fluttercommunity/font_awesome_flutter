@@ -358,7 +358,7 @@ List<String> generateIconDefinitionClass(
     '',
     '// Returns an instance of this class as a map. Used for retrieving an icon',
     '// by string name',
-    'Map<String, IconData> _toMap() {',
+    'Map<String, Function> _toMap() {',
     'return {',
   ]);
 
@@ -376,7 +376,7 @@ List<String> generateIconDefinitionClass(
     'IconData get(String iconName) {',
     'final _mappedVersion = _toMap();',
     'if (_mappedVersion.containsKey(iconName)) {',
-    'return _mappedVersion[iconName]!;',
+    'return _mappedVersion[iconName]!();',
     '}',
     'throw ArgumentError(\'icon name not found\');',
     '}',
@@ -460,9 +460,7 @@ String generateIconAliases(IconMetadata icon, String style) {
 String generateIconMapKeyValue(IconMetadata icon, String style) {
   var iconName = normalizeIconName(icon.name, style, icon.styles.length);
 
-  String iconDataSource = styleToDataSource(style);
-
-  return '\'$iconName\': const $iconDataSource(0x${icon.unicode}),';
+  return '\'$iconName\': () => FontAwesomeIcons.$iconName,';
 }
 
 /// Returns a normalized version of [iconName] which can be used as const name
