@@ -356,9 +356,9 @@ List<String> generateIconDefinitionClass(
 
   output.addAll([
     '',
-    '// Returns an instance of this class as a map. Used for retrieving an icon',
-    '// by string name',
-    'Map<String, Function> _toMap() {',
+    '/// Returns an instance of this class as a map. Used for retrieving an icon',
+    '/// by string name',
+    'static Map<String, Function> _toMap() {',
     'return {',
   ]);
 
@@ -373,7 +373,7 @@ List<String> generateIconDefinitionClass(
   output.addAll([
     '',
     '/// Returns icon by string query.',
-    'IconData get(String iconName) {',
+    'static IconData get(String iconName) {',
     'final _mappedVersion = _toMap();',
     'if (_mappedVersion.containsKey(iconName)) {',
     'return _mappedVersion[iconName]!();',
