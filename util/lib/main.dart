@@ -354,6 +354,34 @@ List<String> generateIconDefinitionClass(
     }
   }
 
+  output.addAll([
+    '',
+    '// Returns an instance of this class as a map. Used for retrieving an icon',
+    '// by string name',
+    'Map<String, IconData> _toMap() {',
+    'return {',
+  ]);
+
+  for (var icon in metadata) {
+    for (String style in icon.styles) {
+      output.add(generateIconMapKeyValue(icon, style));
+    }
+  }
+
+  output.add('};}');
+
+  output.addAll([
+    '',
+    '/// Returns icon by string query.',
+    'IconData get(String iconName) {',
+    'final _mappedVersion = _toMap();',
+    'if (_mappedVersion.containsKey(iconName)) {',
+    'return _mappedVersion[iconName];',
+    '}',
+    'throw ArgumentError(\'icon name not found\');',
+    '}',
+  ]);
+
   output.add('}');
   return output;
 }
@@ -425,6 +453,16 @@ String generateIconAliases(IconMetadata icon, String style) {
   }
 
   return lines.join('\n');
+}
+
+/// Generates key value pairs which can then be searched via a passed in string.
+/// Used by [generateIconDefinitionClass]
+String generateIconMapKeyValue(IconMetadata icon, String style) {
+  var iconName = normalizeIconName(icon.name, style, icon.styles.length);
+
+  String iconDataSource = styleToDataSource(style);
+
+  return '\'$iconName\': $iconDataSource(0x${icon.unicode});';
 }
 
 /// Returns a normalized version of [iconName] which can be used as const name
