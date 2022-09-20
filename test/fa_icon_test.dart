@@ -162,4 +162,10 @@ void main() {
             widget is FaIcon && widget.icon == FontAwesomeIcons.accessibleIcon),
         findsOneWidget);
   });
+
+  test('Should throw exception when invalid query is provided to get method',
+      () {
+    expect(() => FontAwesomeIcons.get('sdfljsdflkjsdflkj'),
+        throwsA(isA<ArgumentError>()));
+  });
 }
