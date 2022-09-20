@@ -144,4 +144,22 @@ void main() {
     // semanticLabel to make sure the subtree was not rebuilt.
     expect(richText2, same(richText1));
   });
+
+  testWidgets('Can retrieve icon by string query', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      Directionality(
+        textDirection: TextDirection.ltr,
+        child: Center(
+          child: FaIcon(
+            FontAwesomeIcons.get('accessibleIcon'),
+          ),
+        ),
+      ),
+    );
+
+    expect(
+        find.byWidgetPredicate((widget) =>
+            widget is FaIcon && widget.icon == FontAwesomeIcons.accessibleIcon),
+        findsOneWidget);
+  });
 }
