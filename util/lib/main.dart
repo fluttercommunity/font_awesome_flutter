@@ -376,7 +376,7 @@ List<String> generateIconDefinitionClass(
     'IconData get(String iconName) {',
     'final _mappedVersion = _toMap();',
     'if (_mappedVersion.containsKey(iconName)) {',
-    'return _mappedVersion[iconName];',
+    'return _mappedVersion[iconName]!;',
     '}',
     'throw ArgumentError(\'icon name not found\');',
     '}',
@@ -462,7 +462,7 @@ String generateIconMapKeyValue(IconMetadata icon, String style) {
 
   String iconDataSource = styleToDataSource(style);
 
-  return '\'$iconName\': $iconDataSource(0x${icon.unicode});';
+  return '\'$iconName\': const $iconDataSource(0x${icon.unicode}),';
 }
 
 /// Returns a normalized version of [iconName] which can be used as const name
