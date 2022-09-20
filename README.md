@@ -34,6 +34,12 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
+Alternatively, in very rare instances you may want to query for a specific icon with a string. An example of this may be if you're pulling data from an external data source, such as a headless CRM, that specifies the icon. In this case you could use the following:
+
+```dart
+FaIcon(FontAwesomeIcons.get('gamepad'));
+```
+
 ### Icon names
 
 Icon names equal those on the [official website](https://fontawesome.com/icons), but are written in lower camel case. If more than one icon style is available for an icon, the style name is used as prefix, except for "regular".
