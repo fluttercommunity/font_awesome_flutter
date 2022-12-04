@@ -1,3 +1,7 @@
+## 10.3.0
+* Upgrade to Font Awesome 6.2.1
+* Fix #227: fix deprecated isAlwaysShown property
+
 ## 10.2.1
 * Update font awesome version in readme
 
