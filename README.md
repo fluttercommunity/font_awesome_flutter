@@ -116,15 +116,13 @@ Using the new configurator tool, this is now an optional feature. Run the tool w
 ```
 $ ./configurator.sh --dynamic
 ```
-...and the following import to use the map. For normal icons, use `faIconMapping` with a key of this format:
+...and the following import to use the map. For normal icons, use `faIconNameMapping` with a key of this format:
 'style icon-name'.
 ```dart
 import 'package:font_awesome_flutter/name_icon_mapping.dart';
 
 ...
-    FaIcon(
-      icon: faIconMapping['solid abacus'],
-    );
+    FaIcon(faIconNameMapping['solid abacus']);
 ...
 ```
 
