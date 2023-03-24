@@ -346,13 +346,32 @@ List<String> generateIconDefinitionClass(
     'class FontAwesomeIcons {',
   ]);
 
+  final Map<String, List<String>> iconsMaps = {};
+
+
   for (var icon in metadata) {
     for (String style in icon.styles) {
       output.add(generateIconDocumentation(icon, style));
       output.add(generateIconDefinition(icon, style));
       output.add(generateIconAliases(icon, style));
+
+
+      if(iconsMaps.containsKey(style) == false) {
+        iconsMaps[style] = [
+          '',
+          'static const List<IconData> ${style}List = ['
+        ];
+      }
+
+
+      iconsMaps[style]?.add('${normalizeIconName(icon.name, style, icon.styles.length)},');
     }
   }
+
+  iconsMaps.forEach((key, value) {
+    value.add('];');
+    output.addAll(value);
+  });
 
   output.add('}');
   return output;
