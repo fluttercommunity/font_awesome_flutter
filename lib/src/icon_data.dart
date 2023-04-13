@@ -83,3 +83,16 @@ class IconDataThin extends IconData {
           fontPackage: 'font_awesome_flutter',
         );
 }
+
+/// [IconData] for font awesome custom kit icon from a code point. Only works if
+/// custom kit is enabled
+///
+/// Code points can be obtained from fontawesome.com
+class IconDataCustom extends IconData {
+  const IconDataCustom(int codePoint)
+      : super(
+    codePoint,
+    fontFamily: 'FontAwesomeCustom',
+    fontPackage: 'font_awesome_flutter',
+  );
+}

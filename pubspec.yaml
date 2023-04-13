@@ -36,11 +36,15 @@ flutter:
       fonts:
         - asset: lib/fonts/fa-solid-900.ttf
           weight: 900
-#    - family: FontAwesomeLight
-#      fonts:
-#        - asset: lib/fonts/fa-light-300.ttf
-#          weight: 300
-#    - family: FontAwesomeThin
-#      fonts:
-#        - asset: lib/fonts/fa-thin-100.ttf
-#          weight: 100
+    - family: FontAwesomeLight
+      fonts:
+        - asset: lib/fonts/fa-light-300.ttf
+          weight: 300
+    - family: FontAwesomeThin
+      fonts:
+        - asset: lib/fonts/fa-thin-100.ttf
+          weight: 100
+    - family: FontAwesomeCustom
+      fonts:
+        - asset: lib/fonts/custom-icons.ttf
+          weight: 400
