@@ -13,14 +13,14 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  recase: ^4.0.0
-  args: ^2.3.0
+  recase: ^4.1.0
+  args: ^2.4.1
   flutter_test:
     sdk: flutter
-  version: ^2.0.0
+  version: ^3.0.2
   ansicolor: ^2.0.1
-  flutter_lints: ^1.0.0
-  pub_semver: ^2.1.1
+  flutter_lints: ^2.0.1
+  pub_semver: ^2.1.4
 
 flutter:
   fonts:
