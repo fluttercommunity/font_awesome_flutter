@@ -5,9 +5,11 @@ import 'dart:io';
 
 import 'package:ansicolor/ansicolor.dart';
 import 'package:args/args.dart';
+import 'package:pub_semver/pub_semver.dart' as pub;
 import 'package:recase/recase.dart';
 import 'package:version/version.dart';
-import 'package:pub_semver/pub_semver.dart' as pub;
+
+import 'custom_icon_transfer_object.dart';
 
 /// A map which adjusts icon ids starting with a number
 ///
@@ -102,23 +104,28 @@ void main(List<String> rawArgs) async {
     print(blue('No icons.json found, updating free icons'));
     const repositoryName = 'FortAwesome/Font-Awesome';
     final defaultBranch = await getRepositoryDefaultBranch(repositoryName);
-    print(blue(
-        'Choosing branch "$defaultBranch" of repository https://github.com/' +
-            repositoryName));
+    print(blue('Choosing branch "$defaultBranch" of repository https://github.com/' + repositoryName));
+    await download('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/metadata/icons.json', File('lib/fonts/icons.json'));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/metadata/icons.json',
-        File('lib/fonts/icons.json'));
-    await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-brands-400.ttf',
-        File('lib/fonts/fa-brands-400.ttf'));
-    await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-regular-400.ttf',
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-brands-400.ttf', File('lib/fonts/fa-brands-400.ttf'));
+    await download('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-regular-400.ttf',
         File('lib/fonts/fa-regular-400.ttf'));
     await download(
-        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-solid-900.ttf',
-        File('lib/fonts/fa-solid-900.ttf'));
+        'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$defaultBranch/webfonts/fa-solid-900.ttf', File('lib/fonts/fa-solid-900.ttf'));
   } else {
     print(blue('Custom icons.json found, generating files'));
+    final customKitIconFont = File('lib/fonts/custom-icons.ttf');
+    final hasCustomKitIcon = customKitIconFont.existsSync();
+    if (hasCustomKitIcon && args['install-custom-kit']) {
+      print(blue('Custom Kit installation command found.'));
+      final customKitIconJS = File('lib/fonts/custom-icons.js');
+      final hasCustomKitIconJS = customKitIconJS.existsSync();
+      if (!hasCustomKitIconJS) {
+        print(red('Cannot find JS file for custom kit icons. Skip installing custom kit icon for now.'));
+      } else {
+        await updateIconJsonFile(iconsJson, customKitIconJS);
+      }
+    }
   }
 
   // A list of all versions mentioned in the metadata
@@ -127,13 +134,11 @@ void main(List<String> rawArgs) async {
   final Set<String> styles = {};
   // duotone icons are no longer supported
   final List<String> excludedStyles = ['duotone', ...args['exclude']];
-  var hasDuotoneIcons = readAndPickMetadata(
-      iconsJson, metadata, styles, versions, excludedStyles);
+  var hasDuotoneIcons = readAndPickMetadata(iconsJson, metadata, styles, versions, excludedStyles);
   if (hasDuotoneIcons) {
     // Duotone are no longer supported - temporarily added notice to avoid
     // confusion
-    print(red(
-        'Duotone icons are no longer supported. Automatically disabled them.'));
+    print(red('Duotone icons are no longer supported. Automatically disabled them.'));
   }
   hasDuotoneIcons = false;
 
@@ -213,9 +218,7 @@ void adjustPubspecFontIncludes(Set<String> styles) {
   pubspecFile.writeAsStringSync(pubspec.join('\n'));
 
   print(blue('\nFound and enabled the following icon styles:'));
-  enabledStyles.isEmpty
-      ? print(red("None"))
-      : print(blue(enabledStyles.join(', ')));
+  enabledStyles.isEmpty ? print(red("None")) : print(blue(enabledStyles.join(', ')));
 
   print(blue('\nRunning "flutter pub get"'));
   final result = Process.runSync('flutter', ['pub', 'get'], runInShell: true);
@@ -327,8 +330,7 @@ to complete successfully.
 }
 
 /// Builds the class with icon definitions and returns the output
-List<String> generateIconDefinitionClass(
-    List<IconMetadata> metadata, Version version) {
+List<String> generateIconDefinitionClass(List<IconMetadata> metadata, Version version) {
   final List<String> output = [
     'library font_awesome_flutter;',
     '',
@@ -476,12 +478,9 @@ Future printVersionNotice(String repositoryName) async {
   try {
     final packageVersion = pub.Version.parse(getPackageVersion());
 
-    print(blue(
-        'Using font_awesome_flutter version ' + packageVersion.toString()));
+    print(blue('Using font_awesome_flutter version ' + packageVersion.toString()));
 
-    await download(
-        'https://api.github.com/repos/' + repositoryName + '/releases',
-        tmpFile);
+    await download('https://api.github.com/repos/' + repositoryName + '/releases', tmpFile);
 
     String rawReleasesData = await tmpFile.readAsString();
     List releasesData = json.decode(rawReleasesData);
@@ -491,12 +490,7 @@ Future printVersionNotice(String repositoryName) async {
       var releaseName = release["name"] as String;
       releaseName = releaseName.isEmpty ? release["tag_name"] : releaseName;
       // remove possible prefixes
-      releaseName = releaseName
-          .toLowerCase()
-          .replaceAll('version', '')
-          .replaceAll('v.', '')
-          .replaceAll('v', '')
-          .trim();
+      releaseName = releaseName.toLowerCase().replaceAll('version', '').replaceAll('v.', '').replaceAll('v', '').trim();
       final version = pub.Version.parse(releaseName);
       if (version.isPreRelease) {
         preReleases.add(version);
@@ -515,15 +509,13 @@ Future printVersionNotice(String repositoryName) async {
           repositoryName +
           ')'));
     }
-    if (primaryPreRelease > packageVersion &&
-        primaryPreRelease > primaryRelease) {
+    if (primaryPreRelease > packageVersion && primaryPreRelease > primaryRelease) {
       print(yellow('A pre-release version (' +
           primaryPreRelease.toString() +
           ') of font_awesome_flutter is available. Should you encounter any problems, have a look if it fixes them.'));
     }
   } on FormatException catch (_) {
-    print(red(
-        'Error while getting font awesome flutter\'s version information. Could not determine whether you are using the latest version.'));
+    print(red('Error while getting font awesome flutter\'s version information. Could not determine whether you are using the latest version.'));
   } finally {
     tmpFile.delete();
   }
@@ -539,8 +531,7 @@ Future printVersionNotice(String repositoryName) async {
 /// latest font awesome version.
 /// [excludedStyles], which can be set in the program arguments, are removed.
 /// Returns whether the dataset contains duotone icons.
-bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
-    Set<String> styles, List<String> versions, List<String> excludedStyles) {
+bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata, Set<String> styles, List<String> versions, List<String> excludedStyles) {
   var hasDuotoneIcons = false;
 
   dynamic rawMetadata;
@@ -548,8 +539,7 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     final content = iconsJson.readAsStringSync();
     rawMetadata = json.decode(content);
   } catch (_) {
-    print(
-        'Error: Invalid icons.json. Please make sure you copied the correct file.');
+    print('Error: Invalid icons.json. Please make sure you copied the correct file.');
     exit(1);
   }
 
@@ -625,11 +615,7 @@ Future download(String url, File target) async {
 ArgParser setUpArgParser() {
   final argParser = ArgParser();
 
-  argParser.addFlag('help',
-      abbr: 'h',
-      defaultsTo: false,
-      negatable: false,
-      help: 'display program options and usage information');
+  argParser.addFlag('help', abbr: 'h', defaultsTo: false, negatable: false, help: 'display program options and usage information');
 
   argParser.addMultiOption('exclude',
       abbr: 'e',
@@ -638,12 +624,52 @@ ArgParser setUpArgParser() {
       help: 'icon styles which are excluded by the generator');
 
   argParser.addFlag('dynamic',
-      abbr: 'd',
-      defaultsTo: false,
-      negatable: false,
-      help: 'builds a map, which allows to dynamically retrieve icons by name');
+      abbr: 'd', defaultsTo: false, negatable: false, help: 'builds a map, which allows to dynamically retrieve icons by name');
+
+  argParser.addFlag('install-custom-kit', abbr: 'k', defaultsTo: false, help: 'Install Custom Kit for PRO user');
 
   return argParser;
+}
+
+/// Update icon.json file to include custom kit icons
+Future<void> updateIconJsonFile(File iconsJson, File customKitIconJS) async {
+  Map<String, CustomIconTransferObject> customIcons = {};
+  final lines = await customKitIconJS.readAsLines();
+  final iconIndex = lines.indexWhere((line) => line.contains('var icons = {'));
+  final iconEndsIndex = lines.indexWhere((line) => line.contains('};'), iconIndex);
+  final customIconJson = ['{', lines.sublist(iconIndex + 1, iconEndsIndex).join().trim(), '}'].join();
+  final json = jsonDecode(customIconJson) as Map<String, dynamic>;
+  json.forEach((key, value) {
+    // Json Value:
+    // "icon-name": [width, height, searchTerm, unicode, path]
+    final width = value[0];
+    final height = value[1];
+    final unicode = value[3];
+    final path = value[4];
+    // Convert icon name to camelCase
+    String mapKey =
+        key.splitMapJoin('-', onNonMatch: (group) => group.isEmpty ? group : '${group[0].toUpperCase()}${group.substring(1)}', onMatch: (_) => '');
+    mapKey = mapKey[0].toLowerCase() + mapKey.substring(1);
+    customIcons[mapKey] = CustomIconTransferObject(
+        label: key.split('-').map((word) => word.isEmpty ? word : '${word[0].toUpperCase()}${word.substring(1)}').join(' '),
+        unicode: unicode,
+        svg: <String, SvgTransferObject>{
+          'customKit': SvgTransferObject(
+            lastModified: DateTime.now().millisecondsSinceEpoch,
+            width: width,
+            height: height,
+            path: path,
+            viewBox: [0, 0, width, height],
+            raw: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 $width $height"><path d="$path"/></svg>',
+          )
+        });
+  });
+  Map<String, dynamic> fileContent = jsonDecode(iconsJson.readAsStringSync());
+  customIcons.forEach((key, value) {
+    fileContent[key] = value.toJson();
+  });
+  await iconsJson.writeAsString(jsonEncode(fileContent));
+  print(yellow("icons.json file successfully updated"));
 }
 
 /// Displays the program help page. Accessible via the --help command line arg
