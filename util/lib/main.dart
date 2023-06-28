@@ -300,7 +300,7 @@ to complete successfully.
     "  var icon = separatedCssClasses.firstWhere((c) => c.startsWith('fa-'));",
     "  icon = icon.replaceFirst('fa-', '');",
     '',
-    "  return faIconNameMapping[style + ' ' + icon] ?? FontAwesomeIcons.circleQuestion;",
+    "  return faIconNameMapping['\$style \$icon'];",
     '  } on StateError {',
     '  return null;',
     '  }',

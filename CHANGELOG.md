@@ -1,3 +1,7 @@
+## 10.5.1
+* Hotfix #244 - regular font still used
+* Update package description icon count
+
 ## 10.5.0
 * Fix #244 - dynamic icon retrieval requires regular font
   * BREAKING: getIconFromCss now returns null if no matching icon is found
