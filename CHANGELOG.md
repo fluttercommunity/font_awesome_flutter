@@ -1,3 +1,8 @@
+## 10.5.0
+* Fix #244 - dynamic icon retrieval requires regular font
+  * BREAKING: getIconFromCss now returns null if no matching icon is found
+* Upgrade to Font Awesome 6.4.0
+
 ## 10.4.0
 * Upgrade to Font Awesome 6.3.0
 * Fix: doc misspells function - thanks @ulrikkold !
