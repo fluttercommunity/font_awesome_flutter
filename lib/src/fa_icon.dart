@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
@@ -26,6 +27,7 @@ class FaIcon extends StatelessWidget {
     this.color,
     this.semanticLabel,
     this.textDirection,
+    this.shadows,
   }) : super(key: key);
 
   /// The icon to display. Available icons are listed in [FontAwesomeIcons].
@@ -102,6 +104,17 @@ class FaIcon extends StatelessWidget {
   /// specified, either directly using this property or using [Directionality].
   final TextDirection? textDirection;
 
+  /// A list of [Shadow]s that will be painted underneath the icon.
+  ///
+  /// Multiple shadows are supported to replicate lighting from multiple light
+  /// sources.
+  ///
+  /// Shadows must be in the same order for [Icon] to be considered as
+  /// equivalent as order produces differing transparency.
+  ///
+  /// Defaults to the nearest [IconTheme]'s [IconThemeData.shadows].
+  final List<Shadow>? shadows;
+
   @override
   Widget build(BuildContext context) {
     assert(this.textDirection != null || debugCheckHasDirectionality(context));
@@ -111,6 +124,7 @@ class FaIcon extends StatelessWidget {
     final IconThemeData iconTheme = IconTheme.of(context);
 
     final double? iconSize = size ?? iconTheme.size;
+    final List<Shadow>? iconShadows = shadows ?? iconTheme.shadows;
 
     if (icon == null) {
       return Semantics(
@@ -138,6 +152,7 @@ class FaIcon extends StatelessWidget {
           fontSize: iconSize,
           fontFamily: icon!.fontFamily,
           package: icon!.fontPackage,
+          shadows: iconShadows,
         ),
       ),
     );
@@ -172,5 +187,7 @@ class FaIcon extends StatelessWidget {
         IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
     properties.add(DoubleProperty('size', size, defaultValue: null));
     properties.add(ColorProperty('color', color, defaultValue: null));
+    properties
+        .add(IterableProperty<Shadow>('shadows', shadows, defaultValue: null));
   }
 }
