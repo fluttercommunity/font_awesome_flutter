@@ -515,7 +515,7 @@ Future printVersionNotice(String repositoryName) async {
       print(yellow(
           'A pre-release version ($primaryPreRelease) of font_awesome_flutter is available. Should you encounter any problems, have a look if it fixes them.'));
     }
-  } on FormatException catch (_) {
+  } catch (_) {
     print(red(
         'Error while getting font awesome flutter\'s version information. Could not determine whether you are using the latest version.'));
   } finally {
