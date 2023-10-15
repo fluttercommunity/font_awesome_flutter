@@ -1,5 +1,6 @@
 ## 10.6.0
 * Upgrade to Font Awesome 6.4.2
+* Add @staticIconProvider annotation
 
 ## 10.5.1
 * Hotfix #244 - regular font still used
