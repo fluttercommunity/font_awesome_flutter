@@ -2099,4 +2099,6 @@ const Map<String, IconData> faIconNameMapping = {
   'brands youtube': FontAwesomeIcons.youtube,
   'solid z': FontAwesomeIcons.z,
   'brands zhihu': FontAwesomeIcons.zhihu,
+  'solid home': FontAwesomeIcons.house,
+  'solid cog': FontAwesomeIcons.gear,
 };
