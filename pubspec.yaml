@@ -19,7 +19,7 @@ dev_dependencies:
     sdk: flutter
   version: ^3.0.2
   ansicolor: ^2.0.1
-  flutter_lints: ^2.0.1
+  flutter_lints: ^4.0.0
   pub_semver: ^2.1.4
 
 flutter:
