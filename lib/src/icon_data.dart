@@ -6,9 +6,8 @@ import 'package:flutter/widgets.dart';
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataBrands extends IconData {
-  const IconDataBrands(int codePoint)
+  const IconDataBrands(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeBrands',
           fontPackage: 'font_awesome_flutter',
         );
@@ -18,9 +17,8 @@ class IconDataBrands extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataSolid extends IconData {
-  const IconDataSolid(int codePoint)
+  const IconDataSolid(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeSolid',
           fontPackage: 'font_awesome_flutter',
         );
@@ -30,9 +28,8 @@ class IconDataSolid extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataRegular extends IconData {
-  const IconDataRegular(int codePoint)
+  const IconDataRegular(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeRegular',
           fontPackage: 'font_awesome_flutter',
         );
@@ -43,9 +40,8 @@ class IconDataRegular extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataLight extends IconData {
-  const IconDataLight(int codePoint)
+  const IconDataLight(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeLight',
           fontPackage: 'font_awesome_flutter',
         );
@@ -63,9 +59,8 @@ class IconDataDuotone extends IconData {
   /// but has to be an [IconData] object.
   final IconData? secondary;
 
-  const IconDataDuotone(int codePoint, {this.secondary})
+  const IconDataDuotone(super.codePoint, {this.secondary})
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeDuotone',
           fontPackage: 'font_awesome_flutter',
         );
@@ -76,9 +71,8 @@ class IconDataDuotone extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataThin extends IconData {
-  const IconDataThin(int codePoint)
+  const IconDataThin(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeThin',
           fontPackage: 'font_awesome_flutter',
         );
