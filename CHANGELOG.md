@@ -1,6 +1,7 @@
 ## 10.8.0
 * Upgrade to Font Awesome 6.6.0
 * Fix linter warnings
+* Add support for sharp icons - thanks @JudahMcNicholl!
 
 ## 10.7.0
 * Upgrade to Font Awesome 6.5.1
