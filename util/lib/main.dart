@@ -194,7 +194,7 @@ void adjustPubspecFontIncludes(Set<String> styles) {
     if (!line.trimLeft().startsWith('- family:')) continue;
 
     styleName = line.substring(25).toLowerCase(); // - family: FontAwesomeXXXXXX
-    if (styles.contains(styleName)) {
+    if (styles.any((element) => element.replaceAll(' ', '') == styleName)) { //Because of 'sharp thin' we need to remove spaces here
       pubspec[i] = uncommentYamlLine(pubspec[i]);
       pubspec[i + 1] = uncommentYamlLine(pubspec[i + 1]);
       pubspec[i + 2] = uncommentYamlLine(pubspec[i + 2]);
@@ -445,7 +445,7 @@ String normalizeIconName(String iconName, String style, int styleCompetitors) {
 
 /// Utility function to generate the correct 'IconData' subclass for a [style]
 String styleToDataSource(String style) {
-  return 'IconData${style[0].toUpperCase()}${style.substring(1)}';
+  return 'IconData${style.split(' ').map((word) => word.isNotEmpty ? word[0].toUpperCase() + word.substring(1) : '').toList().join('')}';
 }
 
 /// Gets the default branch from github's metadata
@@ -556,13 +556,25 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
       versions.add(v);
     }
 
-    List<String> iconStyles = (icon['styles'] as List).cast<String>();
-
+    List<String> iconStyles = [];
+    if (icon.containsKey("styles")) {
+      iconStyles = (icon['styles'] as List).cast<String>();
+    } else if (icon.containsKey("svgs")) {
+      iconStyles.addAll((icon['svgs']['classic'] as Map<String, dynamic>).keys);
+      if (icon['svgs']?['sharp'] != null) {
+        iconStyles.addAll((icon['svgs']['sharp'] as Map<String, dynamic>).keys.map((key) => 'sharp $key')); //"sharp thin ..."
+      }
+    }
     //TODO: Remove line once duotone support discontinuation notice is removed
     if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
 
     for (var excluded in excludedStyles) {
-      iconStyles.remove(excluded);
+      if (excluded == 'sharp') {
+        //Since it's 'sharp thin' then remove any containing sharp
+        iconStyles.removeWhere((element) => element.contains('sharp'));
+      } else {
+        iconStyles.remove(excluded);
+      }
     }
 
     if (iconStyles.isEmpty) continue;
@@ -628,7 +640,7 @@ ArgParser setUpArgParser() {
   argParser.addMultiOption('exclude',
       abbr: 'e',
       defaultsTo: [],
-      allowed: ['brands', 'regular', 'solid', 'duotone', 'light', 'thin'],
+      allowed: ['brands', 'regular', 'solid', 'duotone', 'light', 'thin', 'sharp'],
       help: 'icon styles which are excluded by the generator');
 
   argParser.addFlag('dynamic',
