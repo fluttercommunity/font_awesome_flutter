@@ -83,9 +83,8 @@ class IconDataThin extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataSharpThin extends IconData {
-  const IconDataSharpThin(int codePoint)
+  const IconDataSharpThin(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeSharpThin',
           fontPackage: 'font_awesome_flutter',
         );
@@ -96,9 +95,8 @@ class IconDataSharpThin extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataSharpLight extends IconData {
-  const IconDataSharpLight(int codePoint)
+  const IconDataSharpLight(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeSharpLight',
           fontPackage: 'font_awesome_flutter',
         );
@@ -109,9 +107,8 @@ class IconDataSharpLight extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataSharpRegular extends IconData {
-  const IconDataSharpRegular(int codePoint)
+  const IconDataSharpRegular(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeSharpRegular',
           fontPackage: 'font_awesome_flutter',
         );
@@ -122,9 +119,8 @@ class IconDataSharpRegular extends IconData {
 ///
 /// Code points can be obtained from fontawesome.com
 class IconDataSharpSolid extends IconData {
-  const IconDataSharpSolid(int codePoint)
+  const IconDataSharpSolid(super.codePoint)
       : super(
-          codePoint,
           fontFamily: 'FontAwesomeSharpSolid',
           fontPackage: 'font_awesome_flutter',
         );
