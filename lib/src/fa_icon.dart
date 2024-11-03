@@ -22,13 +22,13 @@ class FaIcon extends StatelessWidget {
   /// The [size] and [color] default to the value given by the current [IconTheme].
   const FaIcon(
     this.icon, {
-    Key? key,
+    super.key,
     this.size,
     this.color,
     this.semanticLabel,
     this.textDirection,
     this.shadows,
-  }) : super(key: key);
+  });
 
   /// The icon to display. Available icons are listed in [FontAwesomeIcons].
   ///

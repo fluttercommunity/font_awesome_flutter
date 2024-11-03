@@ -8,7 +8,7 @@ void main() {
 }
 
 class FontAwesomeGalleryApp extends StatelessWidget {
-  const FontAwesomeGalleryApp({Key? key}) : super(key: key);
+  const FontAwesomeGalleryApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class FontAwesomeGalleryApp extends StatelessWidget {
 }
 
 class FontAwesomeGalleryHome extends StatefulWidget {
-  const FontAwesomeGalleryHome({Key? key}) : super(key: key);
+  const FontAwesomeGalleryHome({super.key});
 
   @override
   State<StatefulWidget> createState() => FontAwesomeGalleryHomeState();
