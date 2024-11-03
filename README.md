@@ -89,7 +89,9 @@ a public github repository or other public file sharing services.
 * Go to the location of your custom font_awesome_flutter version (see [setup](#setup))
 * Download the web version of font awesome pro and open it
 * Move **all** `.ttf` files from the `webfonts` directory and `icons.json` from `metadata` to
-  `path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files.
+  `path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files. 
+  Newer versions might have an `icon-families.json`.  If this is the case, 
+  move its contents to `path/to/your/font_awesome_flutter/lib/fonts/icons.json`.
 * Run the configurator. It should say "Custom icons.json found"
 
 It may be required to run `flutter clean` in apps who use this version for changes to appear.
@@ -112,12 +114,12 @@ As all icons could theoretically be requested, none can be removed by flutter. I
 option in conjunction with [a limited set of styles](#excluding-styles) and with as few of them as possible. You may
 need to build your app with the `--no-tree-shake-icons` flag for it to succeed.
 
-Using the new configurator tool, this is now an optional feature. Run the tool with the `--dynamic` flag to generate...
+Using the configurator tool, this is now an optional feature. Run the tool with the `--dynamic` flag to generate...
 ```
 $ ./configurator.sh --dynamic
 ```
-...and the following import to use the map. For normal icons, use `faIconNameMapping` with a key of this format:
-'style icon-name'.
+...and use the following import to access the map. For normal icons, use 
+`faIconNameMapping` with a key of this format: 'style icon-name'.
 ```dart
 import 'package:font_awesome_flutter/name_icon_mapping.dart';
 
