@@ -1,4 +1,4 @@
-library;
+library font_awesome_flutter;
 
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/src/icon_data.dart';

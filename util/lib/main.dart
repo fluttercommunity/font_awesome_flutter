@@ -568,7 +568,7 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
             .map((key) => 'sharp $key')); //"sharp thin ..."
       }
     }
-    //Remove line once duotone support discontinuation notice is removed
+    //TODO: Remove line once duotone support discontinuation notice is removed
     if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
 
     for (var excluded in excludedStyles) {
