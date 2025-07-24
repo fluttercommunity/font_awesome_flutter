@@ -1,5 +1,8 @@
-## 10.9.0
+## 11.0.0
+* Upgrade to Font Awesome 7.0.0
+  * **Note**: Font Awesome 7 does not include `.ttf` font files anymore, so the lib now uses the `.otf` files.
 
+## 10.9.0
 - Upgrade to Font Awesome 6.7.2
 - Refactor icon color opacity handling and update example icons - thanks @bennajah!
 
