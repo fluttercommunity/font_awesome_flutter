@@ -194,7 +194,8 @@ void adjustPubspecFontIncludes(Set<String> styles) {
     if (!line.trimLeft().startsWith('- family:')) continue;
 
     styleName = line.substring(25).toLowerCase(); // - family: FontAwesomeXXXXXX
-    if (styles.any((element) => element.replaceAll(' ', '') == styleName)) { //Because of 'sharp thin' we need to remove spaces here
+    if (styles.any((element) => element.replaceAll(' ', '') == styleName)) {
+      //Because of 'sharp thin' we need to remove spaces here
       pubspec[i] = uncommentYamlLine(pubspec[i]);
       pubspec[i + 1] = uncommentYamlLine(pubspec[i + 1]);
       pubspec[i + 2] = uncommentYamlLine(pubspec[i + 2]);
@@ -562,7 +563,9 @@ bool readAndPickMetadata(File iconsJson, List<IconMetadata> metadata,
     } else if (icon.containsKey("svgs")) {
       iconStyles.addAll((icon['svgs']['classic'] as Map<String, dynamic>).keys);
       if (icon['svgs']?['sharp'] != null) {
-        iconStyles.addAll((icon['svgs']['sharp'] as Map<String, dynamic>).keys.map((key) => 'sharp $key')); //"sharp thin ..."
+        iconStyles.addAll((icon['svgs']['sharp'] as Map<String, dynamic>)
+            .keys
+            .map((key) => 'sharp $key')); //"sharp thin ..."
       }
     }
     //TODO: Remove line once duotone support discontinuation notice is removed
@@ -640,7 +643,15 @@ ArgParser setUpArgParser() {
   argParser.addMultiOption('exclude',
       abbr: 'e',
       defaultsTo: [],
-      allowed: ['brands', 'regular', 'solid', 'duotone', 'light', 'thin', 'sharp'],
+      allowed: [
+        'brands',
+        'regular',
+        'solid',
+        'duotone',
+        'light',
+        'thin',
+        'sharp'
+      ],
       help: 'icon styles which are excluded by the generator');
 
   argParser.addFlag('dynamic',
