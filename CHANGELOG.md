@@ -1,7 +1,7 @@
 ## 10.9.0
 
 - Upgrade to Font Awesome 6.7.2
-- Refactor icon color opacity handling and update example icons
+- Refactor icon color opacity handling and update example icons - thanks @bennajah!
 
 ## 10.8.0
 
