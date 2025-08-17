@@ -1,8 +1,13 @@
 ## 11.0.0
-* Upgrade to Font Awesome 7.0.0
-  * **Note**: Font Awesome 7 does not include `.ttf` font files anymore, so the lib now uses the `.otf` files.
+- Upgrade to Font Awesome 7.0.0
+  - **Note**: Font Awesome 7 does not include `.ttf` font files anymore, so the lib now uses the `.otf` files.
+
+## 10.9.1
+
+- Fix #276 - breaks build using flutter 3.24 or lower - thanks @ptran-dev!
 
 ## 10.9.0
+
 - Upgrade to Font Awesome 6.7.2
 - Refactor icon color opacity handling and update example icons - thanks @bennajah!
 
