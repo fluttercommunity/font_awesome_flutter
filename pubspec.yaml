@@ -3,7 +3,7 @@ description: The Font Awesome Icon pack available as Flutter Icons. Provides 200
 maintainer: Michael Spiss (@michaelspiss)
 repository: https://github.com/fluttercommunity/font_awesome_flutter
 issue_tracker: https://github.com/fluttercommunity/font_awesome_flutter/issues
-version: 10.9.1
+version: 11.0.0
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -27,37 +27,37 @@ flutter:
   fonts:
     - family: FontAwesomeBrands
       fonts:
-        - asset: lib/fonts/fa-brands-400.ttf
+        - asset: lib/fonts/Font Awesome 7 Brands-Regular-400.otf
           weight: 400
     - family: FontAwesomeRegular
       fonts:
-        - asset: lib/fonts/fa-regular-400.ttf
+        - asset: lib/fonts/Font Awesome 7 Free-Regular-400.otf
           weight: 400
     - family: FontAwesomeSolid
       fonts:
-        - asset: lib/fonts/fa-solid-900.ttf
+        - asset: lib/fonts/Font Awesome 7 Free-Solid-900.otf
           weight: 900
 #    - family: FontAwesomeLight
 #      fonts:
-#        - asset: lib/fonts/fa-light-300.ttf
+#        - asset: lib/fonts/Font Awesome 7 Pro-Light-300.otf
 #          weight: 300
 #    - family: FontAwesomeThin
 #      fonts:
-#        - asset: lib/fonts/fa-thin-100.ttf
+#        - asset: lib/fonts/Font Awesome 7 Pro-Thin-100.otf
 #          weight: 100
 #    - family: FontAwesomeSharpThin
 #      fonts:
-#        - asset: lib/fonts/fa-sharp-thin-100.ttf
+#        - asset: lib/fonts/Font Awesome 7 Sharp-Thin-100.otf
 #          weight: 100
 #    - family: FontAwesomeSharpLight
 #      fonts:
-#        - asset: lib/fonts/fa-sharp-light-300.ttf
+#        - asset: lib/fonts/Font Awesome 7 Sharp-Light-300.otf
 #          weight: 300
 #    - family: FontAwesomeSharpRegular
 #      fonts:
-#        - asset: lib/fonts/fa-sharp-regular-400.ttf
+#        - asset: lib/fonts/Font Awesome 7 Sharp-Regular-400.otf
 #          weight: 400
 #    - family: FontAwesomeSharpSolid
 #      fonts:
-#        - asset: lib/fonts/fa-sharp-solid-900.ttf
+#        - asset: lib/fonts/Font Awesome 7 Sharp-Solid-900.otf
 #          weight: 900
