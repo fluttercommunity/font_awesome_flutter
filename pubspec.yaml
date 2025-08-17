@@ -3,10 +3,10 @@ description: The Font Awesome Icon pack available as Flutter Icons. Provides 200
 maintainer: Michael Spiss (@michaelspiss)
 repository: https://github.com/fluttercommunity/font_awesome_flutter
 issue_tracker: https://github.com/fluttercommunity/font_awesome_flutter/issues
-version: 10.9.0
+version: 10.9.1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.27.0 <4.0.0"
 
 dependencies:
   flutter:

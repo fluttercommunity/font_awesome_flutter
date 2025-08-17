@@ -1,3 +1,7 @@
+## 10.9.1
+
+- Fix #276 - breaks build using flutter 3.24 or lower - thanks @ptran-dev!
+
 ## 10.9.0
 
 - Upgrade to Font Awesome 6.7.2
