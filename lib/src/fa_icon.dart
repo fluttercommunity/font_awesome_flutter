@@ -16,21 +16,34 @@ import 'package:flutter/widgets.dart';
 ///
 /// This Widget does not wrap the icons in a fixed square box, which allows the
 /// icons to render based on their size.
+///
+/// This is basically a copy of flutter's original `Icon` widget, but with the
+/// `SizedBox` and `Center` widgets removed.
+///
+/// Original source code:
+/// https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon.dart
 class FaIcon extends StatelessWidget {
   /// Creates an icon.
-  ///
-  /// The [size] and [color] default to the value given by the current [IconTheme].
   const FaIcon(
-    this.icon, {
-    super.key,
-    this.size,
-    this.color,
-    this.semanticLabel,
-    this.textDirection,
-    this.shadows,
-  });
+      this.icon, {
+        super.key,
+        this.size,
+        this.fill,
+        this.weight,
+        this.grade,
+        this.opticalSize,
+        this.color,
+        this.shadows,
+        this.semanticLabel,
+        this.textDirection,
+        this.applyTextScaling,
+        this.blendMode,
+        this.fontWeight,
+      }) : assert(fill == null || (0.0 <= fill && fill <= 1.0)),
+        assert(weight == null || (0.0 < weight)),
+        assert(opticalSize == null || (0.0 < opticalSize));
 
-  /// The icon to display. Available icons are listed in [FontAwesomeIcons].
+  /// The icon to display. The available icons are described in [Icons].
   ///
   /// The icon can be null, in which case the widget will render as an empty
   /// space of the specified [size].
@@ -40,33 +53,95 @@ class FaIcon extends StatelessWidget {
   ///
   /// Icons occupy a square with width and height equal to size.
   ///
-  /// Defaults to the current [IconTheme] size, if any. If there is no
-  /// [IconTheme], or it does not specify an explicit size, then it defaults to
-  /// 24.0.
+  /// Defaults to the nearest [IconTheme]'s [IconThemeData.size].
   ///
   /// If this [Icon] is being placed inside an [IconButton], then use
   /// [IconButton.iconSize] instead, so that the [IconButton] can make the splash
   /// area the appropriate size as well. The [IconButton] uses an [IconTheme] to
-  /// pass down the size to the [FaIcon].
+  /// pass down the size to the [Icon].
   final double? size;
+
+  /// The fill for drawing the icon.
+  ///
+  /// Requires the underlying icon font to support the `FILL` [FontVariation]
+  /// axis, otherwise has no effect. Variable font filenames often indicate
+  /// the supported axes. Must be between 0.0 (unfilled) and 1.0 (filled),
+  /// inclusive.
+  ///
+  /// Can be used to convey a state transition for animation or interaction.
+  ///
+  /// Defaults to nearest [IconTheme]'s [IconThemeData.fill].
+  ///
+  /// See also:
+  ///  * [weight], for controlling stroke weight.
+  ///  * [grade], for controlling stroke weight in a more granular way.
+  ///  * [opticalSize], for controlling optical size.
+  final double? fill;
+
+  /// The stroke weight for drawing the icon.
+  ///
+  /// Requires the underlying icon font to support the `wght` [FontVariation]
+  /// axis, otherwise has no effect. Variable font filenames often indicate
+  /// the supported axes. Must be greater than 0.
+  ///
+  /// Defaults to nearest [IconTheme]'s [IconThemeData.weight].
+  ///
+  /// See also:
+  ///  * [fill], for controlling fill.
+  ///  * [grade], for controlling stroke weight in a more granular way.
+  ///  * [opticalSize], for controlling optical size.
+  ///  * https://fonts.google.com/knowledge/glossary/weight_axis
+  final double? weight;
+
+  /// The grade (granular stroke weight) for drawing the icon.
+  ///
+  /// Requires the underlying icon font to support the `GRAD` [FontVariation]
+  /// axis, otherwise has no effect. Variable font filenames often indicate
+  /// the supported axes. Can be negative.
+  ///
+  /// Grade and [weight] both affect a symbol's stroke weight (thickness), but
+  /// grade has a smaller impact on the size of the symbol.
+  ///
+  /// Grade is also available in some text fonts. One can match grade levels
+  /// between text and symbols for a harmonious visual effect. For example, if
+  /// the text font has a -25 grade value, the symbols can match it with a
+  /// suitable value, say -25.
+  ///
+  /// Defaults to nearest [IconTheme]'s [IconThemeData.grade].
+  ///
+  /// See also:
+  ///  * [fill], for controlling fill.
+  ///  * [weight], for controlling stroke weight in a less granular way.
+  ///  * [opticalSize], for controlling optical size.
+  ///  * https://fonts.google.com/knowledge/glossary/grade_axis
+  final double? grade;
+
+  /// The optical size for drawing the icon.
+  ///
+  /// Requires the underlying icon font to support the `opsz` [FontVariation]
+  /// axis, otherwise has no effect. Variable font filenames often indicate
+  /// the supported axes. Must be greater than 0.
+  ///
+  /// For an icon to look the same at different sizes, the stroke weight
+  /// (thickness) must change as the icon size scales. Optical size offers a way
+  /// to automatically adjust the stroke weight as icon size changes.
+  ///
+  /// Defaults to nearest [IconTheme]'s [IconThemeData.opticalSize].
+  ///
+  /// See also:
+  ///  * [fill], for controlling fill.
+  ///  * [weight], for controlling stroke weight.
+  ///  * [grade], for controlling stroke weight in a more granular way.
+  ///  * https://fonts.google.com/knowledge/glossary/optical_size_axis
+  final double? opticalSize;
 
   /// The color to use when drawing the icon.
   ///
-  /// Defaults to the current [IconTheme] color, if any.
+  /// Defaults to the nearest [IconTheme]'s [IconThemeData.color].
   ///
   /// The color (whether specified explicitly here or obtained from the
-  /// [IconTheme]) will be further adjusted by the opacity of the current
-  /// [IconTheme], if any.
-  ///
-  /// In material apps, if there is a [Theme] without any [IconTheme]s
-  /// specified, icon colors default to white if the theme is dark
-  /// and black if the theme is light.
-  ///
-  /// If no [IconTheme] and no [Theme] is specified, icons will default to
-  /// black.
-  ///
-  /// See [Theme] to set the current theme and [ThemeData.brightness]
-  /// for setting the current theme's brightness.
+  /// [IconTheme]) will be further adjusted by the nearest [IconTheme]'s
+  /// [IconThemeData.opacity].
   ///
   /// {@tool snippet}
   /// Typically, a Material Design color will be used, as follows:
@@ -80,9 +155,20 @@ class FaIcon extends StatelessWidget {
   /// {@end-tool}
   final Color? color;
 
+  /// A list of [Shadow]s that will be painted underneath the icon.
+  ///
+  /// Multiple shadows are supported to replicate lighting from multiple light
+  /// sources.
+  ///
+  /// Shadows must be in the same order for [Icon] to be considered as
+  /// equivalent as order produces differing transparency.
+  ///
+  /// Defaults to the nearest [IconTheme]'s [IconThemeData.shadows].
+  final List<Shadow>? shadows;
+
   /// Semantic label for the icon.
   ///
-  /// Announced in accessibility modes (e.g TalkBack/VoiceOver).
+  /// Announced by assistive technologies (e.g TalkBack/VoiceOver).
   /// This label does not show in the UI.
   ///
   ///  * [SemanticsProperties.label], which is set to [semanticLabel] in the
@@ -104,28 +190,50 @@ class FaIcon extends StatelessWidget {
   /// specified, either directly using this property or using [Directionality].
   final TextDirection? textDirection;
 
-  /// A list of [Shadow]s that will be painted underneath the icon.
+  /// Whether to scale the size of this widget using the ambient [MediaQuery]'s [TextScaler].
   ///
-  /// Multiple shadows are supported to replicate lighting from multiple light
-  /// sources.
+  /// This is specially useful when you have an icon associated with a text, as
+  /// scaling the text without scaling the icon would result in a confusing
+  /// interface.
   ///
-  /// Shadows must be in the same order for [Icon] to be considered as
-  /// equivalent as order produces differing transparency.
+  /// Defaults to the nearest [IconTheme]'s
+  /// [IconThemeData.applyTextScaling].
+  final bool? applyTextScaling;
+
+  /// The [BlendMode] to apply to the foreground of the icon.
   ///
-  /// Defaults to the nearest [IconTheme]'s [IconThemeData.shadows].
-  final List<Shadow>? shadows;
+  /// Defaults to [BlendMode.srcOver]
+  final BlendMode? blendMode;
+
+  /// The typeface thickness to use when painting the text (e.g., bold).
+  final FontWeight? fontWeight;
 
   @override
   Widget build(BuildContext context) {
     assert(this.textDirection != null || debugCheckHasDirectionality(context));
-    final TextDirection textDirection =
-        this.textDirection ?? Directionality.of(context);
+    final TextDirection textDirection = this.textDirection ?? Directionality.of(context);
 
     final IconThemeData iconTheme = IconTheme.of(context);
 
-    final double? iconSize = size ?? iconTheme.size;
+    final bool applyTextScaling = this.applyTextScaling ?? iconTheme.applyTextScaling ?? false;
+
+    final double tentativeIconSize = size ?? iconTheme.size ?? kDefaultFontSize;
+
+    final double iconSize = applyTextScaling
+        ? MediaQuery.textScalerOf(context).scale(tentativeIconSize)
+        : tentativeIconSize;
+
+    final double? iconFill = fill ?? iconTheme.fill;
+
+    final double? iconWeight = weight ?? iconTheme.weight;
+
+    final double? iconGrade = grade ?? iconTheme.grade;
+
+    final double? iconOpticalSize = opticalSize ?? iconTheme.opticalSize;
+
     final List<Shadow>? iconShadows = shadows ?? iconTheme.shadows;
 
+    final IconData? icon = this.icon;
     if (icon == null) {
       return Semantics(
         label: semanticLabel,
@@ -134,39 +242,55 @@ class FaIcon extends StatelessWidget {
     }
 
     final double iconOpacity = iconTheme.opacity ?? 1.0;
-    Color iconColor = color ?? iconTheme.color!;
+    Color? iconColor = color ?? iconTheme.color!;
+    Paint? foreground;
     if (iconOpacity != 1.0) {
-      iconColor = iconColor.withValues(alpha: iconColor.a * iconOpacity);
+      iconColor = iconColor.withOpacity(iconColor.opacity * iconOpacity);
+    }
+    if (blendMode != null) {
+      foreground = Paint()
+        ..blendMode = blendMode!
+        ..color = iconColor;
+      // Cannot provide both a color and a foreground.
+      iconColor = null;
     }
 
-    Widget iconWidget = RichText(
-      overflow: TextOverflow.visible,
-      // Never clip.
-      textDirection: textDirection,
-      // Since we already fetched it for the assert...
-      text: TextSpan(
-        text: String.fromCharCode(icon!.codePoint),
-        style: TextStyle(
-          inherit: false,
-          color: iconColor,
-          fontSize: iconSize,
-          fontFamily: icon!.fontFamily,
-          package: icon!.fontPackage,
-          shadows: iconShadows,
-        ),
-      ),
+    final TextStyle fontStyle = TextStyle(
+      fontVariations: <FontVariation>[
+        if (iconFill != null) FontVariation('FILL', iconFill),
+        if (iconWeight != null) FontVariation('wght', iconWeight),
+        if (iconGrade != null) FontVariation('GRAD', iconGrade),
+        if (iconOpticalSize != null) FontVariation('opsz', iconOpticalSize),
+      ],
+      inherit: false,
+      color: iconColor,
+      fontSize: iconSize,
+      fontFamily: icon.fontFamily,
+      fontWeight: fontWeight,
+      package: icon.fontPackage,
+      fontFamilyFallback: icon.fontFamilyFallback,
+      shadows: iconShadows,
+      height:
+      1.0, // Makes sure the font's body is vertically centered within the iconSize x iconSize square.
+      leadingDistribution: TextLeadingDistribution.even,
+      foreground: foreground,
     );
 
-    if (icon!.matchTextDirection) {
+    Widget iconWidget = RichText(
+      overflow: TextOverflow.visible, // Never clip.
+      textDirection: textDirection, // Since we already fetched it for the assert...
+      text: TextSpan(text: String.fromCharCode(icon.codePoint), style: fontStyle),
+    );
+
+    if (icon.matchTextDirection) {
       switch (textDirection) {
         case TextDirection.rtl:
           iconWidget = Transform(
-            transform: Matrix4.identity()..scale(-1.0, 1.0, 1.0),
+            transform: Matrix4.identity()..scaleByDouble(-1.0, 1.0, 1.0, 1),
             alignment: Alignment.center,
             transformHitTests: false,
             child: iconWidget,
           );
-          break;
         case TextDirection.ltr:
           break;
       }
@@ -183,11 +307,18 @@ class FaIcon extends StatelessWidget {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties.add(
-        IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
+    properties.add(IconDataProperty('icon', icon, ifNull: '<empty>', showName: false));
     properties.add(DoubleProperty('size', size, defaultValue: null));
+    properties.add(DoubleProperty('fill', fill, defaultValue: null));
+    properties.add(DoubleProperty('weight', weight, defaultValue: null));
+    properties.add(DoubleProperty('grade', grade, defaultValue: null));
+    properties.add(DoubleProperty('opticalSize', opticalSize, defaultValue: null));
     properties.add(ColorProperty('color', color, defaultValue: null));
-    properties
-        .add(IterableProperty<Shadow>('shadows', shadows, defaultValue: null));
+    properties.add(IterableProperty<Shadow>('shadows', shadows, defaultValue: null));
+    properties.add(StringProperty('semanticLabel', semanticLabel, defaultValue: null));
+    properties.add(EnumProperty<TextDirection>('textDirection', textDirection, defaultValue: null));
+    properties.add(
+      DiagnosticsProperty<bool>('applyTextScaling', applyTextScaling, defaultValue: null),
+    );
   }
 }
