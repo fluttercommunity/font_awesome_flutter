@@ -92,11 +92,18 @@ a public github repository or other public file sharing services.
 
 * Go to the location of your custom font_awesome_flutter version (see [setup](#setup))
 * Download the desktop version of font awesome pro and open it
-* Move **all** `.otf` files from the `otfs` directory and `icons.json` from `metadata` to
+* Move **all** `.otf` files from the `otfs` directory to
   `path/to/your/font_awesome_flutter/lib/fonts`. Replace existing files.
-  * To prevent issues with the web and testing, make sure to **replace spaces in the filenames with dashes**.
-  * Newer versions might have an `icon-families.json`.  If this is the case, 
-    move its contents to `path/to/your/font_awesome_flutter/lib/fonts/icons.json`.
+  * To prevent issues with the web and testing, **replace spaces in filenames with dashes**
+    (e.g. `Font Awesome 7 Pro-Solid-900.otf` → `Font-Awesome-7-Pro-Solid-900.otf`).
+* For metadata: copy **one** of these files from `metadata/` to `lib/fonts/icons.json`:
+  * `icons.json` – smaller, uses `styles` format. Use this when it exists and has content.
+  * `icon-families.json` – uses `svgs` format, includes `familyStylesByLicense`. Use this if
+    `icons.json` is empty, or if you prefer the richer format.
+  * **Important**: Copy or rename the chosen file so it becomes `lib/fonts/icons.json`. Do **not**
+    merge the two files or paste content between them—they are alternative formats for the same
+    icon set. Full Pro metadata can exceed 100 MB; use [Git LFS](https://git-lfs.github.com/) if
+    you need it in your repo for CI.
 * Run the configurator. It should say "Custom icons.json found"
 
 It may be required to run `flutter clean` in apps who use this version for changes to appear.
