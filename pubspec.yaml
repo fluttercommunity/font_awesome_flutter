@@ -61,3 +61,51 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/Font-Awesome-7-Sharp-Solid-900.otf
 #          weight: 900
+    - family: FontAwesomeChiselRegular
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Chisel-Regular-400.otf
+          weight: 400
+    - family: FontAwesomeEtchSolid
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Etch-Solid-900.otf
+          weight: 900
+    - family: FontAwesomeGraphiteThin
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Graphite-Thin-100.otf
+          weight: 100
+    - family: FontAwesomeJellyFillRegular
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Jelly-Fill-Regular-400.otf
+          weight: 400
+    - family: FontAwesomeJellyRegular
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Jelly-Regular-400.otf
+          weight: 400
+    - family: FontAwesomeNotdogSolid
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Notdog-Solid-900.otf
+          weight: 900
+    - family: FontAwesomeSlabPressRegular
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Slab-Press-Regular-400.otf
+          weight: 400
+    - family: FontAwesomeSlabRegular
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Slab-Regular-400.otf
+          weight: 400
+    - family: FontAwesomeThumbprintLight
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Thumbprint-Light-300.otf
+          weight: 300
+    - family: FontAwesomeUtilityFillSemibold
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Utility-Fill-Semibold-600.otf
+          weight: 600
+    - family: FontAwesomeUtilitySemibold
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Utility-Semibold-600.otf
+          weight: 600
+    - family: FontAwesomeWhiteboardSemibold
+      fonts:
+        - asset: lib/fonts/Font-Awesome-7-Whiteboard-Semibold-600.otf
+          weight: 600

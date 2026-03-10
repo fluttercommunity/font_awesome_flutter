@@ -630,6 +630,90 @@ bool readAndPickMetadata(
           ),
         ); //"sharp thin ..."
       }
+      if (icon['svgs']?['chisel'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['chisel'] as Map<String, dynamic>).keys.map(
+            (key) => 'chisel $key',
+          ),
+        ); //"chisel thin ..."
+      }
+      if (icon['svgs']?['etch'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['etch'] as Map<String, dynamic>).keys.map(
+            (key) => 'etch $key',
+          ),
+        ); //"etch thin ..."
+      }
+      if (icon['svgs']?['graphite'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['graphite'] as Map<String, dynamic>).keys.map(
+            (key) => 'graphite $key',
+          ),
+        ); //"graphite thin ..."
+      }
+      if (icon['svgs']?['jelly'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['jelly'] as Map<String, dynamic>).keys.map(
+            (key) => 'jelly $key',
+          ),
+        ); //"jelly thin ..."
+      }
+      if (icon['svgs']?['jelly-fill'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['jelly-fill'] as Map<String, dynamic>).keys.map(
+            (key) => 'jelly fill $key',
+          ),
+        ); //"jelly fill thin ..."
+      }
+      if (icon['svgs']?['notdog'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['notdog'] as Map<String, dynamic>).keys.map(
+            (key) => 'notdog $key',
+          ),
+        ); //"notdog thin ..."
+      }
+      if (icon['svgs']?['slab'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['slab'] as Map<String, dynamic>).keys.map(
+            (key) => 'slab $key',
+          ),
+        ); //"slab thin ..."
+      }
+      if (icon['svgs']?['slab-press'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['slab-press'] as Map<String, dynamic>).keys.map(
+            (key) => 'slab press $key',
+          ),
+        ); //"slab press thin ..."
+      }
+      if (icon['svgs']?['thumbprint'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['thumbprint'] as Map<String, dynamic>).keys.map(
+            (key) => 'thumbprint $key',
+          ),
+        ); //"thumbprint thin ..."
+      }
+      if (icon['svgs']?['utility'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['utility'] as Map<String, dynamic>).keys.map(
+            (key) => 'utility $key',
+          ),
+        ); //"utility thin ..."
+      }
+      if (icon['svgs']?['utility-fill'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['utility-fill'] as Map<String, dynamic>).keys.map(
+            (key) => 'utility fill $key',
+          ),
+        ); //"utility fill thin ..."
+      }
+      if (icon['svgs']?['whiteboard'] != null) {
+        iconStyles.addAll(
+          (icon['svgs']['whiteboard'] as Map<String, dynamic>).keys.map(
+            (key) => 'whiteboard $key',
+          ),
+        ); //"whiteboard thin ..."
+      }
     }
     //TODO: Remove line once duotone support discontinuation notice is removed
     if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
@@ -638,6 +722,10 @@ bool readAndPickMetadata(
       if (excluded == 'sharp') {
         //Since it's 'sharp thin' then remove any containing sharp
         iconStyles.removeWhere((element) => element.contains('sharp'));
+      } else if (excluded.contains('-')) {
+        iconStyles.removeWhere(
+          (element) => element.contains(excluded.replaceAll('-', ' ')),
+        );
       } else {
         iconStyles.remove(excluded);
       }
@@ -718,6 +806,18 @@ ArgParser setUpArgParser() {
       'light',
       'thin',
       'sharp',
+      'chisel',
+      'etch',
+      'graphite',
+      'jelly',
+      'jelly-fill',
+      'notdog',
+      'slab',
+      'slab-press',
+      'thumbprint',
+      'utility',
+      'utility-fill',
+      'whiteboard',
     ],
     help: 'icon styles which are excluded by the generator',
   );
