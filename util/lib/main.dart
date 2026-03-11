@@ -162,10 +162,17 @@ void main(List<String> rawArgs) async {
   );
 
   print(blue('\nGenerating example code'));
-  writeCodeToFile(
-    () => generateExamplesListClass(metadata),
-    'example/lib/icons.dart',
-  );
+  final exampleDir = Directory('example');
+  if (exampleDir.existsSync()) {
+    writeCodeToFile(
+      () => generateExamplesListClass(metadata),
+      'example/lib/icons.dart',
+    );
+  } else {
+    print(
+      yellow('Skipping example code generation: example/ folder not found.'),
+    );
+  }
 
   if (args['dynamic']) {
     writeCodeToFile(
