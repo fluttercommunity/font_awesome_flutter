@@ -147,11 +147,89 @@ getIconFromCss('far custom-class fa-abacus'); // returns the abacus icon in regu
 
 ## Duotone icons
 
-Duotone support has been discontinued after font awesome changed the way they lay out the icon glyphs inside the font's
-file. The new way using ligatures is not supported by flutter at the moment.
+Duotone icon support is back! Flutter 3.32.5+ resolves OpenType ligatures when text is rendered
+via `RichText` / `TextSpan`, which makes the FA v6/v7 two-layer ligature system work.
 
-For more information on why duotone icon support was discontinued, see
-[this comment](https://github.com/fluttercommunity/font_awesome_flutter/issues/192#issuecomment-1073003668).
+Duotone icons are **Pro-only** — you need the Font Awesome Pro duotone OTF font file.
+
+### Setup
+
+1. Follow the [pro icons setup](#enable-pro-icons) to place your Pro font files and `icons.json`
+   in `lib/fonts`.
+2. Run the configurator with the `--duotone` flag:
+   ```
+   $ ./configurator.sh --duotone
+   ```
+   This generates `FontAwesomeDuotoneIcons` constants in `lib/font_awesome_flutter.dart`
+   and enables the `FontAwesomeDuotone` font family in `pubspec.yaml`.
+
+### Usage
+
+Use the `FaDuotoneIcon` widget instead of `FaIcon`:
+
+```dart
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+// Simple usage — inherits theme color, 40% secondary opacity
+FaDuotoneIcon(FontAwesomeDuotoneIcons.doorOpen, size: 32)
+
+// Custom two-tone colors
+FaDuotoneIcon(
+  FontAwesomeDuotoneIcons.cat,
+  size: 48,
+  primaryColor: Colors.deepPurple,
+  secondaryColor: Colors.amber,
+  secondaryOpacity: 0.6,
+)
+
+// Swap opacity (equivalent to FA's fa-swap-opacity)
+FaDuotoneIcon(
+  FontAwesomeDuotoneIcons.userDoctor,
+  size: 36,
+  swapOpacity: true,
+  primaryColor: Colors.teal,
+)
+```
+
+### How it works
+
+The `FaDuotoneIcon` widget stacks two `RichText` layers using the OTF font's
+name-based ligature system:
+- **Primary layer**: renders `icon-name#` which triggers the font's GSUB ligature
+  substitution to produce the foreground glyph
+- **Secondary layer**: renders `icon-name##` which triggers the GSUB substitution
+  to produce the background/detail glyph
+
+The duotone OTF is registered as a regular font family (not an icon font), which keeps it
+out of Flutter's icon tree-shaker entirely. The full font ships in the app.
+
+### Sharp Duotone
+
+FA v7 also offers Sharp Duotone icons. If your Pro fonts include
+`Font Awesome 7 Sharp Duotone-Solid-900.otf`, the configurator will generate sharp
+duotone constants as well (prefixed with `sharp`, e.g. `FontAwesomeDuotoneIcons.sharpDoorOpen`).
+
+### Properties
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `icon` | `FaDuotoneIconData` | required | The duotone icon to display |
+| `size` | `double?` | `24.0` | Icon size in logical pixels |
+| `primaryColor` | `Color?` | theme color | Primary (foreground) layer color |
+| `secondaryColor` | `Color?` | `primaryColor` | Secondary (background) layer color |
+| `primaryOpacity` | `double` | `1.0` | Primary layer opacity (0.0-1.0) |
+| `secondaryOpacity` | `double` | `0.4` | Secondary layer opacity (0.0-1.0) |
+| `swapOpacity` | `bool` | `false` | Swap opacity values between layers |
+| `semanticLabel` | `String?` | `null` | Accessibility label |
+| `textDirection` | `TextDirection?` | ambient | Text direction override |
+| `fill` | `double?` | theme | Variable font FILL axis |
+| `weight` | `double?` | theme | Variable font wght axis |
+| `grade` | `double?` | theme | Variable font GRAD axis |
+| `opticalSize` | `double?` | theme | Variable font opsz axis |
+| `shadows` | `List<Shadow>?` | theme | Shadows painted beneath the icon |
+| `applyTextScaling` | `bool?` | `false` | Scale icon size with text scaler |
+| `blendMode` | `BlendMode?` | `null` | Blend mode for painting |
+| `fontWeight` | `FontWeight?` | `null` | Font weight for glyph rendering |
 
 ## FAQ
 

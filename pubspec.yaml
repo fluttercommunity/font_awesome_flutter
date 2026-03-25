@@ -61,3 +61,11 @@ flutter:
 #      fonts:
 #        - asset: lib/fonts/Font-Awesome-7-Sharp-Solid-900.otf
 #          weight: 900
+#    - family: FontAwesomeDuotone
+#      fonts:
+#        - asset: lib/fonts/Font-Awesome-7-Duotone-Solid-900.otf
+#          weight: 900
+#    - family: FontAwesomeSharpDuotone
+#      fonts:
+#        - asset: lib/fonts/Font-Awesome-7-Sharp-Duotone-Solid-900.otf
+#          weight: 900

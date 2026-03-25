@@ -10,3 +10,4 @@ packages
 pubspec.lock
 .flutter-plugins
 local.properties
+**/ephemeral/

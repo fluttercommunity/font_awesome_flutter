@@ -133,31 +133,62 @@ void main(List<String> rawArgs) async {
   final List<String> versions = [];
   final List<IconMetadata> metadata = [];
   final Set<String> styles = {};
-  // duotone icons are no longer supported
-  final List<String> excludedStyles = ['duotone', ...args['exclude']];
-  var hasDuotoneIcons = readAndPickMetadata(
+  final List<String> excludedStyles = [...(args['exclude'] as List<String>)];
+  // Always exclude duotone from the main FontAwesomeIcons generation.
+  // Duotone icons use FaDuotoneIconData (not FaIconData) and are generated
+  // into a separate FontAwesomeDuotoneIcons class when --duotone is enabled.
+  excludedStyles.add('duotone');
+  excludedStyles.add('sharp duotone');
+  readAndPickMetadata(
     iconsJson,
     metadata,
     styles,
     versions,
     excludedStyles,
   );
-  if (hasDuotoneIcons) {
-    // Duotone are no longer supported - temporarily added notice to avoid
-    // confusion
-    print(
-      red(
-        'Duotone icons are no longer supported. Automatically disabled them.',
-      ),
-    );
-  }
-  hasDuotoneIcons = false;
 
   final highestVersion = calculateFontAwesomeVersion(versions);
 
+  // Read duotone metadata if --duotone is enabled (before main generation
+  // so the duotone class can be appended to font_awesome_flutter.dart)
+  List<IconMetadata> duotoneMetadata = [];
+  if (args['duotone']) {
+    final Set<String> duotoneStyles = {};
+    final List<String> duotoneVersions = [];
+    // Only exclude non-duotone styles — keep duotone and sharp duotone
+    final List<String> duotoneExcluded = ['brands', 'regular', 'solid', 'light', 'thin',
+      'sharp solid', 'sharp regular', 'sharp light', 'sharp thin',
+      ...(args['exclude'] as List<String>)];
+    readAndPickMetadata(
+      iconsJson,
+      duotoneMetadata,
+      duotoneStyles,
+      duotoneVersions,
+      duotoneExcluded,
+    );
+
+    if (duotoneMetadata.isNotEmpty) {
+      // Add duotone styles so adjustPubspecFontIncludes enables the fonts
+      styles.addAll(duotoneStyles);
+      print(blue('\nFound ${duotoneMetadata.length} duotone icons'));
+    } else {
+      print(
+        yellow(
+          '\nNo duotone icons found in metadata. '
+          'Duotone icons require Font Awesome Pro.',
+        ),
+      );
+    }
+  }
+
+  // Clean up separate duotone file if it exists (duotone icons are now
+  // generated directly into font_awesome_flutter.dart)
+  final legacyDuotoneFile = File('lib/src/icon_data_duotone.dart');
+  if (legacyDuotoneFile.existsSync()) legacyDuotoneFile.deleteSync();
+
   print(blue('\nGenerating icon definitions'));
   writeCodeToFile(
-    () => generateIconDefinitionClass(metadata, highestVersion),
+    () => generateIconDefinitionClass(metadata, highestVersion, duotoneMetadata),
     'lib/font_awesome_flutter.dart',
   );
 
@@ -369,15 +400,20 @@ to complete successfully.
   return output;
 }
 
-/// Builds the class with icon definitions and returns the output
+/// Builds the class with icon definitions and returns the output.
+///
+/// If [duotoneMetadata] is non-empty, a separate [FontAwesomeDuotoneIcons]
+/// class is appended to the same file.
 List<String> generateIconDefinitionClass(
   List<IconMetadata> metadata,
   Version version,
+  List<IconMetadata> duotoneMetadata,
 ) {
   final List<String> output = [
     "import 'package:flutter/widgets.dart';",
     "import 'package:font_awesome_flutter/src/icon_data.dart';",
     "export 'package:font_awesome_flutter/src/fa_icon.dart';",
+    "export 'package:font_awesome_flutter/src/fa_duotone_icon.dart';",
     "export 'package:font_awesome_flutter/src/icon_data.dart';",
   ];
 
@@ -399,6 +435,12 @@ List<String> generateIconDefinitionClass(
   }
 
   output.add('}');
+
+  // Append duotone class if duotone icons were found
+  if (duotoneMetadata.isNotEmpty) {
+    output.addAll(generateDuotoneIconDefinitionClass(duotoneMetadata, version));
+  }
+
   return output;
 }
 
@@ -491,6 +533,94 @@ String normalizeIconName(String iconName, String style, int styleCompetitors) {
 /// Utility function to generate the correct FontFamily string for a [style]
 String styleToFontFamily(String style) {
   return 'FontAwesome${style.split(' ').map((word) => word.isNotEmpty ? word[0].toUpperCase() + word.substring(1) : '').toList().join('')}';
+}
+
+/// Maps a duotone style name to the corresponding font family
+String duotoneStyleToFontFamily(String style) {
+  if (style.contains('sharp')) {
+    return 'FontAwesomeSharpDuotone';
+  }
+  return 'FontAwesomeDuotone';
+}
+
+/// Builds the class with duotone icon definitions
+///
+/// Duotone icons use [FaDuotoneIconData] which stores a codepoint and
+/// ligature name. The OTF name-based ligature (icon-name# / icon-name##)
+/// is resolved at render time by [FaDuotoneIcon].
+List<String> generateDuotoneIconDefinitionClass(
+  List<IconMetadata> metadata,
+  Version version,
+) {
+  final List<String> output = [
+    '',
+    '/// Duotone icons based on font awesome $version',
+    '///',
+    '/// Duotone icons require Font Awesome Pro and the duotone OTF font file.',
+    '/// Use with [FaDuotoneIcon] widget.',
+    'class FontAwesomeDuotoneIcons {',
+  ];
+
+  // Track which icon names we've seen to handle style disambiguation
+  final Set<String> emittedNames = {};
+
+  for (var icon in metadata) {
+    for (String style in icon.styles) {
+      final String fontFamily = duotoneStyleToFontFamily(style);
+      final bool isSharp = style.contains('sharp');
+      final String prefix = isSharp ? 'sharp' : '';
+
+      var iconName = nameAdjustments[icon.name] ?? icon.name;
+      if (prefix.isNotEmpty) {
+        iconName = '${prefix}_$iconName';
+      }
+      iconName = iconName.camelCase;
+
+      // Skip duplicates
+      if (emittedNames.contains(iconName)) continue;
+      emittedNames.add(iconName);
+
+      // Doc comment
+      output.add(
+        '/// ${style.split(' ').map((w) => w.isNotEmpty ? w[0].toUpperCase() + w.substring(1) : '').join(' ')} ${icon.label} icon\n'
+        '///\n'
+        '/// https://fontawesome.com/icons/${icon.name}?style=$style',
+      );
+      if (icon.searchTerms.isNotEmpty) {
+        output.add('/// ${icon.searchTerms.join(", ")}');
+      }
+
+      // Icon definition — include ligatureName (the raw FA icon name)
+      if (fontFamily == 'FontAwesomeDuotone') {
+        output.add(
+          "static const FaDuotoneIconData $iconName = FaDuotoneIconData(0x${icon.unicode}, ligatureName: '${icon.name}');",
+        );
+      } else {
+        output.add(
+          "static const FaDuotoneIconData $iconName = FaDuotoneIconData(0x${icon.unicode}, ligatureName: '${icon.name}', fontFamily: '$fontFamily');",
+        );
+      }
+
+      // Aliases
+      for (String alias in icon.aliases) {
+        if (ignoredAliases.contains(alias)) continue;
+        var aliasName = nameAdjustments[alias] ?? alias;
+        if (prefix.isNotEmpty) {
+          aliasName = '${prefix}_$aliasName';
+        }
+        aliasName = aliasName.camelCase;
+        if (emittedNames.contains(aliasName)) continue;
+        emittedNames.add(aliasName);
+
+        output.add('/// Alias $alias for icon [$iconName]');
+        output.add('@Deprecated(\'Use "$iconName" instead.\')');
+        output.add('static const FaDuotoneIconData $aliasName = $iconName;');
+      }
+    }
+  }
+
+  output.add('}');
+  return output;
 }
 
 /// Gets the default branch from github's metadata
@@ -622,17 +752,36 @@ bool readAndPickMetadata(
     if (icon.containsKey("styles")) {
       iconStyles = (icon['styles'] as List).cast<String>();
     } else if (icon.containsKey("svgs")) {
-      iconStyles.addAll((icon['svgs']['classic'] as Map<String, dynamic>).keys);
-      if (icon['svgs']?['sharp'] != null) {
+      final svgs = icon['svgs'] as Map<String, dynamic>;
+      if (svgs['classic'] != null) {
+        iconStyles.addAll((svgs['classic'] as Map<String, dynamic>).keys);
+      }
+      if (svgs['sharp'] != null) {
         iconStyles.addAll(
-          (icon['svgs']['sharp'] as Map<String, dynamic>).keys.map(
+          (svgs['sharp'] as Map<String, dynamic>).keys.map(
             (key) => 'sharp $key',
           ),
         ); //"sharp thin ..."
       }
+      if (svgs['duotone'] != null) {
+        iconStyles.addAll(
+          (svgs['duotone'] as Map<String, dynamic>).keys.map(
+            (key) => key == 'solid' ? 'duotone' : 'duotone $key',
+          ),
+        );
+      }
+      if (svgs['sharp-duotone'] != null) {
+        iconStyles.addAll(
+          (svgs['sharp-duotone'] as Map<String, dynamic>).keys.map(
+            (key) => key == 'solid' ? 'sharp duotone' : 'sharp duotone $key',
+          ),
+        );
+      }
     }
-    //TODO: Remove line once duotone support discontinuation notice is removed
-    if (iconStyles.contains('duotone')) hasDuotoneIcons = true;
+    if (iconStyles.contains('duotone') ||
+        iconStyles.any((s) => s.contains('duotone'))) {
+      hasDuotoneIcons = true;
+    }
 
     for (var excluded in excludedStyles) {
       if (excluded == 'sharp') {
@@ -718,8 +867,17 @@ ArgParser setUpArgParser() {
       'light',
       'thin',
       'sharp',
+      'sharp duotone',
     ],
     help: 'icon styles which are excluded by the generator',
+  );
+
+  argParser.addFlag(
+    'duotone',
+    defaultsTo: false,
+    negatable: false,
+    help:
+        'generates duotone icon definitions (requires FA Pro duotone OTF font)',
   );
 
   argParser.addFlag(
