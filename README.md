@@ -203,11 +203,39 @@ name-based ligature system:
 The duotone OTF is registered as a regular font family (not an icon font), which keeps it
 out of Flutter's icon tree-shaker entirely. The full font ships in the app.
 
-### Sharp Duotone
+### Weight variants
 
-FA v7 also offers Sharp Duotone icons. If your Pro fonts include
-`Font Awesome 7 Sharp Duotone-Solid-900.otf`, the configurator will generate sharp
-duotone constants as well (prefixed with `sharp`, e.g. `FontAwesomeDuotoneIcons.sharpDoorOpen`).
+FA v7 duotone icons come in four weights, each requiring its own OTF font file:
+
+| Weight | Classic Duotone Font | Sharp Duotone Font |
+|---|---|---|
+| **Solid** (900, default) | `Font-Awesome-7-Duotone-Solid-900.otf` | `Font-Awesome-7-Sharp-Duotone-Solid-900.otf` |
+| **Regular** (400) | `Font-Awesome-7-Duotone-Regular-400.otf` | `Font-Awesome-7-Sharp-Duotone-Regular-400.otf` |
+| **Light** (300) | `Font-Awesome-7-Duotone-Light-300.otf` | `Font-Awesome-7-Sharp-Duotone-Light-300.otf` |
+| **Thin** (100) | `Font-Awesome-7-Duotone-Thin-100.otf` | `Font-Awesome-7-Sharp-Duotone-Thin-100.otf` |
+
+Place the font files you need in `lib/fonts/` and run the configurator. It will detect available
+weights and generate constants with appropriate prefixes:
+
+```dart
+// Solid (default — no prefix)
+FaDuotoneIcon(FontAwesomeDuotoneIcons.calendarDays)
+
+// Regular weight
+FaDuotoneIcon(FontAwesomeDuotoneIcons.regularCalendarDays)
+
+// Light weight
+FaDuotoneIcon(FontAwesomeDuotoneIcons.lightCalendarDays)
+
+// Thin weight
+FaDuotoneIcon(FontAwesomeDuotoneIcons.thinCalendarDays)
+
+// Sharp solid
+FaDuotoneIcon(FontAwesomeDuotoneIcons.sharpCalendarDays)
+
+// Sharp light
+FaDuotoneIcon(FontAwesomeDuotoneIcons.sharpLightCalendarDays)
+```
 
 ### Properties
 

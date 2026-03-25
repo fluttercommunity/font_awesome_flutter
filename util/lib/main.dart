@@ -134,11 +134,12 @@ void main(List<String> rawArgs) async {
   final List<IconMetadata> metadata = [];
   final Set<String> styles = {};
   final List<String> excludedStyles = [...(args['exclude'] as List<String>)];
-  // Always exclude duotone from the main FontAwesomeIcons generation.
-  // Duotone icons use FaDuotoneIconData (not FaIconData) and are generated
-  // into a separate FontAwesomeDuotoneIcons class when --duotone is enabled.
+  // Always exclude all duotone variants from the main FontAwesomeIcons
+  // generation. Duotone icons use FaDuotoneIconData (not FaIconData) and are
+  // generated into FontAwesomeDuotoneIcons when --duotone is enabled.
+  // The 'duotone' exclusion uses wildcard matching (like 'sharp') to cover
+  // all weight variants: duotone, duotone regular, duotone light, etc.
   excludedStyles.add('duotone');
-  excludedStyles.add('sharp duotone');
   readAndPickMetadata(
     iconsJson,
     metadata,
@@ -535,13 +536,17 @@ String styleToFontFamily(String style) {
   return 'FontAwesome${style.split(' ').map((word) => word.isNotEmpty ? word[0].toUpperCase() + word.substring(1) : '').toList().join('')}';
 }
 
-/// Maps a duotone style name to the corresponding font family
-String duotoneStyleToFontFamily(String style) {
-  if (style.contains('sharp')) {
-    return 'FontAwesomeSharpDuotone';
-  }
-  return 'FontAwesomeDuotone';
-}
+/// Maps a duotone style name to the corresponding font family.
+///
+/// Delegates to [styleToFontFamily] which handles all multi-word styles:
+/// - `'duotone'` → `FontAwesomeDuotone` (solid, the default weight)
+/// - `'duotone regular'` → `FontAwesomeDuotoneRegular`
+/// - `'duotone light'` → `FontAwesomeDuotoneLight`
+/// - `'duotone thin'` → `FontAwesomeDuotoneThin`
+/// - `'sharp duotone'` → `FontAwesomeSharpDuotone`
+/// - `'sharp duotone regular'` → `FontAwesomeSharpDuotoneRegular`
+/// - etc.
+String duotoneStyleToFontFamily(String style) => styleToFontFamily(style);
 
 /// Builds the class with duotone icon definitions
 ///
@@ -567,8 +572,18 @@ List<String> generateDuotoneIconDefinitionClass(
   for (var icon in metadata) {
     for (String style in icon.styles) {
       final String fontFamily = duotoneStyleToFontFamily(style);
-      final bool isSharp = style.contains('sharp');
-      final String prefix = isSharp ? 'sharp' : '';
+
+      // Build prefix from the style name, excluding 'duotone' itself.
+      // 'duotone' (solid) → '' (default, no prefix)
+      // 'duotone regular' → 'regular'
+      // 'duotone light' → 'light'
+      // 'duotone thin' → 'thin'
+      // 'sharp duotone' → 'sharp'
+      // 'sharp duotone regular' → 'sharp_regular'
+      // 'sharp duotone light' → 'sharp_light'
+      // 'sharp duotone thin' → 'sharp_thin'
+      final parts = style.split(' ')..remove('duotone');
+      final String prefix = parts.join('_');
 
       var iconName = nameAdjustments[icon.name] ?? icon.name;
       if (prefix.isNotEmpty) {
@@ -592,6 +607,7 @@ List<String> generateDuotoneIconDefinitionClass(
 
       // Icon definition — include ligatureName (the raw FA icon name)
       if (fontFamily == 'FontAwesomeDuotone') {
+        // FontAwesomeDuotone is the default, no need to specify fontFamily
         output.add(
           "static const FaDuotoneIconData $iconName = FaDuotoneIconData(0x${icon.unicode}, ligatureName: '${icon.name}');",
         );
@@ -787,6 +803,9 @@ bool readAndPickMetadata(
       if (excluded == 'sharp') {
         //Since it's 'sharp thin' then remove any containing sharp
         iconStyles.removeWhere((element) => element.contains('sharp'));
+      } else if (excluded == 'duotone') {
+        // Remove all duotone variants: duotone, duotone regular, etc.
+        iconStyles.removeWhere((element) => element.contains('duotone'));
       } else {
         iconStyles.remove(excluded);
       }
@@ -867,7 +886,6 @@ ArgParser setUpArgParser() {
       'light',
       'thin',
       'sharp',
-      'sharp duotone',
     ],
     help: 'icon styles which are excluded by the generator',
   );

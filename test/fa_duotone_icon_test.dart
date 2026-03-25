@@ -24,13 +24,29 @@ void main() {
       expect(testIcon.fontPackage, 'font_awesome_flutter');
     });
 
-    test('supports custom font family for sharp duotone', () {
-      const sharpIcon = FaDuotoneIconData(
-        0xf52b,
-        ligatureName: 'door-open',
-        fontFamily: 'FontAwesomeSharpDuotone',
-      );
-      expect(sharpIcon.fontFamily, 'FontAwesomeSharpDuotone');
+    test('supports all duotone weight font families', () {
+      const families = [
+        'FontAwesomeDuotone',
+        'FontAwesomeDuotoneRegular',
+        'FontAwesomeDuotoneLight',
+        'FontAwesomeDuotoneThin',
+        'FontAwesomeSharpDuotone',
+        'FontAwesomeSharpDuotoneRegular',
+        'FontAwesomeSharpDuotoneLight',
+        'FontAwesomeSharpDuotoneThin',
+      ];
+
+      for (final family in families) {
+        final icon = FaDuotoneIconData(
+          0xf52b,
+          ligatureName: 'door-open',
+          fontFamily: family,
+        );
+        expect(icon.fontFamily, family);
+        // Ligature names should be the same regardless of font family
+        expect(icon.primaryGlyph, 'door-open#');
+        expect(icon.secondaryGlyph, 'door-open##');
+      }
     });
 
     test('equality works correctly', () {
@@ -224,6 +240,32 @@ void main() {
         find.bySemanticsLabel('Door open icon'),
         findsOneWidget,
       );
+    });
+
+    testWidgets('uses correct font family for weight variants', (
+      WidgetTester tester,
+    ) async {
+      const lightIcon = FaDuotoneIconData(
+        0xf52b,
+        ligatureName: 'door-open',
+        fontFamily: 'FontAwesomeDuotoneLight',
+      );
+
+      await tester.pumpWidget(
+        const Directionality(
+          textDirection: TextDirection.ltr,
+          child: FaDuotoneIcon(lightIcon),
+        ),
+      );
+
+      final richTexts =
+          tester.widgetList<RichText>(find.byType(RichText)).toList();
+      final primaryStyle = (richTexts[1].text as TextSpan).style!;
+      final secondaryStyle = (richTexts[0].text as TextSpan).style!;
+
+      // Flutter prepends the package path to the font family name
+      expect(primaryStyle.fontFamily, contains('FontAwesomeDuotoneLight'));
+      expect(secondaryStyle.fontFamily, contains('FontAwesomeDuotoneLight'));
     });
 
     testWidgets('defaults secondary color to primary color', (
