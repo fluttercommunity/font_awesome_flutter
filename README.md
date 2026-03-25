@@ -56,6 +56,11 @@ Due to restrictions in dart, icons starting with numbers have those numbers writ
 
 View the Flutter app in the `example` directory to see all the available `FontAwesomeIcons`.
 
+The example app also includes a **Duotone Showcase** page (accessible via the palette icon in the
+app bar) that demonstrates all duotone icon families, weight variants, and color/opacity options.
+Duotone icons require Font Awesome Pro fonts — if the fonts are not installed, a banner on the
+page explains the requirement.
+
 ## Customizing font awesome flutter
 
 We supply a configurator tool to assist you with common customizations to this package.

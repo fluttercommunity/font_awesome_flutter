@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:font_awesome_flutter_example/duotone_showcase.dart';
 import 'package:font_awesome_flutter_example/icons.dart';
 
 void main() {
@@ -103,6 +104,16 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
     return AppBar(
       title: const Text("Font Awesome Flutter Gallery"),
       actions: [
+        IconButton(
+            icon: const FaIcon(FontAwesomeIcons.palette),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (BuildContext context) => const DuotoneShowcase(),
+                ),
+              );
+            }),
         IconButton(
             icon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
             onPressed: () {
