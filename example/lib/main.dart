@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:font_awesome_flutter_example/duotone_showcase.dart';
 import 'package:font_awesome_flutter_example/icons.dart';
 
 void main() {
@@ -104,6 +105,16 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
       title: const Text("Font Awesome Flutter Gallery"),
       actions: [
         IconButton(
+            icon: const FaIcon(FontAwesomeIcons.palette),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (BuildContext context) => const DuotoneShowcase(),
+                ),
+              );
+            }),
+        IconButton(
             icon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
             onPressed: () {
               ModalRoute.of(context)?.addLocalHistoryEntry(
@@ -144,6 +155,75 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
         autofocus: true,
         style: const TextStyle(fontSize: 18.0),
         decoration: const InputDecoration(border: InputBorder.none),
+      ),
+    );
+  }
+}
+
+/// Showcase page demonstrating duotone icon rendering.
+///
+/// Duotone icons require the Font Awesome Pro duotone OTF font to be
+/// registered in pubspec.yaml. The icons below use hardcoded codepoints
+/// for demonstration purposes — in real usage, use the generated
+/// [FontAwesomeDuotoneIcons] constants.
+class DuotoneShowcasePage extends StatelessWidget {
+  const DuotoneShowcasePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // Example duotone icons (FA Pro required)
+    const doorOpen = FaDuotoneIconData(0xf52b, ligatureName: 'door-open');
+    const cat = FaDuotoneIconData(0xf6be, ligatureName: 'cat');
+    const userDoctor = FaDuotoneIconData(0xf0f0, ligatureName: 'user-doctor');
+
+    return Scaffold(
+      appBar: AppBar(title: const Text('Duotone Icons Showcase')),
+      body: Center(
+        child: Wrap(
+          spacing: 32,
+          runSpacing: 32,
+          alignment: WrapAlignment.center,
+          children: [
+            // Simple usage — inherits theme color
+            const Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                FaDuotoneIcon(doorOpen, size: 48),
+                SizedBox(height: 8),
+                Text('Default'),
+              ],
+            ),
+            // Custom two-tone colors
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                FaDuotoneIcon(
+                  cat,
+                  size: 48,
+                  primaryColor: Colors.deepPurple,
+                  secondaryColor: Colors.amber,
+                  secondaryOpacity: 0.6,
+                ),
+                const SizedBox(height: 8),
+                const Text('Custom colors'),
+              ],
+            ),
+            // Swap opacity
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                FaDuotoneIcon(
+                  userDoctor,
+                  size: 48,
+                  swapOpacity: true,
+                  primaryColor: Colors.teal,
+                ),
+                const SizedBox(height: 8),
+                const Text('Swapped opacity'),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
